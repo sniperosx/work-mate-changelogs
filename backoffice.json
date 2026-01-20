@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-20T08:51:47.108Z",
+  "generatedAt": "2026-01-20T11:01:47.755Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -19,7 +19,16 @@
       "version": "Rolling Release",
       "tag": null,
       "date": null,
-      "changes": {}
+      "changes": {
+        "fixes": [
+          {
+            "hash": "3233f75",
+            "emoji": "🐛",
+            "message": "Fehlerbehebung im Editor für Artikel. Überschriften und Checkboxen können wieder sauber gepflegt werden.",
+            "date": "2026-01-20"
+          }
+        ]
+      }
     },
     {
       "version": "0.3.5",
