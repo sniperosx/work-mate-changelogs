@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-20T12:10:39.869Z",
+  "generatedAt": "2026-01-20T12:16:12.905Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -38,7 +38,7 @@
         ],
         "refactors": [
           {
-            "hash": "9159197",
+            "hash": "fcd0c20",
             "emoji": "♻️",
             "message": "Anpassung der Darstellung der Kundengesundheit",
             "date": "2026-01-20"
