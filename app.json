@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-01-20T09:24:40.890Z",
+  "generatedAt": "2026-01-20T16:37:07.624Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "26f7f9b",
+            "emoji": "✨",
+            "message": "Das verfassen von mehrzeiligen Nachrichten ist im Benutzer-Chat ab sofort möglich",
+            "date": "2026-01-20"
+          },
+          {
+            "hash": "753a919",
+            "emoji": "✨",
+            "message": "Tastaturhandling im Chat unter iOS 26 und iOS 18 komplett überarbeitet.",
+            "date": "2026-01-20"
+          },
           {
             "hash": "d2f1681",
             "emoji": "✨",
@@ -50,7 +62,102 @@
             "emoji": "✨",
             "message": "Du kannst dich nun mit deiner Telefonnummer oder E-Mail anmelden. Der alte QR-Code wurde abgeschafft.",
             "date": "2026-01-16"
+          }
+        ],
+        "deployment": [
+          {
+            "hash": "2cad766",
+            "emoji": "🚀",
+            "message": "Dynamische Generierung und Platzierung von Changelogs wurde eingeführt",
+            "date": "2026-01-20"
           },
+          {
+            "hash": "5c70c5b",
+            "emoji": "🚀",
+            "message": "Neue Changelog-Generierung eingeführt",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "59c7f37",
+            "emoji": "🚀",
+            "message": "Release 1.8.0 Android (Buildable)",
+            "date": "2026-01-10"
+          }
+        ],
+        "fixes": [
+          {
+            "hash": "466f3ed",
+            "emoji": "🐛",
+            "message": "Fixes crash on WORK-MATE-APP-3R",
+            "date": "2026-01-13"
+          },
+          {
+            "hash": "96ae552",
+            "emoji": "🐛",
+            "message": "Fixes animation issues in owly chat",
+            "date": "2026-01-10"
+          }
+        ],
+        "refactors": [
+          {
+            "hash": "7321c3a",
+            "emoji": "♻️",
+            "message": "Fixes BackButton unter iOS 26 (nicht zentrierte Icons)",
+            "date": "2026-01-17"
+          },
+          {
+            "hash": "762d310",
+            "emoji": "♻️",
+            "message": "Optimierung des Chats für besonders lange Nachrichten (gerade Owly ist sehr gesprächig)",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "1f4e8b7",
+            "emoji": "♻️",
+            "message": "Optimierung des Tastaturhandlings im Chat",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "88d0b6d",
+            "emoji": "♻️",
+            "message": "Platzhalter in der ChatEingabe nun korrekt (nicht mehr Owly bei deinen Kollegen)",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "d0d279e",
+            "emoji": "♻️",
+            "message": "Fixes parameter issues on international phone numbers",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "8474929",
+            "emoji": "♻️",
+            "message": "Entfernung des QR-Code-Logins. Ebenfalls wurden die Kamera-Permissions aus der App entfernt, da nicht mehr benötigt.",
+            "date": "2026-01-16"
+          }
+        ],
+        "styles": [
+          {
+            "hash": "52cd68b",
+            "emoji": "💄",
+            "message": "Optimierung der Chat-Texteingabe unter Android. Zentralisierung der Chats zwischen Benutzern und Owly",
+            "date": "2026-01-20"
+          },
+          {
+            "hash": "4d807b2",
+            "emoji": "💄",
+            "message": "Optimierung der Newsfeeddarstellung",
+            "date": "2026-01-16"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.8.0",
+      "tag": "v1.8.0",
+      "date": "2026-01-07",
+      "changes": {
+        "features": [
           {
             "hash": "42be15a",
             "emoji": "✨",
@@ -468,24 +575,6 @@
         ],
         "deployment": [
           {
-            "hash": "2cad766",
-            "emoji": "🚀",
-            "message": "Dynamische Generierung und Platzierung von Changelogs wurde eingeführt",
-            "date": "2026-01-20"
-          },
-          {
-            "hash": "5c70c5b",
-            "emoji": "🚀",
-            "message": "Neue Changelog-Generierung eingeführt",
-            "date": "2026-01-16"
-          },
-          {
-            "hash": "59c7f37",
-            "emoji": "🚀",
-            "message": "Release 1.8.0 Android (Buildable)",
-            "date": "2026-01-10"
-          },
-          {
             "hash": "854ac6f",
             "emoji": "🚀",
             "message": "Version bump to 1.8.0",
@@ -572,18 +661,6 @@
         ],
         "fixes": [
           {
-            "hash": "466f3ed",
-            "emoji": "🐛",
-            "message": "Fixes crash on WORK-MATE-APP-3R",
-            "date": "2026-01-13"
-          },
-          {
-            "hash": "96ae552",
-            "emoji": "🐛",
-            "message": "Fixes animation issues in owly chat",
-            "date": "2026-01-10"
-          },
-          {
             "hash": "00a1382",
             "emoji": "🐛",
             "message": "Fixes key issue on home screen",
@@ -669,42 +746,6 @@
           }
         ],
         "refactors": [
-          {
-            "hash": "7321c3a",
-            "emoji": "♻️",
-            "message": "Fixes BackButton unter iOS 26 (nicht zentrierte Icons)",
-            "date": "2026-01-17"
-          },
-          {
-            "hash": "762d310",
-            "emoji": "♻️",
-            "message": "Optimierung des Chats für besonders lange Nachrichten (gerade Owly ist sehr gesprächig)",
-            "date": "2026-01-16"
-          },
-          {
-            "hash": "1f4e8b7",
-            "emoji": "♻️",
-            "message": "Optimierung des Tastaturhandlings im Chat",
-            "date": "2026-01-16"
-          },
-          {
-            "hash": "88d0b6d",
-            "emoji": "♻️",
-            "message": "Platzhalter in der ChatEingabe nun korrekt (nicht mehr Owly bei deinen Kollegen)",
-            "date": "2026-01-16"
-          },
-          {
-            "hash": "d0d279e",
-            "emoji": "♻️",
-            "message": "Fixes parameter issues on international phone numbers",
-            "date": "2026-01-16"
-          },
-          {
-            "hash": "8474929",
-            "emoji": "♻️",
-            "message": "Entfernung des QR-Code-Logins. Ebenfalls wurden die Kamera-Permissions aus der App entfernt, da nicht mehr benötigt.",
-            "date": "2026-01-16"
-          },
           {
             "hash": "446d01b",
             "emoji": "♻️",
@@ -881,12 +922,6 @@
           }
         ],
         "styles": [
-          {
-            "hash": "4d807b2",
-            "emoji": "💄",
-            "message": "Optimierung der Newsfeeddarstellung",
-            "date": "2026-01-16"
-          },
           {
             "hash": "5997fb6",
             "emoji": "💄",
