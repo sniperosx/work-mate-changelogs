@@ -1,1 +1,952 @@
-{"repository":"app","releases":[]}
+{
+  "repository": "app",
+  "generatedAt": "2026-01-20T09:24:40.890Z",
+  "categoryNames": {
+    "features": "Features",
+    "deployment": "Deployment",
+    "fixes": "Bug Fixes",
+    "refactors": "Refactoring",
+    "styles": "UI / Styles",
+    "tests": "Tests",
+    "docs": "Documentation",
+    "dependencies": "Dependencies",
+    "security": "Security",
+    "build": "Build & CI",
+    "other": "Other"
+  },
+  "releases": [
+    {
+      "version": "Rolling Release",
+      "tag": null,
+      "date": null,
+      "changes": {
+        "features": [
+          {
+            "hash": "d2f1681",
+            "emoji": "✨",
+            "message": "Profilbilder im Chat und im Newsfeed öffnen nun das Benutzerprofil",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "87d2e82",
+            "emoji": "✨",
+            "message": "Eine neue Schaltfläche im Chat, um auf das Profil deines Kollegen zu springen",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "887efd6",
+            "emoji": "✨",
+            "message": "Im Profil kann nun die eigenen Kontaktdaten (E-Mail und Telefonnummer) selbständig verwaltet werden.",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "829808c",
+            "emoji": "✨",
+            "message": "Unvollständige Profile werden nun aufgefordert E-Mail oder Telefonnummer zu hinterlegen (passiert nach Beförderung in den Mitarbeiter)",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "bbf92b9",
+            "emoji": "✨",
+            "message": "Du kannst dich nun mit deiner Telefonnummer oder E-Mail anmelden. Der alte QR-Code wurde abgeschafft.",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "42be15a",
+            "emoji": "✨",
+            "message": "Ein ausstehendes Onboarding-Feedback kann nun auch als frischer Mitarbeiter vervollständigt werden (z.B. nach einer Beförderung)",
+            "date": "2026-01-07"
+          },
+          {
+            "hash": "a51584c",
+            "emoji": "✨",
+            "message": "Für das Onboarding-Feedback ist nun ein Banner verfügbar. Du siehst ab sofort kein automatisches und teils störendes PopUp mehr dazu.",
+            "date": "2026-01-07"
+          },
+          {
+            "hash": "9f655f4",
+            "emoji": "✨",
+            "message": "Kommentare an News-Einträgen können nun frei übersetzt werden",
+            "date": "2026-01-07"
+          },
+          {
+            "hash": "50c95cf",
+            "emoji": "✨",
+            "message": "Das Verfassen und Löschen von eigenen Kommentaren zu einem News-Eintrag ist nun möglich",
+            "date": "2026-01-06"
+          },
+          {
+            "hash": "6b97f98",
+            "emoji": "✨",
+            "message": "Newsfeed-Einträge besitzen nun Kommentare. Die Anzahl von Kommentaren wird in der Übersicht dargestellt. Über das Kommentar-Symbol können nun alle Kommentare eingesehen werden",
+            "date": "2026-01-06"
+          },
+          {
+            "hash": "4ce6cc0",
+            "emoji": "✨",
+            "message": "Neues Weihnachts/Winter-Icon unter iOS eingeführt",
+            "date": "2025-12-21"
+          },
+          {
+            "hash": "cca5f59",
+            "emoji": "✨",
+            "message": "Hilfefragen in Owly sind nun jederzeit und übersichtlich einsehbar und nutzbar.",
+            "date": "2025-12-19"
+          },
+          {
+            "hash": "966be30",
+            "emoji": "✨",
+            "message": "Die Echtzeitübersetzung von Chat- und Owly-Nachrichten ist nun verfügbar",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "08d0294",
+            "emoji": "✨",
+            "message": "Der Newsfeed zeigt nun ungelesene/neue Beiträge in Form von Badges an.",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "4712156",
+            "emoji": "✨",
+            "message": "Die Darstellung von Newseinträgen ist nun kompakter und übersichtlicher",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "49ac56c",
+            "emoji": "✨",
+            "message": "Fixes upper case login issues",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "15882d1",
+            "emoji": "✨",
+            "message": "Markdown support in Chat-Nachrichten eingeführt",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "a21e1a4",
+            "emoji": "✨",
+            "message": "Templatefragen von Owly werden nun aus dem Backend bezogen",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "514aaef",
+            "emoji": "✨",
+            "message": "Owly kann nun Vorschläge von passenden Fragen bereitstellen, sofern diese vom Administrator gepflegt wurden.",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "97f26be",
+            "emoji": "✨",
+            "message": "Fixes imprint and privacy links",
+            "date": "2025-12-15"
+          },
+          {
+            "hash": "00051b7",
+            "emoji": "✨",
+            "message": "Das Profil bietet nun die Möglichkeit deine präferierte Sprache einzustellen.",
+            "date": "2025-12-09"
+          },
+          {
+            "hash": "0174b76",
+            "emoji": "✨",
+            "message": "Die Echtzeitübersetzung von News-Einträgen ist nun verfügbar.",
+            "date": "2025-12-09"
+          },
+          {
+            "hash": "a27a5ba",
+            "emoji": "✨",
+            "message": "Widgets ohne Inhalte fallen nun auf ein \"Keine Inhalte\" Widget zurück",
+            "date": "2025-12-04"
+          },
+          {
+            "hash": "e65acf3",
+            "emoji": "✨",
+            "message": "Die App kann nun mit dem neuen Rechtesystem umgehen",
+            "date": "2025-12-04"
+          },
+          {
+            "hash": "d5e3801",
+            "emoji": "✨",
+            "message": "Adds holiday and learning place overlays in apprentices calendar",
+            "date": "2025-11-04"
+          },
+          {
+            "hash": "33fc8a2",
+            "emoji": "✨",
+            "message": "Adds pastel colors for better readability to apprentice calendar",
+            "date": "2025-11-03"
+          },
+          {
+            "hash": "1887e37",
+            "emoji": "✨",
+            "message": "Adds holiday support for apprentice calendar",
+            "date": "2025-11-03"
+          },
+          {
+            "hash": "6ecfd7b",
+            "emoji": "✨",
+            "message": "Adds support for schedules and learning place legends in apprentice calendar",
+            "date": "2025-11-03"
+          },
+          {
+            "hash": "d367556",
+            "emoji": "✨",
+            "message": "Adds new layout for home screen",
+            "date": "2025-10-31"
+          },
+          {
+            "hash": "60d15a7",
+            "emoji": "✨",
+            "message": "Adds inline pdf support on android",
+            "date": "2025-10-24"
+          },
+          {
+            "hash": "74af666",
+            "emoji": "✨",
+            "message": "Adds loading indicator to pdf button",
+            "date": "2025-10-24"
+          },
+          {
+            "hash": "6c4221b",
+            "emoji": "✨",
+            "message": "Adds unsaved data warning in user profile edit screen",
+            "date": "2025-10-21"
+          },
+          {
+            "hash": "8d8f809",
+            "emoji": "✨",
+            "message": "Adds additional profile edit button the home screen",
+            "date": "2025-10-20"
+          },
+          {
+            "hash": "350219b",
+            "emoji": "✨",
+            "message": "Adds support for live regex check on text input",
+            "date": "2025-10-20"
+          },
+          {
+            "hash": "66e0ec6",
+            "emoji": "✨",
+            "message": "Adds list of new colleagues to employee assistant",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "cdd5bc4",
+            "emoji": "✨",
+            "message": "Merged user profile and mentor profile screen",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "57b6232",
+            "emoji": "✨",
+            "message": "UI polishing in user details",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "14ac649",
+            "emoji": "✨",
+            "message": "Adds user detail view for user profiles",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "d953986",
+            "emoji": "✨",
+            "message": "Adds user profile editing screen with corresponding queries and mutations",
+            "date": "2025-10-16"
+          },
+          {
+            "hash": "13391aa",
+            "emoji": "✨",
+            "message": "Adds user profile button and screen into drawer navigation",
+            "date": "2025-10-16"
+          },
+          {
+            "hash": "9f6a33f",
+            "emoji": "✨",
+            "message": "Adds pdf button to articles detail",
+            "date": "2025-10-14"
+          },
+          {
+            "hash": "a119a51",
+            "emoji": "✨",
+            "message": "Feat adds first stage of a fullscreen image viewer.",
+            "date": "2025-10-14"
+          },
+          {
+            "hash": "5da6527",
+            "emoji": "✨",
+            "message": "Adds view to present images in article content flow",
+            "date": "2025-10-14"
+          },
+          {
+            "hash": "4f36aa5",
+            "emoji": "✨",
+            "message": "Adds new bottom sheet provider implementation",
+            "date": "2025-10-08"
+          },
+          {
+            "hash": "f288304",
+            "emoji": "✨",
+            "message": "Adds code push support on android",
+            "date": "2025-09-17"
+          },
+          {
+            "hash": "3b004ea",
+            "emoji": "✨",
+            "message": "Adds code push support for iOS using revopush",
+            "date": "2025-09-17"
+          },
+          {
+            "hash": "8048739",
+            "emoji": "✨",
+            "message": "Adds the profile image onto home screen",
+            "date": "2025-09-16"
+          },
+          {
+            "hash": "0349f35",
+            "emoji": "✨",
+            "message": "Adds environment service to switch to staging in review processes",
+            "date": "2025-09-16"
+          },
+          {
+            "hash": "3332b6c",
+            "emoji": "✨",
+            "message": "Adds blur top bar in home screen",
+            "date": "2025-09-15"
+          },
+          {
+            "hash": "fb2bca1",
+            "emoji": "✨",
+            "message": "Adds sentry with auto DSYM file upload",
+            "date": "2025-09-12"
+          },
+          {
+            "hash": "b63dc73",
+            "emoji": "✨",
+            "message": "Adds suggestion challenges list (with dummy message)",
+            "date": "2025-09-11"
+          },
+          {
+            "hash": "621c4e0",
+            "emoji": "✨",
+            "message": "Diverese changes in home screen",
+            "date": "2025-09-10"
+          },
+          {
+            "hash": "c11c489",
+            "emoji": "✨",
+            "message": "Optimizes keyboard handling in overlays",
+            "date": "2025-09-10"
+          },
+          {
+            "hash": "e398aee",
+            "emoji": "✨",
+            "message": "Adds better link display in markdown view",
+            "date": "2025-09-09"
+          },
+          {
+            "hash": "5b0b929",
+            "emoji": "✨",
+            "message": "Adds setting to disable next lessons in lesson detail",
+            "date": "2025-09-09"
+          },
+          {
+            "hash": "75b897b",
+            "emoji": "✨",
+            "message": "Adds auto play to videos",
+            "date": "2025-09-09"
+          },
+          {
+            "hash": "d99ab81",
+            "emoji": "✨",
+            "message": "Adds support for external links",
+            "date": "2025-09-09"
+          },
+          {
+            "hash": "18ea163",
+            "emoji": "✨",
+            "message": "Adds support to leave or delete chats and groups",
+            "date": "2025-09-05"
+          },
+          {
+            "hash": "b9d1f17",
+            "emoji": "✨",
+            "message": "Adds error screen in surveys",
+            "date": "2025-09-05"
+          },
+          {
+            "hash": "6ee254b",
+            "emoji": "✨",
+            "message": "Introduces new navigation handling without tabs",
+            "date": "2025-09-03"
+          },
+          {
+            "hash": "89b83ba",
+            "emoji": "✨",
+            "message": "Polishes app rating pop up with new images",
+            "date": "2025-09-02"
+          },
+          {
+            "hash": "caa35c2",
+            "emoji": "✨",
+            "message": "Polishing owly screen and put owly in root navigation",
+            "date": "2025-09-01"
+          },
+          {
+            "hash": "248d761",
+            "emoji": "✨",
+            "message": "Adds support for links in markdown elements",
+            "date": "2025-09-01"
+          },
+          {
+            "hash": "136ce36",
+            "emoji": "✨",
+            "message": "Polished animations on owly chat",
+            "date": "2025-08-29"
+          },
+          {
+            "hash": "ea93047",
+            "emoji": "✨",
+            "message": "Adds first running owly implementation",
+            "date": "2025-08-29"
+          },
+          {
+            "hash": "a8ec1ae",
+            "emoji": "✨",
+            "message": "Adds owly chat with dummy content messages",
+            "date": "2025-08-28"
+          },
+          {
+            "hash": "489c187",
+            "emoji": "✨",
+            "message": "Adds Owly welcome screen",
+            "date": "2025-08-28"
+          },
+          {
+            "hash": "2508abe",
+            "emoji": "✨",
+            "message": "Adds image and comment support in grade entry commit",
+            "date": "2025-08-15"
+          },
+          {
+            "hash": "66beece",
+            "emoji": "✨",
+            "message": "Adds apprentice grade overview screen with average chart",
+            "date": "2025-08-15"
+          },
+          {
+            "hash": "adeca05",
+            "emoji": "✨",
+            "message": "Finishes grade input with api connection",
+            "date": "2025-08-14"
+          },
+          {
+            "hash": "11cc688",
+            "emoji": "✨",
+            "message": "Adds third screen to input grade values and add comments",
+            "date": "2025-08-12"
+          },
+          {
+            "hash": "e2f22cf",
+            "emoji": "✨",
+            "message": "Adds subject selection and display optimization in grade subject selection screen",
+            "date": "2025-08-11"
+          },
+          {
+            "hash": "c44b35a",
+            "emoji": "✨",
+            "message": "Adds screen for grade subject selection including all available subject icons",
+            "date": "2025-08-11"
+          },
+          {
+            "hash": "9ae0655",
+            "emoji": "✨",
+            "message": "Adds first screen and step for managing school grades in apprentice asisstant",
+            "date": "2025-08-09"
+          }
+        ],
+        "deployment": [
+          {
+            "hash": "2cad766",
+            "emoji": "🚀",
+            "message": "Dynamische Generierung und Platzierung von Changelogs wurde eingeführt",
+            "date": "2026-01-20"
+          },
+          {
+            "hash": "5c70c5b",
+            "emoji": "🚀",
+            "message": "Neue Changelog-Generierung eingeführt",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "59c7f37",
+            "emoji": "🚀",
+            "message": "Release 1.8.0 Android (Buildable)",
+            "date": "2026-01-10"
+          },
+          {
+            "hash": "854ac6f",
+            "emoji": "🚀",
+            "message": "Version bump to 1.8.0",
+            "date": "2026-01-07"
+          },
+          {
+            "hash": "24607f1",
+            "emoji": "🚀",
+            "message": "Adds sentry symbols upload on revopush upgrade",
+            "date": "2025-10-24"
+          },
+          {
+            "hash": "9d835e2",
+            "emoji": "🚀",
+            "message": "Upgrade react native reanimated",
+            "date": "2025-10-21"
+          },
+          {
+            "hash": "ec9d7ad",
+            "emoji": "🚀",
+            "message": "Adds ic_notifications icons to android project",
+            "date": "2025-10-21"
+          },
+          {
+            "hash": "61526b7",
+            "emoji": "🚀",
+            "message": "Hotfix release on android 1.6.1",
+            "date": "2025-09-18"
+          },
+          {
+            "hash": "cee5f63",
+            "emoji": "🚀",
+            "message": "Bumps to 1.6.1",
+            "date": "2025-09-17"
+          },
+          {
+            "hash": "cde17bc",
+            "emoji": "🚀",
+            "message": "Release of version 1.6.0 in app store and play store",
+            "date": "2025-09-16"
+          },
+          {
+            "hash": "3e7ee61",
+            "emoji": "🚀",
+            "message": "Adds android build support on react native 0.79.6",
+            "date": "2025-09-15"
+          },
+          {
+            "hash": "28c4917",
+            "emoji": "🚀",
+            "message": "Adds play store fastlane support CI/CD",
+            "date": "2025-09-15"
+          },
+          {
+            "hash": "9bfdabc",
+            "emoji": "🚀",
+            "message": "Golden Master 1.6.0",
+            "date": "2025-09-12"
+          },
+          {
+            "hash": "d38a1d8",
+            "emoji": "🚀",
+            "message": "Adds test flight fastlane CI/CD",
+            "date": "2025-09-10"
+          },
+          {
+            "hash": "1827b88",
+            "emoji": "🚀",
+            "message": "Bumps to version 1.6",
+            "date": "2025-09-08"
+          },
+          {
+            "hash": "9e0495e",
+            "emoji": "🚀",
+            "message": "Bumps version to 1.5.0",
+            "date": "2025-08-14"
+          },
+          {
+            "hash": "390b999",
+            "emoji": "🚀",
+            "message": "Deploys study.mate android 1.4.1",
+            "date": "2025-08-06"
+          }
+        ],
+        "fixes": [
+          {
+            "hash": "466f3ed",
+            "emoji": "🐛",
+            "message": "Fixes crash on WORK-MATE-APP-3R",
+            "date": "2026-01-13"
+          },
+          {
+            "hash": "96ae552",
+            "emoji": "🐛",
+            "message": "Fixes animation issues in owly chat",
+            "date": "2026-01-10"
+          },
+          {
+            "hash": "00a1382",
+            "emoji": "🐛",
+            "message": "Fixes key issue on home screen",
+            "date": "2025-12-17"
+          },
+          {
+            "hash": "1b5ecc2",
+            "emoji": "🐛",
+            "message": "Behebt einen Absturz beim Ausloggen in der App",
+            "date": "2025-12-04"
+          },
+          {
+            "hash": "d9c0429",
+            "emoji": "🐛",
+            "message": "Fixes crash on QR-Code race condition",
+            "date": "2025-12-04"
+          },
+          {
+            "hash": "19ec887",
+            "emoji": "🐛",
+            "message": "Workaround for BAD_ACCESS crashes on startup",
+            "date": "2025-12-04"
+          },
+          {
+            "hash": "3f873fc",
+            "emoji": "🐛",
+            "message": "Fixes crash on loading (autoscrolling) new employee screen",
+            "date": "2025-12-04"
+          },
+          {
+            "hash": "5c78bf1",
+            "emoji": "🐛",
+            "message": "Behebt einige Fehler im File- und Fotopicking während eines Fragebogens",
+            "date": "2025-11-19"
+          },
+          {
+            "hash": "eea50fc",
+            "emoji": "🐛",
+            "message": "Fixes firebase network lost exception in prod environment",
+            "date": "2025-10-21"
+          },
+          {
+            "hash": "f917bd1",
+            "emoji": "🐛",
+            "message": "Fixes sentry crash on auto scroll in chat lists",
+            "date": "2025-10-21"
+          },
+          {
+            "hash": "6dc07da",
+            "emoji": "🐛",
+            "message": "Fixes freezing overlays caused by race condition in bottom sheet",
+            "date": "2025-10-15"
+          },
+          {
+            "hash": "afd489a",
+            "emoji": "🐛",
+            "message": "Signature line in pairing screen is visible again on work.mate flavour",
+            "date": "2025-10-07"
+          },
+          {
+            "hash": "67e337e",
+            "emoji": "🐛",
+            "message": "Disables pro guard again preventing from reflection crashes in production releases",
+            "date": "2025-09-17"
+          },
+          {
+            "hash": "f5155aa",
+            "emoji": "🐛",
+            "message": "Fixes keyboard handling in overlay screens",
+            "date": "2025-09-15"
+          },
+          {
+            "hash": "0ff35cf",
+            "emoji": "🐛",
+            "message": "Fixes new chat on group edit",
+            "date": "2025-09-05"
+          },
+          {
+            "hash": "e0f41c9",
+            "emoji": "🐛",
+            "message": "Fixes keyboard handling in chat screen",
+            "date": "2025-09-05"
+          }
+        ],
+        "refactors": [
+          {
+            "hash": "7321c3a",
+            "emoji": "♻️",
+            "message": "Fixes BackButton unter iOS 26 (nicht zentrierte Icons)",
+            "date": "2026-01-17"
+          },
+          {
+            "hash": "762d310",
+            "emoji": "♻️",
+            "message": "Optimierung des Chats für besonders lange Nachrichten (gerade Owly ist sehr gesprächig)",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "1f4e8b7",
+            "emoji": "♻️",
+            "message": "Optimierung des Tastaturhandlings im Chat",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "88d0b6d",
+            "emoji": "♻️",
+            "message": "Platzhalter in der ChatEingabe nun korrekt (nicht mehr Owly bei deinen Kollegen)",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "d0d279e",
+            "emoji": "♻️",
+            "message": "Fixes parameter issues on international phone numbers",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "8474929",
+            "emoji": "♻️",
+            "message": "Entfernung des QR-Code-Logins. Ebenfalls wurden die Kamera-Permissions aus der App entfernt, da nicht mehr benötigt.",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "446d01b",
+            "emoji": "♻️",
+            "message": "Changes feedback rating timing",
+            "date": "2026-01-07"
+          },
+          {
+            "hash": "24dcc00",
+            "emoji": "♻️",
+            "message": "Behebt ein Fehler, der aus dem Owly Screen nicht zurücknavigieren ließ",
+            "date": "2025-12-19"
+          },
+          {
+            "hash": "7c83cbb",
+            "emoji": "♻️",
+            "message": "Der Chatbereich ist nun zwischen Nutzerchats und Owly auf eine einheitliche Basis gezogen",
+            "date": "2025-12-19"
+          },
+          {
+            "hash": "cc67a57",
+            "emoji": "♻️",
+            "message": "Removes firebase issues on simulator run",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "6f3f5e6",
+            "emoji": "♻️",
+            "message": "Recovers native logging",
+            "date": "2025-12-04"
+          },
+          {
+            "hash": "d20e538",
+            "emoji": "♻️",
+            "message": "Adds MIME type image checks on questionnaire inputs",
+            "date": "2025-11-28"
+          },
+          {
+            "hash": "a31f75e",
+            "emoji": "♻️",
+            "message": "Skips Sentry upload on OTA script (temporary)",
+            "date": "2025-11-24"
+          },
+          {
+            "hash": "501e4cb",
+            "emoji": "♻️",
+            "message": "First WIP of calendar view",
+            "date": "2025-10-31"
+          },
+          {
+            "hash": "fbee9d6",
+            "emoji": "♻️",
+            "message": "Symmetry polishing in the home menu",
+            "date": "2025-10-31"
+          },
+          {
+            "hash": "df321be",
+            "emoji": "♻️",
+            "message": "Renaming of login screens",
+            "date": "2025-10-24"
+          },
+          {
+            "hash": "322b0fd",
+            "emoji": "♻️",
+            "message": "Polishes login screens on android",
+            "date": "2025-10-24"
+          },
+          {
+            "hash": "33a57e3",
+            "emoji": "♻️",
+            "message": "Optimizes PDF display (with file name)",
+            "date": "2025-10-24"
+          },
+          {
+            "hash": "74b305f",
+            "emoji": "♻️",
+            "message": "Refactoring of the edit profile screen",
+            "date": "2025-10-21"
+          },
+          {
+            "hash": "7cad269",
+            "emoji": "♻️",
+            "message": "Moves login overlays to modal screens for better keyboard handling",
+            "date": "2025-10-19"
+          },
+          {
+            "hash": "8b8e7f3",
+            "emoji": "♻️",
+            "message": "Fixes TS errors",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "11cdb82",
+            "emoji": "♻️",
+            "message": "Potential fix for minimal font sizes in menu items",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "44aaab6",
+            "emoji": "♻️",
+            "message": "Changed interval of onboarding feedback request (only once a week)",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "cd6a6a2",
+            "emoji": "♻️",
+            "message": "Fixes some iOS 26 and bottom sheet UI problems",
+            "date": "2025-10-08"
+          },
+          {
+            "hash": "31eb7e2",
+            "emoji": "♻️",
+            "message": "Refactors refresh token logic with piggyback support for multiple request on invalid token",
+            "date": "2025-09-17"
+          },
+          {
+            "hash": "d19b94c",
+            "emoji": "♻️",
+            "message": "Fixes grid display for better initial rendering",
+            "date": "2025-09-16"
+          },
+          {
+            "hash": "d1fffc6",
+            "emoji": "♻️",
+            "message": "Pushed android to be running",
+            "date": "2025-09-16"
+          },
+          {
+            "hash": "80eba48",
+            "emoji": "♻️",
+            "message": "WIP: New home item layout",
+            "date": "2025-09-12"
+          },
+          {
+            "hash": "a0d273b",
+            "emoji": "♻️",
+            "message": "Fixes character counter to match API requirements on newsfeed post",
+            "date": "2025-09-11"
+          },
+          {
+            "hash": "e328111",
+            "emoji": "♻️",
+            "message": "Refactors markdown linebreaks in static texts",
+            "date": "2025-09-09"
+          },
+          {
+            "hash": "a17a61f",
+            "emoji": "♻️",
+            "message": "Enables badge support in main menu",
+            "date": "2025-09-09"
+          },
+          {
+            "hash": "355d372",
+            "emoji": "♻️",
+            "message": "Bugfixing after upgrade",
+            "date": "2025-09-05"
+          },
+          {
+            "hash": "6ca1f57",
+            "emoji": "♻️",
+            "message": "Remove Expo from native projects",
+            "date": "2025-09-04"
+          },
+          {
+            "hash": "940fc36",
+            "emoji": "♻️",
+            "message": "Tweaking tsconfig",
+            "date": "2025-09-01"
+          },
+          {
+            "hash": "e4a1b0b",
+            "emoji": "♻️",
+            "message": "Adds switch from user phase to user role",
+            "date": "2025-08-27"
+          }
+        ],
+        "styles": [
+          {
+            "hash": "4d807b2",
+            "emoji": "💄",
+            "message": "Optimierung der Newsfeeddarstellung",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "5997fb6",
+            "emoji": "💄",
+            "message": "Fixes display of upgrade lock screen",
+            "date": "2025-09-18"
+          },
+          {
+            "hash": "0e8634c",
+            "emoji": "💄",
+            "message": "Removes department label from drawer header",
+            "date": "2025-09-15"
+          },
+          {
+            "hash": "3807e6a",
+            "emoji": "💄",
+            "message": "UI polishes the menu item display",
+            "date": "2025-09-12"
+          },
+          {
+            "hash": "3bac281",
+            "emoji": "💄",
+            "message": "Polishing of the chat item",
+            "date": "2025-09-05"
+          },
+          {
+            "hash": "60de712",
+            "emoji": "💄",
+            "message": "Redesign of the home screen for all modules",
+            "date": "2025-09-02"
+          },
+          {
+            "hash": "2192cd5",
+            "emoji": "💄",
+            "message": "Polishing of owly chat",
+            "date": "2025-09-02"
+          },
+          {
+            "hash": "220664b",
+            "emoji": "💄",
+            "message": "UI polishing in grade list screen",
+            "date": "2025-08-15"
+          }
+        ],
+        "docs": [
+          {
+            "hash": "79b1c78",
+            "emoji": "📝",
+            "message": "Adds changelog",
+            "date": "2025-10-17"
+          }
+        ],
+        "dependencies": [
+          {
+            "hash": "a6cfb22",
+            "emoji": "⬇️",
+            "message": "⬇️ Removes Expo dependencies from project",
+            "date": "2025-09-04"
+          }
+        ]
+      }
+    }
+  ]
+}
