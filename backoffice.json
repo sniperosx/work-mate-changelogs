@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-20T11:01:47.755Z",
+  "generatedAt": "2026-01-20T11:41:44.192Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -20,6 +20,14 @@
       "tag": null,
       "date": null,
       "changes": {
+        "features": [
+          {
+            "hash": "4545071",
+            "emoji": "✨",
+            "message": "Erweiterung der Analytics-Auswertung für work.mate-Mitarbeiter",
+            "date": "2026-01-20"
+          }
+        ],
         "fixes": [
           {
             "hash": "3233f75",
