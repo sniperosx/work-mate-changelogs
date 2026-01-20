@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-20T11:41:44.192Z",
+  "generatedAt": "2026-01-20T12:10:39.869Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -33,6 +33,14 @@
             "hash": "3233f75",
             "emoji": "🐛",
             "message": "Fehlerbehebung im Editor für Artikel. Überschriften und Checkboxen können wieder sauber gepflegt werden.",
+            "date": "2026-01-20"
+          }
+        ],
+        "refactors": [
+          {
+            "hash": "9159197",
+            "emoji": "♻️",
+            "message": "Anpassung der Darstellung der Kundengesundheit",
             "date": "2026-01-20"
           }
         ]
