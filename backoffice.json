@@ -1,1 +1,1200 @@
-{"repository":"backoffice","releases":[]}
+{
+  "repository": "backoffice",
+  "generatedAt": "2026-01-20T08:51:47.108Z",
+  "categoryNames": {
+    "features": "Features",
+    "deployment": "Deployment",
+    "fixes": "Bug Fixes",
+    "refactors": "Refactoring",
+    "styles": "UI / Styles",
+    "tests": "Tests",
+    "docs": "Documentation",
+    "dependencies": "Dependencies",
+    "security": "Security",
+    "build": "Build & CI",
+    "other": "Other"
+  },
+  "releases": [
+    {
+      "version": "Rolling Release",
+      "tag": null,
+      "date": null,
+      "changes": {}
+    },
+    {
+      "version": "0.3.5",
+      "tag": "v_0.3.5",
+      "date": "2026-01-20",
+      "changes": {
+        "features": [
+          {
+            "hash": "10efdea",
+            "emoji": "✨",
+            "message": "Lebenszyklus-Tab für Administratoren hinzugefügt und Gruppenauswahl für Führungskräfte erweitert (Mitarbeiter- und Führungsgruppen auswählbar)",
+            "date": "2026-01-18"
+          }
+        ],
+        "deployment": [
+          {
+            "hash": "18cf51c",
+            "emoji": "🚀",
+            "message": "Dynamische Generierung und Platzierung von Changelogs wurde eingeführt",
+            "date": "2026-01-20"
+          }
+        ],
+        "refactors": [
+          {
+            "hash": "dfd0d26",
+            "emoji": "♻️",
+            "message": "Optimierung der Anzeige in den SystemTransaktionen",
+            "date": "2026-01-18"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.3.4",
+      "tag": "v_0.3.4",
+      "date": "2026-01-17",
+      "changes": {
+        "features": [
+          {
+            "hash": "eed74ee",
+            "emoji": "✨",
+            "message": "Optimierung des Datei-Uploads in Dokumenten. Der Ladestand wird sauber angezeigt und auch nach einem Fehler ist das Austauschen der Datei ab sofort möglich.",
+            "date": "2026-01-17"
+          },
+          {
+            "hash": "1b18fa8",
+            "emoji": "✨",
+            "message": "Benutzerverwaltung wurde vereinfacht. Einstellungen wurden minimiert und weiter zusammen gefasst. Mehr Übersicht, schnellere Verwaltung.",
+            "date": "2026-01-17"
+          },
+          {
+            "hash": "785f537",
+            "emoji": "✨",
+            "message": "Im Mitarbeiter-Lifecycle kann nun das Austrittsdatum gepflegt werden. Zudem kann nun einfach zu ausgewählten Gruppen abgesprungen werden (z.B. um die Inhalte einfach zu überprüfen)",
+            "date": "2026-01-17"
+          },
+          {
+            "hash": "0121b59",
+            "emoji": "✨",
+            "message": "Anpassung des Benutzerformulars an neue Anmeldeanforderungen mit Email und oder Telefonnummer",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "2f02a72",
+            "emoji": "✨",
+            "message": "Aktivitäten eines Users werden nun auf der Basis der globalen System-Transaktionen abgebildet und sind damit nur noch work.mate-Mitarbeitern einsehbar.",
+            "date": "2026-01-16"
+          },
+          {
+            "hash": "f6fdd13",
+            "emoji": "✨",
+            "message": "Eine neue übersichtliche Oberfläche für das Verwalten der Mitarbeiter-Zyklen wurde eingeführt",
+            "date": "2026-01-15"
+          },
+          {
+            "hash": "9b97b8c",
+            "emoji": "✨",
+            "message": "Fügt die Einsicht von SystemTransaktionen für Superadministratoren hinz",
+            "date": "2026-01-14"
+          },
+          {
+            "hash": "beec20d",
+            "emoji": "✨",
+            "message": "Auch Führungskräften können nun weitere Führungskräfte zugewiesen werden (Hierarchie)",
+            "date": "2026-01-07"
+          },
+          {
+            "hash": "717fc1a",
+            "emoji": "✨",
+            "message": "Superadministratoren können nun Owly Templatefragen einstellen",
+            "date": "2025-12-16"
+          },
+          {
+            "hash": "97633de",
+            "emoji": "✨",
+            "message": "Der Wissenspool ist pro Kunden jetzt im Kundendetail konfigurierbar",
+            "date": "2025-12-13"
+          },
+          {
+            "hash": "4bcff06",
+            "emoji": "✨",
+            "message": "Als Superadmin kann nun die MandantID für work.mate AI gepflegt werden",
+            "date": "2025-12-12"
+          },
+          {
+            "hash": "6f009c7",
+            "emoji": "✨",
+            "message": "work.mate Mitarbeiter können nun pro Kunde einstellen, ob dieser work.mate-AI gebucht hat, oder nicht.",
+            "date": "2025-12-10"
+          },
+          {
+            "hash": "107c45e",
+            "emoji": "✨",
+            "message": "Administratoren können pro Kunden nun festlegen, ob sich der Chat privat oder öffentlich verhalten soll.",
+            "date": "2025-12-03"
+          }
+        ],
+        "fixes": [
+          {
+            "hash": "b2b0d29",
+            "emoji": "🐛",
+            "message": "Die Dokumentenzuweisung im Onboardee ist nach Anpassung des fehlenden Einladungsschreibens nun wieder nutzbar",
+            "date": "2026-01-17"
+          },
+          {
+            "hash": "40451be",
+            "emoji": "🐛",
+            "message": "Ein Fehler beim Speichern von Dokument-Zuweisungen in einem Onboardee wurde behoben",
+            "date": "2026-01-15"
+          },
+          {
+            "hash": "bc9d6a0",
+            "emoji": "🐛",
+            "message": "Fixes TS errors",
+            "date": "2025-12-10"
+          }
+        ],
+        "refactors": [
+          {
+            "hash": "13cd24b",
+            "emoji": "♻️",
+            "message": "Überarbeitung der Dokumentenzuweisung und -Darstellung. Bessere Übersicht, einfachere Bedienung.",
+            "date": "2026-01-17"
+          },
+          {
+            "hash": "2b19895",
+            "emoji": "♻️",
+            "message": "Entfernt Debug-Page aus dem Nutzer und stellt User-Transaktionen auf die globalen System-Transaktionen um (nur für work.mate-Mitarbeiter)",
+            "date": "2026-01-15"
+          },
+          {
+            "hash": "684327e",
+            "emoji": "♻️",
+            "message": "Neue Logik für das Generieren von Changelogs auf Basis von Gitmojis",
+            "date": "2026-01-15"
+          },
+          {
+            "hash": "d7ea18a",
+            "emoji": "♻️",
+            "message": "User Promotions aus dem System entfernt. Nun einsehbar über SystemTransaktionen im Superadmin.",
+            "date": "2026-01-14"
+          }
+        ],
+        "styles": [
+          {
+            "hash": "861be65",
+            "emoji": "💄",
+            "message": "Die Auswertung von Einarbeitung-Feedbacks wurde deutlich verbessert und ist nun übersichtlicher und schlüssiger.",
+            "date": "2026-01-07"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.3.3",
+      "tag": "v_0.3.3",
+      "date": "2025-12-01",
+      "changes": {
+        "features": [
+          {
+            "hash": "049a307",
+            "emoji": "✨",
+            "message": "Neuer Datumseingabe ist nun in der Benutzerverwaltung verfügbar",
+            "date": "2025-11-20"
+          },
+          {
+            "hash": "648a7e3",
+            "emoji": "✨",
+            "message": "Adds admin CRUD testing",
+            "date": "2025-11-19"
+          },
+          {
+            "hash": "0fb1885",
+            "emoji": "✨",
+            "message": "Introduces playwright UI testing",
+            "date": "2025-11-19"
+          },
+          {
+            "hash": "792e9fc",
+            "emoji": "✨",
+            "message": "Administratoren sind ab sofort vollwertige Mitarbeiter und können als solche bearbeitet und eingesehen werden.",
+            "date": "2025-11-18"
+          },
+          {
+            "hash": "c94242e",
+            "emoji": "✨",
+            "message": "Chats werden nun in aktive und inaktive gruppiert",
+            "date": "2025-11-14"
+          },
+          {
+            "hash": "c1cf4b4",
+            "emoji": "✨",
+            "message": "Die Chat-Funktion für Administratoren wurde grundlegend optisch überarbeitet, für besseres Scrolling und erhöhte Übersichtlichkeit.",
+            "date": "2025-11-14"
+          },
+          {
+            "hash": "f9c47ce",
+            "emoji": "✨",
+            "message": "Sticky Tabellenköpfe eingeführt. Das Jahr und der aktuelle Monat sind nun jederzeit sichtbar und scrollen nicht mehr aus dem sichtbaren Bereich.",
+            "date": "2025-11-14"
+          },
+          {
+            "hash": "ed97a5e",
+            "emoji": "✨",
+            "message": "Umstrukturierung der Lernort Übersicht",
+            "date": "2025-11-13"
+          },
+          {
+            "hash": "74fb342",
+            "emoji": "✨",
+            "message": "Einführung einer neuen Datums-Komponente zum einfachen Eintragen von Daten mit der Tastatur",
+            "date": "2025-11-13"
+          },
+          {
+            "hash": "aa52e64",
+            "emoji": "✨",
+            "message": "Die Planungsübersicht besitzt nun einen Einstellungs-PopUp um weniger genutzte Einstellungen aus der Hauptansicht auszulagern - für bessere Übersicht",
+            "date": "2025-11-13"
+          },
+          {
+            "hash": "2adcdb5",
+            "emoji": "✨",
+            "message": "Das freie Zoomen in der Azubi Planung ist nun möglich",
+            "date": "2025-11-13"
+          },
+          {
+            "hash": "af975f4",
+            "emoji": "✨",
+            "message": "In der Azubi-Planung steht nun eine Zoom-Komponente zur Verfügung",
+            "date": "2025-11-13"
+          },
+          {
+            "hash": "cd87adc",
+            "emoji": "✨",
+            "message": "Die Auslastung von Lernorten ist nun im Azubiassistenten einsehbar",
+            "date": "2025-11-10"
+          },
+          {
+            "hash": "1da30cb",
+            "emoji": "✨",
+            "message": "Lernorte im Azubi-Assistenten besitzen nun einen Inhalte-Bereich zum Pflegen von Zielen, Fähigkeiten und Voraussetzungen.",
+            "date": "2025-11-10"
+          },
+          {
+            "hash": "509ffbf",
+            "emoji": "✨",
+            "message": "Adds segmented control to learning place",
+            "date": "2025-11-06"
+          },
+          {
+            "hash": "c2e9660",
+            "emoji": "✨",
+            "message": "Lernziele innerhalb eines Lernortes können nun ausführlich mit Stilen gepflegt werden",
+            "date": "2025-11-06"
+          },
+          {
+            "hash": "27e64c7",
+            "emoji": "✨",
+            "message": "Bei der Pflege von Tags in Lernorten werden bereits vorhandene Tags ab nun zur Direktauswahl vorgeschlagen.",
+            "date": "2025-11-06"
+          },
+          {
+            "hash": "2e72b94",
+            "emoji": "✨",
+            "message": "Noten besitzen nun einen eigenen Menüpunkt und sind aus der Benutzerdetailansicht enfernt",
+            "date": "2025-11-06"
+          },
+          {
+            "hash": "25895b5",
+            "emoji": "✨",
+            "message": "Das Zuweisen von Fächern zu einzelnen Azubi-Gruppen is nun möglich, um das Melden von Noten für Fächer zu aktivieren.",
+            "date": "2025-11-06"
+          },
+          {
+            "hash": "8a80672",
+            "emoji": "✨",
+            "message": "Das Wechseln zwischen Detail und Übersicht in der Azubi-Ablaufplanung stellt nun Zustände und Scrollposition wieder her - für reibungsloseren Wechsel",
+            "date": "2025-11-05"
+          },
+          {
+            "hash": "d18620d",
+            "emoji": "✨",
+            "message": "Einführung einer neuen Datumseingabe für das Azubi-Planungstool (Texteingabe)",
+            "date": "2025-11-05"
+          },
+          {
+            "hash": "9f322ad",
+            "emoji": "✨",
+            "message": "Bei der Anlage von Nutzern wurde das Einstellungs- und Geburtsdatum getauscht. Das Geburtsdatum ist zudem kein Pflichtfeld mehr.",
+            "date": "2025-11-05"
+          },
+          {
+            "hash": "3ea9c98",
+            "emoji": "✨",
+            "message": "Die Menüpunkte Chat und Mein-Profil sind nun für den Administrator wieder zugänglich",
+            "date": "2025-11-05"
+          },
+          {
+            "hash": "af9ccda",
+            "emoji": "✨",
+            "message": "Das Bearbeiten des eigenen Profils ist nun für alle Nutzergruppen im Dashboard möglich",
+            "date": "2025-11-04"
+          },
+          {
+            "hash": "f986b04",
+            "emoji": "✨",
+            "message": "Das Zurücksetzen von Administratoren-Passwörtern ist nun möglich.",
+            "date": "2025-11-04"
+          },
+          {
+            "hash": "b7b76b6",
+            "emoji": "✨",
+            "message": "Removes single planing page on apprentices",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "795665f",
+            "emoji": "✨",
+            "message": "Adds filtering by tags for learning place planning",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "29ece65",
+            "emoji": "✨",
+            "message": "Add support for \"already visited learning places\" in planning overview",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "2e5b0eb",
+            "emoji": "✨",
+            "message": "Planning view is more compact now",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "2e97736",
+            "emoji": "✨",
+            "message": "History overlay respects weekend settings from now on",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "25a4341",
+            "emoji": "✨",
+            "message": "Adds weekend filtering option to planning overview",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "dec35f2",
+            "emoji": "✨",
+            "message": "Adds new settings header for planning overview",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "afb9bd8",
+            "emoji": "✨",
+            "message": "Adds planning overview table (yearly)",
+            "date": "2025-10-27"
+          },
+          {
+            "hash": "bd27bce",
+            "emoji": "✨",
+            "message": "Introduced a full screen layout",
+            "date": "2025-10-23"
+          },
+          {
+            "hash": "5549224",
+            "emoji": "✨",
+            "message": "Adds cell merging in planing overview for consecutive entries",
+            "date": "2025-10-23"
+          },
+          {
+            "hash": "cd983c7",
+            "emoji": "✨",
+            "message": "First stage of planning overview in apprentice module",
+            "date": "2025-10-22"
+          },
+          {
+            "hash": "286b856",
+            "emoji": "✨",
+            "message": "Adds admin panel to all modules",
+            "date": "2025-10-20"
+          },
+          {
+            "hash": "3ee04b5",
+            "emoji": "✨",
+            "message": "Adds support for pdf selection and configuration in articles",
+            "date": "2025-10-14"
+          },
+          {
+            "hash": "688dc34",
+            "emoji": "✨",
+            "message": "Finishes functionality to add images to the article flow",
+            "date": "2025-10-13"
+          },
+          {
+            "hash": "4039c38",
+            "emoji": "✨",
+            "message": "Adds ui for managing an image section inside an article",
+            "date": "2025-10-13"
+          },
+          {
+            "hash": "a33b9a3",
+            "emoji": "✨",
+            "message": "New types in article details are available to select from",
+            "date": "2025-10-09"
+          },
+          {
+            "hash": "8eca060",
+            "emoji": "✨",
+            "message": "Adds close star to customers overview cell",
+            "date": "2025-10-07"
+          },
+          {
+            "hash": "7ecc14b",
+            "emoji": "✨",
+            "message": "Adds warning before seeding data for data loss",
+            "date": "2025-10-07"
+          },
+          {
+            "hash": "a2657e0",
+            "emoji": "✨",
+            "message": "Refactors customers overview to grid display",
+            "date": "2025-10-07"
+          },
+          {
+            "hash": "66c20bd",
+            "emoji": "✨",
+            "message": "Adds the free learning place suggestion logic to book only free places",
+            "date": "2025-10-06"
+          },
+          {
+            "hash": "b863e55",
+            "emoji": "✨",
+            "message": "Adds apprentice demo data import functionality",
+            "date": "2025-10-06"
+          },
+          {
+            "hash": "d2391cd",
+            "emoji": "✨",
+            "message": "First stage apprentice schedule suggestions",
+            "date": "2025-10-02"
+          },
+          {
+            "hash": "cd668db",
+            "emoji": "✨",
+            "message": "Adds auto update on entry changes",
+            "date": "2025-10-01"
+          },
+          {
+            "hash": "775d4d3",
+            "emoji": "✨",
+            "message": "Adds delete button to apprentice schedule items",
+            "date": "2025-10-01"
+          },
+          {
+            "hash": "47c30a7",
+            "emoji": "✨",
+            "message": "Adds color input in learning places dialog",
+            "date": "2025-09-30"
+          },
+          {
+            "hash": "ebe1cdd",
+            "emoji": "✨",
+            "message": "Adds a employee selection for trainee planning page",
+            "date": "2025-09-30"
+          },
+          {
+            "hash": "bbc9f62",
+            "emoji": "✨",
+            "message": "Adds color legend for learning places",
+            "date": "2025-09-30"
+          },
+          {
+            "hash": "5175c7c",
+            "emoji": "✨",
+            "message": "Adds support for apprentice schedule display",
+            "date": "2025-09-30"
+          },
+          {
+            "hash": "ff4913d",
+            "emoji": "✨",
+            "message": "Adds first stage of dynamic apprentice schedule calendar",
+            "date": "2025-09-29"
+          },
+          {
+            "hash": "713c97a",
+            "emoji": "✨",
+            "message": "Introduces new markdown WYSIWYG editor",
+            "date": "2025-09-12"
+          },
+          {
+            "hash": "0c567de",
+            "emoji": "✨",
+            "message": "Removes public registration from employee groups",
+            "date": "2025-09-11"
+          },
+          {
+            "hash": "f9f0730",
+            "emoji": "✨",
+            "message": "Adds subtle user counter in users table header",
+            "date": "2025-09-11"
+          },
+          {
+            "hash": "bec66f3",
+            "emoji": "✨",
+            "message": "Add employee activities tab",
+            "date": "2025-09-09"
+          },
+          {
+            "hash": "c0f7e38",
+            "emoji": "✨",
+            "message": "Adds new stats page for employees (first stage)",
+            "date": "2025-09-08"
+          },
+          {
+            "hash": "396a50d",
+            "emoji": "✨",
+            "message": "Adds employee image upload for super admins",
+            "date": "2025-09-08"
+          },
+          {
+            "hash": "e87cc81",
+            "emoji": "✨",
+            "message": "Enables surveys and notifications on all modules",
+            "date": "2025-08-27"
+          },
+          {
+            "hash": "ae1c0f6",
+            "emoji": "✨",
+            "message": "Adds survey module filter on blueprint assignment form",
+            "date": "2025-08-27"
+          },
+          {
+            "hash": "9de6141",
+            "emoji": "✨",
+            "message": "Adds implizit module support for surveys",
+            "date": "2025-08-27"
+          },
+          {
+            "hash": "bd6d476",
+            "emoji": "✨",
+            "message": "Adds disabled features for non suite customers in executive assistant",
+            "date": "2025-08-27"
+          },
+          {
+            "hash": "54438bd",
+            "emoji": "✨",
+            "message": "Executive assistant is mandatory from now on",
+            "date": "2025-08-27"
+          },
+          {
+            "hash": "c722f68",
+            "emoji": "✨",
+            "message": "Only customers with booked suite has lifecycle section enabled from now on",
+            "date": "2025-08-27"
+          },
+          {
+            "hash": "f74197a",
+            "emoji": "✨",
+            "message": "Adds support for exit groups and dynamic group handling by the user",
+            "date": "2025-08-26"
+          },
+          {
+            "hash": "5d0f2d9",
+            "emoji": "✨",
+            "message": "Changes date input handling between admins and other user types",
+            "date": "2025-08-26"
+          },
+          {
+            "hash": "1d2be17",
+            "emoji": "✨",
+            "message": "After employee creation user is redirected to additional settings",
+            "date": "2025-08-26"
+          },
+          {
+            "hash": "86eb1d8",
+            "emoji": "✨",
+            "message": "Adds better display in subject",
+            "date": "2025-08-26"
+          },
+          {
+            "hash": "d1f4b95",
+            "emoji": "✨",
+            "message": "Every employee have got a hire date again",
+            "date": "2025-08-25"
+          },
+          {
+            "hash": "1ea6163",
+            "emoji": "✨",
+            "message": "Central forms forms for employee editing",
+            "date": "2025-08-25"
+          },
+          {
+            "hash": "db178fd",
+            "emoji": "✨",
+            "message": "Adds executive selection from mentor selection for any onboardee",
+            "date": "2025-08-21"
+          },
+          {
+            "hash": "19aba2a",
+            "emoji": "✨",
+            "message": "Adds incomplete group indicator to users page",
+            "date": "2025-08-20"
+          },
+          {
+            "hash": "35d4832",
+            "emoji": "✨",
+            "message": "Adds support for marking on unsaved changes in user management",
+            "date": "2025-08-20"
+          },
+          {
+            "hash": "f5690cb",
+            "emoji": "✨",
+            "message": "Adds birth date to user form and structure",
+            "date": "2025-08-19"
+          },
+          {
+            "hash": "fa2af49",
+            "emoji": "✨",
+            "message": "Show subject icons and details dialog on employee grade page",
+            "date": "2025-08-15"
+          },
+          {
+            "hash": "994451d",
+            "emoji": "✨",
+            "message": "Adds full grade entry image support and generalizes dialog",
+            "date": "2025-08-15"
+          },
+          {
+            "hash": "f9de8a6",
+            "emoji": "✨",
+            "message": "Adds polishing to trainee grade statistics page",
+            "date": "2025-08-14"
+          },
+          {
+            "hash": "96a1e72",
+            "emoji": "✨",
+            "message": "Add employee grade page with statistical header",
+            "date": "2025-08-14"
+          },
+          {
+            "hash": "9b2cd06",
+            "emoji": "✨",
+            "message": "Adds new API schema",
+            "date": "2025-08-14"
+          },
+          {
+            "hash": "a0735dd",
+            "emoji": "✨",
+            "message": "Apprentices are now filtered in users list",
+            "date": "2025-08-09"
+          },
+          {
+            "hash": "c645aa8",
+            "emoji": "✨",
+            "message": "Adds CRUD support for managing grade subjects",
+            "date": "2025-08-07"
+          },
+          {
+            "hash": "d3d363f",
+            "emoji": "✨",
+            "message": "Adds list of grade subjects",
+            "date": "2025-08-07"
+          },
+          {
+            "hash": "4885983",
+            "emoji": "✨",
+            "message": "Adds support for ordering video courses in any group",
+            "date": "2025-08-06"
+          }
+        ],
+        "deployment": [
+          {
+            "hash": "2d23da1",
+            "emoji": "🚀",
+            "message": "Fixes azure size limitation issue on CI/CD",
+            "date": "2025-10-27"
+          },
+          {
+            "hash": "f28b28f",
+            "emoji": "🚀",
+            "message": "Addresses Azure out of memory issue",
+            "date": "2025-10-27"
+          },
+          {
+            "hash": "d215287",
+            "emoji": "🚀",
+            "message": "Updates Changelogs",
+            "date": "2025-09-12"
+          },
+          {
+            "hash": "4082dba",
+            "emoji": "🚀",
+            "message": "Removes TS errors",
+            "date": "2025-08-25"
+          }
+        ],
+        "fixes": [
+          {
+            "hash": "c5fea61",
+            "emoji": "🐛",
+            "message": "Das Löschen und Bearbeiten von Artikel-Kategorien ist nun auch bei besonders langen Namen noch möglich",
+            "date": "2025-11-26"
+          },
+          {
+            "hash": "aee3914",
+            "emoji": "🐛",
+            "message": "Führungskräften können nun auch Gruppen zugewiesen werden, wenn keine Suite gebucht wurde",
+            "date": "2025-11-24"
+          },
+          {
+            "hash": "a2125e6",
+            "emoji": "🐛",
+            "message": "Das Aktualisieren des eigenen Profilbildes ist über das Backoffice nun funktionsfähig",
+            "date": "2025-11-24"
+          },
+          {
+            "hash": "56501a7",
+            "emoji": "🐛",
+            "message": "Fixes endless loop on feedback page",
+            "date": "2025-11-19"
+          },
+          {
+            "hash": "e4272b3",
+            "emoji": "🐛",
+            "message": "Der original Dateiname wird nun als Fallback beim Anhängen von PDF-Dateien in Artikeln verwendet",
+            "date": "2025-11-17"
+          },
+          {
+            "hash": "981a106",
+            "emoji": "🐛",
+            "message": "Behebt verlorene Texte in neuem Artikel-Editor. Neue Interpretationen für Zitate und Sektionen wieder eingeführt.",
+            "date": "2025-11-14"
+          },
+          {
+            "hash": "20eefde",
+            "emoji": "🐛",
+            "message": "Fixes multi highlighting in sidebar",
+            "date": "2025-10-27"
+          },
+          {
+            "hash": "8ce52f3",
+            "emoji": "🐛",
+            "message": "Removes TS errors",
+            "date": "2025-10-14"
+          },
+          {
+            "hash": "1741ad9",
+            "emoji": "🐛",
+            "message": "Fixes scroll bug in article detail",
+            "date": "2025-10-14"
+          },
+          {
+            "hash": "97c3530",
+            "emoji": "🐛",
+            "message": "Fixes crash on loading new onboardee after creation",
+            "date": "2025-10-13"
+          },
+          {
+            "hash": "cb719c3",
+            "emoji": "🐛",
+            "message": "Sidemenu items are filled no in executive manager when being a superadmin",
+            "date": "2025-10-07"
+          },
+          {
+            "hash": "eab26ae",
+            "emoji": "🐛",
+            "message": "Sidemenu items are filled no in executive manager when being a superadmin",
+            "date": "2025-10-07"
+          },
+          {
+            "hash": "1c09aad",
+            "emoji": "🐛",
+            "message": "Removes TS errors",
+            "date": "2025-10-06"
+          },
+          {
+            "hash": "25b7bf8",
+            "emoji": "🐛",
+            "message": "Fixes deadlock on changing product modules. Auto fallback to a booked module.",
+            "date": "2025-09-22"
+          },
+          {
+            "hash": "ba9ac84",
+            "emoji": "🐛",
+            "message": "Fixes crash on customer detail page during initialization",
+            "date": "2025-09-19"
+          },
+          {
+            "hash": "471c168",
+            "emoji": "🐛",
+            "message": "The onboardees blueprint selection for promotion offers the right group types now",
+            "date": "2025-09-11"
+          },
+          {
+            "hash": "04089e8",
+            "emoji": "🐛",
+            "message": "Fixes typescript errors",
+            "date": "2025-08-14"
+          },
+          {
+            "hash": "8d42770",
+            "emoji": "🐛",
+            "message": "Fixes typescript errors",
+            "date": "2025-08-14"
+          }
+        ],
+        "refactors": [
+          {
+            "hash": "a82dc50",
+            "emoji": "♻️",
+            "message": "New login method is handled by login screen",
+            "date": "2025-11-19"
+          },
+          {
+            "hash": "22dd189",
+            "emoji": "♻️",
+            "message": "Das System wurde für das neue Rechtesystem umgebaut",
+            "date": "2025-11-18"
+          },
+          {
+            "hash": "5e62142",
+            "emoji": "♻️",
+            "message": "Removes TS errors",
+            "date": "2025-11-10"
+          },
+          {
+            "hash": "1e6b49f",
+            "emoji": "♻️",
+            "message": "Optimierung der Lernortübersicht",
+            "date": "2025-11-10"
+          },
+          {
+            "hash": "e1ee4e9",
+            "emoji": "♻️",
+            "message": "Erklärung zu Schulfächern eingebunden",
+            "date": "2025-11-06"
+          },
+          {
+            "hash": "83cf0f5",
+            "emoji": "♻️",
+            "message": "Optimizes edit dialog for apprentice schedules",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "b964ae7",
+            "emoji": "♻️",
+            "message": "Moves mentor editing to new user profile structs and endpoints",
+            "date": "2025-10-27"
+          },
+          {
+            "hash": "d819e5f",
+            "emoji": "♻️",
+            "message": "Apprentice planning overview polishing",
+            "date": "2025-10-23"
+          },
+          {
+            "hash": "4ea3640",
+            "emoji": "♻️",
+            "message": "Second version of planner",
+            "date": "2025-10-22"
+          },
+          {
+            "hash": "6744719",
+            "emoji": "♻️",
+            "message": "Adds admin for executive assignment againe",
+            "date": "2025-10-07"
+          },
+          {
+            "hash": "06fec0b",
+            "emoji": "♻️",
+            "message": "Renames employee lifecycle menu items",
+            "date": "2025-09-11"
+          },
+          {
+            "hash": "2b52ce5",
+            "emoji": "♻️",
+            "message": "Fixes navigation to login as non admin in dashboard",
+            "date": "2025-09-10"
+          },
+          {
+            "hash": "3185f06",
+            "emoji": "♻️",
+            "message": "Refactors employee data structure and DateOnly support",
+            "date": "2025-09-10"
+          },
+          {
+            "hash": "bd1e107",
+            "emoji": "♻️",
+            "message": "Removes unused user query",
+            "date": "2025-09-09"
+          },
+          {
+            "hash": "2f8be58",
+            "emoji": "♻️",
+            "message": "Removes email field from onboardee form",
+            "date": "2025-08-27"
+          },
+          {
+            "hash": "de61fdb",
+            "emoji": "♻️",
+            "message": "Polishes container scroll behaviour",
+            "date": "2025-08-27"
+          },
+          {
+            "hash": "4711710",
+            "emoji": "♻️",
+            "message": "Finishes generic form handling in employee types",
+            "date": "2025-08-25"
+          },
+          {
+            "hash": "50dcada",
+            "emoji": "♻️",
+            "message": "Adds new implementation of single selctions",
+            "date": "2025-08-25"
+          },
+          {
+            "hash": "586e1c9",
+            "emoji": "♻️",
+            "message": "Fixes structural errors during generation",
+            "date": "2025-08-21"
+          },
+          {
+            "hash": "29460ab",
+            "emoji": "♻️",
+            "message": "Refactors codex changelog code",
+            "date": "2025-08-21"
+          },
+          {
+            "hash": "93f10c5",
+            "emoji": "♻️",
+            "message": "Refactors user onNext handling for better usage and removes update loop",
+            "date": "2025-08-20"
+          },
+          {
+            "hash": "68546ee",
+            "emoji": "♻️",
+            "message": "Removes dedicated user forms for onboardees and administrators",
+            "date": "2025-08-20"
+          },
+          {
+            "hash": "ed5ed13",
+            "emoji": "♻️",
+            "message": "Some TS errors removed",
+            "date": "2025-08-19"
+          },
+          {
+            "hash": "ea044cb",
+            "emoji": "♻️",
+            "message": "Fixes some routing issues",
+            "date": "2025-08-19"
+          },
+          {
+            "hash": "3471250",
+            "emoji": "♻️",
+            "message": "Refactors getModulePath to be static",
+            "date": "2025-08-19"
+          },
+          {
+            "hash": "5ea9193",
+            "emoji": "♻️",
+            "message": "Refactors user edit form and polishes it for better overview",
+            "date": "2025-08-19"
+          },
+          {
+            "hash": "b2fb55c",
+            "emoji": "♻️",
+            "message": "Removes user phases from system",
+            "date": "2025-08-19"
+          },
+          {
+            "hash": "0d8dbb1",
+            "emoji": "♻️",
+            "message": "Removes TS errors",
+            "date": "2025-08-15"
+          },
+          {
+            "hash": "47e6c99",
+            "emoji": "♻️",
+            "message": "Refactors apprentice side menu items",
+            "date": "2025-08-15"
+          },
+          {
+            "hash": "6a812e3",
+            "emoji": "♻️",
+            "message": "Refactors apprentice side menu items",
+            "date": "2025-08-15"
+          },
+          {
+            "hash": "d1dffb3",
+            "emoji": "♻️",
+            "message": "Some UI polishing in grade stats display",
+            "date": "2025-08-14"
+          }
+        ],
+        "styles": [
+          {
+            "hash": "f722739",
+            "emoji": "💄",
+            "message": "Überarbeitung des Sendeverhaltens von Chatnachrichten",
+            "date": "2025-11-14"
+          },
+          {
+            "hash": "eb704d8",
+            "emoji": "💄",
+            "message": "Modernere Darstellung der Zellen in der Azubiplanung eingeführt",
+            "date": "2025-11-14"
+          },
+          {
+            "hash": "c8d9076",
+            "emoji": "💄",
+            "message": "Die Scrollfunktion wurde optisch verbessert - weniger Zucken",
+            "date": "2025-11-14"
+          },
+          {
+            "hash": "4e52aa5",
+            "emoji": "💄",
+            "message": "Polishes header input of apprentice planning",
+            "date": "2025-11-13"
+          },
+          {
+            "hash": "c0bff01",
+            "emoji": "💄",
+            "message": "Überarbeitung der Lernorte-Übersicht. Anpassung an die restlichen Tabellen und Optimierung der Darstellung für bessere Lesbarkeit.",
+            "date": "2025-11-06"
+          },
+          {
+            "hash": "7d0869a",
+            "emoji": "💄",
+            "message": "Polishes delete button in planning edit",
+            "date": "2025-10-29"
+          },
+          {
+            "hash": "3a2ff37",
+            "emoji": "💄",
+            "message": "Matches UI between select and date inputs",
+            "date": "2025-10-01"
+          },
+          {
+            "hash": "6d8b107",
+            "emoji": "💄",
+            "message": "Optimizes apprentice schedule display",
+            "date": "2025-10-01"
+          },
+          {
+            "hash": "d308a4c",
+            "emoji": "💄",
+            "message": "Adds drag n drop icons to articles instead of article icons for better understanding",
+            "date": "2025-09-11"
+          },
+          {
+            "hash": "731f027",
+            "emoji": "💄",
+            "message": "Adds user profile image to side menu user box",
+            "date": "2025-09-10"
+          },
+          {
+            "hash": "0593244",
+            "emoji": "💄",
+            "message": "Polishes titles and descriptions in user sheets",
+            "date": "2025-09-10"
+          },
+          {
+            "hash": "09d0d84",
+            "emoji": "💄",
+            "message": "Polishing of changelog display",
+            "date": "2025-08-21"
+          }
+        ],
+        "tests": [
+          {
+            "hash": "fd47df0",
+            "emoji": "🧪",
+            "message": "Testabdeckung für Videokurse",
+            "date": "2025-12-01"
+          },
+          {
+            "hash": "bf0bfe1",
+            "emoji": "🧪",
+            "message": "Testabdeckung Artikel",
+            "date": "2025-11-26"
+          },
+          {
+            "hash": "816c0b6",
+            "emoji": "🧪",
+            "message": "Testabdeckung für das Verwalten von Einarbeitungsgruppen",
+            "date": "2025-11-26"
+          },
+          {
+            "hash": "7b26456",
+            "emoji": "🧪",
+            "message": "Testabdeckung für Reflexionsfragen erstellt",
+            "date": "2025-11-26"
+          },
+          {
+            "hash": "d5a5a60",
+            "emoji": "🧪",
+            "message": "Adds questionnaires test coverage",
+            "date": "2025-11-25"
+          },
+          {
+            "hash": "07370e2",
+            "emoji": "🧪",
+            "message": "Testabdeckung für das Versenden, Planen und Löschen von Benachrichtigungen",
+            "date": "2025-11-25"
+          },
+          {
+            "hash": "bd668c9",
+            "emoji": "🧪",
+            "message": "First stage of push notification test",
+            "date": "2025-11-24"
+          },
+          {
+            "hash": "972c120",
+            "emoji": "🧪",
+            "message": "Testabdeckung für das Erstellen, Ummelden, Prüfen und Löschen einer Führungskraft eingeführt",
+            "date": "2025-11-24"
+          },
+          {
+            "hash": "032e1bd",
+            "emoji": "🧪",
+            "message": "Strips some screenshots during testing",
+            "date": "2025-11-24"
+          },
+          {
+            "hash": "6464da0",
+            "emoji": "🧪",
+            "message": "Test fixes",
+            "date": "2025-11-24"
+          },
+          {
+            "hash": "c8754de",
+            "emoji": "🧪",
+            "message": "Adds feedback tests",
+            "date": "2025-11-21"
+          },
+          {
+            "hash": "4ec47c2",
+            "emoji": "🧪",
+            "message": "Adds test converage for my profile",
+            "date": "2025-11-21"
+          },
+          {
+            "hash": "a7e3485",
+            "emoji": "🧪",
+            "message": "Adds testing for onboardee CRUD",
+            "date": "2025-11-21"
+          },
+          {
+            "hash": "681e505",
+            "emoji": "🧪",
+            "message": "Adds admin crud test coverage",
+            "date": "2025-11-20"
+          }
+        ]
+      }
+    }
+  ]
+}
