@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-21T11:54:21.909Z",
+  "generatedAt": "2026-01-21T16:35:36.048Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "6cd4c99",
+            "emoji": "✨",
+            "message": "Pro Kunde kann nun die Einstellung über das Newsfeed-Verhalten und die Newsfeed-Kommentare verwaltet werden",
+            "date": "2026-01-21"
+          },
+          {
+            "hash": "4efcef9",
+            "emoji": "✨",
+            "message": "Support-Chats können als work.mate-Mitarbeiter nun initiiert werden",
+            "date": "2026-01-21"
+          },
           {
             "hash": "a8db3a7",
             "emoji": "✨",
