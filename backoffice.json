@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-20T12:16:12.905Z",
+  "generatedAt": "2026-01-21T11:54:21.909Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -22,6 +22,24 @@
       "changes": {
         "features": [
           {
+            "hash": "a8db3a7",
+            "emoji": "✨",
+            "message": "Neue Statistik: ø App-Sitzungen nach Modul",
+            "date": "2026-01-21"
+          },
+          {
+            "hash": "320df06",
+            "emoji": "✨",
+            "message": "Trennung der Analytics zwischen App- und Dashboard-Nutzung",
+            "date": "2026-01-21"
+          },
+          {
+            "hash": "864871c",
+            "emoji": "✨",
+            "message": "Analytics Dashboard besitzt nun einen Periodenauswahl (Monat, Quartal, Jahr)",
+            "date": "2026-01-21"
+          },
+          {
             "hash": "4545071",
             "emoji": "✨",
             "message": "Erweiterung der Analytics-Auswertung für work.mate-Mitarbeiter",
@@ -37,6 +55,18 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "63e2da7",
+            "emoji": "♻️",
+            "message": "Customer-Health Statistiken optisch gesäubert und gruppiert",
+            "date": "2026-01-21"
+          },
+          {
+            "hash": "e288d9c",
+            "emoji": "♻️",
+            "message": "Entfernung der Churn Statistiken aus der Analytics Page",
+            "date": "2026-01-21"
+          },
           {
             "hash": "fcd0c20",
             "emoji": "♻️",
