@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-01-20T16:37:07.624Z",
+  "generatedAt": "2026-01-21T16:05:40.850Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "d58c984",
+            "emoji": "✨",
+            "message": "Neue Newsfeed-Einstellungen werden verarbeitet. Geschlossene Newsfeeds und Kommentarfunktion werden interpretiert.",
+            "date": "2026-01-21"
+          },
           {
             "hash": "26f7f9b",
             "emoji": "✨",
