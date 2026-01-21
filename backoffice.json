@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-21T16:35:36.048Z",
+  "generatedAt": "2026-01-21T16:48:15.604Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -59,6 +59,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "4130644",
+            "emoji": "🐛",
+            "message": "Fixes TS-Errors",
+            "date": "2026-01-21"
+          },
           {
             "hash": "3233f75",
             "emoji": "🐛",
