@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-21T16:48:15.604Z",
+  "generatedAt": "2026-01-22T13:19:16.240Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "c246078",
+            "emoji": "✨",
+            "message": "Führungskräfte können nun als Ausbilder gesetzt werden und erhalten damit Zugriff auf die Planung ihrer zugewiesenen Azubis",
+            "date": "2026-01-22"
+          },
           {
             "hash": "6cd4c99",
             "emoji": "✨",
