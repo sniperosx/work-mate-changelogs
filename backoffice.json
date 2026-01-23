@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-23T10:27:13.430Z",
+  "generatedAt": "2026-01-23T14:36:57.402Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -103,6 +103,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "08c4362",
+            "emoji": "♻️",
+            "message": "Email handling um user angepasst. Admin pflicht, Mitarbeiter optional",
+            "date": "2026-01-23"
+          },
           {
             "hash": "63e2da7",
             "emoji": "♻️",
