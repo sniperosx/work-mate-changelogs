@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-01-23T10:30:53.751Z",
+  "generatedAt": "2026-01-23T18:25:59.591Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -97,6 +97,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "c54568f",
+            "emoji": "🐛",
+            "message": "Alle Mitarbeiter können nun Chats erstellen",
+            "date": "2026-01-23"
+          },
           {
             "hash": "466f3ed",
             "emoji": "🐛",
