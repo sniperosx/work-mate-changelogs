@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-01-21T16:05:40.850Z",
+  "generatedAt": "2026-01-23T10:30:53.751Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -71,6 +71,12 @@
           }
         ],
         "deployment": [
+          {
+            "hash": "d3c148a",
+            "emoji": "🚀",
+            "message": "Version incrementation unter Android wieder eingeführt",
+            "date": "2026-01-23"
+          },
           {
             "hash": "2cad766",
             "emoji": "🚀",
