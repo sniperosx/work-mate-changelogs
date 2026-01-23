@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-01-23T14:36:57.402Z",
+  "generatedAt": "2026-01-23T18:15:17.519Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -103,6 +103,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "810d230",
+            "emoji": "♻️",
+            "message": "Wording für Administratoren (wenn noch keine vorliegen) optimiert",
+            "date": "2026-01-23"
+          },
           {
             "hash": "08c4362",
             "emoji": "♻️",
