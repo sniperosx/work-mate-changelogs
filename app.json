@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-01-23T18:25:59.591Z",
+  "generatedAt": "2026-02-02T10:06:14.151Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -97,6 +97,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "d3cef1b",
+            "emoji": "🐛",
+            "message": "Das Anmelden als Administrator ist nun in der App mit Passwort und OTP wieder möglich",
+            "date": "2026-02-02"
+          },
           {
             "hash": "c54568f",
             "emoji": "🐛",
