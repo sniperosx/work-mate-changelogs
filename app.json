@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-02-02T10:06:14.151Z",
+  "generatedAt": "2026-02-03T13:30:52.016Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "55e7025",
+            "emoji": "✨",
+            "message": "Anpassung der App an die neue Teams-Logik",
+            "date": "2026-02-03"
+          },
+          {
+            "hash": "9adc95c",
+            "emoji": "✨",
+            "message": "Beim Verfassen eines neuen Newsfeed-Beitrags, wird die Sichtbarkeit auf die jeweilige Ansicht vorausgewählt (Unternehmen oder Team)",
+            "date": "2026-02-03"
+          },
           {
             "hash": "d58c984",
             "emoji": "✨",
