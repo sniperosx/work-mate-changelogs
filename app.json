@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-02-03T13:30:52.016Z",
+  "generatedAt": "2026-02-03T13:36:22.830Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -109,6 +109,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "9ab4f49",
+            "emoji": "🐛",
+            "message": "Fehlerbehebung beim Erstellen privater Teamnewsfeed-Posts",
+            "date": "2026-02-03"
+          },
           {
             "hash": "d3cef1b",
             "emoji": "🐛",
