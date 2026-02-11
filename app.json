@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-02-03T13:36:22.830Z",
+  "generatedAt": "2026-02-11T14:15:36.420Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "b6394f0",
+            "emoji": "✨",
+            "message": "Internationale Telefonnummern im Login unterstützen",
+            "date": "2026-02-11"
+          },
+          {
+            "hash": "7829237",
+            "emoji": "✨",
+            "message": "Automatische URL-Erkennung in Chat, Newsfeed-Posts und Kommentaren",
+            "date": "2026-02-11"
+          },
           {
             "hash": "55e7025",
             "emoji": "✨",
