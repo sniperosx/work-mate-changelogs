@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-02-11T20:10:36.887Z",
+  "generatedAt": "2026-02-12T08:50:07.110Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -294,6 +294,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "8009b90",
+            "emoji": "♻️",
+            "message": "Fixes Führungskraftprobleme ohne Mitarbeiter-Lizenz",
+            "date": "2026-02-12"
+          },
           {
             "hash": "222e5d5",
             "emoji": "♻️",
