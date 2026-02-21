@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-02-11T14:15:36.420Z",
+  "generatedAt": "2026-02-21T15:50:02.540Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "56841ec",
+            "emoji": "✨",
+            "message": "Digitale Signatur überarbeitet (neue screens)",
+            "date": "2026-02-21"
+          },
           {
             "hash": "b6394f0",
             "emoji": "✨",
@@ -96,6 +102,12 @@
         ],
         "deployment": [
           {
+            "hash": "9f99dc1",
+            "emoji": "🚀",
+            "message": "UI test Abdeckung (initial)",
+            "date": "2026-02-21"
+          },
+          {
             "hash": "d3c148a",
             "emoji": "🚀",
             "message": "Version incrementation unter Android wieder eingeführt",
@@ -121,6 +133,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "626df3b",
+            "emoji": "🐛",
+            "message": "Fehlendes Leerzeichen vor Uhrzeit im Unterschrifts-Screen behoben",
+            "date": "2026-02-21"
+          },
           {
             "hash": "9ab4f49",
             "emoji": "🐛",
