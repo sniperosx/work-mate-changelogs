@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-02-21T15:50:02.540Z",
+  "generatedAt": "2026-02-22T09:52:32.732Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -171,6 +171,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "73772c5",
+            "emoji": "♻️",
+            "message": "Telefonnummern sind nun auch in der Unterschriftsfunktion internationalisiert (nicht nur DE Nummern)",
+            "date": "2026-02-22"
+          },
           {
             "hash": "7321c3a",
             "emoji": "♻️",
