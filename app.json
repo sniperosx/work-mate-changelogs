@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-02-22T09:52:32.732Z",
+  "generatedAt": "2026-02-22T09:57:11.563Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -171,6 +171,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "5a8a87b",
+            "emoji": "♻️",
+            "message": "E-Mail Validierung bereits in der App während der digitalen Signatur",
+            "date": "2026-02-22"
+          },
           {
             "hash": "73772c5",
             "emoji": "♻️",
