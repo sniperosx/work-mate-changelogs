@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-02-12T08:50:07.110Z",
+  "generatedAt": "2026-02-23T06:51:19.655Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,72 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "62b2698",
+            "emoji": "✨",
+            "message": "Neue Typen von Führungskräften hinzugefügt",
+            "date": "2026-02-22"
+          },
+          {
+            "hash": "2e5a89d",
+            "emoji": "✨",
+            "message": "Nach Erstellen eines Nutzers wird der Lebenszyklus mit passender Warnung geladen, zur direkten Zuweisung einer Inhaltsgruppe.",
+            "date": "2026-02-22"
+          },
+          {
+            "hash": "7417b0d",
+            "emoji": "✨",
+            "message": "Absprung auf die Benutzerdokumente ist nun direkt möglich (z.B. aus der Dokumentenansicht)",
+            "date": "2026-02-22"
+          },
+          {
+            "hash": "545515b",
+            "emoji": "✨",
+            "message": "Audit trail ist herunterladbar im Rahmen der digitalen Unterschrift",
+            "date": "2026-02-21"
+          },
+          {
+            "hash": "e3b0811",
+            "emoji": "✨",
+            "message": "Der Status von digitalen Signaturen werden nun im jeweiligen Nutzer detailliert präsentiert",
+            "date": "2026-02-19"
+          },
+          {
+            "hash": "da1a598",
+            "emoji": "✨",
+            "message": "CSV-Import: Neue Spaltenzuordnungsseite mit PapaParse & JSON-Import 📄 Neue CsvColumnAssignmentPage: CSV-Parsing, Auto-Erkennung, Spalten-Dropdowns, Datenvorschau 🔄 Import-Mutation sendet jetzt JSON statt raw CSV (Content-Type: application/json) 📝 Hilfetext aktualisiert: Gruppenname statt groupId, flexible Spaltenreihenfolge 🗺️ Neue Route /import/users/assign für die Zuweisungsseite",
+            "date": "2026-02-18"
+          },
+          {
+            "hash": "0e4da01",
+            "emoji": "✨",
+            "message": "Content-Hub (Dummy)",
+            "date": "2026-02-17"
+          },
+          {
+            "hash": "c5669bc",
+            "emoji": "✨",
+            "message": "Wissensmanagement rohdaten (Dummy)",
+            "date": "2026-02-17"
+          },
+          {
+            "hash": "15cbe19",
+            "emoji": "✨",
+            "message": "Wissens dashboard (mock)",
+            "date": "2026-02-17"
+          },
+          {
+            "hash": "1a2cb7e",
+            "emoji": "✨",
+            "message": "Liste von Wissensabfaben MA (Dummy)",
+            "date": "2026-02-17"
+          },
+          {
+            "hash": "7887aa9",
+            "emoji": "✨",
+            "message": "Neue Dokumentenübersicht ist verfügbar",
+            "date": "2026-02-13"
+          },
           {
             "hash": "28a4f87",
             "emoji": "✨",
@@ -269,6 +335,29 @@
         ],
         "fixes": [
           {
+            "hash": "c00cbc7",
+            "emoji": "🐛",
+            "message": "TS errors",
+            "date": "2026-02-22"
+          },
+          {
+            "hash": "f8d7d4e",
+            "emoji": "🐛",
+            "message": "Declined/Error-Status in Dokumentenzuweisungs-Overlay anzeigen",
+            "date": "2026-02-22",
+            "description": [
+              "Status-Typ um 'declined' und 'error' erweitert.",
+              "SIGNATURE_STATUS_CONFIG zeigt nun \"Abgelehnt\" (rot) und \"Fehler\" (rot)",
+              "statt \"Keine\" für fehlgeschlagene Signaturen."
+            ]
+          },
+          {
+            "hash": "10df03f",
+            "emoji": "🐛",
+            "message": "Import-Route zu UNIFIED_ROUTES hinzugefügt — behebt 404 bei /import/users/assign",
+            "date": "2026-02-18"
+          },
+          {
             "hash": "d0602d1",
             "emoji": "🐛",
             "message": "Fixes TS errors",
@@ -294,6 +383,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "b7410dd",
+            "emoji": "♻️",
+            "message": "API scheme update",
+            "date": "2026-02-18"
+          },
           {
             "hash": "8009b90",
             "emoji": "♻️",
@@ -389,6 +484,24 @@
           }
         ],
         "styles": [
+          {
+            "hash": "3692422",
+            "emoji": "💄",
+            "message": "Überflüssige Dateityp-Anzeige aus DocumentItem entfernt",
+            "date": "2026-02-21"
+          },
+          {
+            "hash": "044d96c",
+            "emoji": "💄",
+            "message": "Optimierung der Dokumentendarstellung und -Zuweisung",
+            "date": "2026-02-19"
+          },
+          {
+            "hash": "a0591ad",
+            "emoji": "💄",
+            "message": "Optimierung der Customer Box im Seitenmenü",
+            "date": "2026-02-12"
+          },
           {
             "hash": "9b54c90",
             "emoji": "💄",
@@ -1090,54 +1203,6 @@
             "emoji": "✨",
             "message": "Only customers with booked suite has lifecycle section enabled from now on",
             "date": "2025-08-27"
-          },
-          {
-            "hash": "f74197a",
-            "emoji": "✨",
-            "message": "Adds support for exit groups and dynamic group handling by the user",
-            "date": "2025-08-26"
-          },
-          {
-            "hash": "5d0f2d9",
-            "emoji": "✨",
-            "message": "Changes date input handling between admins and other user types",
-            "date": "2025-08-26"
-          },
-          {
-            "hash": "1d2be17",
-            "emoji": "✨",
-            "message": "After employee creation user is redirected to additional settings",
-            "date": "2025-08-26"
-          },
-          {
-            "hash": "86eb1d8",
-            "emoji": "✨",
-            "message": "Adds better display in subject",
-            "date": "2025-08-26"
-          },
-          {
-            "hash": "d1f4b95",
-            "emoji": "✨",
-            "message": "Every employee have got a hire date again",
-            "date": "2025-08-25"
-          },
-          {
-            "hash": "1ea6163",
-            "emoji": "✨",
-            "message": "Central forms forms for employee editing",
-            "date": "2025-08-25"
-          },
-          {
-            "hash": "db178fd",
-            "emoji": "✨",
-            "message": "Adds executive selection from mentor selection for any onboardee",
-            "date": "2025-08-21"
-          },
-          {
-            "hash": "19aba2a",
-            "emoji": "✨",
-            "message": "Adds incomplete group indicator to users page",
-            "date": "2025-08-20"
           }
         ],
         "deployment": [
@@ -1158,12 +1223,6 @@
             "emoji": "🚀",
             "message": "Updates Changelogs",
             "date": "2025-09-12"
-          },
-          {
-            "hash": "4082dba",
-            "emoji": "🚀",
-            "message": "Removes TS errors",
-            "date": "2025-08-25"
           }
         ],
         "fixes": [
@@ -1354,36 +1413,6 @@
             "emoji": "♻️",
             "message": "Removes email field from onboardee form",
             "date": "2025-08-27"
-          },
-          {
-            "hash": "de61fdb",
-            "emoji": "♻️",
-            "message": "Polishes container scroll behaviour",
-            "date": "2025-08-27"
-          },
-          {
-            "hash": "4711710",
-            "emoji": "♻️",
-            "message": "Finishes generic form handling in employee types",
-            "date": "2025-08-25"
-          },
-          {
-            "hash": "50dcada",
-            "emoji": "♻️",
-            "message": "Adds new implementation of single selctions",
-            "date": "2025-08-25"
-          },
-          {
-            "hash": "586e1c9",
-            "emoji": "♻️",
-            "message": "Fixes structural errors during generation",
-            "date": "2025-08-21"
-          },
-          {
-            "hash": "29460ab",
-            "emoji": "♻️",
-            "message": "Refactors codex changelog code",
-            "date": "2025-08-21"
           }
         ],
         "styles": [
@@ -1452,12 +1481,6 @@
             "emoji": "💄",
             "message": "Polishes titles and descriptions in user sheets",
             "date": "2025-09-10"
-          },
-          {
-            "hash": "09d0d84",
-            "emoji": "💄",
-            "message": "Polishing of changelog display",
-            "date": "2025-08-21"
           }
         ],
         "tests": [
