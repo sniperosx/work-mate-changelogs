@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-02-22T09:57:11.563Z",
+  "generatedAt": "2026-02-23T16:41:44.726Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "1f93261",
+            "emoji": "✨",
+            "message": "Deep-Link-Route für Newsfeed-Posts hinzugefügt",
+            "date": "2026-02-23"
+          },
           {
             "hash": "56841ec",
             "emoji": "✨",
@@ -134,6 +140,12 @@
         ],
         "fixes": [
           {
+            "hash": "13f4d56",
+            "emoji": "🐛",
+            "message": "Android: Animation der Schaltflächen mit Schatten sind nun fehlerfrei",
+            "date": "2026-02-23"
+          },
+          {
             "hash": "626df3b",
             "emoji": "🐛",
             "message": "Fehlendes Leerzeichen vor Uhrzeit im Unterschrifts-Screen behoben",
@@ -171,6 +183,24 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "8cd7daa",
+            "emoji": "♻️",
+            "message": "Wording für das Profil vereinheitlich",
+            "date": "2026-02-23"
+          },
+          {
+            "hash": "729d41b",
+            "emoji": "♻️",
+            "message": "Switch auf neues Audio-Framework (0.82 kompatibel)",
+            "date": "2026-02-23"
+          },
+          {
+            "hash": "97dbb12",
+            "emoji": "♻️",
+            "message": "Absicherung der Production OTA releases",
+            "date": "2026-02-23"
+          },
           {
             "hash": "5a8a87b",
             "emoji": "♻️",
