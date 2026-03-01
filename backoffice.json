@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-02-23T06:51:19.655Z",
+  "generatedAt": "2026-03-01T18:37:59.698Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,30 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "2422cb3",
+            "emoji": "✨",
+            "message": "Das Hervorheben ungelesener Chat-Nachrichten ist nun vorhanden",
+            "date": "2026-02-27"
+          },
+          {
+            "hash": "027607d",
+            "emoji": "✨",
+            "message": "Neue Chats ohne Nachrichten werden nun auch unter \"Aktive Chats\" eingeordnet. Neue Mitarbeiter gehen damit nicht direkt unter.",
+            "date": "2026-02-23"
+          },
+          {
+            "hash": "5c28032",
+            "emoji": "✨",
+            "message": "Das Eröffnen neuer Chats mit deinen Kollegen ist nun auch im Dashboard möglich",
+            "date": "2026-02-23"
+          },
+          {
+            "hash": "2d991c3",
+            "emoji": "✨",
+            "message": "Team-Spalte in Mitarbeiter-Übersichtstabelle anzeigen",
+            "date": "2026-02-23"
+          },
           {
             "hash": "62b2698",
             "emoji": "✨",
@@ -335,6 +359,12 @@
         ],
         "fixes": [
           {
+            "hash": "535f07d",
+            "emoji": "🐛",
+            "message": "Das Scrollverhalten im Chat wurde nun für lange Konversationen und Chatlisten optimiert",
+            "date": "2026-02-23"
+          },
+          {
             "hash": "c00cbc7",
             "emoji": "🐛",
             "message": "TS errors",
@@ -383,6 +413,18 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "f8f4670",
+            "emoji": "♻️",
+            "message": "Workflows aus Seitenmenü entfernt",
+            "date": "2026-03-01"
+          },
+          {
+            "hash": "d72db27",
+            "emoji": "♻️",
+            "message": "Anpassung der Changelogs an die neuen Signaturen",
+            "date": "2026-02-27"
+          },
           {
             "hash": "b7410dd",
             "emoji": "♻️",
@@ -580,6 +622,12 @@
           }
         ],
         "tests": [
+          {
+            "hash": "083c734",
+            "emoji": "🧪",
+            "message": "Neues Wording im UserProfile",
+            "date": "2026-02-27"
+          },
           {
             "hash": "bf532de",
             "emoji": "🧪",
@@ -1161,48 +1209,6 @@
             "emoji": "✨",
             "message": "Adds new stats page for employees (first stage)",
             "date": "2025-09-08"
-          },
-          {
-            "hash": "396a50d",
-            "emoji": "✨",
-            "message": "Adds employee image upload for super admins",
-            "date": "2025-09-08"
-          },
-          {
-            "hash": "e87cc81",
-            "emoji": "✨",
-            "message": "Enables surveys and notifications on all modules",
-            "date": "2025-08-27"
-          },
-          {
-            "hash": "ae1c0f6",
-            "emoji": "✨",
-            "message": "Adds survey module filter on blueprint assignment form",
-            "date": "2025-08-27"
-          },
-          {
-            "hash": "9de6141",
-            "emoji": "✨",
-            "message": "Adds implizit module support for surveys",
-            "date": "2025-08-27"
-          },
-          {
-            "hash": "bd6d476",
-            "emoji": "✨",
-            "message": "Adds disabled features for non suite customers in executive assistant",
-            "date": "2025-08-27"
-          },
-          {
-            "hash": "54438bd",
-            "emoji": "✨",
-            "message": "Executive assistant is mandatory from now on",
-            "date": "2025-08-27"
-          },
-          {
-            "hash": "c722f68",
-            "emoji": "✨",
-            "message": "Only customers with booked suite has lifecycle section enabled from now on",
-            "date": "2025-08-27"
           }
         ],
         "deployment": [
@@ -1407,12 +1413,6 @@
             "emoji": "♻️",
             "message": "Removes unused user query",
             "date": "2025-09-09"
-          },
-          {
-            "hash": "2f8be58",
-            "emoji": "♻️",
-            "message": "Removes email field from onboardee form",
-            "date": "2025-08-27"
           }
         ],
         "styles": [
