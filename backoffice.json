@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-03T09:53:58.996Z",
+  "generatedAt": "2026-03-03T11:38:54.038Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "6f7782e",
+            "emoji": "✨",
+            "message": "Einsicht der gebuchten Module mit Upgrade-Option nun im Einstellungsbereich einsehbar",
+            "date": "2026-03-03"
+          },
+          {
+            "hash": "866f7e2",
+            "emoji": "✨",
+            "message": "Einstellungen sind nun gesondert im Seitenmenü gelistet und direkt zugreifbar",
+            "date": "2026-03-03"
+          },
           {
             "hash": "41ec360",
             "emoji": "✨",
@@ -1215,12 +1227,6 @@
             "emoji": "✨",
             "message": "Adds subtle user counter in users table header",
             "date": "2025-09-11"
-          },
-          {
-            "hash": "bec66f3",
-            "emoji": "✨",
-            "message": "Add employee activities tab",
-            "date": "2025-09-09"
           }
         ],
         "deployment": [
@@ -1412,12 +1418,6 @@
             "hash": "2b52ce5",
             "emoji": "♻️",
             "message": "Fixes navigation to login as non admin in dashboard",
-            "date": "2025-09-10"
-          },
-          {
-            "hash": "3185f06",
-            "emoji": "♻️",
-            "message": "Refactors employee data structure and DateOnly support",
             "date": "2025-09-10"
           }
         ],
