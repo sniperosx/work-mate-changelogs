@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-01T18:37:59.698Z",
+  "generatedAt": "2026-03-03T09:53:58.996Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,24 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "41ec360",
+            "emoji": "✨",
+            "message": "Optimierung der Ausbilder-Erstellung im Azubi-Assistenten",
+            "date": "2026-03-03"
+          },
+          {
+            "hash": "1a5c65d",
+            "emoji": "✨",
+            "message": "Beim Erstellen eines neuen Mitarbeiters ist der Titel nun auf die Rolle des neuen Mitarbeiters dynamisiert",
+            "date": "2026-03-03"
+          },
+          {
+            "hash": "ad31638",
+            "emoji": "✨",
+            "message": "Dynamisierung der Führungskraftbenennenung zwischen Azubi-Assistent und Suite",
+            "date": "2026-03-03"
+          },
           {
             "hash": "2422cb3",
             "emoji": "✨",
@@ -1203,12 +1221,6 @@
             "emoji": "✨",
             "message": "Add employee activities tab",
             "date": "2025-09-09"
-          },
-          {
-            "hash": "c0f7e38",
-            "emoji": "✨",
-            "message": "Adds new stats page for employees (first stage)",
-            "date": "2025-09-08"
           }
         ],
         "deployment": [
@@ -1407,12 +1419,6 @@
             "emoji": "♻️",
             "message": "Refactors employee data structure and DateOnly support",
             "date": "2025-09-10"
-          },
-          {
-            "hash": "bd1e107",
-            "emoji": "♻️",
-            "message": "Removes unused user query",
-            "date": "2025-09-09"
           }
         ],
         "styles": [
