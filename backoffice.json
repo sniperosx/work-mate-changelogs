@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-04T13:04:36.183Z",
+  "generatedAt": "2026-03-04T13:09:49.619Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -394,6 +394,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "25f386f",
+            "emoji": "🐛",
+            "message": "TS-Errors",
+            "date": "2026-03-04"
+          },
           {
             "hash": "78e018d",
             "emoji": "🐛",
@@ -1244,12 +1250,6 @@
             "hash": "0c567de",
             "emoji": "✨",
             "message": "Removes public registration from employee groups",
-            "date": "2025-09-11"
-          },
-          {
-            "hash": "f9f0730",
-            "emoji": "✨",
-            "message": "Adds subtle user counter in users table header",
             "date": "2025-09-11"
           }
         ],
