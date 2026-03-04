@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-04T10:33:40.596Z",
+  "generatedAt": "2026-03-04T13:04:36.183Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "7bc7659",
+            "emoji": "✨",
+            "message": "Ein Feedback- und Hilfe-Formular steht nun jedem Nutzer zur Verfügung",
+            "date": "2026-03-04"
+          },
           {
             "hash": "6f7782e",
             "emoji": "✨",
@@ -1475,12 +1481,6 @@
             "emoji": "💄",
             "message": "Optimizes apprentice schedule display",
             "date": "2025-10-01"
-          },
-          {
-            "hash": "d308a4c",
-            "emoji": "💄",
-            "message": "Adds drag n drop icons to articles instead of article icons for better understanding",
-            "date": "2025-09-11"
           }
         ],
         "tests": [
