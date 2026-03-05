@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-04T13:09:49.619Z",
+  "generatedAt": "2026-03-05T10:02:48.981Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "81bff47",
+            "emoji": "✨",
+            "message": "Superadmin: Reflexionsfragen können nun pro Kunde über die WebUI deaktiviert werden",
+            "date": "2026-03-05"
+          },
           {
             "hash": "7bc7659",
             "emoji": "✨",
@@ -467,6 +473,18 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "0e999e7",
+            "emoji": "♻️",
+            "message": "Einstellungen für Suite-Empfänger sind nun nur noch mit gebuchter Suite sichtbar",
+            "date": "2026-03-05"
+          },
+          {
+            "hash": "ade9643",
+            "emoji": "♻️",
+            "message": "Superadmin: work.mate AI ist nun in eigenen Tab ausgelagert und optisch überarbeitet worden",
+            "date": "2026-03-05"
+          },
           {
             "hash": "f8f4670",
             "emoji": "♻️",
@@ -1245,12 +1263,6 @@
             "emoji": "✨",
             "message": "Introduces new markdown WYSIWYG editor",
             "date": "2025-09-12"
-          },
-          {
-            "hash": "0c567de",
-            "emoji": "✨",
-            "message": "Removes public registration from employee groups",
-            "date": "2025-09-11"
           }
         ],
         "deployment": [
@@ -1265,12 +1277,6 @@
             "emoji": "🚀",
             "message": "Addresses Azure out of memory issue",
             "date": "2025-10-27"
-          },
-          {
-            "hash": "d215287",
-            "emoji": "🚀",
-            "message": "Updates Changelogs",
-            "date": "2025-09-12"
           }
         ],
         "fixes": [
@@ -1425,12 +1431,6 @@
             "emoji": "♻️",
             "message": "Adds admin for executive assignment againe",
             "date": "2025-10-07"
-          },
-          {
-            "hash": "06fec0b",
-            "emoji": "♻️",
-            "message": "Renames employee lifecycle menu items",
-            "date": "2025-09-11"
           }
         ],
         "styles": [
