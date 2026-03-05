@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-05T10:02:48.981Z",
+  "generatedAt": "2026-03-05T10:31:08.096Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "e433c36",
+            "emoji": "✨",
+            "message": "Zuweisung einer Onboarding-Gruppe ist nun im Admin des Onboarding-Assistenten möglich",
+            "date": "2026-03-05"
+          },
           {
             "hash": "81bff47",
             "emoji": "✨",
@@ -1257,12 +1263,6 @@
             "emoji": "✨",
             "message": "Adds first stage of dynamic apprentice schedule calendar",
             "date": "2025-09-29"
-          },
-          {
-            "hash": "713c97a",
-            "emoji": "✨",
-            "message": "Introduces new markdown WYSIWYG editor",
-            "date": "2025-09-12"
           }
         ],
         "deployment": [
