@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-05T10:31:08.096Z",
+  "generatedAt": "2026-03-06T13:29:55.559Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "3c1f625",
+            "emoji": "✨",
+            "message": "Überarbeitung Mitteilung für Email/Telefon OTP Mail",
+            "date": "2026-03-06"
+          },
           {
             "hash": "e433c36",
             "emoji": "✨",
@@ -1363,12 +1369,6 @@
             "emoji": "🐛",
             "message": "Fixes deadlock on changing product modules. Auto fallback to a booked module.",
             "date": "2025-09-22"
-          },
-          {
-            "hash": "ba9ac84",
-            "emoji": "🐛",
-            "message": "Fixes crash on customer detail page during initialization",
-            "date": "2025-09-19"
           }
         ],
         "refactors": [
