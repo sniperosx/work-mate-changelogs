@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-06T13:29:55.559Z",
+  "generatedAt": "2026-03-09T12:06:40.493Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "6798423",
+            "emoji": "✨",
+            "message": "Neuer",
+            "date": "2026-03-09"
+          },
           {
             "hash": "3c1f625",
             "emoji": "✨",
@@ -1363,12 +1369,6 @@
             "emoji": "🐛",
             "message": "Removes TS errors",
             "date": "2025-10-06"
-          },
-          {
-            "hash": "25b7bf8",
-            "emoji": "🐛",
-            "message": "Fixes deadlock on changing product modules. Auto fallback to a booked module.",
-            "date": "2025-09-22"
           }
         ],
         "refactors": [
