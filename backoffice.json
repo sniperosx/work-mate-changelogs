@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-09T12:06:40.493Z",
+  "generatedAt": "2026-03-10T11:38:37.958Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "6ce11a6",
+            "emoji": "✨",
+            "message": "Hilfe für die Erkennung von Duplikaten unter Mitarbeitern eingeführt",
+            "date": "2026-03-10"
+          },
           {
             "hash": "6798423",
             "emoji": "✨",
@@ -491,6 +497,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "11b456b",
+            "emoji": "♻️",
+            "message": "Überarbeitung der Filterfunktion von Artikeln. Nun aus Basis der Inhaltsgruppenzuweisung",
+            "date": "2026-03-10"
+          },
           {
             "hash": "0e999e7",
             "emoji": "♻️",
@@ -1263,18 +1275,6 @@
             "emoji": "✨",
             "message": "Adds color legend for learning places",
             "date": "2025-09-30"
-          },
-          {
-            "hash": "5175c7c",
-            "emoji": "✨",
-            "message": "Adds support for apprentice schedule display",
-            "date": "2025-09-30"
-          },
-          {
-            "hash": "ff4913d",
-            "emoji": "✨",
-            "message": "Adds first stage of dynamic apprentice schedule calendar",
-            "date": "2025-09-29"
           }
         ],
         "deployment": [
