@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-10T11:38:37.958Z",
+  "generatedAt": "2026-03-11T07:31:45.955Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "77e54d7",
+            "emoji": "✨",
+            "message": "Unterstützung von Lernort CSV Imports",
+            "date": "2026-03-11"
+          },
+          {
+            "hash": "1d5eed3",
+            "emoji": "✨",
+            "message": "Learning place importer UI steht nun work.mate-Administratoren zur Verfügung",
+            "date": "2026-03-10"
+          },
           {
             "hash": "6ce11a6",
             "emoji": "✨",
@@ -497,6 +509,18 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "432549d",
+            "emoji": "♻️",
+            "message": "Import-Flow vereinfacht: Datei-Upload direkt in den Einstellungen 🗑️ Entfernung der Zwischenseiten für Mitarbeiter- und Lernort-Import (4 Dateien, 2 Routen) 🐛 Fix: Fehlender Import von DocumentFormFieldsPage entfernt (blockierte gesamte App)",
+            "date": "2026-03-11"
+          },
+          {
+            "hash": "6e95f0a",
+            "emoji": "♻️",
+            "message": "Admins werden nun als vollwertige Mitarbeiter behandelt.",
+            "date": "2026-03-10"
+          },
           {
             "hash": "11b456b",
             "emoji": "♻️",
@@ -1257,24 +1281,6 @@
             "emoji": "✨",
             "message": "Adds delete button to apprentice schedule items",
             "date": "2025-10-01"
-          },
-          {
-            "hash": "47c30a7",
-            "emoji": "✨",
-            "message": "Adds color input in learning places dialog",
-            "date": "2025-09-30"
-          },
-          {
-            "hash": "ebe1cdd",
-            "emoji": "✨",
-            "message": "Adds a employee selection for trainee planning page",
-            "date": "2025-09-30"
-          },
-          {
-            "hash": "bbc9f62",
-            "emoji": "✨",
-            "message": "Adds color legend for learning places",
-            "date": "2025-09-30"
           }
         ],
         "deployment": [
@@ -1474,12 +1480,6 @@
             "hash": "3a2ff37",
             "emoji": "💄",
             "message": "Matches UI between select and date inputs",
-            "date": "2025-10-01"
-          },
-          {
-            "hash": "6d8b107",
-            "emoji": "💄",
-            "message": "Optimizes apprentice schedule display",
             "date": "2025-10-01"
           }
         ],
