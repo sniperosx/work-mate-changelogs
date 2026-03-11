@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-11T07:31:45.955Z",
+  "generatedAt": "2026-03-11T19:46:22.454Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,33 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "965368a",
+            "emoji": "✨",
+            "message": "Team-Mitglieder können jetzt per Klick eingesehen werden 🔗 Direkter Absprung zum Mitarbeiter-Profil aus der Mitgliederliste",
+            "date": "2026-03-11"
+          },
+          {
+            "hash": "271a281",
+            "emoji": "✨",
+            "message": "Schulfächer können jetzt als work.mate Administrator initial angelegt werden.",
+            "date": "2026-03-11",
+            "description": [
+              "🗑️ Veraltete Azubi-Einstellungsseite entfernt (alles unter /settings vereint)"
+            ]
+          },
+          {
+            "hash": "8656d06",
+            "emoji": "✨",
+            "message": "Gruppen-Filter um Elternzeit, Führung und Austritt erweitert 🎯 Filter erscheinen nur, wenn passende Gruppen vorhanden sind",
+            "date": "2026-03-11"
+          },
+          {
+            "hash": "acf7c42",
+            "emoji": "✨",
+            "message": "Mitarbeiter haben ein Notiz-Feld erhalten, um Hinweise zu hinterlegen.",
+            "date": "2026-03-11"
+          },
           {
             "hash": "77e54d7",
             "emoji": "✨",
@@ -437,6 +464,12 @@
         ],
         "fixes": [
           {
+            "hash": "9d2f9aa",
+            "emoji": "🐛",
+            "message": "Klick auf Azubi in der Lernortauslastung öffnet jetzt direkt den Mitarbeiter",
+            "date": "2026-03-11"
+          },
+          {
             "hash": "25f386f",
             "emoji": "🐛",
             "message": "TS-Errors",
@@ -652,6 +685,12 @@
           }
         ],
         "styles": [
+          {
+            "hash": "c878691",
+            "emoji": "🎨",
+            "message": "Seitenmenü etwas breiter gemacht, damit alle Menüpunkte sauber lesbar sind",
+            "date": "2026-03-11"
+          },
           {
             "hash": "dfae778",
             "emoji": "💄",
@@ -1251,36 +1290,6 @@
             "emoji": "✨",
             "message": "Refactors customers overview to grid display",
             "date": "2025-10-07"
-          },
-          {
-            "hash": "66c20bd",
-            "emoji": "✨",
-            "message": "Adds the free learning place suggestion logic to book only free places",
-            "date": "2025-10-06"
-          },
-          {
-            "hash": "b863e55",
-            "emoji": "✨",
-            "message": "Adds apprentice demo data import functionality",
-            "date": "2025-10-06"
-          },
-          {
-            "hash": "d2391cd",
-            "emoji": "✨",
-            "message": "First stage apprentice schedule suggestions",
-            "date": "2025-10-02"
-          },
-          {
-            "hash": "cd668db",
-            "emoji": "✨",
-            "message": "Adds auto update on entry changes",
-            "date": "2025-10-01"
-          },
-          {
-            "hash": "775d4d3",
-            "emoji": "✨",
-            "message": "Adds delete button to apprentice schedule items",
-            "date": "2025-10-01"
           }
         ],
         "deployment": [
@@ -1369,12 +1378,6 @@
             "emoji": "🐛",
             "message": "Sidemenu items are filled no in executive manager when being a superadmin",
             "date": "2025-10-07"
-          },
-          {
-            "hash": "1c09aad",
-            "emoji": "🐛",
-            "message": "Removes TS errors",
-            "date": "2025-10-06"
           }
         ],
         "refactors": [
@@ -1475,12 +1478,6 @@
             "emoji": "💄",
             "message": "Polishes delete button in planning edit",
             "date": "2025-10-29"
-          },
-          {
-            "hash": "3a2ff37",
-            "emoji": "💄",
-            "message": "Matches UI between select and date inputs",
-            "date": "2025-10-01"
           }
         ],
         "tests": [
