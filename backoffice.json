@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-12T07:27:12.275Z",
+  "generatedAt": "2026-03-12T09:07:28.599Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -463,6 +463,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "1b7b11d",
+            "emoji": "🐛",
+            "message": "Doppelte Überschrift bei Fragebögen im Nutzerprofil behoben",
+            "date": "2026-03-12"
+          },
           {
             "hash": "9d2f9aa",
             "emoji": "🐛",
@@ -1366,12 +1372,6 @@
             "emoji": "🐛",
             "message": "Fixes crash on loading new onboardee after creation",
             "date": "2025-10-13"
-          },
-          {
-            "hash": "cb719c3",
-            "emoji": "🐛",
-            "message": "Sidemenu items are filled no in executive manager when being a superadmin",
-            "date": "2025-10-07"
           }
         ],
         "refactors": [
