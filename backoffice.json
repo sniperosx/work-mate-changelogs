@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-11T19:46:22.454Z",
+  "generatedAt": "2026-03-12T07:27:12.275Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -1369,12 +1369,6 @@
           },
           {
             "hash": "cb719c3",
-            "emoji": "🐛",
-            "message": "Sidemenu items are filled no in executive manager when being a superadmin",
-            "date": "2025-10-07"
-          },
-          {
-            "hash": "eab26ae",
             "emoji": "🐛",
             "message": "Sidemenu items are filled no in executive manager when being a superadmin",
             "date": "2025-10-07"
