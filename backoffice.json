@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-13T07:54:15.715Z",
+  "generatedAt": "2026-03-13T10:50:54.527Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,15 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "e00fb26",
+            "emoji": "✨",
+            "message": "Die Legende der Lernorte in der Ablaufplanung ist jetzt übersichtlicher gruppiert",
+            "date": "2026-03-13",
+            "description": [
+              "🔧 Lernorte werden in der Legende nun nach Tags gebündelt statt als lange, unstrukturierte Liste angezeigt"
+            ]
+          },
           {
             "hash": "965368a",
             "emoji": "✨",
@@ -1298,12 +1307,6 @@
             "hash": "7ecc14b",
             "emoji": "✨",
             "message": "Adds warning before seeding data for data loss",
-            "date": "2025-10-07"
-          },
-          {
-            "hash": "a2657e0",
-            "emoji": "✨",
-            "message": "Refactors customers overview to grid display",
             "date": "2025-10-07"
           }
         ],
