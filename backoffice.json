@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-12T09:07:28.599Z",
+  "generatedAt": "2026-03-13T07:54:15.715Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -463,6 +463,15 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "3f5ed2c",
+            "emoji": "🐛",
+            "message": "Fragebögen werden im Dashboard wieder vollständig angezeigt",
+            "date": "2026-03-13",
+            "description": [
+              "🔧 Fragebögen verschwinden nicht mehr je nach ausgewähltem Modul in der Navigation"
+            ]
+          },
           {
             "hash": "1b7b11d",
             "emoji": "🐛",
@@ -1428,12 +1437,6 @@
             "emoji": "♻️",
             "message": "Second version of planner",
             "date": "2025-10-22"
-          },
-          {
-            "hash": "6744719",
-            "emoji": "♻️",
-            "message": "Adds admin for executive assignment againe",
-            "date": "2025-10-07"
           }
         ],
         "styles": [
