@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-13T10:50:54.527Z",
+  "generatedAt": "2026-03-17T15:29:11.696Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,16 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "c26711b",
+            "emoji": "✨",
+            "message": "Inhalte können jetzt auch gezielt vor dem ersten Arbeitstag geplant werden",
+            "date": "2026-03-13",
+            "description": [
+              "🔧 Für die Zeitsteuerung gibt es jetzt eine eigene Auswahl für Tage vor dem ersten Arbeitstag",
+              "🔧 Die bestehende Einstellung nach dem ersten Arbeitstag bleibt erhalten und wird verständlicher dargestellt"
+            ]
+          },
           {
             "hash": "e00fb26",
             "emoji": "✨",
@@ -472,6 +482,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "a4d95d0",
+            "emoji": "🐛",
+            "message": "Feste Bildhöhe aus ImageInput entfernt, damit Kurs-Lektionen nicht überlaufen",
+            "date": "2026-03-17"
+          },
           {
             "hash": "3f5ed2c",
             "emoji": "🐛",
@@ -1301,12 +1317,6 @@
             "hash": "8eca060",
             "emoji": "✨",
             "message": "Adds close star to customers overview cell",
-            "date": "2025-10-07"
-          },
-          {
-            "hash": "7ecc14b",
-            "emoji": "✨",
-            "message": "Adds warning before seeding data for data loss",
             "date": "2025-10-07"
           }
         ],
