@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-18T12:01:06.615Z",
+  "generatedAt": "2026-03-18T12:10:10.466Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "92cebe4",
+            "emoji": "✨",
+            "message": "Dashboard sendet jetzt Agent-Property beim Login",
+            "date": "2026-03-18"
+          },
           {
             "hash": "5246a3e",
             "emoji": "✨",
@@ -1312,12 +1318,6 @@
             "emoji": "✨",
             "message": "Adds ui for managing an image section inside an article",
             "date": "2025-10-13"
-          },
-          {
-            "hash": "a33b9a3",
-            "emoji": "✨",
-            "message": "New types in article details are available to select from",
-            "date": "2025-10-09"
           }
         ],
         "deployment": [
@@ -1388,12 +1388,6 @@
             "emoji": "🐛",
             "message": "Fixes scroll bug in article detail",
             "date": "2025-10-14"
-          },
-          {
-            "hash": "97c3530",
-            "emoji": "🐛",
-            "message": "Fixes crash on loading new onboardee after creation",
-            "date": "2025-10-13"
           }
         ],
         "refactors": [
