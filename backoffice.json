@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-18T12:10:10.466Z",
+  "generatedAt": "2026-03-23T12:09:54.727Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,15 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "dc42709",
+            "emoji": "✨",
+            "message": "Blueprint-Duplizierung im Backoffice",
+            "date": "2026-03-23",
+            "description": [
+              "Kleiner Icon-Button (oben rechts auf der Card) zum Duplizieren von Inhaltsgruppen mit Tooltip, Loading- und Erfolgs-State."
+            ]
+          },
           {
             "hash": "92cebe4",
             "emoji": "✨",
@@ -1311,12 +1320,6 @@
             "hash": "688dc34",
             "emoji": "✨",
             "message": "Finishes functionality to add images to the article flow",
-            "date": "2025-10-13"
-          },
-          {
-            "hash": "4039c38",
-            "emoji": "✨",
-            "message": "Adds ui for managing an image section inside an article",
             "date": "2025-10-13"
           }
         ],
