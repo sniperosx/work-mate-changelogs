@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-02-23T16:41:44.726Z",
+  "generatedAt": "2026-03-26T06:19:10.956Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,84 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "d363282",
+            "emoji": "✨",
+            "message": "Umfragen & Fragebögen in Formulare umbenannt und Typ-Pill im Listeneintrag ergänzt",
+            "date": "2026-03-18"
+          },
+          {
+            "hash": "c8ccb31",
+            "emoji": "✨",
+            "message": "Widgets nur sichtbar wenn API-Config sie liefert, Newsfeed-Button aus Funktionen entfernt",
+            "date": "2026-03-18"
+          },
+          {
+            "hash": "675c17f",
+            "emoji": "✨",
+            "message": "Newsfeed Widget auf neue UI angepasst",
+            "date": "2026-03-18"
+          },
+          {
+            "hash": "c71fb3c",
+            "emoji": "✨",
+            "message": "Neuer Mitarbeiter Widget nach Design umgesetzta",
+            "date": "2026-03-18"
+          },
+          {
+            "hash": "e5fed89",
+            "emoji": "✨",
+            "message": "Neuester-Beitrag-Widget auf dem Home-Screen und Überarbeitung der Widget-Zeile",
+            "date": "2026-03-16"
+          },
+          {
+            "hash": "25382da",
+            "emoji": "✨",
+            "message": "Einführung eines neuen Widgets für den neuesten Mitarbeiter auf dem Home-Screen",
+            "date": "2026-03-16"
+          },
+          {
+            "hash": "5c8b8d4",
+            "emoji": "✨",
+            "message": "Der Newsfeed-Zähler in der App wird nicht mehr lokal berechnet",
+            "date": "2026-03-12"
+          },
+          {
+            "hash": "b08f82f",
+            "emoji": "✨",
+            "message": "Neues Formular zum Melden von Fehlern oder Anregungen",
+            "date": "2026-03-04"
+          },
+          {
+            "hash": "4fdf772",
+            "emoji": "✨",
+            "message": "Das Hervorheben ungelesener Chat-Nachrichten ist nun vorhanden",
+            "date": "2026-02-27"
+          },
+          {
+            "hash": "24e8859",
+            "emoji": "✨",
+            "message": "Die Beitragsmeldung im Newsfeed besitzt nun eine Erläuterung und Sicherheitsabfrage",
+            "date": "2026-02-27"
+          },
+          {
+            "hash": "3084d9e",
+            "emoji": "✨",
+            "message": "Die App besitzt im Seitenmenü nun Information über Änderungen und neue Funktionen.",
+            "date": "2026-02-26"
+          },
+          {
+            "hash": "c78b758",
+            "emoji": "✨",
+            "message": "Welcome screen für Wissensmanagement vorbereitet",
+            "date": "2026-02-26"
+          },
+          {
+            "hash": "98c86f1",
+            "emoji": "✨",
+            "message": "Push Notification Deeplinking support unter Android",
+            "date": "2026-02-26"
+          },
           {
             "hash": "1f93261",
             "emoji": "✨",
@@ -108,6 +186,12 @@
         ],
         "deployment": [
           {
+            "hash": "0898b9e",
+            "emoji": "🚀",
+            "message": "Upgrade of dependencies",
+            "date": "2026-02-24"
+          },
+          {
             "hash": "9f99dc1",
             "emoji": "🚀",
             "message": "UI test Abdeckung (initial)",
@@ -139,6 +223,18 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "efb0836",
+            "emoji": "🐛",
+            "message": "ChatAvatar nutzt jetzt Avatar-Component mit imageId statt nur Initialen",
+            "date": "2026-03-18"
+          },
+          {
+            "hash": "aef5f5e",
+            "emoji": "🐛",
+            "message": "Android: Edge-to-Edge aktivieren um toten Balken auf Android 12 zu beheben",
+            "date": "2026-02-24"
+          },
           {
             "hash": "13f4d56",
             "emoji": "🐛",
@@ -183,6 +279,42 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "653cc80",
+            "emoji": "♻️",
+            "message": "Verbesserung Profil-Vervollständigungs Dialog",
+            "date": "2026-03-05"
+          },
+          {
+            "hash": "82aa5fb",
+            "emoji": "♻️",
+            "message": "Neuer Header im Vorschlagswesen. Erklärung wozu und wie ein Vorschlag genutzt wird.",
+            "date": "2026-03-05"
+          },
+          {
+            "hash": "c30753b",
+            "emoji": "♻️",
+            "message": "Profil-Update screen überarbeitet",
+            "date": "2026-03-05"
+          },
+          {
+            "hash": "fd18217",
+            "emoji": "♻️",
+            "message": "Mentoren/Führungskräfte etc. sind nun in \"Ansprechpartner\" zusammengefasst",
+            "date": "2026-03-05"
+          },
+          {
+            "hash": "b0e6293",
+            "emoji": "♻️",
+            "message": "Die Arten von Ansprechpartner wurden deutlich erweitert",
+            "date": "2026-03-05"
+          },
+          {
+            "hash": "c9365c2",
+            "emoji": "♻️",
+            "message": "Die Übersetzungsfunktion wurde weiter optimiert und beschleunigt",
+            "date": "2026-02-27"
+          },
           {
             "hash": "8cd7daa",
             "emoji": "♻️",
@@ -252,6 +384,12 @@
         ],
         "styles": [
           {
+            "hash": "582ef50",
+            "emoji": "💄",
+            "message": "Polishing der neuen Widgets",
+            "date": "2026-03-18"
+          },
+          {
             "hash": "52cd68b",
             "emoji": "💄",
             "message": "Optimierung der Chat-Texteingabe unter Android. Zentralisierung der Chats zwischen Benutzern und Owly",
@@ -262,6 +400,14 @@
             "emoji": "💄",
             "message": "Optimierung der Newsfeeddarstellung",
             "date": "2026-01-16"
+          }
+        ],
+        "security": [
+          {
+            "hash": "1d16840",
+            "emoji": "🔒",
+            "message": "App sendet jetzt Agent-Property beim Login und zeigt bei fehlender Inhaltsgruppe eine verständliche Fehlermeldung",
+            "date": "2026-03-18"
           }
         ]
       }
