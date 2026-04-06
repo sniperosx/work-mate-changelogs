@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-04-06T06:04:28.138Z",
+  "generatedAt": "2026-04-06T06:41:28.170Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -806,6 +806,12 @@
         ],
         "refactors": [
           {
+            "hash": "ef3b96b",
+            "emoji": "♻️",
+            "message": "Removes build errors",
+            "date": "2026-04-06"
+          },
+          {
             "hash": "f58f0c1",
             "emoji": "♻️",
             "message": "Phase 5: CSV-Import-Wizard generalisieren",
@@ -1489,12 +1495,6 @@
             "hash": "ed97a5e",
             "emoji": "✨",
             "message": "Umstrukturierung der Lernort Übersicht",
-            "date": "2025-11-13"
-          },
-          {
-            "hash": "74fb342",
-            "emoji": "✨",
-            "message": "Einführung einer neuen Datums-Komponente zum einfachen Eintragen von Daten mit der Tastatur",
             "date": "2025-11-13"
           }
         ],
