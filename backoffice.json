@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-03-26T06:17:12.454Z",
+  "generatedAt": "2026-04-06T06:04:28.138Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -22,12 +22,190 @@
       "changes": {
         "features": [
           {
+            "hash": "4787af2",
+            "emoji": "✨",
+            "message": "Berichtsheft-Review: Mentor-Statistiken im Alle-Tab + API-Types aktualisiert",
+            "date": "2026-04-02",
+            "description": [
+              "- Stats-Box (Offen, In Prüfung, Freigegeben, Korrektur) pro Azubi im Alle-Tab",
+              "- Nur sichtbar wenn Aufrufer Mentor des Azubis ist (nicht bei Lernort-Zuweisung)",
+              "- API-Types regeneriert (mentorSummaries, imageBase64/imageMimeType)"
+            ]
+          },
+          {
+            "hash": "8511f63",
+            "emoji": "✨",
+            "message": "Berichtsheft-Modus Einstellung in Kundenverwaltung + Lernort-Löschung Fix",
+            "date": "2026-04-02",
+            "description": [
+              "- Berichtsheft-Modus (Täglich/Wöchentlich) als Dropdown in den Kundeneinstellungen",
+              "- API-Types regeneriert mit CustomerApprenticeSettings",
+              "- Lernort-Löschung: Event erst nach erfolgreichem DELETE emittieren"
+            ]
+          },
+          {
+            "hash": "5a3f487",
+            "emoji": "✨",
+            "message": "Berichtsheft Reviews wurden eingeführt",
+            "date": "2026-03-31"
+          },
+          {
+            "hash": "cb508e9",
+            "emoji": "✨",
+            "message": "Übersetzungsverwaltung im Backoffice – Tree-Table mit Inline-Edit, AI-Übersetzung und Sektions-Management",
+            "date": "2026-03-26",
+            "description": [
+              "🌐 Neue Seite unter \"Internationalisierung\" für SuperAdmins",
+              "🔍 Suchfunktion, Aufklappen/Zuklappen, Inline-Bearbeitung pro Sprachzelle",
+              "🤖 AI-Button für automatische Übersetzung leerer Felder"
+            ]
+          },
+          {
+            "hash": "01eeac7",
+            "emoji": "✨",
+            "message": "Collapsible Sidebar mit animierter Active-Pill",
+            "date": "2026-03-25",
+            "description": [
+              "- Sidebar collapsed (80px, Icons-only) als Default, expanded (276px) per Toggle",
+              "- Animated active-pill mit framer-motion layoutId (sliding between items)",
+              "- Glasmorphism hover-style passend zur Pill-Navigation",
+              "- Toggle-Button unten an der Sidebar-Kante",
+              "- Schulungsvideos aus Sidebar entfernt, als Karte in Feedback & Hilfe",
+              "- Einstellungen + Feedback & Hilfe mit mt-auto ans Window-Ende",
+              "- bottomSection Property auf MenuSectionType",
+              "- Layouts und Pill-Navigation passen sich dynamisch an Sidebar-Breite an",
+              "- UserBox vorübergehend auskommentiert"
+            ]
+          },
+          {
+            "hash": "8dac39a",
+            "emoji": "✨",
+            "message": "Einheitliche Page-Transition-Animation für alle Routen",
+            "date": "2026-03-25"
+          },
+          {
+            "hash": "f1297f9",
+            "emoji": "✨",
+            "message": "Inhalte als Pill-Navigation mit Subitems",
+            "date": "2026-03-25",
+            "description": [
+              "- Inhalte-Section zu standalone mit Subitems umgebaut (Inhaltsgruppen, Artikel, Videos, Dokumente)",
+              "- WMPageHeader aus allen Inhalte-Pages entfernt",
+              "- HelpTexts für Inhalte-Tabs ergänzt",
+              "- Route /inhalte und Registry-Einträge hinzugefügt"
+            ]
+          },
+          {
+            "hash": "a4f725a",
+            "emoji": "✨",
+            "message": "Wissensmanagement als Pill-Navigation, Interviews-Tab mit API",
+            "date": "2026-03-25",
+            "description": [
+              "- Workflows als Root-Item entfernt",
+              "- Wissensmanagement mit Subitems: Dashboard, Fragebögen, Interviews, Content-Hub",
+              "- KnowledgeRawDataTab: Dummy-Daten durch echte API ersetzt (alle Sessions aggregiert)",
+              "- Status-Filter-Leiste über der Interviews-Tabelle",
+              "- InterviewSessionDetailPage: Back-Button entfernt, Spacing angepasst",
+              "- CLAUDE.md: MessageView-Regel für Empty States dokumentiert"
+            ]
+          },
+          {
+            "hash": "8375eaf",
+            "emoji": "✨",
+            "message": "Ausbildung als Pill-Navigation, Pill-Positioning fix",
+            "date": "2026-03-25",
+            "description": [
+              "- Ausbildung-Section zu standalone mit Subitems umgebaut (Ablaufplanung, Lernort-Auslastung, Noten, Lernorte, Schulfächer)",
+              "- Pill sticky positioniert mit viewport-basierter Breite (unabhängig vom Content-Layout)",
+              "- WMPageHeader aus allen Ausbildung-Pages entfernt",
+              "- Subitem-Registry um 5 Apprentice-Komponenten erweitert"
+            ]
+          },
+          {
+            "hash": "ae5b828",
+            "emoji": "✨",
+            "message": "Sidebar-Refactoring: Kommunikation & Feedback als Subitems mit Pill-Navigation",
+            "date": "2026-03-25",
+            "description": [
+              "- Kommunikation-Section aufgelöst in standalone Menüpunkte (Mein Profil, Kommunikation, Feedback)",
+              "- Generische SubitemsContainerPage mit AnimatedSegmentedControl (Glass-Pill, framer-motion)",
+              "- FloatingHelpButton neben der Pill-Navigation für kontextbezogene Hilfe",
+              "- Impulsfragen als eigenes Subitem in Feedback aufgenommen",
+              "- WMPageHeader aus allen Subitem-Pages entfernt (Titel in Pill, Beschreibung im HelpButton)",
+              "- Subitem-Registry für lazy-loaded Komponenten-Auflösung",
+              "- Sidebar Active-State und Badge-Aggregation für Subitems"
+            ]
+          },
+          {
+            "hash": "d0fbc85",
+            "emoji": "✨",
+            "message": "Vereinfachung und Zusammenlegen der Benutzerverwaltung",
+            "date": "2026-03-24"
+          },
+          {
             "hash": "dc42709",
             "emoji": "✨",
             "message": "Blueprint-Duplizierung im Backoffice",
             "date": "2026-03-23",
             "description": [
               "Kleiner Icon-Button (oben rechts auf der Card) zum Duplizieren von Inhaltsgruppen mit Tooltip, Loading- und Erfolgs-State."
+            ]
+          },
+          {
+            "hash": "e98ebd5",
+            "emoji": "✨",
+            "message": "InterviewSessionDetailPage + ResponseAccordionItem erstellt",
+            "date": "2026-03-20",
+            "description": [
+              "Detail-Ansicht für eine Interview-Session mit Accordion-Antworten."
+            ]
+          },
+          {
+            "hash": "0515062",
+            "emoji": "✨",
+            "message": "InterviewEditPage mit QuestionList und SessionsTable",
+            "date": "2026-03-20",
+            "description": [
+              "- InterviewEditPage: Create/Edit-Seite mit CrudStateProvider",
+              "- InterviewQuestionList: Sortierbare Fragenliste mit Hinzufügen/Entfernen/Verschieben",
+              "- InterviewSessionsTable: Tabelle der zugewiesenen Sessions mit Status-Badges",
+              "- Zuweisen-Button vorbereitet für InterviewAssignmentOverlay (Task 5)"
+            ]
+          },
+          {
+            "hash": "1f9fa2a",
+            "emoji": "✨",
+            "message": "InterviewsPage + InterviewCard erstellen",
+            "date": "2026-03-20",
+            "description": [
+              "- InterviewsPage unter /workflows/interviews mit Karten-Grid (1/2 Spalten)",
+              "- InterviewCard mit Name, Fragenanzahl und Erstelldatum",
+              "- Filterung von archivierten Interviews",
+              "- FAB-Button navigiert zu /workflows/interviews/new",
+              "- NoContentBox wenn keine Interviews vorhanden"
+            ]
+          },
+          {
+            "hash": "9523005",
+            "emoji": "✨",
+            "message": "Navigation + Routes für Interview-Dashboard einrichten",
+            "date": "2026-03-20",
+            "description": [
+              "- Interviews-Menüeintrag im Workflows-Abschnitt hinzugefügt (sichtbar wenn isAdmin && isWorkmateAIEnabled)",
+              "- Workflows-Abschnitt zeigt bei isWorkmateCustomer ODER isWorkmateAIEnabled",
+              "- isWorkmateAIEnabled-Parameter zu getUnifiedMenuSections hinzugefügt",
+              "- Lazy Imports für InterviewsPage, InterviewEditPage, InterviewSessionDetailPage",
+              "- 4 neue Routen unter /workflows/interviews"
+            ]
+          },
+          {
+            "hash": "17204e9",
+            "emoji": "✨",
+            "message": "Interview API Hooks erstellen",
+            "date": "2026-03-20",
+            "description": [
+              "Alle 7 Query/Mutation Hooks für das Interview-Management Dashboard angelegt",
+              "unter src/queries/interviews/, nach dem bestehenden Documents-Hook-Pattern."
             ]
           },
           {
@@ -496,6 +674,18 @@
         ],
         "deployment": [
           {
+            "hash": "a8e68f0",
+            "emoji": "🚀",
+            "message": "Updating CI/CD scripts for custom runner",
+            "date": "2026-03-27"
+          },
+          {
+            "hash": "1d4c8ba",
+            "emoji": "🚀",
+            "message": "Node self hosted runner eingeführt",
+            "date": "2026-03-27"
+          },
+          {
             "hash": "63165a7",
             "emoji": "🚀",
             "message": "Multiline git commits werden nun in changelogs übernommen",
@@ -503,6 +693,18 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "d9d8f54",
+            "emoji": "🐛",
+            "message": "Fix Rules-of-Hooks Verletzung in KnowledgeRawDataTab",
+            "date": "2026-03-25"
+          },
+          {
+            "hash": "9e07b27",
+            "emoji": "🐛",
+            "message": "Removes TS erros",
+            "date": "2026-03-21"
+          },
           {
             "hash": "a4d95d0",
             "emoji": "🐛",
@@ -603,6 +805,129 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "f58f0c1",
+            "emoji": "♻️",
+            "message": "Phase 5: CSV-Import-Wizard generalisieren",
+            "date": "2026-04-02",
+            "description": [
+              "- GenericCsvColumnAssignmentPage<TField> erstellt (parametrisiert durch targetFields, knownHeaders, buildRow)",
+              "- GenericCsvSanityCheckPage<TRow, TValidation> erstellt (parametrisiert durch Spalten-Definition, Mutation, Validierung)",
+              "- CsvColumnAssignmentPage + CsvSanityCheckPage zu Config-Wrappern reduziert",
+              "- CsvLearningPlaceColumnAssignmentPage + CsvLearningPlaceSanityCheckPage ebenso",
+              "- ~600 Zeilen duplizierter Code eliminiert"
+            ]
+          },
+          {
+            "hash": "eee9f8e",
+            "emoji": "♻️",
+            "message": "Phase 4: Code-Duplikate beseitigen",
+            "date": "2026-04-02",
+            "description": [
+              "- MODULE_LABELS, MODULE_BADGE_COLORS, MODULE_SORT_ORDER in ModuleHelper.ts zentralisiert",
+              "- Berichtsheft-Konstanten (LOCATION_CONFIG, STATUS_*) in berichtsheftConstants.tsx extrahiert",
+              "- Date-Formatting-Funktionen in DateFormatter.ts zentralisiert (dayjs-basiert)",
+              "- Duplikate in BlueprintAssignmentInput, NotificationBlueprintSelection,",
+              "BerichtsheftReviewDialog/Page und Interview-Views entfernt"
+            ]
+          },
+          {
+            "hash": "d63ebea",
+            "emoji": "🔧",
+            "message": "Phase 3: Version-Konflikte beheben",
+            "date": "2026-04-02",
+            "description": [
+              "- react-is von ^19 auf ^18.3.1 downgraded (passend zu React 18)",
+              "- @mui/lab durch eigene LoadingButton-Komponente ersetzt und entfernt",
+              "- TimeInput von date-fns/AdapterDateFns auf dayjs/AdapterDayjs umgestellt",
+              "- date-fns komplett entfernt (dayjs ist primäre Date-Lib mit 69 Imports)"
+            ]
+          },
+          {
+            "hash": "753a929",
+            "emoji": "♻️",
+            "message": "Berichtsheft-Review Tabelle mit festen Spaltenbreiten für konsistente Darstellung",
+            "date": "2026-04-02"
+          },
+          {
+            "hash": "18156bc",
+            "emoji": "♻️",
+            "message": "Lernziele im Lernort ist kein Pflichtfeld mehr",
+            "date": "2026-04-01"
+          },
+          {
+            "hash": "10368d0",
+            "emoji": "♻️",
+            "message": "Lernorte verlinken Ausbilder direkt in deren Benutzeransicht",
+            "date": "2026-04-01"
+          },
+          {
+            "hash": "db9c5b0",
+            "emoji": "♻️",
+            "message": "Updated api scheme",
+            "date": "2026-03-25"
+          },
+          {
+            "hash": "e29c984",
+            "emoji": "♻️",
+            "message": "Assets hinzugefügt",
+            "date": "2026-03-25"
+          },
+          {
+            "hash": "2978e41",
+            "emoji": "♻️",
+            "message": "Wissensmanagement zusammengeführt",
+            "date": "2026-03-25"
+          },
+          {
+            "hash": "f355062",
+            "emoji": "🔧",
+            "message": "Schulfächer: WMPageHeader durch FAB ersetzt",
+            "date": "2026-03-25"
+          },
+          {
+            "hash": "f8ced85",
+            "emoji": "🔧",
+            "message": "Sidebar: Menü-Struktur optimiert, Separator, Benennungen",
+            "date": "2026-03-25",
+            "description": [
+              "- \"Mehr\"-Sektion entfernt, Mein Profil/Einstellungen/Feedback & Hilfe als standalone ans Ende",
+              "- Mein Profil in Delegation deaktiviert",
+              "- \"Feedback\" → \"Fragen & Feedback\", \"Umfragen\" → \"Formulare\"",
+              "- Formulare-Teaser an neue Benennung angepasst",
+              "- separatorAbove-Property auf MenuSectionType für dezente Trennlinien",
+              "- Sidebar-Items pl-6 → pl-3 (weniger Einrückung auf Root-Level)"
+            ]
+          },
+          {
+            "hash": "73fd2c5",
+            "emoji": "🔧",
+            "message": "Cache-Invalidierung, statusConfig dedupliziert, Spec aktualisiert",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "8b72ff4",
+            "emoji": "🔧",
+            "message": "Confidence badge immer anzeigen (grauer Fallback)",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "df299b1",
+            "emoji": "♻️",
+            "message": "AssignmentOverlay Refactoring + InterviewAssignmentOverlay",
+            "date": "2026-03-20",
+            "description": [
+              "Generisches AssignmentOverlay aus DocumentAssignmentOverlay extrahiert.",
+              "DocumentAssignmentOverlay zu dünnem Wrapper refactored.",
+              "InterviewAssignmentOverlay erstellt und in InterviewEditPage verdrahtet."
+            ]
+          },
+          {
+            "hash": "e2ecdd6",
+            "emoji": "🔧",
+            "message": "Fix deleteQuery type cast, add Avatar to sessions table",
+            "date": "2026-03-20"
+          },
           {
             "hash": "432549d",
             "emoji": "♻️",
@@ -897,6 +1222,36 @@
             "date": "2026-02-04"
           }
         ],
+        "docs": [
+          {
+            "hash": "b3825fd",
+            "emoji": "📝",
+            "message": "Design-Spec: Collapsible Sidebar",
+            "date": "2026-03-25"
+          },
+          {
+            "hash": "1c0d1fa",
+            "emoji": "📝",
+            "message": "Design-Spec: Review-Feedback eingearbeitet",
+            "date": "2026-03-20",
+            "description": [
+              "- Archivierung via DELETE klargestellt (Soft Delete)",
+              "- Cancelled-Status + Fallback für unbekannte Werte",
+              "- Follow-Up-Gruppierung via sequentielle Reihenfolge dokumentiert",
+              "- Confidence-Badge Werte + Fallback definiert",
+              "- AssignmentOverlay Verantwortlichkeiten aufgeteilt",
+              "- Cache-Invalidierung pro Mutation spezifiziert",
+              "- data-testid Attribute definiert",
+              "- Loading/Error-States für Session-Detail via QueryStateContainer"
+            ]
+          },
+          {
+            "hash": "5e71676",
+            "emoji": "📝",
+            "message": "Design-Spec für Interview-Management Dashboard",
+            "date": "2026-03-20"
+          }
+        ],
         "other": [
           {
             "hash": "a59b3a2",
@@ -1141,200 +1496,6 @@
             "emoji": "✨",
             "message": "Einführung einer neuen Datums-Komponente zum einfachen Eintragen von Daten mit der Tastatur",
             "date": "2025-11-13"
-          },
-          {
-            "hash": "aa52e64",
-            "emoji": "✨",
-            "message": "Die Planungsübersicht besitzt nun einen Einstellungs-PopUp um weniger genutzte Einstellungen aus der Hauptansicht auszulagern - für bessere Übersicht",
-            "date": "2025-11-13"
-          },
-          {
-            "hash": "2adcdb5",
-            "emoji": "✨",
-            "message": "Das freie Zoomen in der Azubi Planung ist nun möglich",
-            "date": "2025-11-13"
-          },
-          {
-            "hash": "af975f4",
-            "emoji": "✨",
-            "message": "In der Azubi-Planung steht nun eine Zoom-Komponente zur Verfügung",
-            "date": "2025-11-13"
-          },
-          {
-            "hash": "cd87adc",
-            "emoji": "✨",
-            "message": "Die Auslastung von Lernorten ist nun im Azubiassistenten einsehbar",
-            "date": "2025-11-10"
-          },
-          {
-            "hash": "1da30cb",
-            "emoji": "✨",
-            "message": "Lernorte im Azubi-Assistenten besitzen nun einen Inhalte-Bereich zum Pflegen von Zielen, Fähigkeiten und Voraussetzungen.",
-            "date": "2025-11-10"
-          },
-          {
-            "hash": "509ffbf",
-            "emoji": "✨",
-            "message": "Adds segmented control to learning place",
-            "date": "2025-11-06"
-          },
-          {
-            "hash": "c2e9660",
-            "emoji": "✨",
-            "message": "Lernziele innerhalb eines Lernortes können nun ausführlich mit Stilen gepflegt werden",
-            "date": "2025-11-06"
-          },
-          {
-            "hash": "27e64c7",
-            "emoji": "✨",
-            "message": "Bei der Pflege von Tags in Lernorten werden bereits vorhandene Tags ab nun zur Direktauswahl vorgeschlagen.",
-            "date": "2025-11-06"
-          },
-          {
-            "hash": "2e72b94",
-            "emoji": "✨",
-            "message": "Noten besitzen nun einen eigenen Menüpunkt und sind aus der Benutzerdetailansicht enfernt",
-            "date": "2025-11-06"
-          },
-          {
-            "hash": "25895b5",
-            "emoji": "✨",
-            "message": "Das Zuweisen von Fächern zu einzelnen Azubi-Gruppen is nun möglich, um das Melden von Noten für Fächer zu aktivieren.",
-            "date": "2025-11-06"
-          },
-          {
-            "hash": "8a80672",
-            "emoji": "✨",
-            "message": "Das Wechseln zwischen Detail und Übersicht in der Azubi-Ablaufplanung stellt nun Zustände und Scrollposition wieder her - für reibungsloseren Wechsel",
-            "date": "2025-11-05"
-          },
-          {
-            "hash": "d18620d",
-            "emoji": "✨",
-            "message": "Einführung einer neuen Datumseingabe für das Azubi-Planungstool (Texteingabe)",
-            "date": "2025-11-05"
-          },
-          {
-            "hash": "9f322ad",
-            "emoji": "✨",
-            "message": "Bei der Anlage von Nutzern wurde das Einstellungs- und Geburtsdatum getauscht. Das Geburtsdatum ist zudem kein Pflichtfeld mehr.",
-            "date": "2025-11-05"
-          },
-          {
-            "hash": "3ea9c98",
-            "emoji": "✨",
-            "message": "Die Menüpunkte Chat und Mein-Profil sind nun für den Administrator wieder zugänglich",
-            "date": "2025-11-05"
-          },
-          {
-            "hash": "af9ccda",
-            "emoji": "✨",
-            "message": "Das Bearbeiten des eigenen Profils ist nun für alle Nutzergruppen im Dashboard möglich",
-            "date": "2025-11-04"
-          },
-          {
-            "hash": "f986b04",
-            "emoji": "✨",
-            "message": "Das Zurücksetzen von Administratoren-Passwörtern ist nun möglich.",
-            "date": "2025-11-04"
-          },
-          {
-            "hash": "b7b76b6",
-            "emoji": "✨",
-            "message": "Removes single planing page on apprentices",
-            "date": "2025-10-29"
-          },
-          {
-            "hash": "795665f",
-            "emoji": "✨",
-            "message": "Adds filtering by tags for learning place planning",
-            "date": "2025-10-29"
-          },
-          {
-            "hash": "29ece65",
-            "emoji": "✨",
-            "message": "Add support for \"already visited learning places\" in planning overview",
-            "date": "2025-10-29"
-          },
-          {
-            "hash": "2e5b0eb",
-            "emoji": "✨",
-            "message": "Planning view is more compact now",
-            "date": "2025-10-29"
-          },
-          {
-            "hash": "2e97736",
-            "emoji": "✨",
-            "message": "History overlay respects weekend settings from now on",
-            "date": "2025-10-29"
-          },
-          {
-            "hash": "25a4341",
-            "emoji": "✨",
-            "message": "Adds weekend filtering option to planning overview",
-            "date": "2025-10-29"
-          },
-          {
-            "hash": "dec35f2",
-            "emoji": "✨",
-            "message": "Adds new settings header for planning overview",
-            "date": "2025-10-29"
-          },
-          {
-            "hash": "afb9bd8",
-            "emoji": "✨",
-            "message": "Adds planning overview table (yearly)",
-            "date": "2025-10-27"
-          },
-          {
-            "hash": "bd27bce",
-            "emoji": "✨",
-            "message": "Introduced a full screen layout",
-            "date": "2025-10-23"
-          },
-          {
-            "hash": "5549224",
-            "emoji": "✨",
-            "message": "Adds cell merging in planing overview for consecutive entries",
-            "date": "2025-10-23"
-          },
-          {
-            "hash": "cd983c7",
-            "emoji": "✨",
-            "message": "First stage of planning overview in apprentice module",
-            "date": "2025-10-22"
-          },
-          {
-            "hash": "286b856",
-            "emoji": "✨",
-            "message": "Adds admin panel to all modules",
-            "date": "2025-10-20"
-          },
-          {
-            "hash": "3ee04b5",
-            "emoji": "✨",
-            "message": "Adds support for pdf selection and configuration in articles",
-            "date": "2025-10-14"
-          },
-          {
-            "hash": "688dc34",
-            "emoji": "✨",
-            "message": "Finishes functionality to add images to the article flow",
-            "date": "2025-10-13"
-          }
-        ],
-        "deployment": [
-          {
-            "hash": "2d23da1",
-            "emoji": "🚀",
-            "message": "Fixes azure size limitation issue on CI/CD",
-            "date": "2025-10-27"
-          },
-          {
-            "hash": "f28b28f",
-            "emoji": "🚀",
-            "message": "Addresses Azure out of memory issue",
-            "date": "2025-10-27"
           }
         ],
         "fixes": [
@@ -1373,24 +1534,6 @@
             "emoji": "🐛",
             "message": "Behebt verlorene Texte in neuem Artikel-Editor. Neue Interpretationen für Zitate und Sektionen wieder eingeführt.",
             "date": "2025-11-14"
-          },
-          {
-            "hash": "20eefde",
-            "emoji": "🐛",
-            "message": "Fixes multi highlighting in sidebar",
-            "date": "2025-10-27"
-          },
-          {
-            "hash": "8ce52f3",
-            "emoji": "🐛",
-            "message": "Removes TS errors",
-            "date": "2025-10-14"
-          },
-          {
-            "hash": "1741ad9",
-            "emoji": "🐛",
-            "message": "Fixes scroll bug in article detail",
-            "date": "2025-10-14"
           }
         ],
         "refactors": [
@@ -1405,48 +1548,6 @@
             "emoji": "♻️",
             "message": "Das System wurde für das neue Rechtesystem umgebaut",
             "date": "2025-11-18"
-          },
-          {
-            "hash": "5e62142",
-            "emoji": "♻️",
-            "message": "Removes TS errors",
-            "date": "2025-11-10"
-          },
-          {
-            "hash": "1e6b49f",
-            "emoji": "♻️",
-            "message": "Optimierung der Lernortübersicht",
-            "date": "2025-11-10"
-          },
-          {
-            "hash": "e1ee4e9",
-            "emoji": "♻️",
-            "message": "Erklärung zu Schulfächern eingebunden",
-            "date": "2025-11-06"
-          },
-          {
-            "hash": "83cf0f5",
-            "emoji": "♻️",
-            "message": "Optimizes edit dialog for apprentice schedules",
-            "date": "2025-10-29"
-          },
-          {
-            "hash": "b964ae7",
-            "emoji": "♻️",
-            "message": "Moves mentor editing to new user profile structs and endpoints",
-            "date": "2025-10-27"
-          },
-          {
-            "hash": "d819e5f",
-            "emoji": "♻️",
-            "message": "Apprentice planning overview polishing",
-            "date": "2025-10-23"
-          },
-          {
-            "hash": "4ea3640",
-            "emoji": "♻️",
-            "message": "Second version of planner",
-            "date": "2025-10-22"
           }
         ],
         "styles": [
@@ -1467,24 +1568,6 @@
             "emoji": "💄",
             "message": "Die Scrollfunktion wurde optisch verbessert - weniger Zucken",
             "date": "2025-11-14"
-          },
-          {
-            "hash": "4e52aa5",
-            "emoji": "💄",
-            "message": "Polishes header input of apprentice planning",
-            "date": "2025-11-13"
-          },
-          {
-            "hash": "c0bff01",
-            "emoji": "💄",
-            "message": "Überarbeitung der Lernorte-Übersicht. Anpassung an die restlichen Tabellen und Optimierung der Darstellung für bessere Lesbarkeit.",
-            "date": "2025-11-06"
-          },
-          {
-            "hash": "7d0869a",
-            "emoji": "💄",
-            "message": "Polishes delete button in planning edit",
-            "date": "2025-10-29"
           }
         ],
         "tests": [
