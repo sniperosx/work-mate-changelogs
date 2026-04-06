@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-03-26T06:19:10.956Z",
+  "generatedAt": "2026-04-06T06:04:39.693Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,114 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "ab85a86",
+            "emoji": "✨",
+            "message": "Berichtsheft Weekly-Modus: Wochenbalken, Statistik und Zukunftssperre",
+            "date": "2026-04-02"
+          },
+          {
+            "hash": "202de7a",
+            "emoji": "✨",
+            "message": "Aufräumen der Widgetsansicht zw. Azubi und Mitarbeiter",
+            "date": "2026-04-01"
+          },
+          {
+            "hash": "8c957ee",
+            "emoji": "✨",
+            "message": "Noten-Widget auf dem Homescreen + generalisiertes Noten-Chart",
+            "date": "2026-04-01"
+          },
+          {
+            "hash": "6792881",
+            "emoji": "✨",
+            "message": "Push Deeplinking bei Berichtsheft-Nachrichten",
+            "date": "2026-03-31"
+          },
+          {
+            "hash": "d2618f6",
+            "emoji": "✨",
+            "message": "Berichtsheft-Widget auf dem Homescreen + Endpoint-Sicherheit",
+            "date": "2026-03-31"
+          },
+          {
+            "hash": "4a04519",
+            "emoji": "✨",
+            "message": "Das Einsehen und Erstellen von Azubi-Berichten ist nun über die App möglich",
+            "date": "2026-03-30"
+          },
+          {
+            "hash": "3d27ecf",
+            "emoji": "✨",
+            "message": "Interview-Screen-Titel zu \"Wissen teilen\" umbenannt",
+            "date": "2026-03-21"
+          },
+          {
+            "hash": "048a812",
+            "emoji": "✨",
+            "message": "InterviewSession: UI-Verbesserungen — Modal, Progress-Bar, Pause-Button",
+            "date": "2026-03-21"
+          },
+          {
+            "hash": "5c1ef1a",
+            "emoji": "✨",
+            "message": "InterviewComplete: visuelles Redesign + DEV-Skip-Button",
+            "date": "2026-03-21"
+          },
+          {
+            "hash": "1253f0e",
+            "emoji": "✨",
+            "message": "Interview-Screens in Navigation registriert, Placeholder ersetzt",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "91889de",
+            "emoji": "✨",
+            "message": "InterviewCompleteScreen mit Konfetti und Statistik",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "46e88bb",
+            "emoji": "✨",
+            "message": "InterviewSessionScreen Wizard mit question/recording/analyzing Phasen",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "123715a",
+            "emoji": "✨",
+            "message": "InterviewIntroScreen mit Intro-Infos und Start-Button",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "1dc30b5",
+            "emoji": "✨",
+            "message": "InterviewsListScreen mit sortierter Kartenliste",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "e6be57c",
+            "emoji": "✨",
+            "message": "InterviewRecorder Atom mit Amplitude-Puls und Berechtigungen",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "a457c7c",
+            "emoji": "✨",
+            "message": "InterviewStepDots Atom für Fortschrittsanzeige",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "3b85b80",
+            "emoji": "✨",
+            "message": "InterviewCard Atom mit Status-Badge und Fortschritt",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "a76520b",
+            "emoji": "✨",
+            "message": "Interview API hooks: queries und mutations für Interview-Feature",
+            "date": "2026-03-20"
+          },
           {
             "hash": "d363282",
             "emoji": "✨",
@@ -186,6 +294,18 @@
         ],
         "deployment": [
           {
+            "hash": "763dd57",
+            "emoji": "🚀",
+            "message": "Version 1.9.0 nativ",
+            "date": "2026-04-02"
+          },
+          {
+            "hash": "dc3fa9b",
+            "emoji": "🚀",
+            "message": "Version bumps",
+            "date": "2026-04-02"
+          },
+          {
             "hash": "0898b9e",
             "emoji": "🚀",
             "message": "Upgrade of dependencies",
@@ -223,6 +343,54 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "9d747c6",
+            "emoji": "🐛",
+            "message": "TypeScript-Fehler behoben: EventBus-Event und Berichtsheft-Payload",
+            "date": "2026-04-02"
+          },
+          {
+            "hash": "d112bf2",
+            "emoji": "🐛",
+            "message": "Berichtsheft-Widget: Donut skaliert dynamisch auf kleinen Screens",
+            "date": "2026-04-01"
+          },
+          {
+            "hash": "5a17e04",
+            "emoji": "🐛",
+            "message": "Fixes crash bei Telefonaten oder fehlenden Recordern",
+            "date": "2026-03-23"
+          },
+          {
+            "hash": "02db833",
+            "emoji": "🐛",
+            "message": "InterviewRecorder: iOS Aufnahmepfad fix — Library nutzt documentDirectory",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "2fc2c25",
+            "emoji": "🐛",
+            "message": "InterviewRecorder: try/catch für async Recording-Funktionen",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "8b04ef8",
+            "emoji": "🐛",
+            "message": "Doppeltes /api/ Prefix in Interview-API-Hooks entfernt",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "1e6c68c",
+            "emoji": "🐛",
+            "message": "Metro-Config: .lottie als Asset-Extension registriert",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "6ca8ead",
+            "emoji": "🐛",
+            "message": "Code-Review Fixes: Error-State, dynamischer Titel, Navigation-Stack-Reset",
+            "date": "2026-03-20"
+          },
           {
             "hash": "efb0836",
             "emoji": "🐛",
@@ -279,6 +447,18 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "cba9faf",
+            "emoji": "♻️",
+            "message": "Newsfeed Lesestatus werden nun wieder sauber aktualisiert durch das Lesen",
+            "date": "2026-04-01"
+          },
+          {
+            "hash": "ec90b2f",
+            "emoji": "♻️",
+            "message": "Neuer Menüpunkt \"Interviews\" steht nun zur Verfügung",
+            "date": "2026-03-20"
+          },
           {
             "hash": "653cc80",
             "emoji": "♻️",
@@ -384,6 +564,12 @@
         ],
         "styles": [
           {
+            "hash": "189436e",
+            "emoji": "💄",
+            "message": "Berichtsheft-Kalender mit Status-Icons, Farbschema und Legende überarbeitet",
+            "date": "2026-03-31"
+          },
+          {
             "hash": "582ef50",
             "emoji": "💄",
             "message": "Polishing der neuen Widgets",
@@ -400,6 +586,38 @@
             "emoji": "💄",
             "message": "Optimierung der Newsfeeddarstellung",
             "date": "2026-01-16"
+          }
+        ],
+        "docs": [
+          {
+            "hash": "e8195ca",
+            "emoji": "📝",
+            "message": "Design-Spec für Berichtsheft Home Widget",
+            "date": "2026-03-31"
+          },
+          {
+            "hash": "db92fee",
+            "emoji": "📝",
+            "message": "Implementierungsplan: AudioRecorderModule (nitro-sound Ablösung)",
+            "date": "2026-03-24"
+          },
+          {
+            "hash": "93ff04a",
+            "emoji": "📝",
+            "message": "Design-Spec: Custom AudioRecorderModule als nitro-sound Ersatz",
+            "date": "2026-03-24"
+          },
+          {
+            "hash": "8fa3fad",
+            "emoji": "📝",
+            "message": "Spec-Review-Feedback eingearbeitet: API-Felder, Resume-Flow, Permissions, Race-Condition",
+            "date": "2026-03-20"
+          },
+          {
+            "hash": "75fe4e0",
+            "emoji": "📝",
+            "message": "Design-Spec für Interview App UI",
+            "date": "2026-03-20"
           }
         ],
         "security": [
@@ -789,48 +1007,6 @@
             "emoji": "✨",
             "message": "Adds Owly welcome screen",
             "date": "2025-08-28"
-          },
-          {
-            "hash": "2508abe",
-            "emoji": "✨",
-            "message": "Adds image and comment support in grade entry commit",
-            "date": "2025-08-15"
-          },
-          {
-            "hash": "66beece",
-            "emoji": "✨",
-            "message": "Adds apprentice grade overview screen with average chart",
-            "date": "2025-08-15"
-          },
-          {
-            "hash": "adeca05",
-            "emoji": "✨",
-            "message": "Finishes grade input with api connection",
-            "date": "2025-08-14"
-          },
-          {
-            "hash": "11cc688",
-            "emoji": "✨",
-            "message": "Adds third screen to input grade values and add comments",
-            "date": "2025-08-12"
-          },
-          {
-            "hash": "e2f22cf",
-            "emoji": "✨",
-            "message": "Adds subject selection and display optimization in grade subject selection screen",
-            "date": "2025-08-11"
-          },
-          {
-            "hash": "c44b35a",
-            "emoji": "✨",
-            "message": "Adds screen for grade subject selection including all available subject icons",
-            "date": "2025-08-11"
-          },
-          {
-            "hash": "9ae0655",
-            "emoji": "✨",
-            "message": "Adds first screen and step for managing school grades in apprentice asisstant",
-            "date": "2025-08-09"
           }
         ],
         "deployment": [
@@ -905,18 +1081,6 @@
             "emoji": "🚀",
             "message": "Bumps to version 1.6",
             "date": "2025-09-08"
-          },
-          {
-            "hash": "9e0495e",
-            "emoji": "🚀",
-            "message": "Bumps version to 1.5.0",
-            "date": "2025-08-14"
-          },
-          {
-            "hash": "390b999",
-            "emoji": "🚀",
-            "message": "Deploys study.mate android 1.4.1",
-            "date": "2025-08-06"
           }
         ],
         "fixes": [
@@ -1173,12 +1337,6 @@
             "emoji": "♻️",
             "message": "Tweaking tsconfig",
             "date": "2025-09-01"
-          },
-          {
-            "hash": "e4a1b0b",
-            "emoji": "♻️",
-            "message": "Adds switch from user phase to user role",
-            "date": "2025-08-27"
           }
         ],
         "styles": [
@@ -1217,12 +1375,6 @@
             "emoji": "💄",
             "message": "Polishing of owly chat",
             "date": "2025-09-02"
-          },
-          {
-            "hash": "220664b",
-            "emoji": "💄",
-            "message": "UI polishing in grade list screen",
-            "date": "2025-08-15"
           }
         ],
         "docs": [
