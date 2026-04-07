@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-04-06T06:41:28.170Z",
+  "generatedAt": "2026-04-07T12:30:46.535Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "b7c0c26",
+            "emoji": "✨",
+            "message": "Sidebar-Menüpunkte Chat und Artikel per CustomerFeature dynamisiert",
+            "date": "2026-04-07"
+          },
+          {
+            "hash": "86f5159",
+            "emoji": "✨",
+            "message": "Einzelne Features können nun pro Kunden konfiguriert werden",
+            "date": "2026-04-07"
+          },
           {
             "hash": "4787af2",
             "emoji": "✨",
@@ -694,6 +706,17 @@
         ],
         "fixes": [
           {
+            "hash": "db1ac69",
+            "emoji": "🐛",
+            "message": "Query-Parameter bleiben bei setSearchParams erhalten",
+            "date": "2026-04-07",
+            "description": [
+              "setSearchParams({ key: value }) ersetzt alle Query-Parameter.",
+              "Nutzt nun new URLSearchParams(searchParams) um bestehende",
+              "Parameter (tab, role) beim Wechsel zu erhalten."
+            ]
+          },
+          {
             "hash": "d9d8f54",
             "emoji": "🐛",
             "message": "Fix Rules-of-Hooks Verletzung in KnowledgeRawDataTab",
@@ -805,6 +828,24 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "a475ed2",
+            "emoji": "♻️",
+            "message": "Einstellungen und work.mate AI in den Funktionen-Tab verschoben",
+            "date": "2026-04-07",
+            "description": [
+              "- Einstellungen-Sektion (Chat-Privatsphäre, Newsfeed, Kommentare, Berichtsheft) aus Stammdaten in Funktionen-Tab migriert",
+              "- Reflexionsfragen und work.mate AI als Pseudo-Features im Feature-Grid",
+              "- Funktionen alphabetisch sortiert mit Icons",
+              "- Zusatzmodule-Sektion aus Stammdaten entfernt"
+            ]
+          },
+          {
+            "hash": "66dcf53",
+            "emoji": "♻️",
+            "message": "Führungskräfte können nun direkt bei Erstellung eines neuen Mitarbeiters angegeben werden",
+            "date": "2026-04-07"
+          },
           {
             "hash": "ef3b96b",
             "emoji": "♻️",
@@ -1484,18 +1525,6 @@
             "emoji": "✨",
             "message": "Die Chat-Funktion für Administratoren wurde grundlegend optisch überarbeitet, für besseres Scrolling und erhöhte Übersichtlichkeit.",
             "date": "2025-11-14"
-          },
-          {
-            "hash": "f9c47ce",
-            "emoji": "✨",
-            "message": "Sticky Tabellenköpfe eingeführt. Das Jahr und der aktuelle Monat sind nun jederzeit sichtbar und scrollen nicht mehr aus dem sichtbaren Bereich.",
-            "date": "2025-11-14"
-          },
-          {
-            "hash": "ed97a5e",
-            "emoji": "✨",
-            "message": "Umstrukturierung der Lernort Übersicht",
-            "date": "2025-11-13"
           }
         ],
         "fixes": [
@@ -1528,12 +1557,6 @@
             "emoji": "🐛",
             "message": "Der original Dateiname wird nun als Fallback beim Anhängen von PDF-Dateien in Artikeln verwendet",
             "date": "2025-11-17"
-          },
-          {
-            "hash": "981a106",
-            "emoji": "🐛",
-            "message": "Behebt verlorene Texte in neuem Artikel-Editor. Neue Interpretationen für Zitate und Sektionen wieder eingeführt.",
-            "date": "2025-11-14"
           }
         ],
         "refactors": [
@@ -1555,18 +1578,6 @@
             "hash": "f722739",
             "emoji": "💄",
             "message": "Überarbeitung des Sendeverhaltens von Chatnachrichten",
-            "date": "2025-11-14"
-          },
-          {
-            "hash": "eb704d8",
-            "emoji": "💄",
-            "message": "Modernere Darstellung der Zellen in der Azubiplanung eingeführt",
-            "date": "2025-11-14"
-          },
-          {
-            "hash": "c8d9076",
-            "emoji": "💄",
-            "message": "Die Scrollfunktion wurde optisch verbessert - weniger Zucken",
             "date": "2025-11-14"
           }
         ],
