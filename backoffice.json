@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-04-07T12:30:46.535Z",
+  "generatedAt": "2026-04-27T06:31:27.446Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "32a08b2",
+            "emoji": "✨",
+            "message": "Dashboard für die Verwaltung von Vorschlägen",
+            "date": "2026-04-20"
+          },
           {
             "hash": "b7c0c26",
             "emoji": "✨",
@@ -686,6 +692,12 @@
         ],
         "deployment": [
           {
+            "hash": "04e060d",
+            "emoji": "🚀",
+            "message": "Blueprint-Auswahl Overlay bei der Neukunden-Anlage Beim Klick auf \"Neuer Kunde\" öffnet sich jetzt ein Overlay, in dem Inhaltsgruppen aus dem Template-Kunden ausgewählt werden können — gruppiert nach Phase mit Icons und \"Alle auswählen\"-Toggle 📋 Gewählte Blueprint-IDs werden beim Erstellen des Kunden an die API übergeben ⏭️ Der Schritt kann auch übersprungen werden",
+            "date": "2026-04-15"
+          },
+          {
             "hash": "a8e68f0",
             "emoji": "🚀",
             "message": "Updating CI/CD scripts for custom runner",
@@ -705,6 +717,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "f7e45a4",
+            "emoji": "🐛",
+            "message": "Fix: Default-Features werden jetzt beim Erstellen wirklich ins Model geschrieben Vorher wurden sie nur visuell angezeigt aber nicht mitgespeichert — neue Kunden hatten ein leeres ActiveFeatures-Array",
+            "date": "2026-04-15"
+          },
           {
             "hash": "db1ac69",
             "emoji": "🐛",
@@ -828,6 +846,24 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "f77a380",
+            "emoji": "♻️",
+            "message": "Updates API spec",
+            "date": "2026-04-16"
+          },
+          {
+            "hash": "0525be9",
+            "emoji": "♻️",
+            "message": "Changelogs auf markdown umgesteltl",
+            "date": "2026-04-13"
+          },
+          {
+            "hash": "efc3530",
+            "emoji": "♻️",
+            "message": "Kundenübersicht überarbeitet: horizontale Cards, Zuletzt-geöffnet-Sektion, relative Kundendauer",
+            "date": "2026-04-10"
+          },
           {
             "hash": "a475ed2",
             "emoji": "♻️",
@@ -1501,30 +1537,6 @@
             "emoji": "✨",
             "message": "Adds admin CRUD testing",
             "date": "2025-11-19"
-          },
-          {
-            "hash": "0fb1885",
-            "emoji": "✨",
-            "message": "Introduces playwright UI testing",
-            "date": "2025-11-19"
-          },
-          {
-            "hash": "792e9fc",
-            "emoji": "✨",
-            "message": "Administratoren sind ab sofort vollwertige Mitarbeiter und können als solche bearbeitet und eingesehen werden.",
-            "date": "2025-11-18"
-          },
-          {
-            "hash": "c94242e",
-            "emoji": "✨",
-            "message": "Chats werden nun in aktive und inaktive gruppiert",
-            "date": "2025-11-14"
-          },
-          {
-            "hash": "c1cf4b4",
-            "emoji": "✨",
-            "message": "Die Chat-Funktion für Administratoren wurde grundlegend optisch überarbeitet, für besseres Scrolling und erhöhte Übersichtlichkeit.",
-            "date": "2025-11-14"
           }
         ],
         "fixes": [
@@ -1551,34 +1563,6 @@
             "emoji": "🐛",
             "message": "Fixes endless loop on feedback page",
             "date": "2025-11-19"
-          },
-          {
-            "hash": "e4272b3",
-            "emoji": "🐛",
-            "message": "Der original Dateiname wird nun als Fallback beim Anhängen von PDF-Dateien in Artikeln verwendet",
-            "date": "2025-11-17"
-          }
-        ],
-        "refactors": [
-          {
-            "hash": "a82dc50",
-            "emoji": "♻️",
-            "message": "New login method is handled by login screen",
-            "date": "2025-11-19"
-          },
-          {
-            "hash": "22dd189",
-            "emoji": "♻️",
-            "message": "Das System wurde für das neue Rechtesystem umgebaut",
-            "date": "2025-11-18"
-          }
-        ],
-        "styles": [
-          {
-            "hash": "f722739",
-            "emoji": "💄",
-            "message": "Überarbeitung des Sendeverhaltens von Chatnachrichten",
-            "date": "2025-11-14"
           }
         ],
         "tests": [
