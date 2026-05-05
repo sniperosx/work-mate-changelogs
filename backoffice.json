@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-04-27T06:31:27.446Z",
+  "generatedAt": "2026-05-05T13:16:36.711Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,67 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "739af90",
+            "emoji": "✨",
+            "message": "Neue Einstellung: Empfänger der „Automatische Nutzerlöschung\"-Mails wählbar 📧 Unter „Einstellungen → Empfänger → Suite\" lässt sich jetzt gezielt festlegen, wer über bevorstehende automatische Löschungen informiert werden soll — typischerweise nur die HR-Abteilung 🐛 Empfänger-Auswahlfelder zeigten kurz „Gelöschter Nutzer\" beim Öffnen, bis die Namen geladen waren ✨ Beim Öffnen der Empfänger-Listen werden jetzt erst die echten Namen angezeigt, sobald sie geladen sind — kein Flackern mehr",
+            "date": "2026-05-05"
+          },
+          {
+            "hash": "ea6d81f",
+            "emoji": "✨",
+            "message": "Artikelübersicht: Kategorien alphabetisch, \"Highlights\" oben",
+            "date": "2026-05-04",
+            "description": [
+              "Die Kategorien-Sektionen in der Artikelübersicht waren in der Reihenfolge sortiert, in der die Artikel reinkamen — die \"Highlights\"-Kategorie landete dadurch oft erst weit unten auf der Seite. Ab jetzt werden Kategorien alphabetisch sortiert (deutsche Locale für Umlaute), und \"Highlights\" wird immer als erste Sektion gepinnt und mit Sparkles-Icon und sanftem Amber-Akzent hervorgehoben — konsistent zum bereits vorhandenen Style des \"Neue Artikel\"-Bereichs."
+            ]
+          },
+          {
+            "hash": "6cb9f97",
+            "emoji": "✨",
+            "message": "Superadmin-Menü neu sortiert und in Tab-Container gruppiert",
+            "date": "2026-05-04",
+            "description": [
+              "Das flache Superadmin-Menü mit 11 Einzel-Einträgen wird auf 5 Top-Level-Punkte verdichtet, drei davon sind Tab-Container im bestehenden ?tab=…-Pattern:",
+              "- Kunden → Alle Kunden / Statistiken / Transaktionen",
+              "- Changelog",
+              "- Konfiguration → Personalfragebogen / Reflexionsfragen / Übersetzungen",
+              "- Systemeinstellungen → Versionen / Administratoren",
+              "- Mein Profil",
+              "Außerdem: \"Nutzer-Analyse\" heißt jetzt \"Statistiken\", die alte Systemeinstellungen-Page ist zu \"Versionen\" umbenannt (Files, Routes), und der Bug-Report-Eintrag ist im Superadmin entfernt — Superadmins berichten nicht selbst.",
+              "Detail- und Edit-Routen bleiben vollständig erhalten, damit bestehende Save-Returns nicht brechen."
+            ]
+          },
+          {
+            "hash": "79d7c7c",
+            "emoji": "✨",
+            "message": "Inhaltsgruppen: Neuer \"Zuweisungen\"-Tab mit Mitarbeiter-Grid",
+            "date": "2026-04-30",
+            "description": [
+              "Im Detail einer Inhaltsgruppe gibt es jetzt einen Tab \"Zuweisungen\", der alle aktuell verknüpften Mitarbeiter (primär, Beförderung, Führung) als Grid auflistet. Die Zahl im Tab-Titel zeigt sofort, wie viele Personen betroffen sind — und ein Klick auf eine Karte springt direkt zum User, um die Zuordnung dort zu ändern. Damit lässt sich gezielt auflösen, was einer Löschung der Inhaltsgruppe im Wege steht."
+            ]
+          },
+          {
+            "hash": "6ee6d22",
+            "emoji": "✨",
+            "message": "Toggle für Mitarbeiterverzeichnis in der Kundenkonfiguration",
+            "date": "2026-04-30",
+            "description": [
+              "Neuer Eintrag im Funktionen-Tab unter Customer-Edit. Standardmäßig",
+              "deaktiviert (Datenschutz) — pro Mandant aktivierbar."
+            ]
+          },
+          {
+            "hash": "974bf7e",
+            "emoji": "✨",
+            "message": "Phasen-Segmented-Control und Entwürfe-Tab für Umfragen",
+            "date": "2026-04-29",
+            "description": [
+              "Umfragen werden in /feedback?tab=questionnaires jetzt nach den Modulen der zugewiesenen Gruppen (Blueprints) gefiltert — analog zu Blueprints und Artikeln. Index 0 ist ein \"Entwürfe\"-Tab und listet alle Umfragen ohne Gruppenzuweisung.",
+              "🆕 UserRoleSelectionBar um optionale nullEntry-Prop erweitert (Custom-Label/Icon/Farbe für den null-Slot), Color-Mapper um amber und gray ergänzt.",
+              "📝 Neue Umfragen werden mit linkedModules: [] als Entwurf angelegt; Save-Return navigiert zurück zu /feedback?tab=questionnaires und übernimmt ?role= aus der URL, sofern vorhanden."
+            ]
+          },
           {
             "hash": "32a08b2",
             "emoji": "✨",
@@ -1525,20 +1586,6 @@
       "tag": "v_0.3.3",
       "date": "2025-12-01",
       "changes": {
-        "features": [
-          {
-            "hash": "049a307",
-            "emoji": "✨",
-            "message": "Neuer Datumseingabe ist nun in der Benutzerverwaltung verfügbar",
-            "date": "2025-11-20"
-          },
-          {
-            "hash": "648a7e3",
-            "emoji": "✨",
-            "message": "Adds admin CRUD testing",
-            "date": "2025-11-19"
-          }
-        ],
         "fixes": [
           {
             "hash": "c5fea61",
@@ -1557,12 +1604,6 @@
             "emoji": "🐛",
             "message": "Das Aktualisieren des eigenen Profilbildes ist über das Backoffice nun funktionsfähig",
             "date": "2025-11-24"
-          },
-          {
-            "hash": "56501a7",
-            "emoji": "🐛",
-            "message": "Fixes endless loop on feedback page",
-            "date": "2025-11-19"
           }
         ],
         "tests": [
@@ -1625,30 +1666,6 @@
             "emoji": "🧪",
             "message": "Test fixes",
             "date": "2025-11-24"
-          },
-          {
-            "hash": "c8754de",
-            "emoji": "🧪",
-            "message": "Adds feedback tests",
-            "date": "2025-11-21"
-          },
-          {
-            "hash": "4ec47c2",
-            "emoji": "🧪",
-            "message": "Adds test converage for my profile",
-            "date": "2025-11-21"
-          },
-          {
-            "hash": "a7e3485",
-            "emoji": "🧪",
-            "message": "Adds testing for onboardee CRUD",
-            "date": "2025-11-21"
-          },
-          {
-            "hash": "681e505",
-            "emoji": "🧪",
-            "message": "Adds admin crud test coverage",
-            "date": "2025-11-20"
           }
         ]
       }
