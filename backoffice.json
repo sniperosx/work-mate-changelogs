@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-05T13:16:36.711Z",
+  "generatedAt": "2026-05-05T14:11:04.845Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,15 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "09030fa",
+            "emoji": "✨",
+            "message": "Changelog-Overlay rendert jetzt Markdown statt Plain-Text",
+            "date": "2026-05-05",
+            "description": [
+              "react-markdown mit remark-gfm und remark-breaks eingebunden, sodass das Was-gibt's-neues-Overlay echte Markdown-Formatierung zeigt: fette Stellen werden fett, Listen werden Listen, einfache Zeilenumbrüche bleiben als Umbruch erhalten (analog zu GitHub-Comments). Vorher landete der Inhalt komplett als Plain-Text mit sichtbaren ** und Newlines wurden zu Spaces."
+            ]
+          },
           {
             "hash": "739af90",
             "emoji": "✨",
@@ -1659,12 +1668,6 @@
             "hash": "032e1bd",
             "emoji": "🧪",
             "message": "Strips some screenshots during testing",
-            "date": "2025-11-24"
-          },
-          {
-            "hash": "6464da0",
-            "emoji": "🧪",
-            "message": "Test fixes",
             "date": "2025-11-24"
           }
         ]
