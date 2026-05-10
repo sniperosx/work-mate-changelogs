@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-05T14:11:04.845Z",
+  "generatedAt": "2026-05-10T06:45:46.037Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,40 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "6189235",
+            "emoji": "✨",
+            "message": "Editor: linkDialogPlugin aktiviert (Edit/Remove/Open) + article://-Sprung im neuen Tab",
+            "date": "2026-05-07"
+          },
+          {
+            "hash": "47b8aa2",
+            "emoji": "✨",
+            "message": "Editor: Klick auf article://-Link öffnet Edit-Dialog (Titel, Entfernen, Sprung)",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "003b97e",
+            "emoji": "✨",
+            "message": "Editor: article://-Links öffnen in neuem Tab (Bearbeitungs-State bleibt)",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "7489077",
+            "emoji": "✨",
+            "message": "Editor: Artikel-Verlinkung über neuen Toolbar-Button",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "efc6d52",
+            "emoji": "✨",
+            "message": "Superadmin-Kundensicht: schnellerer Zugriff auf Delegation",
+            "date": "2026-05-06",
+            "description": [
+              "Klick auf eine Kundenkarte schlüpft jetzt direkt in dessen Rolle — die häufigste Aktion bekommt die ganze Trefferfläche. Der bisherige „Delegieren\"-Button auf der Karte wurde zu „Einstellungen\" umfunktioniert und führt zur Kundenbearbeitung.",
+              "Außerdem ist „Delegation beenden\" nun direkt unter dem Avatar im Seitenmenü sichtbar (statt im Avatar-Popover versteckt) — funktioniert in eingeklapptem und ausgeklapptem Sidebar-Zustand."
+            ]
+          },
           {
             "hash": "09030fa",
             "emoji": "✨",
@@ -787,6 +821,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "ebc9465",
+            "emoji": "🐛",
+            "message": "Editor: Markdown-Escape im Titel + Dialog erst beim Öffnen mounten",
+            "date": "2026-05-06"
+          },
           {
             "hash": "f7e45a4",
             "emoji": "🐛",
@@ -1601,18 +1641,6 @@
             "emoji": "🐛",
             "message": "Das Löschen und Bearbeiten von Artikel-Kategorien ist nun auch bei besonders langen Namen noch möglich",
             "date": "2025-11-26"
-          },
-          {
-            "hash": "aee3914",
-            "emoji": "🐛",
-            "message": "Führungskräften können nun auch Gruppen zugewiesen werden, wenn keine Suite gebucht wurde",
-            "date": "2025-11-24"
-          },
-          {
-            "hash": "a2125e6",
-            "emoji": "🐛",
-            "message": "Das Aktualisieren des eigenen Profilbildes ist über das Backoffice nun funktionsfähig",
-            "date": "2025-11-24"
           }
         ],
         "tests": [
@@ -1645,30 +1673,6 @@
             "emoji": "🧪",
             "message": "Adds questionnaires test coverage",
             "date": "2025-11-25"
-          },
-          {
-            "hash": "07370e2",
-            "emoji": "🧪",
-            "message": "Testabdeckung für das Versenden, Planen und Löschen von Benachrichtigungen",
-            "date": "2025-11-25"
-          },
-          {
-            "hash": "bd668c9",
-            "emoji": "🧪",
-            "message": "First stage of push notification test",
-            "date": "2025-11-24"
-          },
-          {
-            "hash": "972c120",
-            "emoji": "🧪",
-            "message": "Testabdeckung für das Erstellen, Ummelden, Prüfen und Löschen einer Führungskraft eingeführt",
-            "date": "2025-11-24"
-          },
-          {
-            "hash": "032e1bd",
-            "emoji": "🧪",
-            "message": "Strips some screenshots during testing",
-            "date": "2025-11-24"
           }
         ]
       }
