@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-10T06:47:08.290Z",
+  "generatedAt": "2026-05-10T07:37:39.286Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -1667,12 +1667,6 @@
             "emoji": "🧪",
             "message": "Testabdeckung für Reflexionsfragen erstellt",
             "date": "2025-11-26"
-          },
-          {
-            "hash": "d5a5a60",
-            "emoji": "🧪",
-            "message": "Adds questionnaires test coverage",
-            "date": "2025-11-25"
           }
         ]
       }
