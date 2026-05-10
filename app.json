@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-04-06T06:04:39.693Z",
+  "generatedAt": "2026-05-10T06:45:24.029Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,78 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "a4d91c2",
+            "emoji": "✨",
+            "message": "MarkdownView: article://-Sprung dismissed Modal und öffnet neu",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "e053845",
+            "emoji": "✨",
+            "message": "MarkdownView: article://-Links navigieren intern zum ArticleDetail",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "1dc9e5d",
+            "emoji": "✨",
+            "message": "ArticleDetail: Param akzeptiert id (cache lookup) oder article (DTO)",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "1d06608",
+            "emoji": "✨",
+            "message": "Interview-Screens überarbeitet und Button-Varianten",
+            "date": "2026-05-05"
+          },
+          {
+            "hash": "b699e19",
+            "emoji": "✨",
+            "message": "Mitarbeiterverzeichnis: Vollständige Profile hervorgehoben",
+            "date": "2026-04-30"
+          },
+          {
+            "hash": "487ab00",
+            "emoji": "✨",
+            "message": "Mitarbeiterverzeichnis hinzugefügt",
+            "date": "2026-04-30"
+          },
+          {
+            "hash": "d3e450c",
+            "emoji": "✨",
+            "message": "Freitextsuche über alle Artikel im Knowledge-Bereich",
+            "date": "2026-04-29"
+          },
+          {
+            "hash": "da1ed83",
+            "emoji": "✨",
+            "message": "Vorschlagswesen beinhalten nun Standorte und Wahl der Anonymität",
+            "date": "2026-04-20"
+          },
+          {
+            "hash": "167c62a",
+            "emoji": "✨",
+            "message": "Push-Einstellungen in der App",
+            "date": "2026-04-16"
+          },
+          {
+            "hash": "53b6d6f",
+            "emoji": "✨",
+            "message": "Changelogs auf markdown umgestellt",
+            "date": "2026-04-13"
+          },
+          {
+            "hash": "dbc07a2",
+            "emoji": "✨",
+            "message": "Öffentliche Registrierung ist nun verfügbar mit Verifizierung über die Telefonnummer",
+            "date": "2026-04-13"
+          },
+          {
+            "hash": "da6f6e3",
+            "emoji": "✨",
+            "message": "Telefonnummer Validierung in der Registrierung eingeführt",
+            "date": "2026-04-11"
+          },
           {
             "hash": "ab85a86",
             "emoji": "✨",
@@ -294,6 +366,36 @@
         ],
         "deployment": [
           {
+            "hash": "79cfac9",
+            "emoji": "🚀",
+            "message": "Neue skills für das App-Release eingeführt",
+            "date": "2026-05-10"
+          },
+          {
+            "hash": "bc80aea",
+            "emoji": "🚀",
+            "message": "OTA Release v32",
+            "date": "2026-05-05"
+          },
+          {
+            "hash": "09796b2",
+            "emoji": "🚀",
+            "message": "Security check für Umgebungsvariablen im Release",
+            "date": "2026-04-27"
+          },
+          {
+            "hash": "38c8c16",
+            "emoji": "🚀",
+            "message": "Fixes 16KB issues on Android",
+            "date": "2026-04-27"
+          },
+          {
+            "hash": "760de67",
+            "emoji": "🚀",
+            "message": "Version bump to 1.9.1",
+            "date": "2026-04-20"
+          },
+          {
             "hash": "763dd57",
             "emoji": "🚀",
             "message": "Version 1.9.0 nativ",
@@ -343,6 +445,48 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "2df7c02",
+            "emoji": "🐛",
+            "message": "ArticleDetail: Loading-Pfad bei Cold-Cache, kein EmptyStateCard-Flash",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "0f59aa9",
+            "emoji": "🐛",
+            "message": "Artikelsuche: Lupe im Videos-Tab ausblenden",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "082a38c",
+            "emoji": "🐛",
+            "message": "Artikelsuche: Fokus-Bug behoben + Lupen-Toggle im Header",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "89fb59e",
+            "emoji": "🐛",
+            "message": "Berichtsheft Wochenmodus: Eintrag wird auf Montag normalisiert",
+            "date": "2026-05-05"
+          },
+          {
+            "hash": "6bfcd0f",
+            "emoji": "🐛",
+            "message": "Chat-Endlosschleife behoben: App spammte ununterbrochen den Server beim Öffnen eines Chats",
+            "date": "2026-04-17"
+          },
+          {
+            "hash": "f1c9fd4",
+            "emoji": "🐛",
+            "message": "Chat: Fehler beim Nachrichtensenden werden nicht mehr verschluckt",
+            "date": "2026-04-16"
+          },
+          {
+            "hash": "c768bee",
+            "emoji": "🐛",
+            "message": "Beheben eines Crashes während des Loguts",
+            "date": "2026-04-11"
+          },
           {
             "hash": "9d747c6",
             "emoji": "🐛",
@@ -447,6 +591,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "81f2ff2",
+            "emoji": "♻️",
+            "message": "Deeplinking unter Android hergestellt",
+            "date": "2026-04-11"
+          },
           {
             "hash": "cba9faf",
             "emoji": "♻️",
@@ -564,6 +714,48 @@
         ],
         "styles": [
           {
+            "hash": "2683848",
+            "emoji": "🎨",
+            "message": "MarkdownView: void-Operator entfernt (no-void lint)",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "50266f5",
+            "emoji": "🎨",
+            "message": "MarkdownView: NativeStackNavigationProp + Konstante in Modul-Scope",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "da79ac0",
+            "emoji": "💄",
+            "message": "Neuigkeiten-Widgets: Horizontaler Karousel mit neuem Design",
+            "date": "2026-04-15"
+          },
+          {
+            "hash": "554eb6e",
+            "emoji": "🎨",
+            "message": "Newsfeed-Widget nutzt die volle Breite wenn \"Neue Kollegen\" ausgeblendet ist",
+            "date": "2026-04-13"
+          },
+          {
+            "hash": "a84329f",
+            "emoji": "💄",
+            "message": "Push-Permission-Overlay: 14-Tage-Cooldown und zwei Textvarianten (Initial/Reminder)",
+            "date": "2026-04-13"
+          },
+          {
+            "hash": "b7b7610",
+            "emoji": "💄",
+            "message": "Anpassungen an study.mate (wording)",
+            "date": "2026-04-11"
+          },
+          {
+            "hash": "e7aa37e",
+            "emoji": "💄",
+            "message": "Redesign des public registration screens",
+            "date": "2026-04-11"
+          },
+          {
             "hash": "189436e",
             "emoji": "💄",
             "message": "Berichtsheft-Kalender mit Status-Icons, Farbschema und Legende überarbeitet",
@@ -589,6 +781,18 @@
           }
         ],
         "docs": [
+          {
+            "hash": "f70f1fc",
+            "emoji": "📝",
+            "message": "Plan: Artikel-zu-Artikel-Verlinkung",
+            "date": "2026-05-06"
+          },
+          {
+            "hash": "0a6aade",
+            "emoji": "📝",
+            "message": "Spec: Artikel-zu-Artikel-Verlinkung",
+            "date": "2026-05-06"
+          },
           {
             "hash": "e8195ca",
             "emoji": "📝",
@@ -626,6 +830,14 @@
             "emoji": "🔒",
             "message": "App sendet jetzt Agent-Property beim Login und zeigt bei fehlender Inhaltsgruppe eine verständliche Fehlermeldung",
             "date": "2026-03-18"
+          }
+        ],
+        "other": [
+          {
+            "hash": "c0a38cf",
+            "emoji": "🗑️",
+            "message": "Genderhinweis komplett entfernt",
+            "date": "2026-04-16"
           }
         ]
       }
@@ -905,108 +1117,6 @@
             "emoji": "✨",
             "message": "Adds sentry with auto DSYM file upload",
             "date": "2025-09-12"
-          },
-          {
-            "hash": "b63dc73",
-            "emoji": "✨",
-            "message": "Adds suggestion challenges list (with dummy message)",
-            "date": "2025-09-11"
-          },
-          {
-            "hash": "621c4e0",
-            "emoji": "✨",
-            "message": "Diverese changes in home screen",
-            "date": "2025-09-10"
-          },
-          {
-            "hash": "c11c489",
-            "emoji": "✨",
-            "message": "Optimizes keyboard handling in overlays",
-            "date": "2025-09-10"
-          },
-          {
-            "hash": "e398aee",
-            "emoji": "✨",
-            "message": "Adds better link display in markdown view",
-            "date": "2025-09-09"
-          },
-          {
-            "hash": "5b0b929",
-            "emoji": "✨",
-            "message": "Adds setting to disable next lessons in lesson detail",
-            "date": "2025-09-09"
-          },
-          {
-            "hash": "75b897b",
-            "emoji": "✨",
-            "message": "Adds auto play to videos",
-            "date": "2025-09-09"
-          },
-          {
-            "hash": "d99ab81",
-            "emoji": "✨",
-            "message": "Adds support for external links",
-            "date": "2025-09-09"
-          },
-          {
-            "hash": "18ea163",
-            "emoji": "✨",
-            "message": "Adds support to leave or delete chats and groups",
-            "date": "2025-09-05"
-          },
-          {
-            "hash": "b9d1f17",
-            "emoji": "✨",
-            "message": "Adds error screen in surveys",
-            "date": "2025-09-05"
-          },
-          {
-            "hash": "6ee254b",
-            "emoji": "✨",
-            "message": "Introduces new navigation handling without tabs",
-            "date": "2025-09-03"
-          },
-          {
-            "hash": "89b83ba",
-            "emoji": "✨",
-            "message": "Polishes app rating pop up with new images",
-            "date": "2025-09-02"
-          },
-          {
-            "hash": "caa35c2",
-            "emoji": "✨",
-            "message": "Polishing owly screen and put owly in root navigation",
-            "date": "2025-09-01"
-          },
-          {
-            "hash": "248d761",
-            "emoji": "✨",
-            "message": "Adds support for links in markdown elements",
-            "date": "2025-09-01"
-          },
-          {
-            "hash": "136ce36",
-            "emoji": "✨",
-            "message": "Polished animations on owly chat",
-            "date": "2025-08-29"
-          },
-          {
-            "hash": "ea93047",
-            "emoji": "✨",
-            "message": "Adds first running owly implementation",
-            "date": "2025-08-29"
-          },
-          {
-            "hash": "a8ec1ae",
-            "emoji": "✨",
-            "message": "Adds owly chat with dummy content messages",
-            "date": "2025-08-28"
-          },
-          {
-            "hash": "489c187",
-            "emoji": "✨",
-            "message": "Adds Owly welcome screen",
-            "date": "2025-08-28"
           }
         ],
         "deployment": [
@@ -1063,24 +1173,6 @@
             "emoji": "🚀",
             "message": "Adds play store fastlane support CI/CD",
             "date": "2025-09-15"
-          },
-          {
-            "hash": "9bfdabc",
-            "emoji": "🚀",
-            "message": "Golden Master 1.6.0",
-            "date": "2025-09-12"
-          },
-          {
-            "hash": "d38a1d8",
-            "emoji": "🚀",
-            "message": "Adds test flight fastlane CI/CD",
-            "date": "2025-09-10"
-          },
-          {
-            "hash": "1827b88",
-            "emoji": "🚀",
-            "message": "Bumps to version 1.6",
-            "date": "2025-09-08"
           }
         ],
         "fixes": [
@@ -1155,18 +1247,6 @@
             "emoji": "🐛",
             "message": "Fixes keyboard handling in overlay screens",
             "date": "2025-09-15"
-          },
-          {
-            "hash": "0ff35cf",
-            "emoji": "🐛",
-            "message": "Fixes new chat on group edit",
-            "date": "2025-09-05"
-          },
-          {
-            "hash": "e0f41c9",
-            "emoji": "🐛",
-            "message": "Fixes keyboard handling in chat screen",
-            "date": "2025-09-05"
           }
         ],
         "refactors": [
@@ -1301,42 +1381,6 @@
             "emoji": "♻️",
             "message": "WIP: New home item layout",
             "date": "2025-09-12"
-          },
-          {
-            "hash": "a0d273b",
-            "emoji": "♻️",
-            "message": "Fixes character counter to match API requirements on newsfeed post",
-            "date": "2025-09-11"
-          },
-          {
-            "hash": "e328111",
-            "emoji": "♻️",
-            "message": "Refactors markdown linebreaks in static texts",
-            "date": "2025-09-09"
-          },
-          {
-            "hash": "a17a61f",
-            "emoji": "♻️",
-            "message": "Enables badge support in main menu",
-            "date": "2025-09-09"
-          },
-          {
-            "hash": "355d372",
-            "emoji": "♻️",
-            "message": "Bugfixing after upgrade",
-            "date": "2025-09-05"
-          },
-          {
-            "hash": "6ca1f57",
-            "emoji": "♻️",
-            "message": "Remove Expo from native projects",
-            "date": "2025-09-04"
-          },
-          {
-            "hash": "940fc36",
-            "emoji": "♻️",
-            "message": "Tweaking tsconfig",
-            "date": "2025-09-01"
           }
         ],
         "styles": [
@@ -1357,24 +1401,6 @@
             "emoji": "💄",
             "message": "UI polishes the menu item display",
             "date": "2025-09-12"
-          },
-          {
-            "hash": "3bac281",
-            "emoji": "💄",
-            "message": "Polishing of the chat item",
-            "date": "2025-09-05"
-          },
-          {
-            "hash": "60de712",
-            "emoji": "💄",
-            "message": "Redesign of the home screen for all modules",
-            "date": "2025-09-02"
-          },
-          {
-            "hash": "2192cd5",
-            "emoji": "💄",
-            "message": "Polishing of owly chat",
-            "date": "2025-09-02"
           }
         ],
         "docs": [
@@ -1383,14 +1409,6 @@
             "emoji": "📝",
             "message": "Adds changelog",
             "date": "2025-10-17"
-          }
-        ],
-        "dependencies": [
-          {
-            "hash": "a6cfb22",
-            "emoji": "⬇️",
-            "message": "⬇️ Removes Expo dependencies from project",
-            "date": "2025-09-04"
           }
         ]
       }
