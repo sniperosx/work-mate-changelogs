@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-10T07:37:39.286Z",
+  "generatedAt": "2026-05-10T07:37:46.325Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -795,6 +795,12 @@
           }
         ],
         "deployment": [
+          {
+            "hash": "b105d60",
+            "emoji": "🚀",
+            "message": "Adds claude release skill",
+            "date": "2026-05-10"
+          },
           {
             "hash": "04e060d",
             "emoji": "🚀",
@@ -1660,12 +1666,6 @@
             "hash": "816c0b6",
             "emoji": "🧪",
             "message": "Testabdeckung für das Verwalten von Einarbeitungsgruppen",
-            "date": "2025-11-26"
-          },
-          {
-            "hash": "7b26456",
-            "emoji": "🧪",
-            "message": "Testabdeckung für Reflexionsfragen erstellt",
             "date": "2025-11-26"
           }
         ]
