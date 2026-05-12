@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-10T07:37:46.325Z",
+  "generatedAt": "2026-05-12T18:47:55.021Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -828,6 +828,22 @@
         ],
         "fixes": [
           {
+            "hash": "f7671c5",
+            "emoji": "🐛",
+            "message": "Inhaltsgruppe: Race Condition beim \"Öffentliche Registrierung\"-Switch behoben",
+            "date": "2026-05-12",
+            "description": [
+              "Der Switch in BlueprintRegistrationInviteForm hatte einen lokalen State, der nie",
+              "in den Parent-State zurückgespielt wurde. Beim schnellen Klick auf \"Speichern\"",
+              "sendete der zentrale Submit den alten Wert mit und überschrieb die Switch-Mutation.",
+              "- useBlueprintMutation invalidiert nun ['blueprints', id] und den QR-Code-Cache",
+              "- BlueprintRegistrationInviteForm propagiert Toggle-Änderungen via onChange an",
+              "den Parent und syncht den lokalen State mit blueprint.isOpenForSelfRegistration",
+              "- CrudStateProvider akzeptiert isSubmitDisabled, BlueprintEditPage sperrt den",
+              "Submit via useIsMutating, solange eine konkurrierende Blueprint-Mutation läuft"
+            ]
+          },
+          {
             "hash": "ebc9465",
             "emoji": "🐛",
             "message": "Editor: Markdown-Escape im Titel + Dialog erst beim Öffnen mounten",
@@ -1641,14 +1657,6 @@
       "tag": "v_0.3.3",
       "date": "2025-12-01",
       "changes": {
-        "fixes": [
-          {
-            "hash": "c5fea61",
-            "emoji": "🐛",
-            "message": "Das Löschen und Bearbeiten von Artikel-Kategorien ist nun auch bei besonders langen Namen noch möglich",
-            "date": "2025-11-26"
-          }
-        ],
         "tests": [
           {
             "hash": "fd47df0",
@@ -1660,12 +1668,6 @@
             "hash": "bf0bfe1",
             "emoji": "🧪",
             "message": "Testabdeckung Artikel",
-            "date": "2025-11-26"
-          },
-          {
-            "hash": "816c0b6",
-            "emoji": "🧪",
-            "message": "Testabdeckung für das Verwalten von Einarbeitungsgruppen",
             "date": "2025-11-26"
           }
         ]
