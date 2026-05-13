@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-13T07:32:14.267Z",
+  "generatedAt": "2026-05-13T11:30:21.115Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "0fc7a9e",
+            "emoji": "✨",
+            "message": "Inhaltsgruppen: Verschieben in andere Rolle möglich",
+            "date": "2026-05-13",
+            "description": [
+              "🎯 Neuer Aktionen-Button auf jeder Inhaltsgruppen-Karte (Drei-Punkte-Menü) mit den Einträgen „Duplizieren\" und „Verschieben\"",
+              "🔀 Inhaltsgruppen lassen sich jetzt in eine andere Rolle (Onboarding, Azubi, Mitarbeiter, …) verschieben, solange keine Mitarbeiter zugewiesen sind",
+              "🛡️ Bei zugewiesenen Gruppen ist der Menüpunkt deaktiviert und zeigt den Grund an",
+              "🧹 Beim Wechsel aus „Azubi\" werden ausbildungsspezifische Einstellungen automatisch entfernt"
+            ]
+          },
           {
             "hash": "6189235",
             "emoji": "✨",
@@ -1606,12 +1618,6 @@
             "emoji": "✨",
             "message": "work.mate Mitarbeiter können nun pro Kunde einstellen, ob dieser work.mate-AI gebucht hat, oder nicht.",
             "date": "2025-12-10"
-          },
-          {
-            "hash": "107c45e",
-            "emoji": "✨",
-            "message": "Administratoren können pro Kunden nun festlegen, ob sich der Chat privat oder öffentlich verhalten soll.",
-            "date": "2025-12-03"
           }
         ],
         "fixes": [
