@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-12T18:47:55.021Z",
+  "generatedAt": "2026-05-13T07:32:14.267Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -828,6 +828,24 @@
         ],
         "fixes": [
           {
+            "hash": "d8f80a3",
+            "emoji": "🐛",
+            "message": "Mitarbeiter-Formular: Führungskraft-Gruppenzuweisung in Non-Suite-Paketen korrigiert",
+            "date": "2026-05-13",
+            "description": [
+              "Bei Kunden ohne Suite (z.B. nur Einarbeitungsassistent) konnte einer Führungskraft keine",
+              "Führungsgruppe zugewiesen werden — Label und Auswahl waren auf Einarbeitungsgruppen",
+              "beschränkt und die Erklärung passte nicht zur Rolle.",
+              "- EmployeeForm lädt für Executives in Non-Suite zusätzlich Management-Blueprints und",
+              "rendert sie gruppiert (Führungsgruppen, Trenner, Einarbeitungsgruppen)",
+              "- Label und Caption für Führungskräfte werden in Non-Suite zu \"Inhaltsgruppe\" mit",
+              "passendem Hinweis-Text angepasst",
+              "- Alert-Box weist darauf hin, wenn einer Führungskraft eine Einarbeitungsgruppe",
+              "zugewiesen wurde — nur zur inhaltlichen Prüfung, nicht für den Betrieb",
+              "- SelectInputGroup akzeptiert optionales isDisabled pro Item (für den Trenner-Eintrag)"
+            ]
+          },
+          {
             "hash": "f7671c5",
             "emoji": "🐛",
             "message": "Inhaltsgruppe: Race Condition beim \"Öffentliche Registrierung\"-Switch behoben",
@@ -1648,27 +1666,6 @@
             "emoji": "💄",
             "message": "Die Auswertung von Einarbeitung-Feedbacks wurde deutlich verbessert und ist nun übersichtlicher und schlüssiger.",
             "date": "2026-01-07"
-          }
-        ]
-      }
-    },
-    {
-      "version": "0.3.3",
-      "tag": "v_0.3.3",
-      "date": "2025-12-01",
-      "changes": {
-        "tests": [
-          {
-            "hash": "fd47df0",
-            "emoji": "🧪",
-            "message": "Testabdeckung für Videokurse",
-            "date": "2025-12-01"
-          },
-          {
-            "hash": "bf0bfe1",
-            "emoji": "🧪",
-            "message": "Testabdeckung Artikel",
-            "date": "2025-11-26"
           }
         ]
       }
