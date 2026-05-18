@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-13T11:30:21.115Z",
+  "generatedAt": "2026-05-18T06:32:15.994Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -840,6 +840,18 @@
         ],
         "fixes": [
           {
+            "hash": "3e02fa9",
+            "emoji": "🐛",
+            "message": "Artikel-Zeitsteuerung: „Tage vor dem ersten Arbeitstag\" beim Aktivieren fixen",
+            "date": "2026-05-18",
+            "description": [
+              "Beim initialen Aktivieren der Zeitsteuerung erzeugte die Auswahl von",
+              "„Tage vor\" mit days=0 ein -0, das in getTimingSelection wegen",
+              "`-0 < 0 === false` als „Tage nach\" interpretiert wurde. Wechsel auf",
+              "relative setzt jetzt mindestens 1 Tag als Default."
+            ]
+          },
+          {
             "hash": "d8f80a3",
             "emoji": "🐛",
             "message": "Mitarbeiter-Formular: Führungskraft-Gruppenzuweisung in Non-Suite-Paketen korrigiert",
@@ -1612,12 +1624,6 @@
             "emoji": "✨",
             "message": "Als Superadmin kann nun die MandantID für work.mate AI gepflegt werden",
             "date": "2025-12-12"
-          },
-          {
-            "hash": "6f009c7",
-            "emoji": "✨",
-            "message": "work.mate Mitarbeiter können nun pro Kunde einstellen, ob dieser work.mate-AI gebucht hat, oder nicht.",
-            "date": "2025-12-10"
           }
         ],
         "fixes": [
