@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-18T06:32:15.994Z",
+  "generatedAt": "2026-05-22T10:44:11.429Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,196 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "c7ef503",
+            "emoji": "✨",
+            "message": "Mitarbeiter anlegen: Initial-Phase wie Phasenwechsel auswählen",
+            "date": "2026-05-22",
+            "description": [
+              "Der alte InitialBlueprintPicker zeigte nur die Inhaltsgruppe für eine",
+              "implizit gesetzte Lifecycle-Rolle. Stattdessen kann der Admin jetzt im",
+              "neuen InitialPhasePicker aus allen sechs Targets (Onboardee, Azubi,",
+              "Mitarbeiter, Elternzeit, Führung, Austritt) wählen — modul-aware, mit",
+              "denselben Pflicht-Slots wie PhaseChangeForm (Zusatzgruppe, Austritts-",
+              "datum). Permission-Rollen bleiben beim Target-Wechsel erhalten. Kein",
+              "Lifecycle-Default mehr — der Admin muss aktiv wählen; ?role=… in der",
+              "URL gilt weiterhin als Vorauswahl. isInitialPhaseComplete prüft jetzt",
+              "alle Targets."
+            ]
+          },
+          {
+            "hash": "149c72e",
+            "emoji": "✨",
+            "message": "Mitarbeiter anlegen: Inhaltsgruppe ist Pflicht beim Erstellen",
+            "date": "2026-05-21",
+            "description": [
+              "Neuer Picker im Create-Modus (statt des bisherigen „Phasen können erst nach dem Speichern geplant werden\"-Hinweises): lifecycle-rollen-abhängiger Pflicht-Blueprint, für Suite-Executives zusätzlich Führungsgruppe. Speichern-Button bleibt deaktiviert, bis alles gewählt ist — so können keine Nutzer ohne Gruppenzuweisung mehr in der DB landen. Administratoren mappen auf den Employee-Lifecycle."
+            ]
+          },
+          {
+            "hash": "cf74314",
+            "emoji": "✨",
+            "message": "Stammdaten: „Führungskraft für\" nur für Executives + Count-Pill",
+            "date": "2026-05-21",
+            "description": [
+              "Section erscheint nur noch bei Usern mit Rolle Executive (sonst null). Anzahl der Mentees wird als kontraststarke Pill (bg-primary/text-primary-contrast) im Section-Header angezeigt."
+            ]
+          },
+          {
+            "hash": "cecb12a",
+            "emoji": "✨",
+            "message": "Stammdaten: Rubrik „Führungskraft für:\" mit zugewiesenen Mentees",
+            "date": "2026-05-21",
+            "description": [
+              "Listet alle User auf, die diesen User als Mentor/Führungskraft hinterlegt haben (Umkehrsicht zur UnifiedSettingsForm). Avatar + Name + Mentor-Label, Klick navigiert zum jeweiligen User-Profil. Daten via useUsersQuery + client-seitiger Filter; sichtbar für Admin/Superadmin im Edit-Modus."
+            ]
+          },
+          {
+            "hash": "ccccf9e",
+            "emoji": "✨",
+            "message": "Ablaufplanung: Termine per Pillenrand-Drag verlängern/kürzen + Move-Outline für kurze Distanzen",
+            "date": "2026-05-20",
+            "description": [
+              "- Resize-Griffe (6 px) an beiden Pillenrändern, Snap pro Tag mit weicher CSS-Transition",
+              "- Floating Preview-Pille im Original-Look statt Per-Pixel-Manipulation der Source",
+              "- Document-Level Pointer-Listener (kein setPointerCapture) → kein verlorenes Tracking bei Re-Render",
+              "- Optimistic Patches (entryId → dateFrom/dateTo) eliminieren das „alter Stand → API → neuer Stand\"-Flackern, Revert bei Fehler",
+              "- Source-Zelle nun selbst Drop-Target → Move um 1-2 Tage innerhalb einer breiten merged-td zeigt jetzt sofort das Outline"
+            ]
+          },
+          {
+            "hash": "210d7c0",
+            "emoji": "✨",
+            "message": "Ablaufplanung: Termine per Drag & Drop verschieben und duplizieren",
+            "date": "2026-05-19",
+            "description": [
+              "- Pille auf andere Zeile ziehen dupliziert (Zeitraum bleibt; Datum-Shift möglich",
+              "wenn Cursor in anderer Spalte landet).",
+              "- Pille in derselben Zeile verschieben (UPDATE mit konstanter Dauer).",
+              "- Live-Vorschau der projizierten Ziel-Pille als durchgehender Outline über die",
+              "Ziel-Cells; Source-Pille wird gedimmt; eigene Pille ist kein Drop-Ziel.",
+              "- Werktag-Arithmetik im 5-Tage-Modus: Wochenenden werden beim Shift übersprungen,",
+              "damit eine 5-Werktag-Pille auch nach Verschiebung 5 Werktage zeigt.",
+              "- DST-sicher (diff(...,'day',true) + Math.round).",
+              "- Bei Backend-Fehler: Toast + Snap-Back ohne State-Mutation."
+            ]
+          },
+          {
+            "hash": "5774406",
+            "emoji": "✨",
+            "message": "Ablaufplanung: Gruppen ein-/ausklappbar",
+            "date": "2026-05-19",
+            "description": [
+              "- Klick auf Gruppen-Header (Blueprint) klappt die Azubi-Zeilen ein/aus.",
+              "- Default: oberste Gruppe expanded, alle weiteren collapsed.",
+              "- Anzahl Azubis je Gruppe wird im Header angezeigt.",
+              "- Reset auf Default, sobald sich die sichtbaren Gruppen ändern (z.B. via Filter).",
+              "- BlueprintSeparator-Props sind optional — MonthlyOverview unverändert."
+            ]
+          },
+          {
+            "hash": "89431f4",
+            "emoji": "✨",
+            "message": "Ablaufplanung: Filter nach Gruppe und Azubis + generische PopoverFilterButton",
+            "date": "2026-05-19",
+            "description": [
+              "- Multi-Select Gruppen-Filter (Blueprint) und Azubi-Filter mit Suche über dem",
+              "Kalender; Auswahl persistiert pro Nutzer im localStorage.",
+              "- Filter clientseitig — API unverändert; weniger DOM-Knoten = spürbar",
+              "schnelleres Rendering bei großen Azubi-Listen.",
+              "- Generisches PopoverFilterButton-Molecule extrahiert (Single/Multi, optionales",
+              "Suchfeld, Custom-Renderer); FilterBar nutzt es 2x.",
+              "- CLAUDE.md: DRY-/Wiederverwendbarkeits-Regel ergänzt."
+            ]
+          },
+          {
+            "hash": "20cd9b5",
+            "emoji": "✨",
+            "message": "Phasenwechsel: einzige verfügbare Zielphase automatisch vorauswählen",
+            "date": "2026-05-18",
+            "description": [
+              "Gibt es nur eine wählbare Phase (z. B. „Führungskraft\" in Non-Suite-Paketen),",
+              "wird sie beim Öffnen des „Phasenwechsel vornehmen\"-Overlays direkt aktiviert,",
+              "sodass die Inhaltsgruppen-Auswahl ohne zusätzlichen Klick erscheint."
+            ]
+          },
+          {
+            "hash": "fdf36bd",
+            "emoji": "✨",
+            "message": "Nutzerverwaltung: Administrator-Phase entfernt, „Alle\"-Ansicht mit Filtern",
+            "date": "2026-05-18",
+            "description": [
+              "Administrator ist nur noch ein Recht, keine eigene Phase mehr. Statt eines",
+              "Administrator-Tabs gibt es jetzt eine „Alle\"-Ansicht (Default), in der",
+              "Mitarbeiter quer durch alle Lifecycle-Phasen aufgelistet werden.",
+              "- UserRoleSelectionBar: Administrator-Entry aus LIFECYCLE_ROLES entfernt",
+              "- UserRoleSelectionBar nutzt jetzt die bereits vorhandene includeAll-Option",
+              "- EmployeesPage: selectedRole als UserRole | null (null = Alle); URL-State",
+              "über `role`, `admin=true`, `problems=true`",
+              "- Zwei Toggle-Filter in der „Alle\"-Ansicht: „Mit Administrator-Rechten\"",
+              "und „Mit Problemen\" (Kontaktdaten unvollständig / ungültige Gruppen-",
+              "zuweisung — exakt die Kriterien aus UsersTable)",
+              "- useUsersQuery: leeres Rollen-Array → kein role-Query-Param",
+              "- UsersPage: additionalFilters-Slot zwischen Role-Bar und Filter-Bar;",
+              "customFilter ist jetzt useEffect-Dep, Setter via Refs stabilisiert",
+              "- UsersTable: Inline-Pills neben dem Namen — Lifecycle-Phase in der",
+              "„Alle\"-Ansicht (Onboardee/Azubi/Mitarbeiter/Elternzeit/Führung/Austritt)",
+              "und Admin/Super-Admin-Badge dauerhaft, sobald Permission gesetzt ist",
+              "- Router: /admins → /users?admin=true; EmployeesEditPage navigiert",
+              "Admins direkt auf /users?admin=true zurück"
+            ]
+          },
+          {
+            "hash": "7f7f094",
+            "emoji": "✨",
+            "message": "Mitarbeiterphase: Elternzeit als Phase + aktuelle Phase direkt editierbar",
+            "date": "2026-05-13",
+            "description": [
+              "🏷️ Sektionsüberschrift \"Phasenwechsel\" → \"Mitarbeiterphase\", Add-Button \"Neuer Phasenwechsel\" → \"Neue Phase\", Dialog-Header je nach Modus (\"Phasenwechsel vornehmen\" / \"Bestehenden Phasenwechsel bearbeiten\"), Zeitfenster-Label \"An einem Tag\" → \"An Datum\"",
+              "👶 Elternzeit ist jetzt eine Zielphase (Modul-Awareness via ProductModule.ParentalLeave) — der Blueprint-Selector zeigt die Elternzeit-Gruppen, kein Enddatum mehr; der Rollen-&-Rechte-Tab samt EmployeeRolesForm wurde entfernt, da nur noch Elternzeit dort lebte",
+              "🧭 Rollen-Reihenfolge und Labels vereinheitlicht: Azubi · Mitarbeiter · Elternzeit · Führung · Austritt (Instructor/Ausbilder aus dem Selektor entfernt)",
+              "✏️ Klick auf die aktuelle Phase-Karte öffnet \"Aktuelle Phase bearbeiten\" — rolle-abhängige Blueprint-Selektoren (Primary, optional Führungs- und Elternzeit-Gruppe) schreiben über onChange in den User-Form-State, Persistenz läuft über den bestehenden Speichern-Button",
+              "💬 Tooltip der aktuellen Phase zeigt zusätzlich die aktuell zugewiesenen Inhaltsgruppen (Primary + ggf. Führungs- + ggf. Elternzeit-Gruppe)",
+              "🤖 api.ts inkl. neuem ScheduledRoleChangeTarget.ParentalLeave-Wert"
+            ]
+          },
+          {
+            "hash": "117c08d",
+            "emoji": "✨",
+            "message": "Phasenwechsel: Agenda + Inline-Callout für Create/Edit",
+            "date": "2026-05-13",
+            "description": [
+              "Vier neue Komponenten:",
+              "- PhaseAgenda / PhaseAgendaItem: horizontale Timeline mit Status-Varianten",
+              "(vergangen ausgegraut, aktuell teal-hervorgehoben, geplant editierbar).",
+              "Tooltip pro Item, data-testid für E2E.",
+              "- PhaseChangeSection: Container in den Stammdaten — aktuelle Phase als",
+              "Badge, Agenda, History-Toggle, \"+ Neuer Phasenwechsel\"-Button und",
+              "Inline-Edit über Klick auf geplante Einträge. Nutzt MessageView für",
+              "leere Agenda statt Plain Text.",
+              "- PhaseChangeForm: Inline-Callout mit modul-bewusstem Rollen-Grid",
+              "(Mitarbeiter / Azubi / Führungskraft / Ausbilder / Offboardee — Buttons",
+              "nur sichtbar, wenn das jeweilige ProductModule gebucht ist),",
+              "Zeitpunkt-Radios (Sofort / In X Tagen-Wochen-Monaten / Am Datum),",
+              "Pflicht-Inhaltsgruppe je nach Ziel-Rolle, optionale Führungsgruppe für",
+              "Executive/Instructor und Pflicht-Austrittsdatum für Offboardee. Speichert",
+              "über die useScheduledRoleChangeMutation-Hooks."
+            ]
+          },
+          {
+            "hash": "ff8bbc5",
+            "emoji": "✨",
+            "message": "Phasenwechsel: Stub-Types und API-Queries für ScheduledRoleChange",
+            "date": "2026-05-13",
+            "description": [
+              "Manuelle TypeScript-Pendants zu den Phase-1-DTOs des Backends (ScheduledRoleChangeDto,",
+              "ScheduledRoleChangeCreateDto, ScheduledRoleChangeUpdateDto, Enum",
+              "ScheduledRoleChangeTarget). Datei wird entfernt, sobald Phase 1 deployed ist und",
+              "yarn run generate:schema:dev die Types regeneriert.",
+              "Plus react-query-Hooks für GET/POST/PUT/DELETE auf",
+              "/users/{userId}/scheduled-role-changes mit Invalidierung der employee-/user-Caches."
+            ]
+          },
           {
             "hash": "0fc7a9e",
             "emoji": "✨",
@@ -780,30 +970,6 @@
             "emoji": "✨",
             "message": "Support-Chats können als work.mate-Mitarbeiter nun initiiert werden",
             "date": "2026-01-21"
-          },
-          {
-            "hash": "a8db3a7",
-            "emoji": "✨",
-            "message": "Neue Statistik: ø App-Sitzungen nach Modul",
-            "date": "2026-01-21"
-          },
-          {
-            "hash": "320df06",
-            "emoji": "✨",
-            "message": "Trennung der Analytics zwischen App- und Dashboard-Nutzung",
-            "date": "2026-01-21"
-          },
-          {
-            "hash": "864871c",
-            "emoji": "✨",
-            "message": "Analytics Dashboard besitzt nun einen Periodenauswahl (Monat, Quartal, Jahr)",
-            "date": "2026-01-21"
-          },
-          {
-            "hash": "4545071",
-            "emoji": "✨",
-            "message": "Erweiterung der Analytics-Auswertung für work.mate-Mitarbeiter",
-            "date": "2026-01-20"
           }
         ],
         "deployment": [
@@ -840,7 +1006,71 @@
         ],
         "fixes": [
           {
+            "hash": "be5c97e",
+            "emoji": "🐛",
+            "message": "Phasenwechsel: relativeAmount NaN-fest validieren",
+            "date": "2026-05-22",
+            "description": [
+              "Leere/ungültige Eingabe im „In X …\"-Feld führte über `Number(\"\") = NaN`",
+              "und den `safeAmount = 0`-Fallback in computeScheduledAt zu einem stillen",
+              "Sofort-Apply auf heute. Jetzt: State ist `number | undefined`, Setter",
+              "parst NaN-sicher und trunkiert auf Integer, Validation verlangt",
+              "ganzzahlig ≥ 1, computeScheduledAt liefert `null` bei ungültiger",
+              "Eingabe statt eines today-Fallbacks, und der Submit fängt das ab."
+            ]
+          },
+          {
+            "hash": "6230ef1",
+            "emoji": "🐛",
+            "message": "Phasenwechsel: Konflikt-Status (409) als Warnung anzeigen",
+            "date": "2026-05-22",
+            "description": [
+              "Wenn das Backend bei doppeltem ScheduledAt 409 zurückgibt, rendert die",
+              "Form jetzt eine Warnung mit Hinweis statt eines generischen Fehlers."
+            ]
+          },
+          {
+            "hash": "db381d4",
+            "emoji": "🐛",
+            "message": "Kurse: Phasen-Filter statt globalem selectedModule",
+            "date": "2026-05-21",
+            "description": [
+              "CoursesPage liest die Phase jetzt aus dem URL-Param ?role= (analog zu Artikeln/Blueprints) und übergibt das via roleToModule an useCoursesQuery — der ?module=…-Backend-Filter folgt damit der gewählten Phase. UserRoleSelectionBar oberhalb der Liste; lokaler courses-State wird beim Phasen-Wechsel geleert, damit die alte Liste nicht stehenbleibt."
+            ]
+          },
+          {
+            "hash": "49478d0",
+            "emoji": "🐛",
+            "message": "Phasenwechsel: Non-Suite-Verzweigung wiederhergestellt",
+            "date": "2026-05-18",
+            "description": [
+              "Bei Kunden ohne Suite (nur Onboarding bzw. Onboarding+Azubi) ließen sich",
+              "Führungskräfte nicht mehr verwalten, weil die neuen Phasen-Forms immer",
+              "Mitarbeitergruppen geladen haben — die in Non-Suite-Paketen nicht existieren.",
+              "- PhaseChangeForm: Target=Führung lädt in Non-Suite Management- statt Employee-",
+              "Blueprints als „Inhaltsgruppe\"; das separate „Führungsgruppe (optional)\"-",
+              "Feld entfällt und managementBlueprintId wird im Payload explizit auf",
+              "undefined gemappt",
+              "- CurrentPhaseEditForm: Non-Suite-Executives bekommen die Führungskraftgruppen",
+              "direkt als editierbare Inhaltsgruppe (Executive ist additiv zu Employee,",
+              "daher musste der Non-Suite-Branch vor derivePrimaryModule greifen);",
+              "Doppelfeld „Führungsgruppe\" bleibt nur im Suite-Modus sichtbar"
+            ]
+          },
+          {
             "hash": "3e02fa9",
+            "emoji": "🐛",
+            "message": "Artikel-Zeitsteuerung: „Tage vor dem ersten Arbeitstag\" beim Aktivieren fixen",
+            "date": "2026-05-18",
+            "description": [
+              "Beim initialen Aktivieren der Zeitsteuerung erzeugte die Auswahl von",
+              "„Tage vor\" mit days=0 ein -0, das in getTimingSelection wegen",
+              "`-0 < 0 === false` als „Tage nach\" interpretiert wurde. Wechsel auf",
+              "relative setzt jetzt mindestens 1 Tag als Default."
+            ]
+          },
+          {
+            "hash": "3222104",
             "emoji": "🐛",
             "message": "Artikel-Zeitsteuerung: „Tage vor dem ersten Arbeitstag\" beim Aktivieren fixen",
             "date": "2026-05-18",
@@ -1011,15 +1241,55 @@
             "emoji": "🐛",
             "message": "Fixes TS-Errors",
             "date": "2026-01-21"
-          },
-          {
-            "hash": "3233f75",
-            "emoji": "🐛",
-            "message": "Fehlerbehebung im Editor für Artikel. Überschriften und Checkboxen können wieder sauber gepflegt werden.",
-            "date": "2026-01-20"
           }
         ],
         "refactors": [
+          {
+            "hash": "7eaea4f",
+            "emoji": "⚡",
+            "message": "Phasenwechsel-Mutation: Cache-Invalidate awaiten + Timezone mitsenden",
+            "date": "2026-05-22",
+            "description": [
+              "onSuccess wird jetzt async und awaitet alle invalidateQueries parallel,",
+              "sodass mutateAsync erst resolved, wenn die Caches frisch sind — Modal-",
+              "Closes nach `await mutateAsync(...)` rennen damit nicht mehr gegen den",
+              "nächsten Render. Zusätzlich wird X-Timezone-Offset (dayjs().utcOffset())",
+              "in Create- und Update-Calls mitgeschickt, damit das Backend „heute\"",
+              "client-lokal beurteilen kann."
+            ]
+          },
+          {
+            "hash": "adca6ab",
+            "emoji": "♻️",
+            "message": "Updates API spec",
+            "date": "2026-05-21"
+          },
+          {
+            "hash": "180612b",
+            "emoji": "♻️",
+            "message": "Phasenwechsel: Lebenszyklus-Tab entfernt, Sektion in Stammdaten integriert",
+            "date": "2026-05-13",
+            "description": [
+              "EmployeesEditPage:",
+              "- Lebenszyklus-Tab in allen vier Tab-Konfigurationen (Trainee, Employee,",
+              "Executive, Onboardee) entfernt",
+              "- Import von EmployeeLifecycleForm entfernt",
+              "- Nach Create-Navigation: Standard-Tab statt ?tab=lifecycle",
+              "EmployeeForm:",
+              "- PhaseChangeSection als eigene Sektion direkt unter den Personaldaten",
+              "(nach Vorname/Nachname, vor Team & Kontakt) — nicht für Admins",
+              "- Komplette \"Inhaltsgruppe\"-Sektion (Ausbilder/Führungskraft im Azubi-/",
+              "Onboarding-Paket) entfernt; ersetzt durch Phasenwechsel-Flow",
+              "- Unbenutzte Imports und Helper bereinigt (ProductModule, isSuite,",
+              "getCustomerPackage, useBlueprintsQuery, IconClick)",
+              "EmployeeRolesForm:",
+              "- Führungskraft-Container komplett entfernt (Toggle, Führungsgruppen-",
+              "Selektor, Ist-Ausbilder-Switch) — wandert in den Phasenwechsel",
+              "- Elternzeit-Container bleibt unverändert",
+              "- Hinweis im Header, dass Rollenwechsel über Phasenwechsel laufen",
+              "EmployeeLifecycleForm.tsx wurde gelöscht."
+            ]
+          },
           {
             "hash": "f77a380",
             "emoji": "♻️",
@@ -1313,21 +1583,30 @@
             "emoji": "♻️",
             "message": "Customer-Health Statistiken optisch gesäubert und gruppiert",
             "date": "2026-01-21"
-          },
-          {
-            "hash": "e288d9c",
-            "emoji": "♻️",
-            "message": "Entfernung der Churn Statistiken aus der Analytics Page",
-            "date": "2026-01-21"
-          },
-          {
-            "hash": "fcd0c20",
-            "emoji": "♻️",
-            "message": "Anpassung der Darstellung der Kundengesundheit",
-            "date": "2026-01-20"
           }
         ],
         "styles": [
+          {
+            "hash": "80b40e4",
+            "emoji": "💄",
+            "message": "Stammdaten-Tab: Sektionen als eigenständige Cards",
+            "date": "2026-05-21",
+            "description": [
+              "Neue generische SectionCard-Komponente (bg-white, rounded-xl, shadow-sm, border) ersetzt die bisherigen flachen mt-8/mt-10-Blöcke in Stammdaten, Phase/InitialBlueprint, Rechte, Mentoren, „Führungskraft für\", Notiz und Superadmin-Aktionen — der Tab liest sich jetzt deutlich strukturierter und weniger überladen."
+            ]
+          },
+          {
+            "hash": "312d5ec",
+            "emoji": "💄",
+            "message": "Ablaufplanung: Pillen mit Gradient/Highlight aufgewertet + Hover-Tooltip",
+            "date": "2026-05-20",
+            "description": [
+              "- Neue colorUtils (lightenHex, hexToRgba, readableTextColor, buildPillStyle) erzeugen den weichen Look (Vertikal-Gradient, tinted Multi-Layer-Shadow, weiße Highlight-Linie, rounded-md, Hover-Lift) für Source-Pillen und die Resize-Preview einheitlich",
+              "- MUI Tooltip am Lernort-Pill mit Kategorie (tags), Ausbildern (managers) und „Freie Plätze X / Y\" (Min aus perDay über die Pill-Tage)",
+              "- useLearningPlacesAvailabilityQuery für das sichtbare Fenster geladen, als Map<placeId, Availability> durch Calendar/Row/DayCell durchgereicht",
+              "- Refetch-Hook deckt jetzt auch die Availability-Query ab → freie Plätze aktualisieren nach Create/Update/Delete"
+            ]
+          },
           {
             "hash": "c878691",
             "emoji": "🎨",
@@ -1437,6 +1716,32 @@
         ],
         "tests": [
           {
+            "hash": "bbb1158",
+            "emoji": "🧪",
+            "message": "Phasenwechsel: E2E-Tests + Anpassung bestehender Lifecycle-Tests",
+            "date": "2026-05-13",
+            "description": [
+              "Neue Tests:",
+              "- phasenwechsel-erstellen: Mitarbeiter anlegen, Phasenwechsel hinzufügen,",
+              "Agenda verifizieren, User aufräumen",
+              "- phasenwechsel-editieren: geplanten Wechsel öffnen, Datum ändern, speichern",
+              "- phasenwechsel-loeschen: geplanten Wechsel über das Edit-Formular löschen",
+              "- phasenwechsel-offboardee: Auswahl Offboardee blendet Austrittsdatum-Feld",
+              "ein und validiert es als Pflicht",
+              "- phasenwechsel-modul-awareness: nur Module-spezifische Rollen-Buttons",
+              "werden gerendert",
+              "Angepasste Tests:",
+              "- executive-lifecycle: Promotion zum Executive läuft jetzt über",
+              "Phasenwechsel-Sektion (Sofort) statt über den entfernten Lifecycle-Tab",
+              "- admin-crud: Lebenszyklus-Tab-Check ersetzt durch Verifikation, dass",
+              "Phasenwechsel-Sektion bei Admins ausgeblendet ist",
+              "- push-notifications: Blueprint-Zuweisung läuft über den Phasenwechsel-",
+              "Flow (Mitarbeiter, Sofort) statt über den entfernten Lifecycle-Tab",
+              "Tests nutzen die existierenden Helpers (login/logout), data-testids und",
+              "das standardisierte Cleanup-Pattern."
+            ]
+          },
+          {
             "hash": "083c734",
             "emoji": "🧪",
             "message": "Neues Wording im UserProfile",
@@ -1509,175 +1814,41 @@
             "date": "2026-03-20"
           }
         ],
+        "security": [
+          {
+            "hash": "ee13c6f",
+            "emoji": "🔐",
+            "message": "Rollen-Modell: Phasen-Rollen vs Permission-Rollen getrennt + Rechte-Sektion",
+            "date": "2026-05-15",
+            "description": [
+              "🧩 Klare Trennung: Phasen-Rollen (Onboardee/Employee/Apprentice/Executive/ParentalLeave/Offboardee) werden beim Phasenwechsel ausgetauscht — Permission-Rollen (Administrator, Superadministrator, Instructor) bleiben erhalten",
+              "🎛️ Neue RechteSection im Mitarbeiter-Form (eigene Sektion zwischen PhaseChangeSection und UnifiedSettingsForm) mit Toggles für Administrator/Ausbilder/Superadministrator; Ausbilder-Toggle nur an aktive Führungskräfte vergebbar, Superadministrator nur für Superadmins sichtbar, Self-Lock-Schutz für eigene Admin-/Superadmin-Rolle",
+              "📱 Telefonnummer auch im Admin-Mitarbeiter-Form setzbar (E-Mail bleibt Pflicht), Spalten-Layout vereinheitlicht, Login-Info-Box für alle Rollen einheitlich",
+              "🧹 Preboardee aus UserRole entfernt (kein User hatte ihn), ScheduledRoleChangeTarget.Instructor entfernt — Auto-Set von Instructor bei neuen Executives im \"onboarding-azubi\"-Paket entfällt (jetzt explizit über Rechte-Sektion)",
+              "🤖 api.ts und scheduledRoleChange.ts angepasst (bitte nach Backend-Deploy yarn run generate:schema:dev laufen lassen)",
+              "🧪 admin-crud E2E: Phone-Feld bei Admin sichtbar & persistiert"
+            ]
+          }
+        ],
         "other": [
+          {
+            "hash": "1f4aaca",
+            "emoji": "🚧",
+            "message": "Phasenwechsel: Vergangenheit sperren + Sofort-Apply-Warnung",
+            "date": "2026-05-22",
+            "description": [
+              "Datepicker erhält min=today, Validation lehnt manuell getippte",
+              "Vergangenheits-Daten ab, und ein Warn-Banner unter „Wann?\" weist",
+              "sichtbar darauf hin, wenn der Wechsel mit dem Speichern direkt",
+              "wirksam wird (Sofort gewählt oder heutiges Datum). DateInputGroup",
+              "reicht jetzt min/max an den DateInput durch."
+            ]
+          },
           {
             "hash": "a59b3a2",
             "emoji": "🗑️",
             "message": "Verknüpfungen-Rubrik aus Azubi-Formular entfernt",
             "date": "2026-02-11"
-          }
-        ]
-      }
-    },
-    {
-      "version": "0.3.5",
-      "tag": "v_0.3.5",
-      "date": "2026-01-20",
-      "changes": {
-        "features": [
-          {
-            "hash": "10efdea",
-            "emoji": "✨",
-            "message": "Lebenszyklus-Tab für Administratoren hinzugefügt und Gruppenauswahl für Führungskräfte erweitert (Mitarbeiter- und Führungsgruppen auswählbar)",
-            "date": "2026-01-18",
-            "description": [
-              "Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
-            ]
-          }
-        ],
-        "deployment": [
-          {
-            "hash": "18cf51c",
-            "emoji": "🚀",
-            "message": "Dynamische Generierung und Platzierung von Changelogs wurde eingeführt",
-            "date": "2026-01-20"
-          }
-        ],
-        "refactors": [
-          {
-            "hash": "dfd0d26",
-            "emoji": "♻️",
-            "message": "Optimierung der Anzeige in den SystemTransaktionen",
-            "date": "2026-01-18"
-          }
-        ]
-      }
-    },
-    {
-      "version": "0.3.4",
-      "tag": "v_0.3.4",
-      "date": "2026-01-17",
-      "changes": {
-        "features": [
-          {
-            "hash": "eed74ee",
-            "emoji": "✨",
-            "message": "Optimierung des Datei-Uploads in Dokumenten. Der Ladestand wird sauber angezeigt und auch nach einem Fehler ist das Austauschen der Datei ab sofort möglich.",
-            "date": "2026-01-17"
-          },
-          {
-            "hash": "1b18fa8",
-            "emoji": "✨",
-            "message": "Benutzerverwaltung wurde vereinfacht. Einstellungen wurden minimiert und weiter zusammen gefasst. Mehr Übersicht, schnellere Verwaltung.",
-            "date": "2026-01-17"
-          },
-          {
-            "hash": "785f537",
-            "emoji": "✨",
-            "message": "Im Mitarbeiter-Lifecycle kann nun das Austrittsdatum gepflegt werden. Zudem kann nun einfach zu ausgewählten Gruppen abgesprungen werden (z.B. um die Inhalte einfach zu überprüfen)",
-            "date": "2026-01-17"
-          },
-          {
-            "hash": "0121b59",
-            "emoji": "✨",
-            "message": "Anpassung des Benutzerformulars an neue Anmeldeanforderungen mit Email und oder Telefonnummer",
-            "date": "2026-01-16"
-          },
-          {
-            "hash": "2f02a72",
-            "emoji": "✨",
-            "message": "Aktivitäten eines Users werden nun auf der Basis der globalen System-Transaktionen abgebildet und sind damit nur noch work.mate-Mitarbeitern einsehbar.",
-            "date": "2026-01-16"
-          },
-          {
-            "hash": "f6fdd13",
-            "emoji": "✨",
-            "message": "Eine neue übersichtliche Oberfläche für das Verwalten der Mitarbeiter-Zyklen wurde eingeführt",
-            "date": "2026-01-15"
-          },
-          {
-            "hash": "9b97b8c",
-            "emoji": "✨",
-            "message": "Fügt die Einsicht von SystemTransaktionen für Superadministratoren hinz",
-            "date": "2026-01-14"
-          },
-          {
-            "hash": "beec20d",
-            "emoji": "✨",
-            "message": "Auch Führungskräften können nun weitere Führungskräfte zugewiesen werden (Hierarchie)",
-            "date": "2026-01-07"
-          },
-          {
-            "hash": "717fc1a",
-            "emoji": "✨",
-            "message": "Superadministratoren können nun Owly Templatefragen einstellen",
-            "date": "2025-12-16"
-          },
-          {
-            "hash": "97633de",
-            "emoji": "✨",
-            "message": "Der Wissenspool ist pro Kunden jetzt im Kundendetail konfigurierbar",
-            "date": "2025-12-13"
-          },
-          {
-            "hash": "4bcff06",
-            "emoji": "✨",
-            "message": "Als Superadmin kann nun die MandantID für work.mate AI gepflegt werden",
-            "date": "2025-12-12"
-          }
-        ],
-        "fixes": [
-          {
-            "hash": "b2b0d29",
-            "emoji": "🐛",
-            "message": "Die Dokumentenzuweisung im Onboardee ist nach Anpassung des fehlenden Einladungsschreibens nun wieder nutzbar",
-            "date": "2026-01-17"
-          },
-          {
-            "hash": "40451be",
-            "emoji": "🐛",
-            "message": "Ein Fehler beim Speichern von Dokument-Zuweisungen in einem Onboardee wurde behoben",
-            "date": "2026-01-15"
-          },
-          {
-            "hash": "bc9d6a0",
-            "emoji": "🐛",
-            "message": "Fixes TS errors",
-            "date": "2025-12-10"
-          }
-        ],
-        "refactors": [
-          {
-            "hash": "13cd24b",
-            "emoji": "♻️",
-            "message": "Überarbeitung der Dokumentenzuweisung und -Darstellung. Bessere Übersicht, einfachere Bedienung.",
-            "date": "2026-01-17"
-          },
-          {
-            "hash": "2b19895",
-            "emoji": "♻️",
-            "message": "Entfernt Debug-Page aus dem Nutzer und stellt User-Transaktionen auf die globalen System-Transaktionen um (nur für work.mate-Mitarbeiter)",
-            "date": "2026-01-15"
-          },
-          {
-            "hash": "684327e",
-            "emoji": "♻️",
-            "message": "Neue Logik für das Generieren von Changelogs auf Basis von Gitmojis",
-            "date": "2026-01-15"
-          },
-          {
-            "hash": "d7ea18a",
-            "emoji": "♻️",
-            "message": "User Promotions aus dem System entfernt. Nun einsehbar über SystemTransaktionen im Superadmin.",
-            "date": "2026-01-14"
-          }
-        ],
-        "styles": [
-          {
-            "hash": "861be65",
-            "emoji": "💄",
-            "message": "Die Auswertung von Einarbeitung-Feedbacks wurde deutlich verbessert und ist nun übersichtlicher und schlüssiger.",
-            "date": "2026-01-07"
           }
         ]
       }
