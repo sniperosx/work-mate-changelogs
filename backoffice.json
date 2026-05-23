@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-22T10:44:11.429Z",
+  "generatedAt": "2026-05-23T18:43:18.455Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -958,21 +958,15 @@
             "emoji": "✨",
             "message": "Führungskräfte können nun als Ausbilder gesetzt werden und erhalten damit Zugriff auf die Planung ihrer zugewiesenen Azubis",
             "date": "2026-01-22"
-          },
-          {
-            "hash": "6cd4c99",
-            "emoji": "✨",
-            "message": "Pro Kunde kann nun die Einstellung über das Newsfeed-Verhalten und die Newsfeed-Kommentare verwaltet werden",
-            "date": "2026-01-21"
-          },
-          {
-            "hash": "4efcef9",
-            "emoji": "✨",
-            "message": "Support-Chats können als work.mate-Mitarbeiter nun initiiert werden",
-            "date": "2026-01-21"
           }
         ],
         "deployment": [
+          {
+            "hash": "5ef0c0f",
+            "emoji": "🚀",
+            "message": "Changelog Automatisierung",
+            "date": "2026-05-23"
+          },
           {
             "hash": "b105d60",
             "emoji": "🚀",
@@ -1577,12 +1571,6 @@
             "emoji": "♻️",
             "message": "Email handling um user angepasst. Admin pflicht, Mitarbeiter optional",
             "date": "2026-01-23"
-          },
-          {
-            "hash": "63e2da7",
-            "emoji": "♻️",
-            "message": "Customer-Health Statistiken optisch gesäubert und gruppiert",
-            "date": "2026-01-21"
           }
         ],
         "styles": [
