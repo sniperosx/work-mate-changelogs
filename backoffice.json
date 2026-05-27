@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-23T18:43:18.455Z",
+  "generatedAt": "2026-05-27T15:07:12.720Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,21 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "67c6066",
+            "emoji": "✨",
+            "message": "Onboardee-Jahresbereinigung für Superadmin",
+            "date": "2026-05-27",
+            "description": [
+              "Superadmin kann im Onboardee-Tab alle Onboardees eines Registrierungsjahres",
+              "des delegierten Kunden gebündelt löschen — rein clientseitig über den",
+              "bestehenden Single-Delete-Endpoint, mit Tabellen-Vorschau und Type-to-confirm.",
+              "- TypeToConfirmDialog: generischer destruktiver Bestätigungsdialog",
+              "- useBulkOnboardeeDelete: Worker-Pool (5 parallel), Fortschritt, fortsetzbar",
+              "- OnboardeeYearCleanup: Jahr-Dropdown + Lösch-Button + Fortschritt",
+              "- EmployeesPage: Superadmin-Gate, cleanupYear-Param, Tabellen-Vorschau"
+            ]
+          },
           {
             "hash": "c7ef503",
             "emoji": "✨",
@@ -1229,12 +1244,6 @@
             "emoji": "🐛",
             "message": "Removes TS Error",
             "date": "2026-02-07"
-          },
-          {
-            "hash": "4130644",
-            "emoji": "🐛",
-            "message": "Fixes TS-Errors",
-            "date": "2026-01-21"
           }
         ],
         "refactors": [
