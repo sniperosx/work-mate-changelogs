@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-27T15:07:12.720Z",
+  "generatedAt": "2026-05-27T15:22:02.282Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -967,12 +967,6 @@
             "emoji": "✨",
             "message": "Gruppenzuweisung ist nun vom Wording auf jede Entität dynamisiert (Artikel, Kurs etc.)",
             "date": "2026-01-23"
-          },
-          {
-            "hash": "c246078",
-            "emoji": "✨",
-            "message": "Führungskräfte können nun als Ausbilder gesetzt werden und erhalten damit Zugriff auf die Planung ihrer zugewiesenen Azubis",
-            "date": "2026-01-22"
           }
         ],
         "deployment": [
@@ -1014,6 +1008,18 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "4278c8f",
+            "emoji": "🐛",
+            "message": "Superadmin-Anlage: Navigation über getModulePath statt /auth/404",
+            "date": "2026-05-27",
+            "description": [
+              "onNext nutzte rohe Pfade (/admins/<id>, /users?admin=true). Für",
+              "Superadmins existieren nur /admin/...-Routes, daher landete das Anlegen/",
+              "Speichern im Catch-all auf /auth/404. getModulePath wieder eingesetzt;",
+              "Listen-Navigation für Superadmin auf /admin/admins."
+            ]
+          },
           {
             "hash": "be5c97e",
             "emoji": "🐛",
