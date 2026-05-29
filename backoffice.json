@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-27T15:22:02.282Z",
+  "generatedAt": "2026-05-29T13:26:27.370Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,22 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "db4e5c4",
+            "emoji": "✨",
+            "message": "Inhaltsgruppen direkt in der Phasenanzeige anzeigen",
+            "date": "2026-05-29",
+            "description": [
+              "Inhaltsgruppen werden jetzt unter dem Phasennamen angezeigt (aktive +",
+              "geplante/überfällige Phasen) statt nur im Tooltip. Lange Namen werden",
+              "truncated, der volle Name bleibt im Tooltip sichtbar.",
+              "- Neuer PhaseContentGroupHelper baut die Gruppenliste pro Phase (primär +",
+              "Führung/Elternzeit) und spiegelt die Modul-/Label-Logik aus den Formularen",
+              "- Blueprint-Titel werden zentral in PhaseAgenda aufgelöst (eine Query statt",
+              "Mehrfach-Auflösung pro Phase)",
+              "- Icon-Container als 1:1-Quadrat in Höhe von Name+Datum für mehr Symmetrie"
+            ]
+          },
           {
             "hash": "67c6066",
             "emoji": "✨",
@@ -960,12 +976,6 @@
             "hash": "a22d316",
             "emoji": "✨",
             "message": "Bei der Bearbeitung einer Fragestrecke können ab sofort die Module und Gruppen zugewiesen werden. Kein Wechsel in alle Gruppen mehr nötig!",
-            "date": "2026-01-23"
-          },
-          {
-            "hash": "77ae45e",
-            "emoji": "✨",
-            "message": "Gruppenzuweisung ist nun vom Wording auf jede Entität dynamisiert (Artikel, Kurs etc.)",
             "date": "2026-01-23"
           }
         ],
