@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-05-29T13:26:27.370Z",
+  "generatedAt": "2026-06-01T14:34:49.764Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -971,12 +971,6 @@
             "emoji": "✨",
             "message": "Innerhalb einer Gruppe können Fragestrecken nun eingesehen, in ihrer Reihenfolge vertauscht und entfernt werden.",
             "date": "2026-01-23"
-          },
-          {
-            "hash": "a22d316",
-            "emoji": "✨",
-            "message": "Bei der Bearbeitung einer Fragestrecke können ab sofort die Module und Gruppen zugewiesen werden. Kein Wechsel in alle Gruppen mehr nötig!",
-            "date": "2026-01-23"
           }
         ],
         "deployment": [
@@ -1018,6 +1012,15 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "4153e34",
+            "emoji": "🐛",
+            "message": "Newsfeed: Menüpunkt erscheint wieder zuverlässig",
+            "date": "2026-06-01",
+            "description": [
+              "Der Newsfeed taucht im Menü jetzt verlässlich auf, sobald er für einen Kunden aktiviert ist – vorher konnte er trotz Freischaltung fehlen. Neue Mitarbeitende sehen den Newsfeed passend erst ab ihrem ersten Arbeitstag."
+            ]
+          },
           {
             "hash": "4278c8f",
             "emoji": "🐛",
