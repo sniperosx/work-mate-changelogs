@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-03T13:54:26.678Z",
+  "generatedAt": "2026-06-03T14:07:23.331Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -990,12 +990,6 @@
             "emoji": "✨",
             "message": "Mitarbeiter erhalten nun eine Pflichtzuweisung zu einem Team.",
             "date": "2026-02-03"
-          },
-          {
-            "hash": "517ffe0",
-            "emoji": "✨",
-            "message": "Die bestehenden Einstellungen sind nun in die neue Struktur überführt worden",
-            "date": "2026-02-03"
           }
         ],
         "deployment": [
@@ -1037,6 +1031,18 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "dad4098",
+            "emoji": "🐛",
+            "message": "Menü: Newsfeed featurebasiert + Onboardee-Schutz nach Merge",
+            "date": "2026-06-03",
+            "description": [
+              "Nach develop->production-Merge war Newsfeed wieder modulbasiert (ProductModule.Employee)",
+              "und die Aufrufer übergaben isOnboardee/hireDate an eine Funktion ohne diese Parameter.",
+              "Gating nun an CustomerFeature.Newsfeed gekoppelt (wie Chat/Artikel), Onboardees erst ab",
+              "HireDate; Parameter isOnboardee/userHireDate + onboardeeBeforeHire ergänzt."
+            ]
+          },
           {
             "hash": "4153e34",
             "emoji": "🐛",
@@ -1594,12 +1600,6 @@
             "emoji": "♻️",
             "message": "Neue Kennzahl für durchschnittliche Nutzung pro Woche eingeführt",
             "date": "2026-02-06"
-          },
-          {
-            "hash": "66429c3",
-            "emoji": "♻️",
-            "message": "Optische Symmetrie unter allen Eingabefeldern überarbeitet",
-            "date": "2026-02-03"
           }
         ],
         "styles": [
