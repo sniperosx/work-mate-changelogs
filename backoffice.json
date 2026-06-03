@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-01T14:34:49.764Z",
+  "generatedAt": "2026-06-03T13:54:26.678Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,55 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "dd77c1b",
+            "emoji": "✨",
+            "message": "Statistik: Vormonat-Button im Zeitraum-Selektor",
+            "date": "2026-06-03",
+            "description": [
+              "PeriodSelector um 'Vormonat' ergänzt (Monat · Vormonat · Quartal · Jahr).",
+              "api.ts regeneriert (AnalyticsPeriodType.PreviousMonth)."
+            ]
+          },
+          {
+            "hash": "494691a",
+            "emoji": "✨",
+            "message": "Statistik: Kunden-Health-Detailkachel mit Picker statt Tabelle",
+            "date": "2026-06-03",
+            "description": [
+              "CustomerHealthTable ersetzt durch Customer-Picker + wiederverwendbare",
+              "CustomerHealthDetailCard (Funnel, Wochen-Trend, Toggle Komplett/Engagiert,",
+              "aufklappbare Methodik). Reiner Metrics-Helper computeHealth für beide Sichten;",
+              "Starts/Woche/User in 'Engagiert' ohne Dormant. api.ts regeneriert.",
+              "Inkl. Spec + Plan unter docs/superpowers."
+            ]
+          },
+          {
+            "hash": "976b5b2",
+            "emoji": "✨",
+            "message": "Wissensbereich: Mitarbeiter-Vorschau für Customer-Delegates",
+            "date": "2026-06-03",
+            "description": [
+              "Customer-Delegates (Superadmin) können den Wissensbereich aus Sicht eines",
+              "ausgewählten Mitarbeiters ansehen. Artikel und Kurse werden dann über die",
+              "/users/:id/preview-Endpunkte statt /app/* geladen; die Auswahl steckt im",
+              "useAppStore (persistiert) und wird über einen EmployeeSelectInput gesteuert."
+            ]
+          },
+          {
+            "hash": "fd9909a",
+            "emoji": "✨",
+            "message": "Wissensbereich: Lese-Ansicht /knowledge (Artikel + Videos)",
+            "date": "2026-06-02",
+            "description": [
+              "Neue Konsum-/Lese-Ansicht unter /knowledge für alle Rollen mit Tabs Artikel und Videos, als Web-Pendant zur App. Keine Backend-Änderung – Daten aus /app/articles und /app/profile (blueprint.courseChapters).",
+              "- Query-Hooks (src/queries/app): useAppArticlesQuery, useAppArticleById, useAppProfileQuery/useCourseChapters (customer-scoped Keys)",
+              "- Artikel: Tab mit Suche (aus App portiert), Highlights + Kategorie-Sektionen, Detailseite mit Content-Rendering (Text/Markdown, Bild+Lightbox, PDF)",
+              "- Videos/Kurse: Tab mit Kapitel-Übersicht, Kapitel-Detail, Lektions-Player (<video>) inkl. lokalem Fortschritt/Resume (localStorage)",
+              "- Routing (nicht hinter isAdmin) + Sidebar-Eintrag 'Wissen' (CustomerFeature.Articles, alle Rollen)",
+              "- Spec + Plan unter docs/superpowers (inkl. Phase-2-Design: Superadmin preview-as-user in Delegation)"
+            ]
+          },
           {
             "hash": "db4e5c4",
             "emoji": "✨",
@@ -947,30 +996,6 @@
             "emoji": "✨",
             "message": "Die bestehenden Einstellungen sind nun in die neue Struktur überführt worden",
             "date": "2026-02-03"
-          },
-          {
-            "hash": "0ff572f",
-            "emoji": "✨",
-            "message": "Das Verwalten von Teams ist nun möglich",
-            "date": "2026-02-02"
-          },
-          {
-            "hash": "5824a31",
-            "emoji": "✨",
-            "message": "Es ist nun möglich den Newsfeed als Administrator im Dashboard zu verwalten.",
-            "date": "2026-02-02"
-          },
-          {
-            "hash": "dba3013",
-            "emoji": "✨",
-            "message": "Fragestrecken vom Typ \"Umfrage\" können nun zentral statistisch ausgewertet werden.",
-            "date": "2026-01-23"
-          },
-          {
-            "hash": "b336815",
-            "emoji": "✨",
-            "message": "Innerhalb einer Gruppe können Fragestrecken nun eingesehen, in ihrer Reihenfolge vertauscht und entfernt werden.",
-            "date": "2026-01-23"
           }
         ],
         "deployment": [
@@ -1575,33 +1600,45 @@
             "emoji": "♻️",
             "message": "Optische Symmetrie unter allen Eingabefeldern überarbeitet",
             "date": "2026-02-03"
-          },
-          {
-            "hash": "846e7f7",
-            "emoji": "♻️",
-            "message": "Weitere Optimierung im Newsfeed-Bereich",
-            "date": "2026-02-03"
-          },
-          {
-            "hash": "646bf69",
-            "emoji": "♻️",
-            "message": "Wording für die Teamseinstellung überarbeitet",
-            "date": "2026-02-03"
-          },
-          {
-            "hash": "810d230",
-            "emoji": "♻️",
-            "message": "Wording für Administratoren (wenn noch keine vorliegen) optimiert",
-            "date": "2026-01-23"
-          },
-          {
-            "hash": "08c4362",
-            "emoji": "♻️",
-            "message": "Email handling um user angepasst. Admin pflicht, Mitarbeiter optional",
-            "date": "2026-01-23"
           }
         ],
         "styles": [
+          {
+            "hash": "63263ea",
+            "emoji": "💄",
+            "message": "Statistik: Aufteilung in Tabs Global + Kunde",
+            "date": "2026-06-03",
+            "description": [
+              "Top-Level-SegmentedControl: Tab 'Global' (bisherige Auswertungen + 'Aktivste",
+              "Nutzer'-Tabelle direkt statt innerem Sub-Tab) und Tab 'Kunde' (Customer-Picker +",
+              "Detailkachel). PeriodSelector bleibt über beiden Tabs."
+            ]
+          },
+          {
+            "hash": "602585f",
+            "emoji": "💄",
+            "message": "Statistik: Suche im Customer-Picker + kein Scroll-Sprung beim Kundenwechsel",
+            "date": "2026-06-03",
+            "description": [
+              "CustomerSelectInput: Freitextsuche (searchable, Default an, zentral).",
+              "Kundenwechsel: keepPreviousData + isFetching-Dimm — Kachel bleibt stehen statt",
+              "zu kollabieren, kein Sprung nach oben mehr."
+            ]
+          },
+          {
+            "hash": "44fc082",
+            "emoji": "💄",
+            "message": "Sidebar: Persönlich-Block oben, Verwaltung darunter",
+            "date": "2026-06-03",
+            "description": [
+              "Trennt das Seitenmenü in einen oberen \"Persönlich\"-Block (konsumierend als",
+              "User: Mein Profil, Wissen, Chat, Newsfeed) und die Verwaltungspunkte darunter,",
+              "getrennt durch einen subtilen Separator (auch im eingeklappten Zustand).",
+              "- Kommunikations-Hub aufgelöst: Chat und Newsfeed sind jetzt direkte Punkte",
+              "- Benachrichtigungen wird ein eigener Verwaltungspunkt (nur Admin)",
+              "- verwaiste /kommunikation-Route entfernt"
+            ]
+          },
           {
             "hash": "80b40e4",
             "emoji": "💄",
