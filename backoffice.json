@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-03T14:07:23.331Z",
+  "generatedAt": "2026-06-14T09:49:46.806Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "5aeed59",
+            "emoji": "✨",
+            "message": "Freie Datumsauswahl in den Statisiken + Auflistung aktivste Kunden",
+            "date": "2026-06-14"
+          },
+          {
+            "hash": "f9ae73e",
+            "emoji": "✨",
+            "message": "Statistiken: Auch die Web-Nutzung der Mitarbeiter wird jetzt erfasst 📊 Neue Kennzahl „Sitzungen gesamt\" (App + Web zusammen) in der globalen Übersicht 🔄 Kunden-Ansicht zählt Sitzungen jetzt aus App und Web gemeinsam",
+            "date": "2026-06-13"
+          },
           {
             "hash": "dd77c1b",
             "emoji": "✨",
@@ -960,36 +972,6 @@
             "emoji": "✨",
             "message": "Testabdeckung an neue Pfade angepasst",
             "date": "2026-02-05"
-          },
-          {
-            "hash": "c9047a6",
-            "emoji": "✨",
-            "message": "Die Phase in der Mitarbeiterliste wird nun gespeichert und beim Zurücknavigieren wieder korrekt geladen",
-            "date": "2026-02-04"
-          },
-          {
-            "hash": "f122655",
-            "emoji": "✨",
-            "message": "Die Mitarbeiter-Ansicht ist nun nach Mitarbeiterphase nutzbar",
-            "date": "2026-02-04"
-          },
-          {
-            "hash": "983982c",
-            "emoji": "✨",
-            "message": "Neues einheitliches Seitenmenü über alle Module eingeführt",
-            "date": "2026-02-04"
-          },
-          {
-            "hash": "7898e4c",
-            "emoji": "✨",
-            "message": "Das Gruppieren von Mitarbeitern nach Teams ist nun möglich",
-            "date": "2026-02-03"
-          },
-          {
-            "hash": "9fa9e66",
-            "emoji": "✨",
-            "message": "Mitarbeiter erhalten nun eine Pflichtzuweisung zu einem Team.",
-            "date": "2026-02-03"
           }
         ],
         "deployment": [
@@ -1297,6 +1279,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "b9186e4",
+            "emoji": "🔧",
+            "message": "release-Skill: Changelog kundenfreundlich (themenbasiert) statt technisch",
+            "date": "2026-06-03"
+          },
           {
             "hash": "7eaea4f",
             "emoji": "⚡",
@@ -1759,12 +1747,6 @@
             "emoji": "💄",
             "message": "Polishing der Mitarbeiterverwaltung mit detaillierten Warnungen und Informationen",
             "date": "2026-02-04"
-          },
-          {
-            "hash": "0004546",
-            "emoji": "💄",
-            "message": "UI Polishing der Newsfeed-Kommentarfunktion",
-            "date": "2026-02-03"
           }
         ],
         "tests": [
@@ -1838,6 +1820,18 @@
           }
         ],
         "docs": [
+          {
+            "hash": "1d0091e",
+            "emoji": "📝",
+            "message": "Kunden-Statistik: Erklärtext korrigiert – „Sitzungen\" umfasst jetzt richtig App- UND Web-Nutzung ℹ️ Health-Score & Risiko-Kennzahlen sind klar als „Stand heute\" gekennzeichnet, da sie sich nicht rückwirkend auf einen vergangenen Zeitraum berechnen lassen",
+            "date": "2026-06-14"
+          },
+          {
+            "hash": "825d21c",
+            "emoji": "📝",
+            "message": "Changelog 0.6.0: kundenfreundlich vereinfacht",
+            "date": "2026-06-03"
+          },
           {
             "hash": "b3825fd",
             "emoji": "📝",
