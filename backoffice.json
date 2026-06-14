@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-14T09:49:46.806Z",
+  "generatedAt": "2026-06-14T10:10:16.113Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -1014,6 +1014,15 @@
         ],
         "fixes": [
           {
+            "hash": "d8eb76d",
+            "emoji": "🐛",
+            "message": "Ablaufplanung: Zoom-Regler ist wieder da",
+            "date": "2026-06-14",
+            "description": [
+              "Der Schieberegler zum Rein- und Rauszoomen in der Ablaufplanung war nach der Einführung der Filter nicht mehr sichtbar. Er hat jetzt wieder seinen eigenen festen Platz und funktioniert wie gewohnt – genau wie in der Lernort-Auslastung."
+            ]
+          },
+          {
             "hash": "dad4098",
             "emoji": "🐛",
             "message": "Menü: Newsfeed featurebasiert + Onboardee-Schutz nach Merge",
@@ -1740,12 +1749,6 @@
             "hash": "01fa57a",
             "emoji": "💄",
             "message": "Probleme mit Nutzern werden nun in einer kleinen Badge am Avatar dargestellt und nicht mehr prominent in der Tabelle als Badge.",
-            "date": "2026-02-04"
-          },
-          {
-            "hash": "0e5bd7f",
-            "emoji": "💄",
-            "message": "Polishing der Mitarbeiterverwaltung mit detaillierten Warnungen und Informationen",
             "date": "2026-02-04"
           }
         ],
