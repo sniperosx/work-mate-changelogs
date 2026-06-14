@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-14T10:10:16.113Z",
+  "generatedAt": "2026-06-14T10:17:41.603Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -1014,6 +1014,15 @@
         ],
         "fixes": [
           {
+            "hash": "b4b0e5d",
+            "emoji": "🐛",
+            "message": "Vorschlagswesen erscheint nur noch bei aktiviertem Feature",
+            "date": "2026-06-14",
+            "description": [
+              "Der Menüpunkt Vorschlagswesen war für alle Admins sichtbar, auch wenn das Feature für den Kunden gar nicht freigeschaltet war. Jetzt taucht er nur noch auf, wenn das Vorschlagswesen für den jeweiligen Kunden aktiviert ist."
+            ]
+          },
+          {
             "hash": "d8eb76d",
             "emoji": "🐛",
             "message": "Ablaufplanung: Zoom-Regler ist wieder da",
@@ -1743,12 +1752,6 @@
             "hash": "88f0e20",
             "emoji": "💄",
             "message": "Temporäre workmate-Emails werden in der Nutzersicht ausgeblendet, um keine Irritationen zu erzeugen",
-            "date": "2026-02-04"
-          },
-          {
-            "hash": "01fa57a",
-            "emoji": "💄",
-            "message": "Probleme mit Nutzern werden nun in einer kleinen Badge am Avatar dargestellt und nicht mehr prominent in der Tabelle als Badge.",
             "date": "2026-02-04"
           }
         ],
