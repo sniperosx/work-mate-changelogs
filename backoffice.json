@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-14T10:17:41.603Z",
+  "generatedAt": "2026-06-16T14:16:38.158Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,16 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "f3f5953",
+            "emoji": "✨",
+            "message": "Neuer Bereich „Azubi-Assistent\" in den Kunden-Funktionen mit Schalter fürs Berichtsheft",
+            "date": "2026-06-16",
+            "description": [
+              "👁️ Berichtsheft erscheint im Menü nur noch, wenn das Recht aktiviert ist",
+              "🧹 Berichtsheft-Modus sitzt jetzt direkt im neuen Bereich und nicht mehr unter den allgemeinen Einstellungen"
+            ]
+          },
           {
             "hash": "5aeed59",
             "emoji": "✨",
@@ -1746,12 +1756,6 @@
             "hash": "ed93aa8",
             "emoji": "💄",
             "message": "Newsfeed und Chat als delegierter Admin deaktiviert",
-            "date": "2026-02-04"
-          },
-          {
-            "hash": "88f0e20",
-            "emoji": "💄",
-            "message": "Temporäre workmate-Emails werden in der Nutzersicht ausgeblendet, um keine Irritationen zu erzeugen",
             "date": "2026-02-04"
           }
         ],
