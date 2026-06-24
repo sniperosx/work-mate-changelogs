@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-16T14:16:38.158Z",
+  "generatedAt": "2026-06-24T15:42:40.758Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,43 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "e60b6e4",
+            "emoji": "✨",
+            "message": "Newsfeed: Videos in Beiträgen (Backoffice)",
+            "date": "2026-06-24",
+            "description": [
+              "- Video statt Bilder per SAS-Upload (Video + Thumbnail), Entweder/Oder-Umschaltung im Verfassen-Dialog",
+              "- Video-Anzeige mit Thumbnail-Poster in Feed-Karte & Detailansicht",
+              "- Höhenstabile Media-Karte, Content-Feld nutzt vertikalen Platz"
+            ]
+          },
+          {
+            "hash": "7959df8",
+            "emoji": "✨",
+            "message": "Newsfeed: Neues Verfassen-Overlay & Beiträge nachträglich bearbeiten",
+            "date": "2026-06-23",
+            "description": [
+              "Das Fenster zum Erstellen eines Newsfeed-Beitrags wurde von Grund auf neu gestaltet: ein modernes, aufgeräumtes Overlay mit großzügigem Schreibbereich, einer einladenden Drag-and-Drop-Fläche für Bilder (einfach reinziehen statt umständlich auswählen) und klar getrennten Bereichen – inklusive schöner Schalter für Sichtbarkeit und „Oben anpinnen\".",
+              "Außerdem lassen sich bestehende Beiträge jetzt nachträglich bearbeiten; geänderte Beiträge werden als bearbeitet gekennzeichnet."
+            ]
+          },
+          {
+            "hash": "81bd510",
+            "emoji": "✨",
+            "message": "Newsfeed: Optionale Überschrift beim Verfassen",
+            "date": "2026-06-23",
+            "description": [
+              "Beim Verfassen eines Newsfeed-Beitrags gibt es jetzt ein optionales Feld für eine Überschrift (bis zu 100 Zeichen). Sie erscheint hervorgehoben über dem Text – in der Beitragsliste wie in der Detailansicht.",
+              "So heben sich vor allem offizielle Ankündigungen besser voneinander ab. Wer keine Überschrift vergibt, dessen Beitrag sieht aus wie gewohnt."
+            ]
+          },
+          {
+            "hash": "bd70244",
+            "emoji": "✨",
+            "message": "Serientermine in der Azubiplanung: Wiederholen-Dialog (Wochentage/Block, Intervall, Ende), Mehr-Azubi-/Gruppenauswahl mit Suche, Serien-Indikator auf Pills, Lernort-Pager",
+            "date": "2026-06-23"
+          },
           {
             "hash": "f3f5953",
             "emoji": "✨",
@@ -934,54 +971,6 @@
             "emoji": "✨",
             "message": "Das Anmelden mit Telefonnummer ist nun auch im Dashboard möglich",
             "date": "2026-02-09"
-          },
-          {
-            "hash": "bc3ec9e",
-            "emoji": "✨",
-            "message": "Der Filter nach Rollen ist nun dynamisiert auf die gebuchten Lizenzen des Kunden",
-            "date": "2026-02-06"
-          },
-          {
-            "hash": "5539883",
-            "emoji": "✨",
-            "message": "Eine Mehrfachauswahl von Artikeln ist zum Zuweisen in eine Gruppe nun möglich",
-            "date": "2026-02-05"
-          },
-          {
-            "hash": "7b98a6c",
-            "emoji": "✨",
-            "message": "Der Autor eines Artikels kann nun von einem Administrator editiert werden",
-            "date": "2026-02-05"
-          },
-          {
-            "hash": "798c7f7",
-            "emoji": "✨",
-            "message": "Die Artikeldarstellung würde überarbeitet und an die App angepasst",
-            "date": "2026-02-05"
-          },
-          {
-            "hash": "b4e4d24",
-            "emoji": "✨",
-            "message": "Der Filter in Artikeln wurde nun vollständig überarbeitet",
-            "date": "2026-02-05"
-          },
-          {
-            "hash": "1d6d438",
-            "emoji": "✨",
-            "message": "Artikelverwaltung vereinheitlicht",
-            "date": "2026-02-05"
-          },
-          {
-            "hash": "8a5f73d",
-            "emoji": "✨",
-            "message": "Gruppenverwaltung vereinheitlicht",
-            "date": "2026-02-05"
-          },
-          {
-            "hash": "0e17015",
-            "emoji": "✨",
-            "message": "Testabdeckung an neue Pfade angepasst",
-            "date": "2026-02-05"
           }
         ],
         "deployment": [
@@ -1023,6 +1012,30 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "412de65",
+            "emoji": "🐛",
+            "message": "Newsfeed-Dashboard: Sticky-Ablauf & Löschen aus der Übersicht",
+            "date": "2026-06-23",
+            "description": [
+              "Zwei Verbesserungen im Newsfeed-Bereich des Dashboards:",
+              "Angepinnte Beiträge bleiben jetzt wirklich nur 7 Tage oben angeheftet – danach rutschen sie wieder ganz normal in die zeitliche Reihenfolge und verlieren die Stecknadel. Bisher klebten sie unbegrenzt oben fest.",
+              "Außerdem lassen sich Beiträge jetzt direkt aus der Übersicht löschen (Papierkorb-Symbol auf der Karte, mit Sicherheitsabfrage) – man muss dafür nicht mehr erst den Beitrag öffnen."
+            ]
+          },
+          {
+            "hash": "599a81f",
+            "emoji": "🐛",
+            "message": "Ablaufplanung: Azubi-Namensspalte bleibt beim horizontalen Scrollen sticky",
+            "date": "2026-06-20",
+            "description": [
+              "Tabelle von border-collapse auf border-separate umgestellt (Chromium ignoriert",
+              "sticky auf Tabellenzellen bei collapsed borders) und Rahmen-Darstellung",
+              "angeglichen. Zusätzlich min-w-0 am Inhalts-Container des FullLayout ergänzt,",
+              "damit die breite Tabelle im inneren overflow-x-auto-Container scrollt statt die",
+              "gesamte Seite inkl. Navbar horizontal zu verschieben."
+            ]
+          },
           {
             "hash": "b4b0e5d",
             "emoji": "🐛",
@@ -1307,6 +1320,12 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "4b2d75f",
+            "emoji": "♻️",
+            "message": "Release mail script adapted to multiple reciepients",
+            "date": "2026-06-24"
+          },
           {
             "hash": "b9186e4",
             "emoji": "🔧",
@@ -1604,21 +1623,53 @@
             "emoji": "♻️",
             "message": "Anpassung am Wording im Dokumentenbereich",
             "date": "2026-02-09"
-          },
-          {
-            "hash": "2a41b51",
-            "emoji": "♻️",
-            "message": "Module im Kunden wurden zusammengefasst und an die Lizenzen angepasst: Onboarding, Azubi, Mitarbeiter",
-            "date": "2026-02-06"
-          },
-          {
-            "hash": "1bcf258",
-            "emoji": "♻️",
-            "message": "Neue Kennzahl für durchschnittliche Nutzung pro Woche eingeführt",
-            "date": "2026-02-06"
           }
         ],
         "styles": [
+          {
+            "hash": "01f5575",
+            "emoji": "💄",
+            "message": "Einheitliches Marken-Dunkelgrün (#1C3C46) in der gesamten Oberfläche",
+            "date": "2026-06-24",
+            "description": [
+              "- Primär-Buttons, Sidebar-Highlight, Segmented-Controls (Tab-Leisten),",
+              "Dialog-Header, FAB und Chat-Bubbles auf statisches workmate-primaryDark",
+              "- FAB vereinheitlicht: Newsfeed & Teams nutzen jetzt die zentrale",
+              "FloatingActionButton-Komponente statt MUI-Fab bzw. Inline-Button",
+              "- Newsfeed-Verfassen-Overlay: statische Marken-Tokens mit Lime-Akzent",
+              "- Newsfeed-Sichtbarkeit: AdminOnly-Modus blendet die Team-Option nun",
+              "auch fuer Mitarbeiter aus (ueber /app/settings)"
+            ]
+          },
+          {
+            "hash": "ee5b9b9",
+            "emoji": "💄",
+            "message": "Ablaufplanung: sticky Header/Gruppen/Namensspalte, ClickUp-Scrollmodell & einklappbares Filter-Panel",
+            "date": "2026-06-22",
+            "description": [
+              "- Datums-Header, Gruppen-Trennzeilen (Push-out) und Namensspalte bleiben beim",
+              "Scrollen sichtbar; ein einziger, bildschirmfüllender Scroll-Container für beide",
+              "Achsen (Höhe per JS bis zur Fensterunterkante gemessen), Agenda/Legende darin.",
+              "- Vertikaler Seiten-Scroll nur auf dieser Route gesperrt (kein Nachscrollen mehr).",
+              "- Filter/Einstellungen in eine einklappbare Card (Default geschlossen): Zeitraum,",
+              "Gruppen-/Azubi-Filter, Wochenend-Toggle (Zahnrad entfernt) und Zoom sauber",
+              "gruppiert; Filter-Popovers via z-40 über der Datumsleiste.",
+              "- ZoomSlider: optionale 'bare'-Variante ohne Karten-Box für die Panel-Nutzung.",
+              "- DRY: gemeinsamer useCalendarHeaderModel-Hook für die Header-Berechnung."
+            ]
+          },
+          {
+            "hash": "ab8044f",
+            "emoji": "💄",
+            "message": "Inhaltsgruppen-Auswahl: Hinweis aufs nötige Speichern der Hauptentität + Button „Übernehmen\" statt „Speichern\"",
+            "date": "2026-06-18"
+          },
+          {
+            "hash": "ebc9af6",
+            "emoji": "💄",
+            "message": "Umfrage duplizieren: wechselt jetzt automatisch zum Tab „Entwürfe\", wo das Duplikat erscheint",
+            "date": "2026-06-18"
+          },
           {
             "hash": "63263ea",
             "emoji": "💄",
@@ -1751,12 +1802,6 @@
             "emoji": "💄",
             "message": "Modernisierung des Seitenmenüs (optik)",
             "date": "2026-02-07"
-          },
-          {
-            "hash": "ed93aa8",
-            "emoji": "💄",
-            "message": "Newsfeed und Chat als delegierter Admin deaktiviert",
-            "date": "2026-02-04"
           }
         ],
         "tests": [
@@ -1815,18 +1860,6 @@
             "emoji": "🧪",
             "message": "Tests an neue Seitenleiste angepasst",
             "date": "2026-02-07"
-          },
-          {
-            "hash": "bdd670c",
-            "emoji": "🧪",
-            "message": "Test von Menüpunkten pro Lizenz eingeführt",
-            "date": "2026-02-06"
-          },
-          {
-            "hash": "5e72514",
-            "emoji": "🧪",
-            "message": "Testabdeckung für das Erstellen der drei Hauptnutzer + Login mit diesen",
-            "date": "2026-02-04"
           }
         ],
         "docs": [
