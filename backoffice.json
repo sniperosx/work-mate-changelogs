@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-24T18:13:25.553Z",
+  "generatedAt": "2026-06-30T13:33:26.261Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -1013,6 +1013,32 @@
         ],
         "fixes": [
           {
+            "hash": "bb45856",
+            "emoji": "🐛",
+            "message": "Fehlerprotokoll: technische Fehler endlich selbst einsehbar",
+            "date": "2026-06-30",
+            "description": [
+              "✨ Neuer Bereich „Fehlerprotokoll\" unter Einstellungen → Support: Tritt in der App ein Fehler auf (z. B. „Export fehlgeschlagen\"), wird er ab sofort automatisch festgehalten und ist dort einsehbar",
+              "📋 Mit „Alles kopieren\" lässt sich der komplette Fehler-Verlauf in einem Rutsch kopieren und direkt an den Support schicken – kein Suchen in technischen Browser-Menüs mehr",
+              "🧹 Unwichtige Warnungen werden ausgeblendet, damit nur echte Fehler in der Liste stehen",
+              "🔒 Sensible Daten wie Passwörter werden vor dem Speichern automatisch unkenntlich gemacht"
+            ]
+          },
+          {
+            "hash": "b6a2b8a",
+            "emoji": "🐛",
+            "message": "Dialog: verirrtes window.close() in Button-Handlern entfernt",
+            "date": "2026-06-29",
+            "description": [
+              "Die Buttons in DialogPanel riefen neben ihrer Aktion ein globales close()",
+              "(= window.close()) auf. In direkt geöffneten Tabs ein No-Op, in einem per",
+              "Link (target=_blank) geöffneten Tab schloss es jedoch den kompletten Tab —",
+              "beim Kunden sichtbar als 'Absprung auf work-mate.de' nach Klick auf",
+              "Übernehmen. Der Dialog schliesst weiterhin korrekt ueber setIsOpen(false)",
+              "im Aufrufer."
+            ]
+          },
+          {
             "hash": "412de65",
             "emoji": "🐛",
             "message": "Newsfeed-Dashboard: Sticky-Ablauf & Löschen aus der Übersicht",
@@ -1796,12 +1822,6 @@
             "emoji": "💄",
             "message": "Benutzertabelle überarbeitet und vereinfacht (kein bearbeiten Knopf mehr)",
             "date": "2026-02-07"
-          },
-          {
-            "hash": "c72ee64",
-            "emoji": "💄",
-            "message": "Modernisierung des Seitenmenüs (optik)",
-            "date": "2026-02-07"
           }
         ],
         "tests": [
@@ -1853,12 +1873,6 @@
             "hash": "8421402",
             "emoji": "🧪",
             "message": "Screenshotting in Tests eingeführt",
-            "date": "2026-02-07"
-          },
-          {
-            "hash": "3858b24",
-            "emoji": "🧪",
-            "message": "Tests an neue Seitenleiste angepasst",
             "date": "2026-02-07"
           }
         ],
