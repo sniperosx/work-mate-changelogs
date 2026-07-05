@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-06-30T13:33:26.261Z",
+  "generatedAt": "2026-07-05T12:50:59.939Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,37 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "026d7dc",
+            "emoji": "✨",
+            "message": "ESG-/Nachhaltigkeitszertifikat: druckbare Zertifikat-Ansicht (als PDF speichern) mit belegten Umwelt-Kennzahlen (Papier, CO₂, Wasser, Energie) und Button in den Einstellungen",
+            "date": "2026-07-05"
+          },
+          {
+            "hash": "dcce942",
+            "emoji": "✨",
+            "message": "Auswertungen: Neue Ansicht \"Signatur-Verbrauch\" unter Kunden – Übersicht der digitalen Signaturen je Kunde nach Status, sortierbar und mit Zeitraum-Auswahl",
+            "date": "2026-07-02"
+          },
+          {
+            "hash": "95438a5",
+            "emoji": "✨",
+            "message": "Wissensmanagement: Interviews als Mitarbeiter im Backoffice führen",
+            "date": "2026-07-01",
+            "description": [
+              "Neue Mitarbeitersicht 'Meine Interviews' (/meine-interviews): zugewiesene Interviews auflisten und im Frage-Loop beantworten (Intro → Fragen → Abschluss). Antwort per Sprachaufnahme (WAV im Browser); Texteingabe ist vorbereitet, aber hinter INTERVIEW_TEXT_INPUT_ENABLED deaktiviert, bis der AI-Dienst Text unterstützt.",
+              "Sichtbar für alle Rollen, gated auf CustomerFeature.KnowledgeManagement. Neue App-seitige Query-/Mutation-Hooks für /app/interviews/*."
+            ]
+          },
+          {
+            "hash": "944b3e0",
+            "emoji": "✨",
+            "message": "Interview erstellen: Fragen per KI aus einer Berufsgruppe generieren und unten anhängen",
+            "date": "2026-07-01",
+            "description": [
+              "Neues Berufsgruppe-Feld und Generieren-Button; API-Schema aktualisiert."
+            ]
+          },
           {
             "hash": "e60b6e4",
             "emoji": "✨",
@@ -959,18 +990,6 @@
             "emoji": "✨",
             "message": "Lebenszyklus-Boxen nur aktiv wenn jeweiliges Produktmodul gebucht ist 📦 Mitarbeiter-Box deaktiviert ohne Employee-Modul 📦 Offboarding-Box deaktiviert ohne Offboarding-Modul",
             "date": "2026-02-09"
-          },
-          {
-            "hash": "5f068ed",
-            "emoji": "✨",
-            "message": "Das Anmelden mit Telefon ist nun auch für alle Mitarbeiter freigeschaltet",
-            "date": "2026-02-09"
-          },
-          {
-            "hash": "3692648",
-            "emoji": "✨",
-            "message": "Das Anmelden mit Telefonnummer ist nun auch im Dashboard möglich",
-            "date": "2026-02-09"
           }
         ],
         "deployment": [
@@ -1012,6 +1031,15 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "7999c80",
+            "emoji": "🐛",
+            "message": "Artikelübersicht: Kategorien ohne Gruppenzuordnung im Filter anzeigen und mitzählen",
+            "date": "2026-07-02",
+            "description": [
+              "Kategorien unzugewiesener Artikel erscheinen jetzt im Filter; bei Auswahl werden diese Artikel unter ihrer Kategorie angezeigt. Nicht mehr genutztes ArticleFilterPanel entfernt."
+            ]
+          },
           {
             "hash": "bb45856",
             "emoji": "🐛",
@@ -1337,12 +1365,6 @@
             "emoji": "🐛",
             "message": "Fixes TS errors",
             "date": "2026-02-10"
-          },
-          {
-            "hash": "a6a6d3a",
-            "emoji": "🐛",
-            "message": "Removes TS Error",
-            "date": "2026-02-07"
           }
         ],
         "refactors": [
@@ -1643,15 +1665,18 @@
             "description": [
               "✨ \"Kategorien verwalten\"-Button im Kategorien-Dropdown der Artikel-Filterleiste wieder eingebaut"
             ]
-          },
-          {
-            "hash": "19f1ad7",
-            "emoji": "♻️",
-            "message": "Anpassung am Wording im Dokumentenbereich",
-            "date": "2026-02-09"
           }
         ],
         "styles": [
+          {
+            "hash": "965a59e",
+            "emoji": "💄",
+            "message": "Meine Interviews: warmes Studio-Redesign (Fullscreen, Live-Waveform, Erklär-Header)",
+            "date": "2026-07-02",
+            "description": [
+              "Die Mitarbeiter-Interviewsicht wird eine immersive, motivierende 'Aufnahme-Studio'-Bühne statt blanker Formularoptik: atmender Mikrofon-Puls mit echter Live-Waveform aus dem Mikrofonpegel, Frage in Fraunces, warme Intro- und Feier-Szene, Chapter-Fortschritt. Booth füllt die Content-Fläche auf volle Höhe (Höhen-Kette im FullLayout durchgereicht). Neuer Erklär-Header auf der Übersicht ('Dein Wissen. Nachhaltig gesichert.', 'So funktioniert's'). Dev-only Debug-Skip zum Abschluss (nicht im Prod-Build)."
+            ]
+          },
           {
             "hash": "01f5575",
             "emoji": "💄",
@@ -1794,34 +1819,6 @@
             "emoji": "💄",
             "message": "Sortierung der Menüreihenfolge nach Wunsch angepasst",
             "date": "2026-02-10"
-          },
-          {
-            "hash": "3ef9905",
-            "emoji": "💄",
-            "message": "Elternzeit-Box nur bei gebuchtem Modul sichtbar.",
-            "date": "2026-02-09",
-            "description": [
-              "✨ Gruppenauswahl für Elternzeit hinzugefügt",
-              "✨ Aktivierung der Elternzeit nur mit ausgewählter Gruppe möglich"
-            ]
-          },
-          {
-            "hash": "91d5c22",
-            "emoji": "💄",
-            "message": "Artikelpage ist nun mehr kompakter dargestellt",
-            "date": "2026-02-07"
-          },
-          {
-            "hash": "12f9258",
-            "emoji": "💄",
-            "message": "Modernisierung der Profilverwaltung",
-            "date": "2026-02-07"
-          },
-          {
-            "hash": "aef8f7b",
-            "emoji": "💄",
-            "message": "Benutzertabelle überarbeitet und vereinfacht (kein bearbeiten Knopf mehr)",
-            "date": "2026-02-07"
           }
         ],
         "tests": [
@@ -1856,27 +1853,15 @@
             "emoji": "🧪",
             "message": "Neues Wording im UserProfile",
             "date": "2026-02-27"
-          },
-          {
-            "hash": "bf532de",
-            "emoji": "🧪",
-            "message": "Testabdeckung grün",
-            "date": "2026-02-07"
-          },
-          {
-            "hash": "08d47f7",
-            "emoji": "🧪",
-            "message": "Screenshots in Tests II",
-            "date": "2026-02-07"
-          },
-          {
-            "hash": "8421402",
-            "emoji": "🧪",
-            "message": "Screenshotting in Tests eingeführt",
-            "date": "2026-02-07"
           }
         ],
         "docs": [
+          {
+            "hash": "18feef2",
+            "emoji": "📝",
+            "message": "Wissensmanagement: Spec & Umsetzungsplan (Mitarbeitersicht)",
+            "date": "2026-07-01"
+          },
           {
             "hash": "1d0091e",
             "emoji": "📝",
