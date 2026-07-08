@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-05T12:50:59.939Z",
+  "generatedAt": "2026-07-08T07:18:37.672Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -984,12 +984,6 @@
             "emoji": "✨",
             "message": "Globalen Button zum Anlegen neuer Schulfächer im Page-Header hinzugefügt",
             "date": "2026-02-10"
-          },
-          {
-            "hash": "6339d4d",
-            "emoji": "✨",
-            "message": "Lebenszyklus-Boxen nur aktiv wenn jeweiliges Produktmodul gebucht ist 📦 Mitarbeiter-Box deaktiviert ohne Employee-Modul 📦 Offboarding-Box deaktiviert ohne Offboarding-Modul",
-            "date": "2026-02-09"
           }
         ],
         "deployment": [
@@ -1031,6 +1025,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "c38a7b8",
+            "emoji": "🐛",
+            "message": "Seitenmenü: Navigation auf kleinen Displays scrollbar; Abmelden/Kundenwechsel bleiben immer erreichbar",
+            "date": "2026-07-07"
+          },
           {
             "hash": "7999c80",
             "emoji": "🐛",
