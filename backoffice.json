@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-08T07:18:37.672Z",
+  "generatedAt": "2026-07-09T08:34:00.508Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,30 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "65a00df",
+            "emoji": "✨",
+            "message": "Azubi-Planung: Legende als Overlay per Header-Button; Filter-Dropdowns über Timeline-Header",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "caaab23",
+            "emoji": "✨",
+            "message": "Azubi-Planung: Schichtmodell, horizontales Scrollen & Sticky-Labels",
+            "date": "2026-07-09",
+            "description": [
+              "- Schichtmodell: School/Prüfungen als non-destruktive Overlays über der",
+              "durchlaufenden Lernort-Basis (OverlayBar), Events als gestapelte Pins",
+              "(EventMarker); Löschen eines Overlays gibt die Basis automatisch frei",
+              "- Timeline auf Feste-Dichte-Modell umgestellt: feste Pixel-pro-Tag je Zoom,",
+              "horizontal scrollbarer Track über den gesamten Zeitraum, Tagesraster in der",
+              "Wochenansicht (Raster als CSS-Gradient statt per-Tag-DOM)",
+              "- Sticky-Labels: Balkentitel bleibt beim Horizontal-Scrollen neben der",
+              "Namensspalte lesbar, solange der Balken dort liegt",
+              "- Namensspalte & Achsen-Ecke horizontal fixiert",
+              "- Tooltips: global genau einer offen, schliessen beim Scrollen (PlanningTooltip)"
+            ]
+          },
           {
             "hash": "026d7dc",
             "emoji": "✨",
@@ -978,12 +1002,6 @@
               "- Aktiv-Erkennung prüft nun ob eine Inhaltsgruppe zugewiesen ist",
               "- API-Typen um executiveBlueprintId und parentalLeaveGroupId erweitert"
             ]
-          },
-          {
-            "hash": "6aa5985",
-            "emoji": "✨",
-            "message": "Globalen Button zum Anlegen neuer Schulfächer im Page-Header hinzugefügt",
-            "date": "2026-02-10"
           }
         ],
         "deployment": [
@@ -1025,6 +1043,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "d672a79",
+            "emoji": "🐛",
+            "message": "Azubi-Planung: Tages-Labels der Zeitachse als zentrierte Zweizeiler (kein Überlauf mehr)",
+            "date": "2026-07-09"
+          },
           {
             "hash": "c38a7b8",
             "emoji": "🐛",
@@ -1369,6 +1393,23 @@
         ],
         "refactors": [
           {
+            "hash": "ba1bf57",
+            "emoji": "⚡",
+            "message": "Azubi-Planung: Timeline auf performantes Balken-/Zoom-Modell umgebaut",
+            "date": "2026-07-08",
+            "description": [
+              "- Zelle-pro-Tag-Tabelle entfernt (DayCell/ApprenticeRow/OverviewCalendarHeader)",
+              "- Neue Bausteine: useTimeScale (Datum<->%, Zeit-Zoom Woche/Monat/Quartal),",
+              "TimeAxis, ScheduleBar/LaneTrack (ein Einsatz = ein absolutes Element),",
+              "TimelineLane",
+              "- Drag & Resize aufs %-Modell neu verdrahtet; dateTo inklusive (Ein-Tages-",
+              "Einsaetze sichtbar)",
+              "- Schichtmodell-Basis: useLayeredEntries (Lernort-Basis vs. School/Event-Overlays)",
+              "- ApprenticeNameCell von td auf div; Wochenend-Kompression entfaellt",
+              "- Spec + Implementierungsplan ergaenzt"
+            ]
+          },
+          {
             "hash": "4b2d75f",
             "emoji": "♻️",
             "message": "Release mail script adapted to multiple reciepients",
@@ -1650,24 +1691,25 @@
             "emoji": "♻️",
             "message": "BlueprintAssignmentInput: MultiSelect-Dropdown durch Overlay ersetzt",
             "date": "2026-02-11"
-          },
-          {
-            "hash": "35b7529",
-            "emoji": "♻️",
-            "message": "Mitarbeiter-Box im Lebenszyklus vereinfacht: Führungskraft-Logik entfernt, Azubi/Mitarbeiter-Tabs für Blueprint-Filterung hinzugefügt",
-            "date": "2026-02-10"
-          },
-          {
-            "hash": "1b8278f",
-            "emoji": "♻️",
-            "message": "Gruppenzuweisung vereinfacht: Modul-Auswahl (Schritt 1) entfernt, alle gebuchten Module werden automatisch verwendet",
-            "date": "2026-02-09",
-            "description": [
-              "✨ \"Kategorien verwalten\"-Button im Kategorien-Dropdown der Artikel-Filterleiste wieder eingebaut"
-            ]
           }
         ],
         "styles": [
+          {
+            "hash": "9fff408",
+            "emoji": "💄",
+            "message": "Azubi-Planung: Gruppen-Header vollbreit, gepinnt & sauber geschichtet",
+            "date": "2026-07-09",
+            "description": [
+              "- Gruppen-Header als vollbreites, klickbares Banner (kein Zuschneiden des",
+              "Namens mehr auf die Namensspalten-Breite); Chevron/Akzent/Zähler mit fester",
+              "Groesse, nur der Name schrumpft (einheitliche Kopfzeilen)",
+              "- Chevron + Name bleiben beim Horizontal-Scrollen links gepinnt (sticky auf dem",
+              "schmalen Inhalt statt auf dem vollbreiten Button)",
+              "- z-index-Hierarchie vereinheitlicht: Lane-Inhalt < Namensspalte (z-40) <",
+              "Gruppen-Header (z-50) < TimeAxis (z-60) — Zeilen/Balken scrollen nicht mehr",
+              "ueber die Header"
+            ]
+          },
           {
             "hash": "965a59e",
             "emoji": "💄",
@@ -1807,18 +1849,6 @@
             "emoji": "💄",
             "message": "Optimierung der Customer Box im Seitenmenü",
             "date": "2026-02-12"
-          },
-          {
-            "hash": "9b54c90",
-            "emoji": "💄",
-            "message": "Alle Sidebar-Sektionen einheitlich ein-/ausklappbar gemacht",
-            "date": "2026-02-10"
-          },
-          {
-            "hash": "dc2b5e3",
-            "emoji": "💄",
-            "message": "Sortierung der Menüreihenfolge nach Wunsch angepasst",
-            "date": "2026-02-10"
           }
         ],
         "tests": [
