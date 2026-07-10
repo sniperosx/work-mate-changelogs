@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-07-10T10:11:54.158Z",
+  "generatedAt": "2026-07-10T10:12:18.465Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "09e25aa",
+            "emoji": "✨",
+            "message": "Newsfeed: mehrere Bilder pro Beitrag als Slider",
+            "date": "2026-07-10"
+          },
           {
             "hash": "d0cef69",
             "emoji": "✨",
@@ -1212,12 +1218,6 @@
             "hash": "66e0ec6",
             "emoji": "✨",
             "message": "Adds list of new colleagues to employee assistant",
-            "date": "2025-10-17"
-          },
-          {
-            "hash": "cdd5bc4",
-            "emoji": "✨",
-            "message": "Merged user profile and mentor profile screen",
             "date": "2025-10-17"
           }
         ],
