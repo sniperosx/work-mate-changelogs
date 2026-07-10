@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-07-10T10:11:07.619Z",
+  "generatedAt": "2026-07-10T10:11:54.158Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,24 +21,6 @@
       "date": null,
       "changes": {
         "features": [
-          {
-            "hash": "fca9cec",
-            "emoji": "✨",
-            "message": "App: Highlights kommen jetzt aus der neuen Highlight-Markierung der Beiträge – statt aus einer festen „Highlights\"-Kategorie",
-            "date": "2026-07-09"
-          },
-          {
-            "hash": "d872024",
-            "emoji": "✨",
-            "message": "Bewertungs-Banner: frisches Lime-Design statt Foto-Hintergrund",
-            "date": "2026-07-07"
-          },
-          {
-            "hash": "3216d2b",
-            "emoji": "✨",
-            "message": "Feedback-Widget: frisches Coral-Design statt Pastell-Lila",
-            "date": "2026-07-07"
-          },
           {
             "hash": "d0cef69",
             "emoji": "✨",
@@ -572,24 +554,6 @@
         ],
         "fixes": [
           {
-            "hash": "2600b04",
-            "emoji": "🐛",
-            "message": "Startseite: keine leeren Lücken mehr im Ausbildungs-Bereich",
-            "date": "2026-07-09"
-          },
-          {
-            "hash": "7b2e78d",
-            "emoji": "🐛",
-            "message": "Artikel: Überschriften werden unter Android wieder fett dargestellt",
-            "date": "2026-07-08"
-          },
-          {
-            "hash": "5014656",
-            "emoji": "🐛",
-            "message": "Chat: Tastatur verdeckt das Eingabefeld nicht mehr (+ neuer Senden-Button)",
-            "date": "2026-07-07"
-          },
-          {
             "hash": "0bb9f5e",
             "emoji": "🐛",
             "message": "Newsfeed: Absturz beim Verfassen behoben (Video-Upload entfernt)",
@@ -789,18 +753,6 @@
           }
         ],
         "refactors": [
-          {
-            "hash": "fdc08e4",
-            "emoji": "🔧",
-            "message": "App: generierte API-Typen mit aktuellem Backend-Stand synchronisiert",
-            "date": "2026-07-09"
-          },
-          {
-            "hash": "15eed3f",
-            "emoji": "🔧",
-            "message": "Startseite: leeren „Highlights\"-Bereich komplett ausblenden",
-            "date": "2026-07-09"
-          },
           {
             "hash": "3709e1d",
             "emoji": "🔧",
@@ -1249,6 +1201,24 @@
             "emoji": "✨",
             "message": "Adds additional profile edit button the home screen",
             "date": "2025-10-20"
+          },
+          {
+            "hash": "350219b",
+            "emoji": "✨",
+            "message": "Adds support for live regex check on text input",
+            "date": "2025-10-20"
+          },
+          {
+            "hash": "66e0ec6",
+            "emoji": "✨",
+            "message": "Adds list of new colleagues to employee assistant",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "cdd5bc4",
+            "emoji": "✨",
+            "message": "Merged user profile and mentor profile screen",
+            "date": "2025-10-17"
           }
         ],
         "deployment": [
@@ -1405,6 +1375,32 @@
             "emoji": "♻️",
             "message": "Refactoring of the edit profile screen",
             "date": "2025-10-21"
+          },
+          {
+            "hash": "7cad269",
+            "emoji": "♻️",
+            "message": "Moves login overlays to modal screens for better keyboard handling",
+            "date": "2025-10-19"
+          },
+          {
+            "hash": "8b8e7f3",
+            "emoji": "♻️",
+            "message": "Fixes TS errors",
+            "date": "2025-10-17"
+          },
+          {
+            "hash": "11cdb82",
+            "emoji": "♻️",
+            "message": "Potential fix for minimal font sizes in menu items",
+            "date": "2025-10-17"
+          }
+        ],
+        "docs": [
+          {
+            "hash": "79b1c78",
+            "emoji": "📝",
+            "message": "Adds changelog",
+            "date": "2025-10-17"
           }
         ]
       }
