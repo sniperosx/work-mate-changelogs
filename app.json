@@ -1,6 +1,6 @@
 {
   "repository": "app",
-  "generatedAt": "2026-05-10T09:10:34.052Z",
+  "generatedAt": "2026-07-10T10:08:19.182Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,114 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "bdb1cab",
+            "emoji": "✨",
+            "message": "Newsfeed: mehrere Bilder pro Beitrag als Slider",
+            "date": "2026-07-10"
+          },
+          {
+            "hash": "fca9cec",
+            "emoji": "✨",
+            "message": "App: Highlights kommen jetzt aus der neuen Highlight-Markierung der Beiträge – statt aus einer festen „Highlights\"-Kategorie",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "d872024",
+            "emoji": "✨",
+            "message": "Bewertungs-Banner: frisches Lime-Design statt Foto-Hintergrund",
+            "date": "2026-07-07"
+          },
+          {
+            "hash": "3216d2b",
+            "emoji": "✨",
+            "message": "Feedback-Widget: frisches Coral-Design statt Pastell-Lila",
+            "date": "2026-07-07"
+          },
+          {
+            "hash": "d0cef69",
+            "emoji": "✨",
+            "message": "Newsfeed: Videos abspielen & hochladen (App)",
+            "date": "2026-06-24"
+          },
+          {
+            "hash": "493df53",
+            "emoji": "✨",
+            "message": "Newsfeed: Lesbareres Beitrags-Widget auf dem Start",
+            "date": "2026-06-23"
+          },
+          {
+            "hash": "a5cdca5",
+            "emoji": "✨",
+            "message": "Newsfeed: Überschrift in Liste & Start-Widget",
+            "date": "2026-06-23"
+          },
+          {
+            "hash": "bb0e9c6",
+            "emoji": "✨",
+            "message": "Newsfeed: Einladende Kachel bei leerem Feed & schönere Beiträge",
+            "date": "2026-06-01"
+          },
+          {
+            "hash": "54bc415",
+            "emoji": "✨",
+            "message": "TimeZone Support für Menueinträge",
+            "date": "2026-05-27"
+          },
+          {
+            "hash": "431835e",
+            "emoji": "✨",
+            "message": "Profil: Chat direkt aus dem Profil starten",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "bb5c6ae",
+            "emoji": "✨",
+            "message": "Startseite: Newsfeed vor \"Neue Mitarbeiter\"",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "cd47d0f",
+            "emoji": "✨",
+            "message": "Artikel-Detail: Parallax-Effekt rausgeworfen",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "23610d2",
+            "emoji": "✨",
+            "message": "Listen-Karten: Schatten für Formulare, Sektionen und Unterschriften",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "76b0a0b",
+            "emoji": "✨",
+            "message": "Hamburger-Menü-Button: Schatten verhindert Verschwinden auf weiß",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "33da95a",
+            "emoji": "✨",
+            "message": "Listen-Karten: einheitliches Touch-Highlight beim Antippen",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "40eadd1",
+            "emoji": "✨",
+            "message": "LoginByEmail: SafeArea-Top fix und Icon-Badge über Code-Eingabe",
+            "date": "2026-05-22"
+          },
+          {
+            "hash": "c03fea8",
+            "emoji": "✨",
+            "message": "Drawer: Vollbreit-Layout und überarbeitete Öffnen-/Schließen-Animation",
+            "date": "2026-05-22"
+          },
+          {
+            "hash": "2c13eff",
+            "emoji": "✨",
+            "message": "Profil: Geschäftliche E-Mail und Telefon + One-Tap-Call aus dem Directory",
+            "date": "2026-05-21"
+          },
           {
             "hash": "a4d91c2",
             "emoji": "✨",
@@ -366,6 +474,24 @@
         ],
         "deployment": [
           {
+            "hash": "bd11a3d",
+            "emoji": "🚀",
+            "message": "OTA-Release v35",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "7642b2d",
+            "emoji": "🚀",
+            "message": "Changelog Automatisierung",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "3a1d7ca",
+            "emoji": "🚀",
+            "message": "OTA-Release v34",
+            "date": "2026-05-22"
+          },
+          {
             "hash": "e97946b",
             "emoji": "🚀",
             "message": "OTA-Release v33",
@@ -451,6 +577,78 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "2600b04",
+            "emoji": "🐛",
+            "message": "Startseite: keine leeren Lücken mehr im Ausbildungs-Bereich",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "7b2e78d",
+            "emoji": "🐛",
+            "message": "Artikel: Überschriften werden unter Android wieder fett dargestellt",
+            "date": "2026-07-08"
+          },
+          {
+            "hash": "5014656",
+            "emoji": "🐛",
+            "message": "Chat: Tastatur verdeckt das Eingabefeld nicht mehr (+ neuer Senden-Button)",
+            "date": "2026-07-07"
+          },
+          {
+            "hash": "0bb9f5e",
+            "emoji": "🐛",
+            "message": "Newsfeed: Absturz beim Verfassen behoben (Video-Upload entfernt)",
+            "date": "2026-06-25"
+          },
+          {
+            "hash": "cc0d3ad",
+            "emoji": "🐛",
+            "message": "Newsfeed: Absturz beim Bearbeiten eines Beitrags behoben",
+            "date": "2026-06-24"
+          },
+          {
+            "hash": "dd68f59",
+            "emoji": "🐛",
+            "message": "Chat: Ungelesen-Markierung verschwindet sofort",
+            "date": "2026-06-08"
+          },
+          {
+            "hash": "6b3ed28",
+            "emoji": "🐛",
+            "message": "Formulare: Buttons unten nicht mehr abgeschnitten",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "aa3e74b",
+            "emoji": "🐛",
+            "message": "Sheets: KeyVisual nahtlos am oberen Rand, Android über volle Breite",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "7778273",
+            "emoji": "🐛",
+            "message": "Profil bearbeiten: Mülleimer-Button wird nicht mehr abgeschnitten",
+            "date": "2026-05-23"
+          },
+          {
+            "hash": "b3c5dc1",
+            "emoji": "🐛",
+            "message": "ImageView: Doppel-Shimmer im Avatar-Fallback entfernt (Android)",
+            "date": "2026-05-22"
+          },
+          {
+            "hash": "2d737a6",
+            "emoji": "🐛",
+            "message": "HomeScreen: BlurView-Fallback auf Android API ≤31",
+            "date": "2026-05-21"
+          },
+          {
+            "hash": "708f745",
+            "emoji": "🐛",
+            "message": "Button: textClassName-Farbe überschreibt Default-Color wieder",
+            "date": "2026-05-21"
+          },
           {
             "hash": "2df7c02",
             "emoji": "🐛",
@@ -597,6 +795,30 @@
           }
         ],
         "refactors": [
+          {
+            "hash": "fdc08e4",
+            "emoji": "🔧",
+            "message": "App: generierte API-Typen mit aktuellem Backend-Stand synchronisiert",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "15eed3f",
+            "emoji": "🔧",
+            "message": "Startseite: leeren „Highlights\"-Bereich komplett ausblenden",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "3709e1d",
+            "emoji": "🔧",
+            "message": "Release-Skript: aktuelle OTA-Version oben anzeigen",
+            "date": "2026-06-25"
+          },
+          {
+            "hash": "8e532d9",
+            "emoji": "🔧",
+            "message": "API-Typen aktualisiert: Berichtsheft-Recht (CustomerFeature) ergänzt",
+            "date": "2026-06-16"
+          },
           {
             "hash": "81f2ff2",
             "emoji": "♻️",
@@ -788,6 +1010,12 @@
         ],
         "docs": [
           {
+            "hash": "ea48b82",
+            "emoji": "📝",
+            "message": "CLAUDE.md: Commit-Konvention für endkundenfähige Beschreibungen festgehalten",
+            "date": "2026-05-23"
+          },
+          {
             "hash": "f70f1fc",
             "emoji": "📝",
             "message": "Plan: Artikel-zu-Artikel-Verlinkung",
@@ -839,6 +1067,12 @@
           }
         ],
         "other": [
+          {
+            "hash": "0ce4c60",
+            "emoji": "🔥",
+            "message": "Drawer: Menüpunkt und Screen \"Hilfe anfordern\" entfernt",
+            "date": "2026-05-21"
+          },
           {
             "hash": "c0a38cf",
             "emoji": "🗑️",
@@ -1015,108 +1249,6 @@
             "emoji": "✨",
             "message": "Adds unsaved data warning in user profile edit screen",
             "date": "2025-10-21"
-          },
-          {
-            "hash": "8d8f809",
-            "emoji": "✨",
-            "message": "Adds additional profile edit button the home screen",
-            "date": "2025-10-20"
-          },
-          {
-            "hash": "350219b",
-            "emoji": "✨",
-            "message": "Adds support for live regex check on text input",
-            "date": "2025-10-20"
-          },
-          {
-            "hash": "66e0ec6",
-            "emoji": "✨",
-            "message": "Adds list of new colleagues to employee assistant",
-            "date": "2025-10-17"
-          },
-          {
-            "hash": "cdd5bc4",
-            "emoji": "✨",
-            "message": "Merged user profile and mentor profile screen",
-            "date": "2025-10-17"
-          },
-          {
-            "hash": "57b6232",
-            "emoji": "✨",
-            "message": "UI polishing in user details",
-            "date": "2025-10-17"
-          },
-          {
-            "hash": "14ac649",
-            "emoji": "✨",
-            "message": "Adds user detail view for user profiles",
-            "date": "2025-10-17"
-          },
-          {
-            "hash": "d953986",
-            "emoji": "✨",
-            "message": "Adds user profile editing screen with corresponding queries and mutations",
-            "date": "2025-10-16"
-          },
-          {
-            "hash": "13391aa",
-            "emoji": "✨",
-            "message": "Adds user profile button and screen into drawer navigation",
-            "date": "2025-10-16"
-          },
-          {
-            "hash": "9f6a33f",
-            "emoji": "✨",
-            "message": "Adds pdf button to articles detail",
-            "date": "2025-10-14"
-          },
-          {
-            "hash": "a119a51",
-            "emoji": "✨",
-            "message": "Feat adds first stage of a fullscreen image viewer.",
-            "date": "2025-10-14"
-          },
-          {
-            "hash": "5da6527",
-            "emoji": "✨",
-            "message": "Adds view to present images in article content flow",
-            "date": "2025-10-14"
-          },
-          {
-            "hash": "4f36aa5",
-            "emoji": "✨",
-            "message": "Adds new bottom sheet provider implementation",
-            "date": "2025-10-08"
-          },
-          {
-            "hash": "f288304",
-            "emoji": "✨",
-            "message": "Adds code push support on android",
-            "date": "2025-09-17"
-          },
-          {
-            "hash": "3b004ea",
-            "emoji": "✨",
-            "message": "Adds code push support for iOS using revopush",
-            "date": "2025-09-17"
-          },
-          {
-            "hash": "8048739",
-            "emoji": "✨",
-            "message": "Adds the profile image onto home screen",
-            "date": "2025-09-16"
-          },
-          {
-            "hash": "0349f35",
-            "emoji": "✨",
-            "message": "Adds environment service to switch to staging in review processes",
-            "date": "2025-09-16"
-          },
-          {
-            "hash": "3332b6c",
-            "emoji": "✨",
-            "message": "Adds blur top bar in home screen",
-            "date": "2025-09-15"
           }
         ],
         "deployment": [
@@ -1143,36 +1275,6 @@
             "emoji": "🚀",
             "message": "Adds ic_notifications icons to android project",
             "date": "2025-10-21"
-          },
-          {
-            "hash": "61526b7",
-            "emoji": "🚀",
-            "message": "Hotfix release on android 1.6.1",
-            "date": "2025-09-18"
-          },
-          {
-            "hash": "cee5f63",
-            "emoji": "🚀",
-            "message": "Bumps to 1.6.1",
-            "date": "2025-09-17"
-          },
-          {
-            "hash": "cde17bc",
-            "emoji": "🚀",
-            "message": "Release of version 1.6.0 in app store and play store",
-            "date": "2025-09-16"
-          },
-          {
-            "hash": "3e7ee61",
-            "emoji": "🚀",
-            "message": "Adds android build support on react native 0.79.6",
-            "date": "2025-09-15"
-          },
-          {
-            "hash": "28c4917",
-            "emoji": "🚀",
-            "message": "Adds play store fastlane support CI/CD",
-            "date": "2025-09-15"
           }
         ],
         "fixes": [
@@ -1223,30 +1325,6 @@
             "emoji": "🐛",
             "message": "Fixes sentry crash on auto scroll in chat lists",
             "date": "2025-10-21"
-          },
-          {
-            "hash": "6dc07da",
-            "emoji": "🐛",
-            "message": "Fixes freezing overlays caused by race condition in bottom sheet",
-            "date": "2025-10-15"
-          },
-          {
-            "hash": "afd489a",
-            "emoji": "🐛",
-            "message": "Signature line in pairing screen is visible again on work.mate flavour",
-            "date": "2025-10-07"
-          },
-          {
-            "hash": "67e337e",
-            "emoji": "🐛",
-            "message": "Disables pro guard again preventing from reflection crashes in production releases",
-            "date": "2025-09-17"
-          },
-          {
-            "hash": "f5155aa",
-            "emoji": "🐛",
-            "message": "Fixes keyboard handling in overlay screens",
-            "date": "2025-09-15"
           }
         ],
         "refactors": [
@@ -1327,88 +1405,6 @@
             "emoji": "♻️",
             "message": "Refactoring of the edit profile screen",
             "date": "2025-10-21"
-          },
-          {
-            "hash": "7cad269",
-            "emoji": "♻️",
-            "message": "Moves login overlays to modal screens for better keyboard handling",
-            "date": "2025-10-19"
-          },
-          {
-            "hash": "8b8e7f3",
-            "emoji": "♻️",
-            "message": "Fixes TS errors",
-            "date": "2025-10-17"
-          },
-          {
-            "hash": "11cdb82",
-            "emoji": "♻️",
-            "message": "Potential fix for minimal font sizes in menu items",
-            "date": "2025-10-17"
-          },
-          {
-            "hash": "44aaab6",
-            "emoji": "♻️",
-            "message": "Changed interval of onboarding feedback request (only once a week)",
-            "date": "2025-10-17"
-          },
-          {
-            "hash": "cd6a6a2",
-            "emoji": "♻️",
-            "message": "Fixes some iOS 26 and bottom sheet UI problems",
-            "date": "2025-10-08"
-          },
-          {
-            "hash": "31eb7e2",
-            "emoji": "♻️",
-            "message": "Refactors refresh token logic with piggyback support for multiple request on invalid token",
-            "date": "2025-09-17"
-          },
-          {
-            "hash": "d19b94c",
-            "emoji": "♻️",
-            "message": "Fixes grid display for better initial rendering",
-            "date": "2025-09-16"
-          },
-          {
-            "hash": "d1fffc6",
-            "emoji": "♻️",
-            "message": "Pushed android to be running",
-            "date": "2025-09-16"
-          },
-          {
-            "hash": "80eba48",
-            "emoji": "♻️",
-            "message": "WIP: New home item layout",
-            "date": "2025-09-12"
-          }
-        ],
-        "styles": [
-          {
-            "hash": "5997fb6",
-            "emoji": "💄",
-            "message": "Fixes display of upgrade lock screen",
-            "date": "2025-09-18"
-          },
-          {
-            "hash": "0e8634c",
-            "emoji": "💄",
-            "message": "Removes department label from drawer header",
-            "date": "2025-09-15"
-          },
-          {
-            "hash": "3807e6a",
-            "emoji": "💄",
-            "message": "UI polishes the menu item display",
-            "date": "2025-09-12"
-          }
-        ],
-        "docs": [
-          {
-            "hash": "79b1c78",
-            "emoji": "📝",
-            "message": "Adds changelog",
-            "date": "2025-10-17"
           }
         ]
       }
