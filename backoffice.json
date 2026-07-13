@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-10T11:48:47.386Z",
+  "generatedAt": "2026-07-13T14:34:19.988Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -22,10 +22,88 @@
       "changes": {
         "features": [
           {
+            "hash": "1df7bd6",
+            "emoji": "✨",
+            "message": "Azubi-Planung: Kalenderwochen als KW-Leiste im Monats-Header",
+            "date": "2026-07-13",
+            "description": [
+              "Monats-Auflösung der Ablaufplanung zeigt jetzt zwei Header-Bänder: oben die",
+              "Monatsnamen, darunter eine gleichmäßige KW-Leiste mit Kalenderwochen-Ticks. Die",
+              "Monats-Trennlinie endet an der Band-Grenze, sodass sie die KW-Labels nicht mehr",
+              "durchschneidet."
+            ]
+          },
+          {
+            "hash": "29cfa44",
+            "emoji": "✨",
+            "message": "Azubi-Planung: Ferien & Feiertage als farbiges Overlay mit Bundesland-Picker",
+            "date": "2026-07-13"
+          },
+          {
             "hash": "b4a68c5",
             "emoji": "✨",
             "message": "Wissensartikel: Inhaltsbausteine per Drag & Drop umsortierbar",
             "date": "2026-07-10"
+          },
+          {
+            "hash": "25ad181",
+            "emoji": "✨",
+            "message": "Wissensartikel: Inhaltsbausteine per Drag & Drop umsortierbar",
+            "date": "2026-07-10"
+          },
+          {
+            "hash": "d492231",
+            "emoji": "✨",
+            "message": "Ablaufplanung: parallele Termine vertikal gestapelt (dynamische Zeilenhöhe), saubere Serien-Pills, Wiederhol-Icon in den Tooltip",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "2e0e527",
+            "emoji": "✨",
+            "message": "Noten für Ausbildungsleiter freigegeben (nicht mehr admin-exklusiv); auf eigene Azubis gescopet, Menü/Tab nur bei bestehendem Recht",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "2bebd78",
+            "emoji": "✨",
+            "message": "Beiträge: Highlights lassen sich jetzt per Schalter „Als Highlight anzeigen\" direkt am Beitrag setzen",
+            "date": "2026-07-09",
+            "description": [
+              "♻️ Die feste „Highlights\"-Kategorie entfällt – Highlight-Beiträge erscheinen in einer eigenen Übersicht und bleiben zusätzlich in ihrer normalen Kategorie. Kategorien sind jetzt alle frei bearbeitbar."
+            ]
+          },
+          {
+            "hash": "2eb4d61",
+            "emoji": "✨",
+            "message": "Ablaufplanung: Lernort-Legende zeigt nur eigene Lernorte (außer Admin/Ausbildungsleitung)",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "7527ece",
+            "emoji": "✨",
+            "message": "Azubi-Detail: Ausbildungsleitung (Voller-Zugriff-Badge) + read-only Ausbilder-Liste aus Lernorten",
+            "date": "2026-07-09"
+          },
+          {
+            "hash": "dfea344",
+            "emoji": "✨",
+            "message": "Wissensmanagement-Dashboard: KI-Ansichten im Backoffice (Phase 2)",
+            "date": "2026-07-09",
+            "description": [
+              "Ersetzt die Mock-Tabs unter /wissensmanagement durch echte, KI-gestützte",
+              "Ansichten. Dashboard rendert die Backend-Auswertung (KPIs, Overview, Charts,",
+              "Sektionen, Question-Insights, Meta) plus Prompt-Box gegen die DB; Content-Hub",
+              "generiert echten KI-Content mit Themenvorschlägen aus den Insights.",
+              "- Query-Hooks: useKnowledgeInsightsQuery (+refresh), useKnowledgeAskMutation,",
+              "useKnowledgeContentGenerateMutation (customerId-Header, 180s-Timeout)",
+              "- Charts via recharts (Top-Themen, Confidence-Donut, Risiko-Cluster)",
+              "- Generisches QuoteCard-Atom + DashboardCard/DashboardSection/CollapsibleRow",
+              "- DashboardSingleStatCell um optionales icon/trend erweitert",
+              "- QueryStateContainer.skipRefetchError: Refresh-Fehler wischt Dashboard nicht",
+              "- RichTextEditor: Link-Öffnung mit http/https/mailto-Allowlist",
+              "- api.ts via generate:schema:dev regeneriert (analysisMeta typisiert)",
+              "- Feature-Doku (Plan/Spec/Golden-Master-Referenz) unter docs/superpowers"
+            ]
           },
           {
             "hash": "65a00df",
@@ -921,93 +999,6 @@
             "emoji": "✨",
             "message": "Der Status von digitalen Signaturen werden nun im jeweiligen Nutzer detailliert präsentiert",
             "date": "2026-02-19"
-          },
-          {
-            "hash": "da1a598",
-            "emoji": "✨",
-            "message": "CSV-Import: Neue Spaltenzuordnungsseite mit PapaParse & JSON-Import 📄 Neue CsvColumnAssignmentPage: CSV-Parsing, Auto-Erkennung, Spalten-Dropdowns, Datenvorschau 🔄 Import-Mutation sendet jetzt JSON statt raw CSV (Content-Type: application/json) 📝 Hilfetext aktualisiert: Gruppenname statt groupId, flexible Spaltenreihenfolge 🗺️ Neue Route /import/users/assign für die Zuweisungsseite",
-            "date": "2026-02-18"
-          },
-          {
-            "hash": "0e4da01",
-            "emoji": "✨",
-            "message": "Content-Hub (Dummy)",
-            "date": "2026-02-17"
-          },
-          {
-            "hash": "c5669bc",
-            "emoji": "✨",
-            "message": "Wissensmanagement rohdaten (Dummy)",
-            "date": "2026-02-17"
-          },
-          {
-            "hash": "15cbe19",
-            "emoji": "✨",
-            "message": "Wissens dashboard (mock)",
-            "date": "2026-02-17"
-          },
-          {
-            "hash": "1a2cb7e",
-            "emoji": "✨",
-            "message": "Liste von Wissensabfaben MA (Dummy)",
-            "date": "2026-02-17"
-          },
-          {
-            "hash": "7887aa9",
-            "emoji": "✨",
-            "message": "Neue Dokumentenübersicht ist verfügbar",
-            "date": "2026-02-13"
-          },
-          {
-            "hash": "28a4f87",
-            "emoji": "✨",
-            "message": "Automatische URL-Erkennung in Chat, Newsfeed-Posts und Kommentaren",
-            "date": "2026-02-11"
-          },
-          {
-            "hash": "eb7f521",
-            "emoji": "✨",
-            "message": "Blueprint-Auswahl als Overlay mit Filter, Suche und Checkbox-Liste",
-            "date": "2026-02-11"
-          },
-          {
-            "hash": "76249f8",
-            "emoji": "✨",
-            "message": "Benachrichtigungen: Zielgruppe auf alle Blueprint-Module erweitert",
-            "date": "2026-02-11",
-            "description": [
-              "Blueprints aus Einarbeitung, Azubi und Mitarbeiter werden nun gemeinsam angezeigt, mit Modultyp-Suffix im Namen."
-            ]
-          },
-          {
-            "hash": "291dce9",
-            "emoji": "✨",
-            "message": "Onboarding-Empfänger in RecipientsPage mit Tabbar integriert",
-            "date": "2026-02-10"
-          },
-          {
-            "hash": "b9da860",
-            "emoji": "✨",
-            "message": "Lebenszyklus-Tab für Azubis hinzugefügt",
-            "date": "2026-02-10"
-          },
-          {
-            "hash": "9a98cdf",
-            "emoji": "✨",
-            "message": "Neuer Tab 'Rollen & Rechte' für Führungskraft und Elternzeit",
-            "date": "2026-02-10",
-            "description": [
-              "- EmployeeRolesForm mit Führungskraft-Card (Executive-Rolle, optionale",
-              "Führungsgruppe, Ausbilder-Switch) und Elternzeit-Card hinzugefügt",
-              "- Tab wird nur angezeigt wenn Mitarbeiter Employee-Rolle hat und weder",
-              "Onboardee noch Apprentice ist",
-              "- Elternzeit-Seitenbox aus dem Lebenszyklus entfernt für einen klaren",
-              "linearen Flow (Einarbeitung → Mitarbeiter → Austritt)",
-              "- Mitarbeiter-Box: Titel und Beschreibung wechseln je nach Azubi/MA-Tab",
-              "- Blueprint-Tab wird anhand zugewiesener Gruppe vorausgewählt",
-              "- Aktiv-Erkennung prüft nun ob eine Inhaltsgruppe zugewiesen ist",
-              "- API-Typen um executiveBlueprintId und parentalLeaveGroupId erweitert"
-            ]
           }
         ],
         "deployment": [
@@ -1043,6 +1034,30 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "6575e6b",
+            "emoji": "🐛",
+            "message": "Umfragen: Falschen Untertitel im Frage-Dialog korrigiert",
+            "date": "2026-07-13"
+          },
+          {
+            "hash": "61f4037",
+            "emoji": "🐛",
+            "message": "Azubi-Planung: Fehlermeldung im Termin-Dialog wird beim Schließen zurückgesetzt",
+            "date": "2026-07-13"
+          },
+          {
+            "hash": "ca54a83",
+            "emoji": "🐛",
+            "message": "Azubi-Planung: Lernort-Resize öffnet nicht mehr versehentlich den Bearbeiten-Dialog",
+            "date": "2026-07-13"
+          },
+          {
+            "hash": "4e853d0",
+            "emoji": "🐛",
+            "message": "Lernort-Auslastung zeigt Ausbildern nur eigene Lernorte; Planungs-Legende wieder vollständig",
+            "date": "2026-07-09"
+          },
           {
             "hash": "d672a79",
             "emoji": "🐛",
@@ -1377,18 +1392,6 @@
               "SIGNATURE_STATUS_CONFIG zeigt nun \"Abgelehnt\" (rot) und \"Fehler\" (rot)",
               "statt \"Keine\" für fehlgeschlagene Signaturen."
             ]
-          },
-          {
-            "hash": "10df03f",
-            "emoji": "🐛",
-            "message": "Import-Route zu UNIFIED_ROUTES hinzugefügt — behebt 404 bei /import/users/assign",
-            "date": "2026-02-18"
-          },
-          {
-            "hash": "d0602d1",
-            "emoji": "🐛",
-            "message": "Fixes TS errors",
-            "date": "2026-02-10"
           }
         ],
         "refactors": [
@@ -1673,27 +1676,21 @@
             "emoji": "♻️",
             "message": "Anpassung der Changelogs an die neuen Signaturen",
             "date": "2026-02-27"
-          },
-          {
-            "hash": "b7410dd",
-            "emoji": "♻️",
-            "message": "API scheme update",
-            "date": "2026-02-18"
-          },
-          {
-            "hash": "8009b90",
-            "emoji": "♻️",
-            "message": "Fixes Führungskraftprobleme ohne Mitarbeiter-Lizenz",
-            "date": "2026-02-12"
-          },
-          {
-            "hash": "222e5d5",
-            "emoji": "♻️",
-            "message": "BlueprintAssignmentInput: MultiSelect-Dropdown durch Overlay ersetzt",
-            "date": "2026-02-11"
           }
         ],
         "styles": [
+          {
+            "hash": "1ef41d0",
+            "emoji": "💄",
+            "message": "Azubi-Planung: Termine als reguläre Balken (violett + Icon), im Lane-Raster gestapelt",
+            "date": "2026-07-10"
+          },
+          {
+            "hash": "93c0e72",
+            "emoji": "💄",
+            "message": "Azubi-Detail: Ausbilder-Liste konsekutiv gruppiert (von–bis) + Zugriffs-Pill; Ausbildungsleitung mit Empty-State & eigenem Button-Label",
+            "date": "2026-07-09"
+          },
           {
             "hash": "9fff408",
             "emoji": "💄",
@@ -1843,12 +1840,6 @@
             "emoji": "💄",
             "message": "Optimierung der Dokumentendarstellung und -Zuweisung",
             "date": "2026-02-19"
-          },
-          {
-            "hash": "a0591ad",
-            "emoji": "💄",
-            "message": "Optimierung der Customer Box im Seitenmenü",
-            "date": "2026-02-12"
           }
         ],
         "tests": [
@@ -1935,6 +1926,12 @@
         ],
         "security": [
           {
+            "hash": "274d80a",
+            "emoji": "🔒",
+            "message": "Ablaufplanung: Zeilen ohne Bearbeitungsrecht read-only (kein Anlegen/Verschieben/Resize/Edit)",
+            "date": "2026-07-09"
+          },
+          {
             "hash": "ee13c6f",
             "emoji": "🔐",
             "message": "Rollen-Modell: Phasen-Rollen vs Permission-Rollen getrennt + Rechte-Sektion",
@@ -1962,12 +1959,6 @@
               "wirksam wird (Sofort gewählt oder heutiges Datum). DateInputGroup",
               "reicht jetzt min/max an den DateInput durch."
             ]
-          },
-          {
-            "hash": "a59b3a2",
-            "emoji": "🗑️",
-            "message": "Verknüpfungen-Rubrik aus Azubi-Formular entfernt",
-            "date": "2026-02-11"
           }
         ]
       }
