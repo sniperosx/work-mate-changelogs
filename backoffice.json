@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-13T14:34:19.988Z",
+  "generatedAt": "2026-07-14T15:25:43.408Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,45 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "4ab432c",
+            "emoji": "✨",
+            "message": "Wissensmanagement: Interviews einzeln löschen",
+            "date": "2026-07-14",
+            "description": [
+              "In der Interview-Übersicht lassen sich einzelne Interviews entfernen: noch nicht",
+              "begonnene sowie Interviews ehemaliger Mitarbeiter. Bei einem abgeschlossenen",
+              "Interview weist die Rückfrage ausdrücklich darauf hin, dass das enthaltene Wissen",
+              "unwiderruflich verloren geht. Ist ein Interview nicht löschbar, erklärt ein",
+              "Hinweis am Button den Grund.",
+              "🐛 Wissensmanagement: Spalte \"Fragebogen\" bleibt nicht mehr leer",
+              "In der Interview-Übersicht wurde in der Spalte \"Fragebogen\" nie ein Name angezeigt.",
+              "📄 Specs"
+            ]
+          },
+          {
+            "hash": "1eecc7b",
+            "emoji": "✨",
+            "message": "Azubi-Planung: Mehrfachzuweisung von Azubis bei Terminanlage",
+            "date": "2026-07-14",
+            "description": [
+              "Beim Anlegen eines Einzeltermins können jetzt mehrere Azubis in einem Vorgang gewählt werden (Bulk-Anlage), analog zum Serientermin. Zuweisung und Wiederholen liegen in getrennten, symmetrischen Boxen; die Zuweisung ist standardmäßig eingeklappt (Zugewiesen an aktuellen Azubi) und wird per Schalter Mehrfachzuweisung aufgeklappt. Zusätzlich: Lernort-Selektor zeigt Bereits besuchte Lernorte nun oberhalb der verfügbaren."
+            ]
+          },
+          {
+            "hash": "8b08122",
+            "emoji": "✨",
+            "message": "Azubi-Planung: Monatsraster in Wochen- und Quartalsansicht",
+            "date": "2026-07-14",
+            "description": [
+              "Die Zeitachse gliedert jetzt in jeder Zoomstufe zweizeilig — grobe",
+              "Einheit oben, feines Raster darunter: Woche = Monat/Tage,",
+              "Monat = Monat/KW, Quartal = Quartal/Monate. Dazu benennt der Tick statt",
+              "seiner Einheit (variant) sein Header-Band (band), da der Monat je nach",
+              "Zoomstufe oben oder unten steht. Die Tages-Ticks der Wochenansicht sind",
+              "dafür einzeilig (\"Mo 06\"), sodass die Achsenhöhe unverändert bleibt."
+            ]
+          },
           {
             "hash": "1df7bd6",
             "emoji": "✨",
@@ -981,24 +1020,6 @@
             "emoji": "✨",
             "message": "Nach Erstellen eines Nutzers wird der Lebenszyklus mit passender Warnung geladen, zur direkten Zuweisung einer Inhaltsgruppe.",
             "date": "2026-02-22"
-          },
-          {
-            "hash": "7417b0d",
-            "emoji": "✨",
-            "message": "Absprung auf die Benutzerdokumente ist nun direkt möglich (z.B. aus der Dokumentenansicht)",
-            "date": "2026-02-22"
-          },
-          {
-            "hash": "545515b",
-            "emoji": "✨",
-            "message": "Audit trail ist herunterladbar im Rahmen der digitalen Unterschrift",
-            "date": "2026-02-21"
-          },
-          {
-            "hash": "e3b0811",
-            "emoji": "✨",
-            "message": "Der Status von digitalen Signaturen werden nun im jeweiligen Nutzer detailliert präsentiert",
-            "date": "2026-02-19"
           }
         ],
         "deployment": [
@@ -1034,6 +1055,18 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "7df9557",
+            "emoji": "🐛",
+            "message": "Azubi-Planung: Ferien-/Feiertags-Marker als eigene Zeile in der Zeitachse",
+            "date": "2026-07-14",
+            "description": [
+              "Die Marker-Chips klebten als sticky Rail auf derselben Höhe wie die",
+              "Gruppen-Header und liefen dadurch über deren Titel. Sie sitzen jetzt in",
+              "einem eigenen Band unterhalb der KW-Leiste, sodass sich beide den Platz",
+              "nicht mehr teilen."
+            ]
+          },
           {
             "hash": "6575e6b",
             "emoji": "🐛",
@@ -1680,6 +1713,17 @@
         ],
         "styles": [
           {
+            "hash": "fe48bee",
+            "emoji": "💄",
+            "message": "Wissensmanagement: Interview-Übersicht aufgeräumt",
+            "date": "2026-07-14",
+            "description": [
+              "Die Spalte \"Fortschritt\" ist entfallen. Interviews ehemaliger Mitarbeiter zeigen",
+              "jetzt das Unternehmenslogo anstelle des nicht mehr vorhandenen Profilbilds; ist",
+              "kein Name hinterlegt, erscheint der Hinweis \"Gelöschter Mitarbeiter\"."
+            ]
+          },
+          {
             "hash": "1ef41d0",
             "emoji": "💄",
             "message": "Azubi-Planung: Termine als reguläre Balken (violett + Icon), im Lane-Raster gestapelt",
@@ -1828,18 +1872,6 @@
             "emoji": "💄",
             "message": "Fehleransichten werden nun sauber und zentriert gezeichnet",
             "date": "2026-03-04"
-          },
-          {
-            "hash": "3692422",
-            "emoji": "💄",
-            "message": "Überflüssige Dateityp-Anzeige aus DocumentItem entfernt",
-            "date": "2026-02-21"
-          },
-          {
-            "hash": "044d96c",
-            "emoji": "💄",
-            "message": "Optimierung der Dokumentendarstellung und -Zuweisung",
-            "date": "2026-02-19"
           }
         ],
         "tests": [
