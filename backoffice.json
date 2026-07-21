@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-16T09:25:59.006Z",
+  "generatedAt": "2026-07-21T18:29:21.106Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "36c0deb",
+            "emoji": "✨",
+            "message": "Interview-Zusammenfassung: Word-Export (echtes .docx) und Überführung in einen neuen Artikel",
+            "date": "2026-07-16"
+          },
+          {
+            "hash": "cacbe6d",
+            "emoji": "✨",
+            "message": "Wissensmanagement: Interview-Zusammenfassung per KI auf der Session-Detailseite — Content-Hub entfernt",
+            "date": "2026-07-16"
+          },
           {
             "hash": "d99e68f",
             "emoji": "✨",
@@ -1026,42 +1038,6 @@
             "emoji": "✨",
             "message": "Ein Feedback- und Hilfe-Formular steht nun jedem Nutzer zur Verfügung",
             "date": "2026-03-04"
-          },
-          {
-            "hash": "6f7782e",
-            "emoji": "✨",
-            "message": "Einsicht der gebuchten Module mit Upgrade-Option nun im Einstellungsbereich einsehbar",
-            "date": "2026-03-03"
-          },
-          {
-            "hash": "866f7e2",
-            "emoji": "✨",
-            "message": "Einstellungen sind nun gesondert im Seitenmenü gelistet und direkt zugreifbar",
-            "date": "2026-03-03"
-          },
-          {
-            "hash": "41ec360",
-            "emoji": "✨",
-            "message": "Optimierung der Ausbilder-Erstellung im Azubi-Assistenten",
-            "date": "2026-03-03"
-          },
-          {
-            "hash": "1a5c65d",
-            "emoji": "✨",
-            "message": "Beim Erstellen eines neuen Mitarbeiters ist der Titel nun auf die Rolle des neuen Mitarbeiters dynamisiert",
-            "date": "2026-03-03"
-          },
-          {
-            "hash": "ad31638",
-            "emoji": "✨",
-            "message": "Dynamisierung der Führungskraftbenennenung zwischen Azubi-Assistent und Suite",
-            "date": "2026-03-03"
-          },
-          {
-            "hash": "2422cb3",
-            "emoji": "✨",
-            "message": "Das Hervorheben ungelesener Chat-Nachrichten ist nun vorhanden",
-            "date": "2026-02-27"
           }
         ],
         "deployment": [
@@ -1097,6 +1073,24 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "fb8aa68",
+            "emoji": "🐛",
+            "message": "Noten: gleiche Zahlen wie in der App",
+            "date": "2026-07-21",
+            "description": [
+              "Dashboard und App zeigten für denselben Azubi unterschiedliche Werte.",
+              "Zum einen fiel im Dashboard das Plus oder Minus einer Note unter den",
+              "Tisch, sodass Durchschnitte leicht danebenlagen. Zum anderen wurden",
+              "Ausbildungsjahre nach einer festen Grenze im August gezählt statt nach",
+              "dem echten Ausbildungsstart — wer im September angefangen hat, sah seine",
+              "Noten dadurch schief auf die Jahre verteilt.",
+              "Beides ist jetzt an die App angeglichen. Bei manchen Azubis verschieben",
+              "sich Jahresgruppen und Durchschnitte dadurch sichtbar — das ist die",
+              "Korrektur, nicht ein neuer Fehler. Noten ohne Wertung fließen außerdem",
+              "nicht mehr in den Schnitt ein; bisher zogen sie ihn fälschlich nach oben."
+            ]
+          },
           {
             "hash": "8eea568",
             "emoji": "🐛",
@@ -1759,21 +1753,24 @@
             "emoji": "♻️",
             "message": "Superadmin: work.mate AI ist nun in eigenen Tab ausgelagert und optisch überarbeitet worden",
             "date": "2026-03-05"
-          },
-          {
-            "hash": "f8f4670",
-            "emoji": "♻️",
-            "message": "Workflows aus Seitenmenü entfernt",
-            "date": "2026-03-01"
-          },
-          {
-            "hash": "d72db27",
-            "emoji": "♻️",
-            "message": "Anpassung der Changelogs an die neuen Signaturen",
-            "date": "2026-02-27"
           }
         ],
         "styles": [
+          {
+            "hash": "67f70ee",
+            "emoji": "🎨",
+            "message": "Notification-Katalog: jede Benachrichtigung wird jetzt als anschaulicher Ablauf dargestellt (Auslöser → Bündelung → Empfänger-Einstellung → Kanäle → Empfänger) statt als Tabelle",
+            "date": "2026-07-20",
+            "description": [
+              "🗂 Rubrik bequem per Auswahl umschaltbar; sichtbar, wo der Empfänger selbst über Sofort, Zusammengefasst oder Aus entscheidet"
+            ]
+          },
+          {
+            "hash": "6001abf",
+            "emoji": "💄",
+            "message": "Rechte: Ausbilder-Beschreibung verständlicher und als Aufzählung strukturiert",
+            "date": "2026-07-16"
+          },
           {
             "hash": "7dc6b3a",
             "emoji": "💄",
@@ -1944,12 +1941,6 @@
             "emoji": "🎨",
             "message": "Seitenmenü etwas breiter gemacht, damit alle Menüpunkte sauber lesbar sind",
             "date": "2026-03-11"
-          },
-          {
-            "hash": "dfae778",
-            "emoji": "💄",
-            "message": "Fehleransichten werden nun sauber und zentriert gezeichnet",
-            "date": "2026-03-04"
           }
         ],
         "tests": [
@@ -1978,12 +1969,6 @@
               "Tests nutzen die existierenden Helpers (login/logout), data-testids und",
               "das standardisierte Cleanup-Pattern."
             ]
-          },
-          {
-            "hash": "083c734",
-            "emoji": "🧪",
-            "message": "Neues Wording im UserProfile",
-            "date": "2026-02-27"
           }
         ],
         "docs": [
