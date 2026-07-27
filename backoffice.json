@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-21T18:29:21.106Z",
+  "generatedAt": "2026-07-27T10:57:57.324Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,93 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "062b60e",
+            "emoji": "✨",
+            "message": "Newsfeed-Beitrag als eigene Detailseite statt Overlay",
+            "date": "2026-07-24",
+            "description": [
+              "Beiträge öffnen sich auf einer eigenen, verlinkbaren Seite (Klick auf Bild,",
+              "Titel oder Kommentare) statt in einem Overlay; das Overlay entfällt komplett.",
+              "Newsfeed-Benachrichtigungen im Center verlinken jetzt direkt auf den Beitrag."
+            ]
+          },
+          {
+            "hash": "cfd4a22",
+            "emoji": "✨",
+            "message": "Artikel-Übersicht als zweispaltiges Karten-Grid",
+            "date": "2026-07-24",
+            "description": [
+              "Artikel je Kategorie werden im breiten Layout in zwei Spalten als Karten",
+              "dargestellt statt als einspaltige Liste; initial vier statt drei Artikel."
+            ]
+          },
+          {
+            "hash": "9810031",
+            "emoji": "✨",
+            "message": "Nachrichtencenter im Dashboard: Topbar mit Glocken-Popover & eigener Vollansicht",
+            "date": "2026-07-24",
+            "description": [
+              "- Neue Topbar (voll breit) mit Glocken-Popover (kompakte Liste + Absprung) und User-Menü (Profil/Delegation/Abmelden), das aus der Sidebar hierher wandert",
+              "- Vollseite /meine-benachrichtigungen mit Infinite-Scroll und Vorschauen (Artikel-/Newsfeed-Titelbild, Chat-/Autor-Avatar) analog zur App",
+              "- Deeplinks nur wo im Dashboard sinnvoll: Artikel -> Leseansicht, Newsfeed -> Liste, Chat -> Chat; Umfrage/Kurs anzeige-only",
+              "- Superadmin sieht keine Glocke (kein 403-Polling)",
+              "- Menuepunkt \"Mein Profil\" aus Sidebar entfernt, sauber ins Topbar-User-Menu integriert",
+              "- Initiale Route fuer App-User feature-basiert: Newsfeed -> Chats -> Profil",
+              "- Inhaltsrahmen linksbuendig und einheitlich begrenzt; fixedHeight-Seiten (Chat/Owly) um Topbar-Hoehe korrigiert"
+            ]
+          },
+          {
+            "hash": "456885d",
+            "emoji": "✨",
+            "message": "Owly-KI-Chat im Dashboard: eigene Seite für alle Nutzer",
+            "date": "2026-07-24",
+            "description": [
+              "Owly analog zur App als eigener, KI-gated Menüpunkt (/owly). Verlauf laden,",
+              "Frage stellen mit „denkt nach\"-Anzeige und Markdown-Antwort, Vorschlagsfragen",
+              "im leeren Chat. Nutzt die vorhandenen /ai.mate/owly-Endpoints und bestehende",
+              "Chat-Bausteine."
+            ]
+          },
+          {
+            "hash": "2f1d803",
+            "emoji": "✨",
+            "message": "Nummerierte Listen im Editor nutzbar + getrennte Aufzählungen bleiben getrennt",
+            "date": "2026-07-24",
+            "description": [
+              "Nummerierte Listen sichtbar gestylt und den Toolbar-Button eingeblendet. Zwei",
+              "durch eine Leerzeile getrennte gleichartige Listen verschmolzen bisher beim",
+              "Speichern zu einer durchlaufenden Nummerierung (in App und Editor). Ein",
+              "Export-Visitor erhält die Leerzeile als Trenner-Absatz (geschütztes Leerzeichen),",
+              "sodass die Aufzählungen in Editor, Backoffice und App getrennt bleiben und jede",
+              "wieder bei 1 startet."
+            ]
+          },
+          {
+            "hash": "d712c58",
+            "emoji": "✨",
+            "message": "Profilbild im Mitarbeiter-Detail: neuer Header mit Bild & Name für alle Admins",
+            "date": "2026-07-23",
+            "description": [
+              "Das Profilbild steckte bisher in einer nur für Superadmins sichtbaren, klappbaren",
+              "Sektion. Es sitzt jetzt präsenter oben im Header: ein runder, editierbarer Avatar",
+              "(72 px) links neben dem Namen, rechts Rolle und Team als Pills. Klick öffnet den",
+              "Datei-Dialog, ein kleiner Button entfernt das Bild. Ohne persönliches Bild zeigt der",
+              "Avatar — wie in der App — das Customer-Logo (Initialen nur als letzter Fallback).",
+              "- Neuer editierbarer Avatar mit dezentem grauen Rand, für alle Admins nutzbar",
+              "- Rolle/Team als Pills im Header-Subtitle (WMPageHeader um subtitle-Prop erweitert)",
+              "- Runder Back-Button im Hero durch dezenten „← Zurück\"-Textlink oberhalb ersetzt",
+              "(neue BackButton-Variante), auf allen anderen Seiten unverändert",
+              "- Datei→Base64-Logik in wiederverwendbaren ImageFileHelper ausgelagert (DRY)",
+              "- Alte, nur-Superadmin Profilbild-Sektion samt fehlerhaftem Rollen-Guard entfernt"
+            ]
+          },
+          {
+            "hash": "5d5133d",
+            "emoji": "✨",
+            "message": "„Was gibt's neues“ ist jetzt ein fester Menüpunkt im Seitenmenü statt eines Pop-ups beim Anmelden: Zwischen „Einstellungen“ und „Abmelden“ finden Nutzer eine Übersicht aller Neuerungen (nach Backoffice gefiltert). Ein kleiner Hinweis am Menüpunkt zeigt, wenn es ungelesene Änderungen gibt, und verschwindet, sobald die Seite geöffnet wurde",
+            "date": "2026-07-23"
+          },
           {
             "hash": "36c0deb",
             "emoji": "✨",
@@ -990,54 +1077,6 @@
             "emoji": "✨",
             "message": "Mitarbeiter haben ein Notiz-Feld erhalten, um Hinweise zu hinterlegen.",
             "date": "2026-03-11"
-          },
-          {
-            "hash": "77e54d7",
-            "emoji": "✨",
-            "message": "Unterstützung von Lernort CSV Imports",
-            "date": "2026-03-11"
-          },
-          {
-            "hash": "1d5eed3",
-            "emoji": "✨",
-            "message": "Learning place importer UI steht nun work.mate-Administratoren zur Verfügung",
-            "date": "2026-03-10"
-          },
-          {
-            "hash": "6ce11a6",
-            "emoji": "✨",
-            "message": "Hilfe für die Erkennung von Duplikaten unter Mitarbeitern eingeführt",
-            "date": "2026-03-10"
-          },
-          {
-            "hash": "6798423",
-            "emoji": "✨",
-            "message": "Neuer",
-            "date": "2026-03-09"
-          },
-          {
-            "hash": "3c1f625",
-            "emoji": "✨",
-            "message": "Überarbeitung Mitteilung für Email/Telefon OTP Mail",
-            "date": "2026-03-06"
-          },
-          {
-            "hash": "e433c36",
-            "emoji": "✨",
-            "message": "Zuweisung einer Onboarding-Gruppe ist nun im Admin des Onboarding-Assistenten möglich",
-            "date": "2026-03-05"
-          },
-          {
-            "hash": "81bff47",
-            "emoji": "✨",
-            "message": "Superadmin: Reflexionsfragen können nun pro Kunde über die WebUI deaktiviert werden",
-            "date": "2026-03-05"
-          },
-          {
-            "hash": "7bc7659",
-            "emoji": "✨",
-            "message": "Ein Feedback- und Hilfe-Formular steht nun jedem Nutzer zur Verfügung",
-            "date": "2026-03-04"
           }
         ],
         "deployment": [
@@ -1463,27 +1502,15 @@
             "emoji": "🐛",
             "message": "Klick auf Azubi in der Lernortauslastung öffnet jetzt direkt den Mitarbeiter",
             "date": "2026-03-11"
-          },
-          {
-            "hash": "25f386f",
-            "emoji": "🐛",
-            "message": "TS-Errors",
-            "date": "2026-03-04"
-          },
-          {
-            "hash": "78e018d",
-            "emoji": "🐛",
-            "message": "Das Zurücksetzen von Autoren in Artikeln ist nun sauber möglich",
-            "date": "2026-03-04"
-          },
-          {
-            "hash": "380bc5e",
-            "emoji": "🐛",
-            "message": "Das Zurücksetzen von Autoren in Artikeln ist nun sauber möglich",
-            "date": "2026-03-04"
           }
         ],
         "refactors": [
+          {
+            "hash": "4134e9c",
+            "emoji": "♻️",
+            "message": "Übriggebliebenes",
+            "date": "2026-07-27"
+          },
           {
             "hash": "ba1bf57",
             "emoji": "⚡",
@@ -1729,33 +1756,84 @@
             "emoji": "♻️",
             "message": "Import-Flow vereinfacht: Datei-Upload direkt in den Einstellungen 🗑️ Entfernung der Zwischenseiten für Mitarbeiter- und Lernort-Import (4 Dateien, 2 Routen) 🐛 Fix: Fehlender Import von DocumentFormFieldsPage entfernt (blockierte gesamte App)",
             "date": "2026-03-11"
-          },
-          {
-            "hash": "6e95f0a",
-            "emoji": "♻️",
-            "message": "Admins werden nun als vollwertige Mitarbeiter behandelt.",
-            "date": "2026-03-10"
-          },
-          {
-            "hash": "11b456b",
-            "emoji": "♻️",
-            "message": "Überarbeitung der Filterfunktion von Artikeln. Nun aus Basis der Inhaltsgruppenzuweisung",
-            "date": "2026-03-10"
-          },
-          {
-            "hash": "0e999e7",
-            "emoji": "♻️",
-            "message": "Einstellungen für Suite-Empfänger sind nun nur noch mit gebuchter Suite sichtbar",
-            "date": "2026-03-05"
-          },
-          {
-            "hash": "ade9643",
-            "emoji": "♻️",
-            "message": "Superadmin: work.mate AI ist nun in eigenen Tab ausgelagert und optisch überarbeitet worden",
-            "date": "2026-03-05"
           }
         ],
         "styles": [
+          {
+            "hash": "7d12b4e",
+            "emoji": "🎨",
+            "message": "Benachrichtigungen: Tab-Leiste als linksbündige Pill-Control mit mehr Abstand zum Inhalt",
+            "date": "2026-07-25",
+            "description": [
+              "Die Tab-Umschaltung der Benachrichtigungen nutzt jetzt die neue linksbündige Pill-Control statt der alten Tab-Leiste; der Seitentitel bleibt darüber erhalten. Zusätzlich wurde der Abstand zwischen der Pill-Leiste und dem Inhalt vergrößert, was für alle Ansichten mit dieser Umschaltung gilt."
+            ]
+          },
+          {
+            "hash": "81c1e5f",
+            "emoji": "🎨",
+            "message": "Einklappbares Seitenmenü entfernt — Sidebar dauerhaft in voller Breite",
+            "date": "2026-07-25",
+            "description": [
+              "Das Ein-/Ausklappen der Sidebar wird komplett entfernt. Menü und Logo-Zone stehen fest auf voller Breite, wodurch das im schmalen Zustand gestauchte Logo korrekt sitzt. Der persistierte Collapse-Zustand wird per Store-Versionssprung verworfen."
+            ]
+          },
+          {
+            "hash": "036f9da",
+            "emoji": "🎨",
+            "message": "Interview-Fragestrecke: Höhe an Topbar angepasst, linke Rundungen entfernt",
+            "date": "2026-07-24",
+            "description": [
+              "Die Bühne füllt exakt den Bereich unter der Topbar (kein Überstand mehr) und",
+              "verzichtet auf die abgerundeten linken Ecken."
+            ]
+          },
+          {
+            "hash": "0c207a8",
+            "emoji": "🎨",
+            "message": "Profilseite: Zurück-Button und Hilfe-Icon entfernt",
+            "date": "2026-07-24",
+            "description": [
+              "Das Profil ist ein eigenständiges Ziel und braucht keinen Zurück-Button; der",
+              "Seitenkopf kann ihn nun optional unterdrücken. Zusätzlich das erklärende",
+              "Hilfe-Icon im Titel entfernt."
+            ]
+          },
+          {
+            "hash": "8363202",
+            "emoji": "🎨",
+            "message": "Wissens- und Leseansichten linksbündig ausgerichtet",
+            "date": "2026-07-24",
+            "description": [
+              "Wissen-Übersicht nutzt jetzt die neue linksbündige Pill-Leiste statt der",
+              "zentrierten, über die volle Breite schwebenden Tab-Leiste. Artikel-, Kapitel-",
+              "und Lektions-Detailseiten beginnen linksbündig statt zentriert."
+            ]
+          },
+          {
+            "hash": "a753db6",
+            "emoji": "🎨",
+            "message": "Einheitliche linksbündige Content-Breite statt zentriertem Layout",
+            "date": "2026-07-24",
+            "description": [
+              "Inhalte beginnen linksbündig hinter der Sidebar (statt zentriert mit großer",
+              "Weißfläche), einheitlich begrenzt und mit kleinerem Padding. fixedHeight-Seiten",
+              "ziehen die Topbar-Höhe ab, damit nichts unten aus dem Bild rutscht."
+            ]
+          },
+          {
+            "hash": "c7c2c65",
+            "emoji": "🎨",
+            "message": "Customer-Logo im Avatar vollständig einpassen statt beschneiden",
+            "date": "2026-07-23",
+            "description": [
+              "Wo mangels persönlichem Bild das Firmenlogo als Avatar erscheint, wurde es bisher",
+              "formatfüllend beschnitten. Jetzt wird das Logo vollständig eingepasst (AspectFit) und",
+              "der im Kunden hinterlegte Logo-Hintergrund füllt den Rest — konsistent im Backoffice",
+              "und unten im Seitenmenü. Persönliche Fotos bleiben unverändert formatfüllend.",
+              "- Avatar-Komponente: Customer-Logo mit object-contain + Logo-Hintergrund",
+              "- Seitenmenü-Avatar (UserBox) nutzte eigenes Markup und wurde gleich behandelt"
+            ]
+          },
           {
             "hash": "67f70ee",
             "emoji": "🎨",
