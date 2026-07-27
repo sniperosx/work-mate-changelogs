@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-27T10:57:57.324Z",
+  "generatedAt": "2026-07-27T15:22:31.323Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,16 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "b3c27fa",
+            "emoji": "✨",
+            "message": "Ablaufplanung: Schule liegt auf dem Lernort, Termin-Spur mit Schnellanlage",
+            "date": "2026-07-27",
+            "description": [
+              "Die Azubi-Zeile nutzt jetzt ein festes Spurmodell statt des generischen Stapelns: der Lernort läuft als Basis durch, die Schule liegt oben bündig darauf und bleibt flach, solange ein Lernort darunter liegt — ohne Lernort rendert sie auf voller Höhe. Darunter liegen Termin-Spuren mit einer freien Reserve-Spur, in der beim Überfahren ein Plus samt Datumsangabe erscheint und einen Termin an genau diesem Tag anlegt. Ein Klick auf die Basisfläche legt weiterhin einen Lernort an.",
+              "Die Lernortauslastung bleibt beim bisherigen Stapelmodell; beide Modelle laufen über denselben Zeitstrahl."
+            ]
+          },
           {
             "hash": "062b60e",
             "emoji": "✨",
@@ -1071,12 +1081,6 @@
             "emoji": "✨",
             "message": "Gruppen-Filter um Elternzeit, Führung und Austritt erweitert 🎯 Filter erscheinen nur, wenn passende Gruppen vorhanden sind",
             "date": "2026-03-11"
-          },
-          {
-            "hash": "acf7c42",
-            "emoji": "✨",
-            "message": "Mitarbeiter haben ein Notiz-Feld erhalten, um Hinweise zu hinterlegen.",
-            "date": "2026-03-11"
           }
         ],
         "deployment": [
@@ -1496,12 +1500,6 @@
             "emoji": "🐛",
             "message": "Doppelte Überschrift bei Fragebögen im Nutzerprofil behoben",
             "date": "2026-03-12"
-          },
-          {
-            "hash": "9d2f9aa",
-            "emoji": "🐛",
-            "message": "Klick auf Azubi in der Lernortauslastung öffnet jetzt direkt den Mitarbeiter",
-            "date": "2026-03-11"
           }
         ],
         "refactors": [
@@ -1750,15 +1748,18 @@
             "emoji": "🔧",
             "message": "Fix deleteQuery type cast, add Avatar to sessions table",
             "date": "2026-03-20"
-          },
-          {
-            "hash": "432549d",
-            "emoji": "♻️",
-            "message": "Import-Flow vereinfacht: Datei-Upload direkt in den Einstellungen 🗑️ Entfernung der Zwischenseiten für Mitarbeiter- und Lernort-Import (4 Dateien, 2 Routen) 🐛 Fix: Fehlender Import von DocumentFormFieldsPage entfernt (blockierte gesamte App)",
-            "date": "2026-03-11"
           }
         ],
         "styles": [
+          {
+            "hash": "502a89b",
+            "emoji": "🎨",
+            "message": "Superadmin-Bereiche: Pill-Leiste linksbündig statt zentriert",
+            "date": "2026-07-27",
+            "description": [
+              "Kundenübersicht, Konfiguration und System nutzen jetzt die linksbündige Pill-Control im Seitencontainer statt der am Viewport klebenden, zentrierten Variante. Da die Tab-Inhalte ihr Seiten-Padding selbst mitbringen, fluchten die Pills mit dem Inhalt; ohne Titel darüber bekommt die Pill-Zeile den fehlenden oberen Abstand ergänzt."
+            ]
+          },
           {
             "hash": "7d12b4e",
             "emoji": "🎨",
