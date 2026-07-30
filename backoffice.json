@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-27T15:22:31.323Z",
+  "generatedAt": "2026-07-30T08:25:38.419Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,15 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "8250735",
+            "emoji": "✨",
+            "message": "Changelogs: Plattform-Filter als Pill-Leiste, Release-Datum vorausgefüllt",
+            "date": "2026-07-27",
+            "description": [
+              "Die Changelog-Übersicht lässt sich jetzt über eine linksbündige Pill-Leiste nach Alle, Dashboard und App filtern; die Auswahl steht in der URL und übersteht Reload und Rücksprung aus dem Formular. Die Tabelle liegt dafür in einer gemeinsamen Komponente, leere Auswahlen zeigen einen Hinweis statt eines nackten Tabellenkopfs. Beim Anlegen ist das Release-Datum mit dem heutigen Tag vorbelegt."
+            ]
+          },
           {
             "hash": "b3c27fa",
             "emoji": "✨",
@@ -1060,27 +1069,6 @@
             "description": [
               "🔧 Lernorte werden in der Legende nun nach Tags gebündelt statt als lange, unstrukturierte Liste angezeigt"
             ]
-          },
-          {
-            "hash": "965368a",
-            "emoji": "✨",
-            "message": "Team-Mitglieder können jetzt per Klick eingesehen werden 🔗 Direkter Absprung zum Mitarbeiter-Profil aus der Mitgliederliste",
-            "date": "2026-03-11"
-          },
-          {
-            "hash": "271a281",
-            "emoji": "✨",
-            "message": "Schulfächer können jetzt als work.mate Administrator initial angelegt werden.",
-            "date": "2026-03-11",
-            "description": [
-              "🗑️ Veraltete Azubi-Einstellungsseite entfernt (alles unter /settings vereint)"
-            ]
-          },
-          {
-            "hash": "8656d06",
-            "emoji": "✨",
-            "message": "Gruppen-Filter um Elternzeit, Führung und Austritt erweitert 🎯 Filter erscheinen nur, wenn passende Gruppen vorhanden sind",
-            "date": "2026-03-11"
           }
         ],
         "deployment": [
@@ -1116,6 +1104,27 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "72d9e39",
+            "emoji": "🐛",
+            "message": "Abmelden führt nicht mehr zu einer weissen Seite: Durch die neue Beobachter-Funktion wurde beim Abmelden noch auf Anmeldedaten zugegriffen, die es zu dem Zeitpunkt schon nicht mehr gab — die Anwendung brach dabei komplett ab. Betroffen war jede Abmeldung, bei Ausbildungsleitungen zusätzlich an einer zweiten Stelle",
+            "date": "2026-07-30"
+          },
+          {
+            "hash": "7d6ace6",
+            "emoji": "🐛",
+            "message": "Wissensmanagement: Auswertung hängt nicht mehr im Ladezustand",
+            "date": "2026-07-28",
+            "description": [
+              "Der Insights-Call lief in den Axios-Default-Timeout von 2 Minuten, obwohl",
+              "der Backend-Client bis zu 5 Minuten rechnen darf (Server-Log: 499 nach",
+              "120s). react-query wiederholte den Timeout danach still dreimal, wodurch",
+              "die Seite ~8 Minuten im Ladescreen stand, ohne je einen Fehler zu zeigen.",
+              "- Timeout auf 5 Minuten für jeden Insights-Call, nicht nur bei refresh",
+              "- retry:false, damit ein Fehler sofort sichtbar wird statt nach Retries",
+              "- eigene Lade-/Fehlertexte inkl. separatem Hinweis bei Timeout"
+            ]
+          },
           {
             "hash": "fb8aa68",
             "emoji": "🐛",
@@ -1485,24 +1494,25 @@
             "emoji": "🐛",
             "message": "Feste Bildhöhe aus ImageInput entfernt, damit Kurs-Lektionen nicht überlaufen",
             "date": "2026-03-17"
-          },
-          {
-            "hash": "3f5ed2c",
-            "emoji": "🐛",
-            "message": "Fragebögen werden im Dashboard wieder vollständig angezeigt",
-            "date": "2026-03-13",
-            "description": [
-              "🔧 Fragebögen verschwinden nicht mehr je nach ausgewähltem Modul in der Navigation"
-            ]
-          },
-          {
-            "hash": "1b7b11d",
-            "emoji": "🐛",
-            "message": "Doppelte Überschrift bei Fragebögen im Nutzerprofil behoben",
-            "date": "2026-03-12"
           }
         ],
         "refactors": [
+          {
+            "hash": "776dc53",
+            "emoji": "⚡",
+            "message": "Chat-Unread-Polling entfernt, Notification-Center-Poller entschärft",
+            "date": "2026-07-28",
+            "description": [
+              "Das Backoffice hat dauerhaft alle 30 Sekunden /chats/unread-count abgefragt,",
+              "ungated und unabhängig davon, ob jemals ein Chat geöffnet wurde. Da das",
+              "Notification Center Chat-Ereignisse über NotificationCategory.Chat ohnehin",
+              "abdeckt, entfällt die Query samt der beiden Badge-Verwendungen in Sidebar",
+              "und Subitem-Tabs.",
+              "Der verbleibende Poller im Notification Center läuft jetzt alle 2 Minuten",
+              "statt alle 30 Sekunden und pausiert, solange das Fenster nicht fokussiert",
+              "ist. Die Rückkehr in den Tab lädt den Zähler ohnehin sofort neu."
+            ]
+          },
           {
             "hash": "4134e9c",
             "emoji": "♻️",
@@ -2014,12 +2024,6 @@
               "- useLearningPlacesAvailabilityQuery für das sichtbare Fenster geladen, als Map<placeId, Availability> durch Calendar/Row/DayCell durchgereicht",
               "- Refetch-Hook deckt jetzt auch die Availability-Query ab → freie Plätze aktualisieren nach Create/Update/Delete"
             ]
-          },
-          {
-            "hash": "c878691",
-            "emoji": "🎨",
-            "message": "Seitenmenü etwas breiter gemacht, damit alle Menüpunkte sauber lesbar sind",
-            "date": "2026-03-11"
           }
         ],
         "tests": [
