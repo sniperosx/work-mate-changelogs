@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-07-30T10:56:24.696Z",
+  "generatedAt": "2026-08-05T14:29:37.893Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -981,69 +981,6 @@
             "description": [
               "Kleiner Icon-Button (oben rechts auf der Card) zum Duplizieren von Inhaltsgruppen mit Tooltip, Loading- und Erfolgs-State."
             ]
-          },
-          {
-            "hash": "e98ebd5",
-            "emoji": "✨",
-            "message": "InterviewSessionDetailPage + ResponseAccordionItem erstellt",
-            "date": "2026-03-20",
-            "description": [
-              "Detail-Ansicht für eine Interview-Session mit Accordion-Antworten."
-            ]
-          },
-          {
-            "hash": "0515062",
-            "emoji": "✨",
-            "message": "InterviewEditPage mit QuestionList und SessionsTable",
-            "date": "2026-03-20",
-            "description": [
-              "- InterviewEditPage: Create/Edit-Seite mit CrudStateProvider",
-              "- InterviewQuestionList: Sortierbare Fragenliste mit Hinzufügen/Entfernen/Verschieben",
-              "- InterviewSessionsTable: Tabelle der zugewiesenen Sessions mit Status-Badges",
-              "- Zuweisen-Button vorbereitet für InterviewAssignmentOverlay (Task 5)"
-            ]
-          },
-          {
-            "hash": "1f9fa2a",
-            "emoji": "✨",
-            "message": "InterviewsPage + InterviewCard erstellen",
-            "date": "2026-03-20",
-            "description": [
-              "- InterviewsPage unter /workflows/interviews mit Karten-Grid (1/2 Spalten)",
-              "- InterviewCard mit Name, Fragenanzahl und Erstelldatum",
-              "- Filterung von archivierten Interviews",
-              "- FAB-Button navigiert zu /workflows/interviews/new",
-              "- NoContentBox wenn keine Interviews vorhanden"
-            ]
-          },
-          {
-            "hash": "9523005",
-            "emoji": "✨",
-            "message": "Navigation + Routes für Interview-Dashboard einrichten",
-            "date": "2026-03-20",
-            "description": [
-              "- Interviews-Menüeintrag im Workflows-Abschnitt hinzugefügt (sichtbar wenn isAdmin && isWorkmateAIEnabled)",
-              "- Workflows-Abschnitt zeigt bei isWorkmateCustomer ODER isWorkmateAIEnabled",
-              "- isWorkmateAIEnabled-Parameter zu getUnifiedMenuSections hinzugefügt",
-              "- Lazy Imports für InterviewsPage, InterviewEditPage, InterviewSessionDetailPage",
-              "- 4 neue Routen unter /workflows/interviews"
-            ]
-          },
-          {
-            "hash": "17204e9",
-            "emoji": "✨",
-            "message": "Interview API Hooks erstellen",
-            "date": "2026-03-20",
-            "description": [
-              "Alle 7 Query/Mutation Hooks für das Interview-Management Dashboard angelegt",
-              "unter src/queries/interviews/, nach dem bestehenden Documents-Hook-Pattern."
-            ]
-          },
-          {
-            "hash": "92cebe4",
-            "emoji": "✨",
-            "message": "Dashboard sendet jetzt Agent-Property beim Login",
-            "date": "2026-03-18"
           }
         ],
         "deployment": [
@@ -1710,26 +1647,21 @@
             "emoji": "🔧",
             "message": "Confidence badge immer anzeigen (grauer Fallback)",
             "date": "2026-03-20"
-          },
-          {
-            "hash": "df299b1",
-            "emoji": "♻️",
-            "message": "AssignmentOverlay Refactoring + InterviewAssignmentOverlay",
-            "date": "2026-03-20",
-            "description": [
-              "Generisches AssignmentOverlay aus DocumentAssignmentOverlay extrahiert.",
-              "DocumentAssignmentOverlay zu dünnem Wrapper refactored.",
-              "InterviewAssignmentOverlay erstellt und in InterviewEditPage verdrahtet."
-            ]
-          },
-          {
-            "hash": "e2ecdd6",
-            "emoji": "🔧",
-            "message": "Fix deleteQuery type cast, add Avatar to sessions table",
-            "date": "2026-03-20"
           }
         ],
         "styles": [
+          {
+            "hash": "b9b02af",
+            "emoji": "🎨",
+            "message": "Vertragsdaten im Kundenbereich komplett überarbeitet. Die Maske stammte noch aus der alten Oberfläche und war der letzte Bereich der Kundenverwaltung, der nicht auf dem aktuellen Stand war. Sie ist jetzt in drei klare Abschnitte gegliedert: Status, Vertragsinformationen und Fristen",
+            "date": "2026-08-04",
+            "description": [
+              "🚦 Der Vertragsstatus ist keine reine Anzeige mehr, sondern anklickbar. Die fünf Stationen stehen als Kette nebeneinander — In Einrichtung, Inaktiv, Aktiv, Gekündigt, Archiviert — jede mit eigenem Symbol und eigener Farbe, verbunden durch Pfeile. Zum gewählten Status steht darunter, was er bedeutet",
+              "📆 Vertragsbeginn und Kündigungsdatum laufen über die aktuelle Datumsauswahl, Mindestlaufzeit über die gewohnte Auswahlliste",
+              "⏳ Bei den Fristen steht jetzt dabei, dass drei Monate vor der Verlängerung gekündigt werden muss. Fehlt der Vertragsbeginn, erscheint ein verständlicher Hinweis statt eines wortlosen \"Nicht verfügbar\"",
+              "🧹 Der Credits-Bereich ist verschwunden. Er zeigte drei fest einprogrammierte Zahlen, hinter denen nie Daten standen. Ebenso entfällt das Vertragspaket"
+            ]
+          },
           {
             "hash": "502a89b",
             "emoji": "🎨",
@@ -2047,28 +1979,6 @@
             "emoji": "📝",
             "message": "Design-Spec: Collapsible Sidebar",
             "date": "2026-03-25"
-          },
-          {
-            "hash": "1c0d1fa",
-            "emoji": "📝",
-            "message": "Design-Spec: Review-Feedback eingearbeitet",
-            "date": "2026-03-20",
-            "description": [
-              "- Archivierung via DELETE klargestellt (Soft Delete)",
-              "- Cancelled-Status + Fallback für unbekannte Werte",
-              "- Follow-Up-Gruppierung via sequentielle Reihenfolge dokumentiert",
-              "- Confidence-Badge Werte + Fallback definiert",
-              "- AssignmentOverlay Verantwortlichkeiten aufgeteilt",
-              "- Cache-Invalidierung pro Mutation spezifiziert",
-              "- data-testid Attribute definiert",
-              "- Loading/Error-States für Session-Detail via QueryStateContainer"
-            ]
-          },
-          {
-            "hash": "5e71676",
-            "emoji": "📝",
-            "message": "Design-Spec für Interview-Management Dashboard",
-            "date": "2026-03-20"
           }
         ],
         "security": [
