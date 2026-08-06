@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-06T11:55:53.817Z",
+  "generatedAt": "2026-08-06T15:38:31.887Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,16 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "af514a9",
+            "emoji": "✨",
+            "message": "Wissenspools: Ein Knopf lernt alle Pools auf einmal an, und die Übersicht zeigt dabei, woran jeder einzelne gerade ist. Bisher musste jeder Pool einzeln angestoßen werden — bei vielen Pools eine Klickstrecke. Der neue Sammelstart stößt sie nacheinander an, überspringt dabei alles, was ohnehin schon läuft, zeigt seinen Fortschritt im Knopf und meldet am Ende in einer einzigen Zusammenfassung, was gestartet wurde und was nicht. Wie beim einzelnen Anlernen bleibt die Bedienung Superadministratoren vorbehalten",
+            "date": "2026-08-06",
+            "description": [
+              "Die Statusanzeige unterscheidet jetzt drei Zustände statt einem: „In der Warteschlange\", „Wird gerade gelernt\" und „Lernen fehlgeschlagen\". Gerade beim Sammelstart ist das der Unterschied zwischen „es passiert nichts\" und „es ist nur noch nicht dran\"",
+              "Nachgefragt wird dabei nur noch jede Minute statt alle sieben Sekunden. Ein Lernvorgang dauert Minuten bis zu einer halben Stunde; der engere Takt hat lediglich das KI-System belastet, ohne dass jemand früher etwas anderes zu sehen bekam"
+            ]
+          },
           {
             "hash": "8250735",
             "emoji": "✨",
@@ -951,27 +961,6 @@
               "- WMPageHeader aus allen Ausbildung-Pages entfernt",
               "- Subitem-Registry um 5 Apprentice-Komponenten erweitert"
             ]
-          },
-          {
-            "hash": "ae5b828",
-            "emoji": "✨",
-            "message": "Sidebar-Refactoring: Kommunikation & Feedback als Subitems mit Pill-Navigation",
-            "date": "2026-03-25",
-            "description": [
-              "- Kommunikation-Section aufgelöst in standalone Menüpunkte (Mein Profil, Kommunikation, Feedback)",
-              "- Generische SubitemsContainerPage mit AnimatedSegmentedControl (Glass-Pill, framer-motion)",
-              "- FloatingHelpButton neben der Pill-Navigation für kontextbezogene Hilfe",
-              "- Impulsfragen als eigenes Subitem in Feedback aufgenommen",
-              "- WMPageHeader aus allen Subitem-Pages entfernt (Titel in Pill, Beschreibung im HelpButton)",
-              "- Subitem-Registry für lazy-loaded Komponenten-Auflösung",
-              "- Sidebar Active-State und Badge-Aggregation für Subitems"
-            ]
-          },
-          {
-            "hash": "d0fbc85",
-            "emoji": "✨",
-            "message": "Vereinfachung und Zusammenlegen der Benutzerverwaltung",
-            "date": "2026-03-24"
           }
         ],
         "deployment": [
@@ -1606,20 +1595,6 @@
             "emoji": "🔧",
             "message": "Schulfächer: WMPageHeader durch FAB ersetzt",
             "date": "2026-03-25"
-          },
-          {
-            "hash": "f8ced85",
-            "emoji": "🔧",
-            "message": "Sidebar: Menü-Struktur optimiert, Separator, Benennungen",
-            "date": "2026-03-25",
-            "description": [
-              "- \"Mehr\"-Sektion entfernt, Mein Profil/Einstellungen/Feedback & Hilfe als standalone ans Ende",
-              "- Mein Profil in Delegation deaktiviert",
-              "- \"Feedback\" → \"Fragen & Feedback\", \"Umfragen\" → \"Formulare\"",
-              "- Formulare-Teaser an neue Benennung angepasst",
-              "- separatorAbove-Property auf MenuSectionType für dezente Trennlinien",
-              "- Sidebar-Items pl-6 → pl-3 (weniger Einrückung auf Root-Level)"
-            ]
           }
         ],
         "styles": [
