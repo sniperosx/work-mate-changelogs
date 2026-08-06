@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-05T14:30:04.338Z",
+  "generatedAt": "2026-08-06T11:55:53.817Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -972,15 +972,6 @@
             "emoji": "✨",
             "message": "Vereinfachung und Zusammenlegen der Benutzerverwaltung",
             "date": "2026-03-24"
-          },
-          {
-            "hash": "dc42709",
-            "emoji": "✨",
-            "message": "Blueprint-Duplizierung im Backoffice",
-            "date": "2026-03-23",
-            "description": [
-              "Kleiner Icon-Button (oben rechts auf der Card) zum Duplizieren von Inhaltsgruppen mit Tooltip, Loading- und Erfolgs-State."
-            ]
           }
         ],
         "deployment": [
@@ -1394,12 +1385,6 @@
             "emoji": "🐛",
             "message": "Fix Rules-of-Hooks Verletzung in KnowledgeRawDataTab",
             "date": "2026-03-25"
-          },
-          {
-            "hash": "9e07b27",
-            "emoji": "🐛",
-            "message": "Removes TS erros",
-            "date": "2026-03-21"
           }
         ],
         "refactors": [
@@ -1635,18 +1620,6 @@
               "- separatorAbove-Property auf MenuSectionType für dezente Trennlinien",
               "- Sidebar-Items pl-6 → pl-3 (weniger Einrückung auf Root-Level)"
             ]
-          },
-          {
-            "hash": "73fd2c5",
-            "emoji": "🔧",
-            "message": "Cache-Invalidierung, statusConfig dedupliziert, Spec aktualisiert",
-            "date": "2026-03-20"
-          },
-          {
-            "hash": "8b72ff4",
-            "emoji": "🔧",
-            "message": "Confidence badge immer anzeigen (grauer Fallback)",
-            "date": "2026-03-20"
           }
         ],
         "styles": [
