@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-07T12:38:09.578Z",
+  "generatedAt": "2026-08-07T18:49:59.877Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -934,20 +934,6 @@
               "- WMPageHeader aus allen Inhalte-Pages entfernt",
               "- HelpTexts für Inhalte-Tabs ergänzt",
               "- Route /inhalte und Registry-Einträge hinzugefügt"
-            ]
-          },
-          {
-            "hash": "a4f725a",
-            "emoji": "✨",
-            "message": "Wissensmanagement als Pill-Navigation, Interviews-Tab mit API",
-            "date": "2026-03-25",
-            "description": [
-              "- Workflows als Root-Item entfernt",
-              "- Wissensmanagement mit Subitems: Dashboard, Fragebögen, Interviews, Content-Hub",
-              "- KnowledgeRawDataTab: Dummy-Daten durch echte API ersetzt (alle Sessions aggregiert)",
-              "- Status-Filter-Leiste über der Interviews-Tabelle",
-              "- InterviewSessionDetailPage: Back-Button entfernt, Spacing angepasst",
-              "- CLAUDE.md: MessageView-Regel für Empty States dokumentiert"
             ]
           }
         ],
