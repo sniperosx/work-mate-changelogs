@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-07T10:43:08.151Z",
+  "generatedAt": "2026-08-07T12:38:09.578Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -1570,18 +1570,6 @@
             "hash": "e29c984",
             "emoji": "♻️",
             "message": "Assets hinzugefügt",
-            "date": "2026-03-25"
-          },
-          {
-            "hash": "2978e41",
-            "emoji": "♻️",
-            "message": "Wissensmanagement zusammengeführt",
-            "date": "2026-03-25"
-          },
-          {
-            "hash": "f355062",
-            "emoji": "🔧",
-            "message": "Schulfächer: WMPageHeader durch FAB ersetzt",
             "date": "2026-03-25"
           }
         ],
