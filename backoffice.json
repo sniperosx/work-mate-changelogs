@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-06T15:38:31.887Z",
+  "generatedAt": "2026-08-07T10:43:08.151Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -948,18 +948,6 @@
               "- Status-Filter-Leiste über der Interviews-Tabelle",
               "- InterviewSessionDetailPage: Back-Button entfernt, Spacing angepasst",
               "- CLAUDE.md: MessageView-Regel für Empty States dokumentiert"
-            ]
-          },
-          {
-            "hash": "8375eaf",
-            "emoji": "✨",
-            "message": "Ausbildung als Pill-Navigation, Pill-Positioning fix",
-            "date": "2026-03-25",
-            "description": [
-              "- Ausbildung-Section zu standalone mit Subitems umgebaut (Ablaufplanung, Lernort-Auslastung, Noten, Lernorte, Schulfächer)",
-              "- Pill sticky positioniert mit viewport-basierter Breite (unabhängig vom Content-Layout)",
-              "- WMPageHeader aus allen Ausbildung-Pages entfernt",
-              "- Subitem-Registry um 5 Apprentice-Komponenten erweitert"
             ]
           }
         ],
