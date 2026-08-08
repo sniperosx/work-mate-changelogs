@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-07T18:49:59.877Z",
+  "generatedAt": "2026-08-08T12:42:49.802Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -916,24 +916,6 @@
               "- bottomSection Property auf MenuSectionType",
               "- Layouts und Pill-Navigation passen sich dynamisch an Sidebar-Breite an",
               "- UserBox vorübergehend auskommentiert"
-            ]
-          },
-          {
-            "hash": "8dac39a",
-            "emoji": "✨",
-            "message": "Einheitliche Page-Transition-Animation für alle Routen",
-            "date": "2026-03-25"
-          },
-          {
-            "hash": "f1297f9",
-            "emoji": "✨",
-            "message": "Inhalte als Pill-Navigation mit Subitems",
-            "date": "2026-03-25",
-            "description": [
-              "- Inhalte-Section zu standalone mit Subitems umgebaut (Inhaltsgruppen, Artikel, Videos, Dokumente)",
-              "- WMPageHeader aus allen Inhalte-Pages entfernt",
-              "- HelpTexts für Inhalte-Tabs ergänzt",
-              "- Route /inhalte und Registry-Einträge hinzugefügt"
             ]
           }
         ],
@@ -1883,12 +1865,6 @@
             "emoji": "📝",
             "message": "Changelog 0.6.0: kundenfreundlich vereinfacht",
             "date": "2026-06-03"
-          },
-          {
-            "hash": "b3825fd",
-            "emoji": "📝",
-            "message": "Design-Spec: Collapsible Sidebar",
-            "date": "2026-03-25"
           }
         ],
         "security": [
