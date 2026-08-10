@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-08T12:42:49.802Z",
+  "generatedAt": "2026-08-10T20:30:01.209Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -899,23 +899,6 @@
               "🌐 Neue Seite unter \"Internationalisierung\" für SuperAdmins",
               "🔍 Suchfunktion, Aufklappen/Zuklappen, Inline-Bearbeitung pro Sprachzelle",
               "🤖 AI-Button für automatische Übersetzung leerer Felder"
-            ]
-          },
-          {
-            "hash": "01eeac7",
-            "emoji": "✨",
-            "message": "Collapsible Sidebar mit animierter Active-Pill",
-            "date": "2026-03-25",
-            "description": [
-              "- Sidebar collapsed (80px, Icons-only) als Default, expanded (276px) per Toggle",
-              "- Animated active-pill mit framer-motion layoutId (sliding between items)",
-              "- Glasmorphism hover-style passend zur Pill-Navigation",
-              "- Toggle-Button unten an der Sidebar-Kante",
-              "- Schulungsvideos aus Sidebar entfernt, als Karte in Feedback & Hilfe",
-              "- Einstellungen + Feedback & Hilfe mit mt-auto ans Window-Ende",
-              "- bottomSection Property auf MenuSectionType",
-              "- Layouts und Pill-Navigation passen sich dynamisch an Sidebar-Breite an",
-              "- UserBox vorübergehend auskommentiert"
             ]
           }
         ],
