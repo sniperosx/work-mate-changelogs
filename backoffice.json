@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-10T20:30:01.209Z",
+  "generatedAt": "2026-08-15T11:59:57.647Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -1307,12 +1307,6 @@
               "Nutzt nun new URLSearchParams(searchParams) um bestehende",
               "Parameter (tab, role) beim Wechsel zu erhalten."
             ]
-          },
-          {
-            "hash": "d9d8f54",
-            "emoji": "🐛",
-            "message": "Fix Rules-of-Hooks Verletzung in KnowledgeRawDataTab",
-            "date": "2026-03-25"
           }
         ],
         "refactors": [
@@ -1510,21 +1504,21 @@
             "emoji": "♻️",
             "message": "Lernorte verlinken Ausbilder direkt in deren Benutzeransicht",
             "date": "2026-04-01"
-          },
-          {
-            "hash": "db9c5b0",
-            "emoji": "♻️",
-            "message": "Updated api scheme",
-            "date": "2026-03-25"
-          },
-          {
-            "hash": "e29c984",
-            "emoji": "♻️",
-            "message": "Assets hinzugefügt",
-            "date": "2026-03-25"
           }
         ],
         "styles": [
+          {
+            "hash": "4710205",
+            "emoji": "🎨",
+            "message": "Oberfläche: Die Kundenfarbe greift jetzt auch dort, wo bisher noch das work.mate-Grün stand. Die Grundfarbe der Bedienelemente war an zweiter Stelle ein zweites Mal fest hinterlegt — deshalb blieben Schaltflächen in Formularen, der runde Aktionsknopf und die Aktionen im Seitenkopf grün, obwohl der Rest längst dem Kunden folgte. Speichern, Abbrechen und alle übrigen Formularknöpfe hängen jetzt an einer einzigen Stelle. Filter werden einheitlich hervorgehoben statt jeder in einer eigenen Signalfarbe, die Phasen im Mitarbeiterformular ebenso. Der helle Farbton wird aus der Kundenfarbe abgeleitet und muss nicht gepflegt werden. Die Hinweistexte an den Aktionen im Seitenkopf waren angelegt, aber nie zu sehen, weil der Knopf seine Referenz nicht weiterreichte; der Zurück-Knopf in Formularen trägt jetzt denselben Pfeil wie überall sonst",
+            "date": "2026-08-12"
+          },
+          {
+            "hash": "409cf54",
+            "emoji": "🎨",
+            "message": "Oberfläche: Das Backoffice trägt jetzt die Hausfarbe des Kunden. Primärfarbe und dunkler Ton kommen aus den Kundendaten und färben Menü-Highlights, Reiter und Auswahlfelder — beim Superadmin auch dann, wenn er sich in einen Kunden hineinversetzt hat, damit sich die Farbgebung dort prüfen lässt. Ist beim Kunden nichts gepflegt, bleibt es beim work.mate-Ton. Die Rollen-Leiste trug bisher je Lebenszyklus-Rolle eine eigene Farbe; das biss sich mit der Kundenfarbe und ist einer einheitlichen hellen Hervorhebung gewichen. Aktive Flächen und Auswahlringe waren an mehreren Stellen fest verdrahtet und hätten den Wechsel sonst nicht mitgemacht",
+            "date": "2026-08-11"
+          },
           {
             "hash": "b9b02af",
             "emoji": "🎨",
