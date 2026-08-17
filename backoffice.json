@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-15T16:17:51.926Z",
+  "generatedAt": "2026-08-17T14:18:08.755Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,16 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "01e8408",
+            "emoji": "✨",
+            "message": "Wer ein Modul bucht, bekommt seine Funktionen jetzt sofort mitgeliefert — und zwar eingeschaltet. Bisher erschien der gebuchte Bereich zwar im Menü, blieb aber halb leer: Beim Wissensmanagement etwa gab es nur das Dashboard, während Interviews und Fragebögen fehlten. Der Grund war eine zweite, versteckte Maske, in der man von Hand Häkchen setzen musste, ohne zu wissen, dass es sie überhaupt gibt",
+            "date": "2026-08-16",
+            "description": [
+              "🔒 Bewusst getroffene Entscheidungen des Kunden bleiben unangetastet: Funktionen kommen ausschließlich in dem Moment dazu, in dem ein Modul neu eingeschaltet wird — nicht bei jedem Speichern. Was jemand absichtlich abgewählt hat, kommt also nicht heimlich zurück. Und beim Ausschalten eines Moduls wird nichts weggenommen, weil dieselbe Funktion oft zu mehreren gebuchten Modulen gehört",
+              "💬 In beiden Masken steht jetzt ein kurzer Hinweis, der den Zusammenhang erklärt: Das Modul bestimmt, was enthalten ist, die Funktionsschalter dienen zum Abwählen"
+            ]
+          },
           {
             "hash": "af514a9",
             "emoji": "✨",
@@ -861,45 +871,6 @@
             "emoji": "✨",
             "message": "Einzelne Features können nun pro Kunden konfiguriert werden",
             "date": "2026-04-07"
-          },
-          {
-            "hash": "4787af2",
-            "emoji": "✨",
-            "message": "Berichtsheft-Review: Mentor-Statistiken im Alle-Tab + API-Types aktualisiert",
-            "date": "2026-04-02",
-            "description": [
-              "- Stats-Box (Offen, In Prüfung, Freigegeben, Korrektur) pro Azubi im Alle-Tab",
-              "- Nur sichtbar wenn Aufrufer Mentor des Azubis ist (nicht bei Lernort-Zuweisung)",
-              "- API-Types regeneriert (mentorSummaries, imageBase64/imageMimeType)"
-            ]
-          },
-          {
-            "hash": "8511f63",
-            "emoji": "✨",
-            "message": "Berichtsheft-Modus Einstellung in Kundenverwaltung + Lernort-Löschung Fix",
-            "date": "2026-04-02",
-            "description": [
-              "- Berichtsheft-Modus (Täglich/Wöchentlich) als Dropdown in den Kundeneinstellungen",
-              "- API-Types regeneriert mit CustomerApprenticeSettings",
-              "- Lernort-Löschung: Event erst nach erfolgreichem DELETE emittieren"
-            ]
-          },
-          {
-            "hash": "5a3f487",
-            "emoji": "✨",
-            "message": "Berichtsheft Reviews wurden eingeführt",
-            "date": "2026-03-31"
-          },
-          {
-            "hash": "cb508e9",
-            "emoji": "✨",
-            "message": "Übersetzungsverwaltung im Backoffice – Tree-Table mit Inline-Edit, AI-Übersetzung und Sektions-Management",
-            "date": "2026-03-26",
-            "description": [
-              "🌐 Neue Seite unter \"Internationalisierung\" für SuperAdmins",
-              "🔍 Suchfunktion, Aufklappen/Zuklappen, Inline-Bearbeitung pro Sprachzelle",
-              "🤖 AI-Button für automatische Übersetzung leerer Felder"
-            ]
           }
         ],
         "deployment": [
@@ -920,21 +891,41 @@
             "emoji": "🚀",
             "message": "Blueprint-Auswahl Overlay bei der Neukunden-Anlage Beim Klick auf \"Neuer Kunde\" öffnet sich jetzt ein Overlay, in dem Inhaltsgruppen aus dem Template-Kunden ausgewählt werden können — gruppiert nach Phase mit Icons und \"Alle auswählen\"-Toggle 📋 Gewählte Blueprint-IDs werden beim Erstellen des Kunden an die API übergeben ⏭️ Der Schritt kann auch übersprungen werden",
             "date": "2026-04-15"
-          },
-          {
-            "hash": "a8e68f0",
-            "emoji": "🚀",
-            "message": "Updating CI/CD scripts for custom runner",
-            "date": "2026-03-27"
-          },
-          {
-            "hash": "1d4c8ba",
-            "emoji": "🚀",
-            "message": "Node self hosted runner eingeführt",
-            "date": "2026-03-27"
           }
         ],
         "fixes": [
+          {
+            "hash": "51da055",
+            "emoji": "🐛",
+            "message": "Der Menüpunkt „Wissensmanagement\" führt nicht mehr auf eine Fehlerseite. Wer die Fragebögen nicht gebucht hat, sah beim Klick statt seiner Auswertung nur noch „Seite nicht gefunden\" — die Seite war zwar fertig gebaut, aber nie unter einer eigenen Adresse hinterlegt",
+            "date": "2026-08-16",
+            "description": [
+              "🔗 Dasselbe galt still für Impulsfragen und Berichtsheft: Beide waren bisher ausschließlich als Reiter innerhalb ihres Bereichs erreichbar und lassen sich jetzt auch direkt aufrufen und als Lesezeichen ablegen",
+              "🛡️ Und Bereiche mit nur einer einzigen Unterseite zeigen diese jetzt direkt an, statt weiterzuleiten. Damit kann dieselbe Panne an anderer Stelle gar nicht mehr entstehen"
+            ]
+          },
+          {
+            "hash": "e8687a1",
+            "emoji": "🐛",
+            "message": "Mitarbeiter-Gruppen lassen sich wieder zuweisen, auch ohne gebuchten Mitarbeiter-Assistenten. Wer das Wissensmanagement gebucht hat, hat Mitarbeiter im Haus und damit auch Mitarbeiter-Inhaltsgruppen — auf der Gruppenseite waren sie sichtbar, im Artikel aber nicht auswählbar. Die Auswahldialoge hatten die Frage \"welche Gruppen gibt es hier?\" mit \"was ist gebucht?\" beantwortet, und das ist nicht dasselbe. Betroffen waren die Mehrfachauswahl der Inhalte, der Gruppen-Dialog im Artikel, der Gruppenfilter und die Kategorien-Überschriften darin",
+            "date": "2026-08-16",
+            "description": [
+              "🔧 Dieselbe Ableitung steckt jetzt an einer Stelle und wird überall genutzt, statt in jedem Dialog neu geschrieben zu werden. Damit gilt die Wissensmanagement-Regel ab sofort einheitlich",
+              "✨ Beim Verschieben einer Inhaltsgruppe stehen nur noch Ziele zur Wahl, die es tatsächlich gibt: Das Wissensmanagement wurde angeboten, obwohl es dort gar keine Gruppen gibt, und die Mitarbeiter fehlten in der Liste",
+              "🧹 \"Zurücksetzen\" im Inhaltsfilter räumt jetzt nur noch die Filter auf und wechselt nicht mehr heimlich den Personenkreis"
+            ]
+          },
+          {
+            "hash": "9b55d70",
+            "emoji": "🐛",
+            "message": "Beim Anlegen eines Mitarbeiters standen nicht alle Phasen zur Wahl, die es beim Kunden gibt. Wer das Wissensmanagement gebucht hat, braucht Mitarbeiter als Wissensträger — angeboten wurden aber nur „Azubi\" und „Führungskraft\". Die Anlagemaske hatte eine eigene Liste geführt, die von der Nutzerverwaltung längst abgewichen war",
+            "date": "2026-08-16",
+            "description": [
+              "🏷️ Die Führungsphase heißt jetzt überall gleich. Bei Kunden ohne Suite steht dort „Ausbilder\" statt „Führungskraft\" — in der Anlagemaske, beim Phasenwechsel und in der Phasenübersicht. Bisher stand in den Formularen fest „Führung\", egal wie der Kunde seine Leute nennt",
+              "🧹 Welche Phasen es bei einem Kunden gibt, entscheidet jetzt eine einzige Stelle statt drei. Anlagemaske, Phasenwechsel und Nutzerverwaltung fragen dieselbe Produktdefinition — sie können nicht mehr auseinanderlaufen",
+              "🛟 Kein Knopf führt mehr in eine leere Pflichtauswahl: Die zusätzliche Führungsgruppe wird nur noch dort verlangt, wo der Kunde das Führungsmodul auch gebucht hat"
+            ]
+          },
           {
             "hash": "72d9e39",
             "emoji": "🐛",
@@ -1307,12 +1298,6 @@
               "Nutzt nun new URLSearchParams(searchParams) um bestehende",
               "Parameter (tab, role) beim Wechsel zu erhalten."
             ]
-          },
-          {
-            "hash": "d9d8f54",
-            "emoji": "🐛",
-            "message": "Fix Rules-of-Hooks Verletzung in KnowledgeRawDataTab",
-            "date": "2026-03-25"
           }
         ],
         "refactors": [
@@ -1492,36 +1477,6 @@
               "- TimeInput von date-fns/AdapterDateFns auf dayjs/AdapterDayjs umgestellt",
               "- date-fns komplett entfernt (dayjs ist primäre Date-Lib mit 69 Imports)"
             ]
-          },
-          {
-            "hash": "753a929",
-            "emoji": "♻️",
-            "message": "Berichtsheft-Review Tabelle mit festen Spaltenbreiten für konsistente Darstellung",
-            "date": "2026-04-02"
-          },
-          {
-            "hash": "18156bc",
-            "emoji": "♻️",
-            "message": "Lernziele im Lernort ist kein Pflichtfeld mehr",
-            "date": "2026-04-01"
-          },
-          {
-            "hash": "10368d0",
-            "emoji": "♻️",
-            "message": "Lernorte verlinken Ausbilder direkt in deren Benutzeransicht",
-            "date": "2026-04-01"
-          },
-          {
-            "hash": "db9c5b0",
-            "emoji": "♻️",
-            "message": "Updated api scheme",
-            "date": "2026-03-25"
-          },
-          {
-            "hash": "e29c984",
-            "emoji": "♻️",
-            "message": "Assets hinzugefügt",
-            "date": "2026-03-25"
           }
         ],
         "styles": [
@@ -1832,6 +1787,17 @@
         ],
         "docs": [
           {
+            "hash": "5b30cd5",
+            "emoji": "📚",
+            "message": "Wissensmanagement ist jetzt ein eigenes buchbares Modul. Bisher war es ein Häkchen in der Funktionsliste — jetzt steht es bei den aktiven Modulen und bringt Interviews, Owly und Wissenspools mit. Wer es bucht, kann außerdem Mitarbeiter pflegen und Mitarbeiter-Inhaltsgruppen anlegen, ohne den ganzen Mitarbeiter-Assistenten zu buchen",
+            "date": "2026-08-16",
+            "description": [
+              "🔒 Das Menü zeigt nur noch, was der Kunde wirklich gebucht hat. Bisher reichte ein gesetzter Funktionsschalter, damit ein Bereich auftauchte — auch wenn das zugehörige Modul gar nicht dabei war. Jetzt gilt für jeden Menüpunkt beides: Das Modul muss gebucht und die Funktion nicht abgewählt sein. Owly und die Interviews verschwinden entsprechend, wenn das Wissensmanagement fehlt",
+              "👥 In der Nutzerverwaltung stehen nur noch die Personenkreise zur Auswahl, die es beim Kunden gibt. Ein Kunde ohne Azubis sah bisher trotzdem einen Azubi-Reiter, der immer leer blieb. Mit gebuchtem Wissensmanagement bleiben die Mitarbeiter sichtbar — sonst fände man seine Wissensträger nicht mehr",
+              "🎛️ Die Kundenpflege bietet jetzt die Schalter, die bisher fehlten: Videos, Noten, Interviews und Owly lassen sich einzeln an- und abschalten. Das stillgelegte Wissensmanagement-Häkchen ist aus der Funktionsliste verschwunden, weil es dort nichts mehr zu suchen hat"
+            ]
+          },
+          {
             "hash": "18feef2",
             "emoji": "📝",
             "message": "Wissensmanagement: Spec & Umsetzungsplan (Mitarbeitersicht)",
@@ -1851,6 +1817,22 @@
           }
         ],
         "security": [
+          {
+            "hash": "cd4f1ee",
+            "emoji": "🔒",
+            "message": "Funktionsschalter, die nichts bewirken, lassen sich nicht mehr umlegen. Wer das Wissensmanagement nicht gebucht hat, konnte Interviews und Owly trotzdem anhaken — ein Häkchen, das aussieht wie eine Zusage und ins Leere lief. Der Bereich ist jetzt ausgegraut, die Schalter sind gesperrt, und eine kleine Markierung an der Überschrift sagt, woran es liegt",
+            "date": "2026-08-16",
+            "description": [
+              "🎓 Dasselbe gilt für die Ausbildung und für die einzelnen Funktionen im oberen Bereich: Was zu keinem gebuchten Modul gehört, ist sichtbar, aber nicht bedienbar. Funktionen, die in mehreren Modulen stecken — Newsfeed, Chats, Artikel — bleiben offen, solange auch nur eines davon gebucht ist",
+              "✅ Wird ein Modul in den Stammdaten eingeschaltet, ist der zugehörige Bereich sofort wieder offen"
+            ]
+          },
+          {
+            "hash": "86ca905",
+            "emoji": "🔒",
+            "message": "Die Lernorte-Verwaltung ist ab sofort ausschließlich Administratoren vorbehalten. Eine Ausbildungsleitung findet den Bereich weder im Menü noch über die direkte Adresse — dort greift jetzt die gewohnte Seite-nicht-gefunden-Meldung",
+            "date": "2026-08-16"
+          },
           {
             "hash": "274d80a",
             "emoji": "🔒",
