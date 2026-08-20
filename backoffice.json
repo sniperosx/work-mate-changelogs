@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-17T14:18:08.755Z",
+  "generatedAt": "2026-08-20T09:45:26.237Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -1451,31 +1451,6 @@
               "- CsvColumnAssignmentPage + CsvSanityCheckPage zu Config-Wrappern reduziert",
               "- CsvLearningPlaceColumnAssignmentPage + CsvLearningPlaceSanityCheckPage ebenso",
               "- ~600 Zeilen duplizierter Code eliminiert"
-            ]
-          },
-          {
-            "hash": "eee9f8e",
-            "emoji": "♻️",
-            "message": "Phase 4: Code-Duplikate beseitigen",
-            "date": "2026-04-02",
-            "description": [
-              "- MODULE_LABELS, MODULE_BADGE_COLORS, MODULE_SORT_ORDER in ModuleHelper.ts zentralisiert",
-              "- Berichtsheft-Konstanten (LOCATION_CONFIG, STATUS_*) in berichtsheftConstants.tsx extrahiert",
-              "- Date-Formatting-Funktionen in DateFormatter.ts zentralisiert (dayjs-basiert)",
-              "- Duplikate in BlueprintAssignmentInput, NotificationBlueprintSelection,",
-              "BerichtsheftReviewDialog/Page und Interview-Views entfernt"
-            ]
-          },
-          {
-            "hash": "d63ebea",
-            "emoji": "🔧",
-            "message": "Phase 3: Version-Konflikte beheben",
-            "date": "2026-04-02",
-            "description": [
-              "- react-is von ^19 auf ^18.3.1 downgraded (passend zu React 18)",
-              "- @mui/lab durch eigene LoadingButton-Komponente ersetzt und entfernt",
-              "- TimeInput von date-fns/AdapterDateFns auf dayjs/AdapterDayjs umgestellt",
-              "- date-fns komplett entfernt (dayjs ist primäre Date-Lib mit 69 Imports)"
             ]
           }
         ],
