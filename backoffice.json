@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-08-25T19:20:26.896Z",
+  "generatedAt": "2026-09-12T08:45:40.207Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,18 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "778ca62",
+            "emoji": "✨",
+            "message": "Dialoge sehen jetzt überall gleich aus und ziehen sauber auf",
+            "date": "2026-09-04",
+            "description": [
+              "🎬 Der Dialog zur Mitarbeiterauswahl ist bisher schlagartig ins Bild gesprungen. Jetzt blendet er auf wie alle anderen — der Fehler steckte in der gemeinsamen Grundlage und ist damit für sämtliche Dialoge behoben",
+              "🎨 Der Auswahldialog trägt dieselbe dunkle Kopfzeile wie der Gruppen-Dialog, statt wie aus einem anderen Produkt zu wirken",
+              "🍏 Das grelle Hellgrün ist aus der Dialog-Kopfzeile verschwunden; Untertitel und Schließen-Knopf sind jetzt ruhig weiß gehalten",
+              "🧭 Die Überschriften Gruppen, Einstellungen und Fragen haben kleine Sinnbilder bekommen — das lockert die lange Seite auf"
+            ]
+          },
           {
             "hash": "01e8408",
             "emoji": "✨",
@@ -700,177 +712,6 @@
               "💬 Tooltip der aktuellen Phase zeigt zusätzlich die aktuell zugewiesenen Inhaltsgruppen (Primary + ggf. Führungs- + ggf. Elternzeit-Gruppe)",
               "🤖 api.ts inkl. neuem ScheduledRoleChangeTarget.ParentalLeave-Wert"
             ]
-          },
-          {
-            "hash": "117c08d",
-            "emoji": "✨",
-            "message": "Phasenwechsel: Agenda + Inline-Callout für Create/Edit",
-            "date": "2026-05-13",
-            "description": [
-              "Vier neue Komponenten:",
-              "- PhaseAgenda / PhaseAgendaItem: horizontale Timeline mit Status-Varianten",
-              "(vergangen ausgegraut, aktuell teal-hervorgehoben, geplant editierbar).",
-              "Tooltip pro Item, data-testid für E2E.",
-              "- PhaseChangeSection: Container in den Stammdaten — aktuelle Phase als",
-              "Badge, Agenda, History-Toggle, \"+ Neuer Phasenwechsel\"-Button und",
-              "Inline-Edit über Klick auf geplante Einträge. Nutzt MessageView für",
-              "leere Agenda statt Plain Text.",
-              "- PhaseChangeForm: Inline-Callout mit modul-bewusstem Rollen-Grid",
-              "(Mitarbeiter / Azubi / Führungskraft / Ausbilder / Offboardee — Buttons",
-              "nur sichtbar, wenn das jeweilige ProductModule gebucht ist),",
-              "Zeitpunkt-Radios (Sofort / In X Tagen-Wochen-Monaten / Am Datum),",
-              "Pflicht-Inhaltsgruppe je nach Ziel-Rolle, optionale Führungsgruppe für",
-              "Executive/Instructor und Pflicht-Austrittsdatum für Offboardee. Speichert",
-              "über die useScheduledRoleChangeMutation-Hooks."
-            ]
-          },
-          {
-            "hash": "ff8bbc5",
-            "emoji": "✨",
-            "message": "Phasenwechsel: Stub-Types und API-Queries für ScheduledRoleChange",
-            "date": "2026-05-13",
-            "description": [
-              "Manuelle TypeScript-Pendants zu den Phase-1-DTOs des Backends (ScheduledRoleChangeDto,",
-              "ScheduledRoleChangeCreateDto, ScheduledRoleChangeUpdateDto, Enum",
-              "ScheduledRoleChangeTarget). Datei wird entfernt, sobald Phase 1 deployed ist und",
-              "yarn run generate:schema:dev die Types regeneriert.",
-              "Plus react-query-Hooks für GET/POST/PUT/DELETE auf",
-              "/users/{userId}/scheduled-role-changes mit Invalidierung der employee-/user-Caches."
-            ]
-          },
-          {
-            "hash": "0fc7a9e",
-            "emoji": "✨",
-            "message": "Inhaltsgruppen: Verschieben in andere Rolle möglich",
-            "date": "2026-05-13",
-            "description": [
-              "🎯 Neuer Aktionen-Button auf jeder Inhaltsgruppen-Karte (Drei-Punkte-Menü) mit den Einträgen „Duplizieren\" und „Verschieben\"",
-              "🔀 Inhaltsgruppen lassen sich jetzt in eine andere Rolle (Onboarding, Azubi, Mitarbeiter, …) verschieben, solange keine Mitarbeiter zugewiesen sind",
-              "🛡️ Bei zugewiesenen Gruppen ist der Menüpunkt deaktiviert und zeigt den Grund an",
-              "🧹 Beim Wechsel aus „Azubi\" werden ausbildungsspezifische Einstellungen automatisch entfernt"
-            ]
-          },
-          {
-            "hash": "6189235",
-            "emoji": "✨",
-            "message": "Editor: linkDialogPlugin aktiviert (Edit/Remove/Open) + article://-Sprung im neuen Tab",
-            "date": "2026-05-07"
-          },
-          {
-            "hash": "47b8aa2",
-            "emoji": "✨",
-            "message": "Editor: Klick auf article://-Link öffnet Edit-Dialog (Titel, Entfernen, Sprung)",
-            "date": "2026-05-06"
-          },
-          {
-            "hash": "003b97e",
-            "emoji": "✨",
-            "message": "Editor: article://-Links öffnen in neuem Tab (Bearbeitungs-State bleibt)",
-            "date": "2026-05-06"
-          },
-          {
-            "hash": "7489077",
-            "emoji": "✨",
-            "message": "Editor: Artikel-Verlinkung über neuen Toolbar-Button",
-            "date": "2026-05-06"
-          },
-          {
-            "hash": "efc6d52",
-            "emoji": "✨",
-            "message": "Superadmin-Kundensicht: schnellerer Zugriff auf Delegation",
-            "date": "2026-05-06",
-            "description": [
-              "Klick auf eine Kundenkarte schlüpft jetzt direkt in dessen Rolle — die häufigste Aktion bekommt die ganze Trefferfläche. Der bisherige „Delegieren\"-Button auf der Karte wurde zu „Einstellungen\" umfunktioniert und führt zur Kundenbearbeitung.",
-              "Außerdem ist „Delegation beenden\" nun direkt unter dem Avatar im Seitenmenü sichtbar (statt im Avatar-Popover versteckt) — funktioniert in eingeklapptem und ausgeklapptem Sidebar-Zustand."
-            ]
-          },
-          {
-            "hash": "09030fa",
-            "emoji": "✨",
-            "message": "Changelog-Overlay rendert jetzt Markdown statt Plain-Text",
-            "date": "2026-05-05",
-            "description": [
-              "react-markdown mit remark-gfm und remark-breaks eingebunden, sodass das Was-gibt's-neues-Overlay echte Markdown-Formatierung zeigt: fette Stellen werden fett, Listen werden Listen, einfache Zeilenumbrüche bleiben als Umbruch erhalten (analog zu GitHub-Comments). Vorher landete der Inhalt komplett als Plain-Text mit sichtbaren ** und Newlines wurden zu Spaces."
-            ]
-          },
-          {
-            "hash": "739af90",
-            "emoji": "✨",
-            "message": "Neue Einstellung: Empfänger der „Automatische Nutzerlöschung\"-Mails wählbar 📧 Unter „Einstellungen → Empfänger → Suite\" lässt sich jetzt gezielt festlegen, wer über bevorstehende automatische Löschungen informiert werden soll — typischerweise nur die HR-Abteilung 🐛 Empfänger-Auswahlfelder zeigten kurz „Gelöschter Nutzer\" beim Öffnen, bis die Namen geladen waren ✨ Beim Öffnen der Empfänger-Listen werden jetzt erst die echten Namen angezeigt, sobald sie geladen sind — kein Flackern mehr",
-            "date": "2026-05-05"
-          },
-          {
-            "hash": "ea6d81f",
-            "emoji": "✨",
-            "message": "Artikelübersicht: Kategorien alphabetisch, \"Highlights\" oben",
-            "date": "2026-05-04",
-            "description": [
-              "Die Kategorien-Sektionen in der Artikelübersicht waren in der Reihenfolge sortiert, in der die Artikel reinkamen — die \"Highlights\"-Kategorie landete dadurch oft erst weit unten auf der Seite. Ab jetzt werden Kategorien alphabetisch sortiert (deutsche Locale für Umlaute), und \"Highlights\" wird immer als erste Sektion gepinnt und mit Sparkles-Icon und sanftem Amber-Akzent hervorgehoben — konsistent zum bereits vorhandenen Style des \"Neue Artikel\"-Bereichs."
-            ]
-          },
-          {
-            "hash": "6cb9f97",
-            "emoji": "✨",
-            "message": "Superadmin-Menü neu sortiert und in Tab-Container gruppiert",
-            "date": "2026-05-04",
-            "description": [
-              "Das flache Superadmin-Menü mit 11 Einzel-Einträgen wird auf 5 Top-Level-Punkte verdichtet, drei davon sind Tab-Container im bestehenden ?tab=…-Pattern:",
-              "- Kunden → Alle Kunden / Statistiken / Transaktionen",
-              "- Changelog",
-              "- Konfiguration → Personalfragebogen / Reflexionsfragen / Übersetzungen",
-              "- Systemeinstellungen → Versionen / Administratoren",
-              "- Mein Profil",
-              "Außerdem: \"Nutzer-Analyse\" heißt jetzt \"Statistiken\", die alte Systemeinstellungen-Page ist zu \"Versionen\" umbenannt (Files, Routes), und der Bug-Report-Eintrag ist im Superadmin entfernt — Superadmins berichten nicht selbst.",
-              "Detail- und Edit-Routen bleiben vollständig erhalten, damit bestehende Save-Returns nicht brechen."
-            ]
-          },
-          {
-            "hash": "79d7c7c",
-            "emoji": "✨",
-            "message": "Inhaltsgruppen: Neuer \"Zuweisungen\"-Tab mit Mitarbeiter-Grid",
-            "date": "2026-04-30",
-            "description": [
-              "Im Detail einer Inhaltsgruppe gibt es jetzt einen Tab \"Zuweisungen\", der alle aktuell verknüpften Mitarbeiter (primär, Beförderung, Führung) als Grid auflistet. Die Zahl im Tab-Titel zeigt sofort, wie viele Personen betroffen sind — und ein Klick auf eine Karte springt direkt zum User, um die Zuordnung dort zu ändern. Damit lässt sich gezielt auflösen, was einer Löschung der Inhaltsgruppe im Wege steht."
-            ]
-          },
-          {
-            "hash": "6ee6d22",
-            "emoji": "✨",
-            "message": "Toggle für Mitarbeiterverzeichnis in der Kundenkonfiguration",
-            "date": "2026-04-30",
-            "description": [
-              "Neuer Eintrag im Funktionen-Tab unter Customer-Edit. Standardmäßig",
-              "deaktiviert (Datenschutz) — pro Mandant aktivierbar."
-            ]
-          },
-          {
-            "hash": "974bf7e",
-            "emoji": "✨",
-            "message": "Phasen-Segmented-Control und Entwürfe-Tab für Umfragen",
-            "date": "2026-04-29",
-            "description": [
-              "Umfragen werden in /feedback?tab=questionnaires jetzt nach den Modulen der zugewiesenen Gruppen (Blueprints) gefiltert — analog zu Blueprints und Artikeln. Index 0 ist ein \"Entwürfe\"-Tab und listet alle Umfragen ohne Gruppenzuweisung.",
-              "🆕 UserRoleSelectionBar um optionale nullEntry-Prop erweitert (Custom-Label/Icon/Farbe für den null-Slot), Color-Mapper um amber und gray ergänzt.",
-              "📝 Neue Umfragen werden mit linkedModules: [] als Entwurf angelegt; Save-Return navigiert zurück zu /feedback?tab=questionnaires und übernimmt ?role= aus der URL, sofern vorhanden."
-            ]
-          },
-          {
-            "hash": "32a08b2",
-            "emoji": "✨",
-            "message": "Dashboard für die Verwaltung von Vorschlägen",
-            "date": "2026-04-20"
-          },
-          {
-            "hash": "b7c0c26",
-            "emoji": "✨",
-            "message": "Sidebar-Menüpunkte Chat und Artikel per CustomerFeature dynamisiert",
-            "date": "2026-04-07"
-          },
-          {
-            "hash": "86f5159",
-            "emoji": "✨",
-            "message": "Einzelne Features können nun pro Kunden konfiguriert werden",
-            "date": "2026-04-07"
           }
         ],
         "deployment": [
@@ -879,18 +720,6 @@
             "emoji": "🚀",
             "message": "Changelog Automatisierung",
             "date": "2026-05-23"
-          },
-          {
-            "hash": "b105d60",
-            "emoji": "🚀",
-            "message": "Adds claude release skill",
-            "date": "2026-05-10"
-          },
-          {
-            "hash": "04e060d",
-            "emoji": "🚀",
-            "message": "Blueprint-Auswahl Overlay bei der Neukunden-Anlage Beim Klick auf \"Neuer Kunde\" öffnet sich jetzt ein Overlay, in dem Inhaltsgruppen aus dem Template-Kunden ausgewählt werden können — gruppiert nach Phase mit Icons und \"Alle auswählen\"-Toggle 📋 Gewählte Blueprint-IDs werden beim Erstellen des Kunden an die API übergeben ⏭️ Der Schritt kann auch übersprungen werden",
-            "date": "2026-04-15"
           }
         ],
         "fixes": [
@@ -1241,66 +1070,15 @@
               "`-0 < 0 === false` als „Tage nach\" interpretiert wurde. Wechsel auf",
               "relative setzt jetzt mindestens 1 Tag als Default."
             ]
-          },
-          {
-            "hash": "d8f80a3",
-            "emoji": "🐛",
-            "message": "Mitarbeiter-Formular: Führungskraft-Gruppenzuweisung in Non-Suite-Paketen korrigiert",
-            "date": "2026-05-13",
-            "description": [
-              "Bei Kunden ohne Suite (z.B. nur Einarbeitungsassistent) konnte einer Führungskraft keine",
-              "Führungsgruppe zugewiesen werden — Label und Auswahl waren auf Einarbeitungsgruppen",
-              "beschränkt und die Erklärung passte nicht zur Rolle.",
-              "- EmployeeForm lädt für Executives in Non-Suite zusätzlich Management-Blueprints und",
-              "rendert sie gruppiert (Führungsgruppen, Trenner, Einarbeitungsgruppen)",
-              "- Label und Caption für Führungskräfte werden in Non-Suite zu \"Inhaltsgruppe\" mit",
-              "passendem Hinweis-Text angepasst",
-              "- Alert-Box weist darauf hin, wenn einer Führungskraft eine Einarbeitungsgruppe",
-              "zugewiesen wurde — nur zur inhaltlichen Prüfung, nicht für den Betrieb",
-              "- SelectInputGroup akzeptiert optionales isDisabled pro Item (für den Trenner-Eintrag)"
-            ]
-          },
-          {
-            "hash": "f7671c5",
-            "emoji": "🐛",
-            "message": "Inhaltsgruppe: Race Condition beim \"Öffentliche Registrierung\"-Switch behoben",
-            "date": "2026-05-12",
-            "description": [
-              "Der Switch in BlueprintRegistrationInviteForm hatte einen lokalen State, der nie",
-              "in den Parent-State zurückgespielt wurde. Beim schnellen Klick auf \"Speichern\"",
-              "sendete der zentrale Submit den alten Wert mit und überschrieb die Switch-Mutation.",
-              "- useBlueprintMutation invalidiert nun ['blueprints', id] und den QR-Code-Cache",
-              "- BlueprintRegistrationInviteForm propagiert Toggle-Änderungen via onChange an",
-              "den Parent und syncht den lokalen State mit blueprint.isOpenForSelfRegistration",
-              "- CrudStateProvider akzeptiert isSubmitDisabled, BlueprintEditPage sperrt den",
-              "Submit via useIsMutating, solange eine konkurrierende Blueprint-Mutation läuft"
-            ]
-          },
-          {
-            "hash": "ebc9465",
-            "emoji": "🐛",
-            "message": "Editor: Markdown-Escape im Titel + Dialog erst beim Öffnen mounten",
-            "date": "2026-05-06"
-          },
-          {
-            "hash": "f7e45a4",
-            "emoji": "🐛",
-            "message": "Fix: Default-Features werden jetzt beim Erstellen wirklich ins Model geschrieben Vorher wurden sie nur visuell angezeigt aber nicht mitgespeichert — neue Kunden hatten ein leeres ActiveFeatures-Array",
-            "date": "2026-04-15"
-          },
-          {
-            "hash": "db1ac69",
-            "emoji": "🐛",
-            "message": "Query-Parameter bleiben bei setSearchParams erhalten",
-            "date": "2026-04-07",
-            "description": [
-              "setSearchParams({ key: value }) ersetzt alle Query-Parameter.",
-              "Nutzt nun new URLSearchParams(searchParams) um bestehende",
-              "Parameter (tab, role) beim Wechsel zu erhalten."
-            ]
           }
         ],
         "refactors": [
+          {
+            "hash": "bab702d",
+            "emoji": "🔧",
+            "message": "Die Auswahl im Fragen-Editor merkt sich jetzt, welche Frage gemeint ist, statt eine Kopie davon mitzuschleppen",
+            "date": "2026-09-04"
+          },
           {
             "hash": "776dc53",
             "emoji": "⚡",
@@ -1371,77 +1149,50 @@
             "emoji": "♻️",
             "message": "Updates API spec",
             "date": "2026-05-21"
-          },
-          {
-            "hash": "180612b",
-            "emoji": "♻️",
-            "message": "Phasenwechsel: Lebenszyklus-Tab entfernt, Sektion in Stammdaten integriert",
-            "date": "2026-05-13",
-            "description": [
-              "EmployeesEditPage:",
-              "- Lebenszyklus-Tab in allen vier Tab-Konfigurationen (Trainee, Employee,",
-              "Executive, Onboardee) entfernt",
-              "- Import von EmployeeLifecycleForm entfernt",
-              "- Nach Create-Navigation: Standard-Tab statt ?tab=lifecycle",
-              "EmployeeForm:",
-              "- PhaseChangeSection als eigene Sektion direkt unter den Personaldaten",
-              "(nach Vorname/Nachname, vor Team & Kontakt) — nicht für Admins",
-              "- Komplette \"Inhaltsgruppe\"-Sektion (Ausbilder/Führungskraft im Azubi-/",
-              "Onboarding-Paket) entfernt; ersetzt durch Phasenwechsel-Flow",
-              "- Unbenutzte Imports und Helper bereinigt (ProductModule, isSuite,",
-              "getCustomerPackage, useBlueprintsQuery, IconClick)",
-              "EmployeeRolesForm:",
-              "- Führungskraft-Container komplett entfernt (Toggle, Führungsgruppen-",
-              "Selektor, Ist-Ausbilder-Switch) — wandert in den Phasenwechsel",
-              "- Elternzeit-Container bleibt unverändert",
-              "- Hinweis im Header, dass Rollenwechsel über Phasenwechsel laufen",
-              "EmployeeLifecycleForm.tsx wurde gelöscht."
-            ]
-          },
-          {
-            "hash": "f77a380",
-            "emoji": "♻️",
-            "message": "Updates API spec",
-            "date": "2026-04-16"
-          },
-          {
-            "hash": "0525be9",
-            "emoji": "♻️",
-            "message": "Changelogs auf markdown umgesteltl",
-            "date": "2026-04-13"
-          },
-          {
-            "hash": "efc3530",
-            "emoji": "♻️",
-            "message": "Kundenübersicht überarbeitet: horizontale Cards, Zuletzt-geöffnet-Sektion, relative Kundendauer",
-            "date": "2026-04-10"
-          },
-          {
-            "hash": "a475ed2",
-            "emoji": "♻️",
-            "message": "Einstellungen und work.mate AI in den Funktionen-Tab verschoben",
-            "date": "2026-04-07",
-            "description": [
-              "- Einstellungen-Sektion (Chat-Privatsphäre, Newsfeed, Kommentare, Berichtsheft) aus Stammdaten in Funktionen-Tab migriert",
-              "- Reflexionsfragen und work.mate AI als Pseudo-Features im Feature-Grid",
-              "- Funktionen alphabetisch sortiert mit Icons",
-              "- Zusatzmodule-Sektion aus Stammdaten entfernt"
-            ]
-          },
-          {
-            "hash": "66dcf53",
-            "emoji": "♻️",
-            "message": "Führungskräfte können nun direkt bei Erstellung eines neuen Mitarbeiters angegeben werden",
-            "date": "2026-04-07"
-          },
-          {
-            "hash": "ef3b96b",
-            "emoji": "♻️",
-            "message": "Removes build errors",
-            "date": "2026-04-06"
           }
         ],
         "styles": [
+          {
+            "hash": "55fd436",
+            "emoji": "🎨",
+            "message": "Oberfläche: Die Inhaltsgruppen sehen jetzt aus wie die Fragebögen. Jede Gruppe trägt den dunklen Kopf in der Hausfarbe des Kunden mit Icon und Titel, das Drei-Punkte-Menü sitzt hell darin. Darunter stehen drei ruhige Zeilen statt loser Grautexte und eines grünen Datums-Plättchens: welche Inhalte die Gruppe bündelt, wie vielen Personen sie zugewiesen ist und seit wann es sie gibt. Die Zahl der Zugewiesenen war bisher nur indirekt am gesperrten Verschieben zu erahnen, jetzt steht sie auf der Karte. Beim Überfahren hebt sich die Karte wie bei den Fragebögen; die Kachel für eine neue Gruppe ist gestrichelt und nimmt beim Überfahren den hellen Kundenton an. Das Raster folgt ebenfalls den Fragebögen: eine, zwei oder drei Spalten je nach Fensterbreite",
+            "date": "2026-09-10",
+            "description": [
+              "Der Kartenrahmen stand bisher nur in der Fragebogen-Karte. Mit der zweiten Verwendung ist er in eine gemeinsame Karte gewandert, die beide Übersichten nutzen — Kopf, Hover und Zeilen hängen damit an einer Stelle. Das Menü im Kopf erbt die helle Schrift vom Kopf; eine eigene Textfarbe am Knopf verlor gegen die Grundfarbe von MUI und zeigte das Symbol dunkel auf dunkel",
+              "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
+            ]
+          },
+          {
+            "hash": "90d90e6",
+            "emoji": "🎨",
+            "message": "Oberfläche: Die Fragebogen-Übersicht wirkt nicht mehr wie eine Versicherungstabelle. Die Karten tragen jetzt einen dunklen Kopf in der Hausfarbe des Kunden — derselbe Ton wie die aktive Reiter-Pille — mit heller Schrift und einem Icon, das auf der dunklen Fläche sitzt statt auf einem weißen Plättchen. Die Zeilen darunter standen sehr luftig, ihr Abstand ist zusammengerückt, ohne gedrängt zu wirken; eine Karte ist dadurch rund ein Viertel flacher. Statt zwei stehen ab großen Fenstern drei Karten nebeneinander, auf mittleren zwei, auf schmalen eine. Beim Überfahren hebt sich die Karte leicht an, wirft einen weichen Schatten in der Kundenfarbe und der Kopf wird durchgehend dunkel; wer reduzierte Bewegung eingestellt hat, bekommt die Bewegung nicht. Der Farbverlauf im Kopf lässt sich technisch nicht weich überblenden, deshalb legt sich die satte Fläche über ihn statt ihn auszutauschen",
+            "date": "2026-09-09",
+            "description": [
+              "Das Anheben wurde in der obersten Reihe abgeschnitten. Der Seitenrahmen hielt sein horizontales Clipping über `overflow-x-hidden`, und sobald eine Achse auf `hidden` steht, macht der Browser aus der Gegenachse ein `auto` — es wurde also auch nach oben abgeschnitten. Als Reiter bringt der Rahmen zudem keinen oberen Abstand mit, den liefert bereits die Reiterleiste, sodass die Karten direkt an dieser Kante klebten. `clip` verträgt sich anders als `hidden` mit einem sichtbaren `overflow-y` und hält das seitliche Clipping, ohne einen zweiten Scrollbereich zu erzeugen — genau das, was der Rahmen laut seiner eigenen Beschreibung immer schon tun sollte. Seiten mit fester Höhe bleiben unverändert, dort begrenzt die Seite ihre Höhe bewusst selbst",
+              "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
+            ]
+          },
+          {
+            "hash": "ba50b7e",
+            "emoji": "🎨",
+            "message": "Oberfläche: Die Kundenfarbe greift jetzt auch dort, wo bisher noch das work.mate-Grün stand. Die Grundfarbe der Bedienelemente war an zweiter Stelle ein zweites Mal fest hinterlegt — deshalb blieben Schaltflächen in Formularen, der runde Aktionsknopf und die Aktionen im Seitenkopf grün, obwohl der Rest längst dem Kunden folgte. Speichern, Abbrechen und alle übrigen Formularknöpfe hängen jetzt an einer einzigen Stelle. Filter werden einheitlich hervorgehoben statt jeder in einer eigenen Signalfarbe, die Phasen im Mitarbeiterformular ebenso. Der helle Farbton wird aus der Kundenfarbe abgeleitet und muss nicht gepflegt werden. Die Hinweistexte an den Aktionen im Seitenkopf waren angelegt, aber nie zu sehen, weil der Knopf seine Referenz nicht weiterreichte; der Zurück-Knopf in Formularen trägt jetzt denselben Pfeil wie überall sonst",
+            "date": "2026-08-12"
+          },
+          {
+            "hash": "fb36b94",
+            "emoji": "🎨",
+            "message": "Oberfläche: Das Backoffice trägt jetzt die Hausfarbe des Kunden. Primärfarbe und dunkler Ton kommen aus den Kundendaten und färben Menü-Highlights, Reiter und Auswahlfelder — beim Superadmin auch dann, wenn er sich in einen Kunden hineinversetzt hat, damit sich die Farbgebung dort prüfen lässt. Ist beim Kunden nichts gepflegt, bleibt es beim work.mate-Ton. Die Rollen-Leiste trug bisher je Lebenszyklus-Rolle eine eigene Farbe; das biss sich mit der Kundenfarbe und ist einer einheitlichen hellen Hervorhebung gewichen. Aktive Flächen und Auswahlringe waren an mehreren Stellen fest verdrahtet und hätten den Wechsel sonst nicht mitgemacht",
+            "date": "2026-08-11"
+          },
+          {
+            "hash": "57807d0",
+            "emoji": "🎨",
+            "message": "Jeder Fragetyp hat jetzt ein eigenes Sinnbild, unvollständige Fragen werden erkannt",
+            "date": "2026-09-04",
+            "description": [
+              "🔍 Fehlt einer Frage die Fragestellung, der Feldname oder bei einer Auswahl die zweite Antwortmöglichkeit, wird das künftig als Hinweis gemeldet — ohne die Bearbeitung zu blockieren"
+            ]
+          },
           {
             "hash": "b9b02af",
             "emoji": "🎨",
@@ -1721,6 +1472,21 @@
         ],
         "tests": [
           {
+            "hash": "b0487f1",
+            "emoji": "🧪",
+            "message": "Der automatische Test kommt lokal wieder als Administrator hinein. Der Administrator in den Testdaten existiert in der lokalen Umgebung nicht mehr, jeder Test mit dieser Rolle scheiterte schon an der Anmeldung. Er zeigt jetzt auf den lokalen Standard-Admin des Demo-Kunden, der ohne echte Kundendaten auskommt",
+            "date": "2026-09-10",
+            "description": [
+              "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
+            ]
+          },
+          {
+            "hash": "e607c68",
+            "emoji": "🧪",
+            "message": "Der automatische Test führt jetzt durch den neuen Fragen-Editor",
+            "date": "2026-09-04"
+          },
+          {
             "hash": "bbb1158",
             "emoji": "🧪",
             "message": "Phasenwechsel: E2E-Tests + Anpassung bestehender Lifecycle-Tests",
@@ -1779,6 +1545,12 @@
           }
         ],
         "security": [
+          {
+            "hash": "fba737a",
+            "emoji": "🔒",
+            "message": "Ein schreibgeschütztes Formular sagt jetzt deutlich, dass es schreibgeschützt ist — und wie man trotzdem eine eigene Fassung bekommt",
+            "date": "2026-09-04"
+          },
           {
             "hash": "cd4f1ee",
             "emoji": "🔒",
