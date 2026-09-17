@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-09-12T08:45:40.207Z",
+  "generatedAt": "2026-09-17T11:45:15.787Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -698,20 +698,6 @@
               "- Router: /admins → /users?admin=true; EmployeesEditPage navigiert",
               "Admins direkt auf /users?admin=true zurück"
             ]
-          },
-          {
-            "hash": "7f7f094",
-            "emoji": "✨",
-            "message": "Mitarbeiterphase: Elternzeit als Phase + aktuelle Phase direkt editierbar",
-            "date": "2026-05-13",
-            "description": [
-              "🏷️ Sektionsüberschrift \"Phasenwechsel\" → \"Mitarbeiterphase\", Add-Button \"Neuer Phasenwechsel\" → \"Neue Phase\", Dialog-Header je nach Modus (\"Phasenwechsel vornehmen\" / \"Bestehenden Phasenwechsel bearbeiten\"), Zeitfenster-Label \"An einem Tag\" → \"An Datum\"",
-              "👶 Elternzeit ist jetzt eine Zielphase (Modul-Awareness via ProductModule.ParentalLeave) — der Blueprint-Selector zeigt die Elternzeit-Gruppen, kein Enddatum mehr; der Rollen-&-Rechte-Tab samt EmployeeRolesForm wurde entfernt, da nur noch Elternzeit dort lebte",
-              "🧭 Rollen-Reihenfolge und Labels vereinheitlicht: Azubi · Mitarbeiter · Elternzeit · Führung · Austritt (Instructor/Ausbilder aus dem Selektor entfernt)",
-              "✏️ Klick auf die aktuelle Phase-Karte öffnet \"Aktuelle Phase bearbeiten\" — rolle-abhängige Blueprint-Selektoren (Primary, optional Führungs- und Elternzeit-Gruppe) schreiben über onChange in den User-Form-State, Persistenz läuft über den bestehenden Speichern-Button",
-              "💬 Tooltip der aktuellen Phase zeigt zusätzlich die aktuell zugewiesenen Inhaltsgruppen (Primary + ggf. Führungs- + ggf. Elternzeit-Gruppe)",
-              "🤖 api.ts inkl. neuem ScheduledRoleChangeTarget.ParentalLeave-Wert"
-            ]
           }
         ],
         "deployment": [
@@ -723,6 +709,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "ec1a7b4",
+            "emoji": "🐛",
+            "message": "„Wer darf Beiträge im Newsfeed erstellen?\" lässt sich beim Kunden jetzt wirklich speichern. Die Auswahl „Nur Administratoren\" blieb bisher nur bis zum Neuladen stehen und sprang dann heimlich auf „Offen\" zurück – dasselbe galt für die Newsfeed-Kommentare 🧹 Wer einen Kunden speichert, verstellt dabei nicht mehr nebenbei die Chat-Einstellung der work.mate-Vorlage",
+            "date": "2026-09-15"
+          },
           {
             "hash": "51da055",
             "emoji": "🐛",
@@ -1045,30 +1037,6 @@
               "direkt als editierbare Inhaltsgruppe (Executive ist additiv zu Employee,",
               "daher musste der Non-Suite-Branch vor derivePrimaryModule greifen);",
               "Doppelfeld „Führungsgruppe\" bleibt nur im Suite-Modus sichtbar"
-            ]
-          },
-          {
-            "hash": "3e02fa9",
-            "emoji": "🐛",
-            "message": "Artikel-Zeitsteuerung: „Tage vor dem ersten Arbeitstag\" beim Aktivieren fixen",
-            "date": "2026-05-18",
-            "description": [
-              "Beim initialen Aktivieren der Zeitsteuerung erzeugte die Auswahl von",
-              "„Tage vor\" mit days=0 ein -0, das in getTimingSelection wegen",
-              "`-0 < 0 === false` als „Tage nach\" interpretiert wurde. Wechsel auf",
-              "relative setzt jetzt mindestens 1 Tag als Default."
-            ]
-          },
-          {
-            "hash": "3222104",
-            "emoji": "🐛",
-            "message": "Artikel-Zeitsteuerung: „Tage vor dem ersten Arbeitstag\" beim Aktivieren fixen",
-            "date": "2026-05-18",
-            "description": [
-              "Beim initialen Aktivieren der Zeitsteuerung erzeugte die Auswahl von",
-              "„Tage vor\" mit days=0 ein -0, das in getTimingSelection wegen",
-              "`-0 < 0 === false` als „Tage nach\" interpretiert wurde. Wechsel auf",
-              "relative setzt jetzt mindestens 1 Tag als Default."
             ]
           }
         ],
@@ -1485,32 +1453,6 @@
             "emoji": "🧪",
             "message": "Der automatische Test führt jetzt durch den neuen Fragen-Editor",
             "date": "2026-09-04"
-          },
-          {
-            "hash": "bbb1158",
-            "emoji": "🧪",
-            "message": "Phasenwechsel: E2E-Tests + Anpassung bestehender Lifecycle-Tests",
-            "date": "2026-05-13",
-            "description": [
-              "Neue Tests:",
-              "- phasenwechsel-erstellen: Mitarbeiter anlegen, Phasenwechsel hinzufügen,",
-              "Agenda verifizieren, User aufräumen",
-              "- phasenwechsel-editieren: geplanten Wechsel öffnen, Datum ändern, speichern",
-              "- phasenwechsel-loeschen: geplanten Wechsel über das Edit-Formular löschen",
-              "- phasenwechsel-offboardee: Auswahl Offboardee blendet Austrittsdatum-Feld",
-              "ein und validiert es als Pflicht",
-              "- phasenwechsel-modul-awareness: nur Module-spezifische Rollen-Buttons",
-              "werden gerendert",
-              "Angepasste Tests:",
-              "- executive-lifecycle: Promotion zum Executive läuft jetzt über",
-              "Phasenwechsel-Sektion (Sofort) statt über den entfernten Lifecycle-Tab",
-              "- admin-crud: Lebenszyklus-Tab-Check ersetzt durch Verifikation, dass",
-              "Phasenwechsel-Sektion bei Admins ausgeblendet ist",
-              "- push-notifications: Blueprint-Zuweisung läuft über den Phasenwechsel-",
-              "Flow (Mitarbeiter, Sofort) statt über den entfernten Lifecycle-Tab",
-              "Tests nutzen die existierenden Helpers (login/logout), data-testids und",
-              "das standardisierte Cleanup-Pattern."
-            ]
           }
         ],
         "docs": [
@@ -1546,6 +1488,12 @@
         ],
         "security": [
           {
+            "hash": "c95a6ba",
+            "emoji": "🔒",
+            "message": "Der Plus-Button für neue Newsfeed-Beiträge erscheint nur noch, wenn man auch posten darf: Administratoren immer, alle anderen nur, wenn der Newsfeed für alle offen ist. Bisher ließ sich der Dialog trotzdem öffnen und erst beim Absenden kam die Absage",
+            "date": "2026-09-16"
+          },
+          {
             "hash": "fba737a",
             "emoji": "🔒",
             "message": "Ein schreibgeschütztes Formular sagt jetzt deutlich, dass es schreibgeschützt ist — und wie man trotzdem eine eigene Fassung bekommt",
@@ -1572,20 +1520,6 @@
             "emoji": "🔒",
             "message": "Ablaufplanung: Zeilen ohne Bearbeitungsrecht read-only (kein Anlegen/Verschieben/Resize/Edit)",
             "date": "2026-07-09"
-          },
-          {
-            "hash": "ee13c6f",
-            "emoji": "🔐",
-            "message": "Rollen-Modell: Phasen-Rollen vs Permission-Rollen getrennt + Rechte-Sektion",
-            "date": "2026-05-15",
-            "description": [
-              "🧩 Klare Trennung: Phasen-Rollen (Onboardee/Employee/Apprentice/Executive/ParentalLeave/Offboardee) werden beim Phasenwechsel ausgetauscht — Permission-Rollen (Administrator, Superadministrator, Instructor) bleiben erhalten",
-              "🎛️ Neue RechteSection im Mitarbeiter-Form (eigene Sektion zwischen PhaseChangeSection und UnifiedSettingsForm) mit Toggles für Administrator/Ausbilder/Superadministrator; Ausbilder-Toggle nur an aktive Führungskräfte vergebbar, Superadministrator nur für Superadmins sichtbar, Self-Lock-Schutz für eigene Admin-/Superadmin-Rolle",
-              "📱 Telefonnummer auch im Admin-Mitarbeiter-Form setzbar (E-Mail bleibt Pflicht), Spalten-Layout vereinheitlicht, Login-Info-Box für alle Rollen einheitlich",
-              "🧹 Preboardee aus UserRole entfernt (kein User hatte ihn), ScheduledRoleChangeTarget.Instructor entfernt — Auto-Set von Instructor bei neuen Executives im \"onboarding-azubi\"-Paket entfällt (jetzt explizit über Rechte-Sektion)",
-              "🤖 api.ts und scheduledRoleChange.ts angepasst (bitte nach Backend-Deploy yarn run generate:schema:dev laufen lassen)",
-              "🧪 admin-crud E2E: Phone-Feld bei Admin sichtbar & persistiert"
-            ]
           }
         ],
         "other": [
