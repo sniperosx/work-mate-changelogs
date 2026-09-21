@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-09-17T11:45:15.787Z",
+  "generatedAt": "2026-09-21T12:00:24.723Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -661,43 +661,6 @@
               "Suchfeld, Custom-Renderer); FilterBar nutzt es 2x.",
               "- CLAUDE.md: DRY-/Wiederverwendbarkeits-Regel ergänzt."
             ]
-          },
-          {
-            "hash": "20cd9b5",
-            "emoji": "✨",
-            "message": "Phasenwechsel: einzige verfügbare Zielphase automatisch vorauswählen",
-            "date": "2026-05-18",
-            "description": [
-              "Gibt es nur eine wählbare Phase (z. B. „Führungskraft\" in Non-Suite-Paketen),",
-              "wird sie beim Öffnen des „Phasenwechsel vornehmen\"-Overlays direkt aktiviert,",
-              "sodass die Inhaltsgruppen-Auswahl ohne zusätzlichen Klick erscheint."
-            ]
-          },
-          {
-            "hash": "fdf36bd",
-            "emoji": "✨",
-            "message": "Nutzerverwaltung: Administrator-Phase entfernt, „Alle\"-Ansicht mit Filtern",
-            "date": "2026-05-18",
-            "description": [
-              "Administrator ist nur noch ein Recht, keine eigene Phase mehr. Statt eines",
-              "Administrator-Tabs gibt es jetzt eine „Alle\"-Ansicht (Default), in der",
-              "Mitarbeiter quer durch alle Lifecycle-Phasen aufgelistet werden.",
-              "- UserRoleSelectionBar: Administrator-Entry aus LIFECYCLE_ROLES entfernt",
-              "- UserRoleSelectionBar nutzt jetzt die bereits vorhandene includeAll-Option",
-              "- EmployeesPage: selectedRole als UserRole | null (null = Alle); URL-State",
-              "über `role`, `admin=true`, `problems=true`",
-              "- Zwei Toggle-Filter in der „Alle\"-Ansicht: „Mit Administrator-Rechten\"",
-              "und „Mit Problemen\" (Kontaktdaten unvollständig / ungültige Gruppen-",
-              "zuweisung — exakt die Kriterien aus UsersTable)",
-              "- useUsersQuery: leeres Rollen-Array → kein role-Query-Param",
-              "- UsersPage: additionalFilters-Slot zwischen Role-Bar und Filter-Bar;",
-              "customFilter ist jetzt useEffect-Dep, Setter via Refs stabilisiert",
-              "- UsersTable: Inline-Pills neben dem Namen — Lifecycle-Phase in der",
-              "„Alle\"-Ansicht (Onboardee/Azubi/Mitarbeiter/Elternzeit/Führung/Austritt)",
-              "und Admin/Super-Admin-Badge dauerhaft, sobald Permission gesetzt ist",
-              "- Router: /admins → /users?admin=true; EmployeesEditPage navigiert",
-              "Admins direkt auf /users?admin=true zurück"
-            ]
           }
         ],
         "deployment": [
@@ -1018,25 +981,6 @@
             "date": "2026-05-21",
             "description": [
               "CoursesPage liest die Phase jetzt aus dem URL-Param ?role= (analog zu Artikeln/Blueprints) und übergibt das via roleToModule an useCoursesQuery — der ?module=…-Backend-Filter folgt damit der gewählten Phase. UserRoleSelectionBar oberhalb der Liste; lokaler courses-State wird beim Phasen-Wechsel geleert, damit die alte Liste nicht stehenbleibt."
-            ]
-          },
-          {
-            "hash": "49478d0",
-            "emoji": "🐛",
-            "message": "Phasenwechsel: Non-Suite-Verzweigung wiederhergestellt",
-            "date": "2026-05-18",
-            "description": [
-              "Bei Kunden ohne Suite (nur Onboarding bzw. Onboarding+Azubi) ließen sich",
-              "Führungskräfte nicht mehr verwalten, weil die neuen Phasen-Forms immer",
-              "Mitarbeitergruppen geladen haben — die in Non-Suite-Paketen nicht existieren.",
-              "- PhaseChangeForm: Target=Führung lädt in Non-Suite Management- statt Employee-",
-              "Blueprints als „Inhaltsgruppe\"; das separate „Führungsgruppe (optional)\"-",
-              "Feld entfällt und managementBlueprintId wird im Payload explizit auf",
-              "undefined gemappt",
-              "- CurrentPhaseEditForm: Non-Suite-Executives bekommen die Führungskraftgruppen",
-              "direkt als editierbare Inhaltsgruppe (Executive ist additiv zu Employee,",
-              "daher musste der Non-Suite-Branch vor derivePrimaryModule greifen);",
-              "Doppelfeld „Führungsgruppe\" bleibt nur im Suite-Modus sichtbar"
             ]
           }
         ],
@@ -1523,6 +1467,12 @@
           }
         ],
         "other": [
+          {
+            "hash": "77962f1",
+            "emoji": "🗑️",
+            "message": "Das Geschlecht ist auch im Backoffice verschwunden – auf den Nutzerkarten steht kein „männlich/weiblich/divers\" mehr",
+            "date": "2026-09-21"
+          },
           {
             "hash": "e13d197",
             "emoji": "🔥",
