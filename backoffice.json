@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-09-21T12:00:24.723Z",
+  "generatedAt": "2026-09-23T08:42:22.663Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -603,64 +603,6 @@
             "description": [
               "Listet alle User auf, die diesen User als Mentor/Führungskraft hinterlegt haben (Umkehrsicht zur UnifiedSettingsForm). Avatar + Name + Mentor-Label, Klick navigiert zum jeweiligen User-Profil. Daten via useUsersQuery + client-seitiger Filter; sichtbar für Admin/Superadmin im Edit-Modus."
             ]
-          },
-          {
-            "hash": "ccccf9e",
-            "emoji": "✨",
-            "message": "Ablaufplanung: Termine per Pillenrand-Drag verlängern/kürzen + Move-Outline für kurze Distanzen",
-            "date": "2026-05-20",
-            "description": [
-              "- Resize-Griffe (6 px) an beiden Pillenrändern, Snap pro Tag mit weicher CSS-Transition",
-              "- Floating Preview-Pille im Original-Look statt Per-Pixel-Manipulation der Source",
-              "- Document-Level Pointer-Listener (kein setPointerCapture) → kein verlorenes Tracking bei Re-Render",
-              "- Optimistic Patches (entryId → dateFrom/dateTo) eliminieren das „alter Stand → API → neuer Stand\"-Flackern, Revert bei Fehler",
-              "- Source-Zelle nun selbst Drop-Target → Move um 1-2 Tage innerhalb einer breiten merged-td zeigt jetzt sofort das Outline"
-            ]
-          },
-          {
-            "hash": "210d7c0",
-            "emoji": "✨",
-            "message": "Ablaufplanung: Termine per Drag & Drop verschieben und duplizieren",
-            "date": "2026-05-19",
-            "description": [
-              "- Pille auf andere Zeile ziehen dupliziert (Zeitraum bleibt; Datum-Shift möglich",
-              "wenn Cursor in anderer Spalte landet).",
-              "- Pille in derselben Zeile verschieben (UPDATE mit konstanter Dauer).",
-              "- Live-Vorschau der projizierten Ziel-Pille als durchgehender Outline über die",
-              "Ziel-Cells; Source-Pille wird gedimmt; eigene Pille ist kein Drop-Ziel.",
-              "- Werktag-Arithmetik im 5-Tage-Modus: Wochenenden werden beim Shift übersprungen,",
-              "damit eine 5-Werktag-Pille auch nach Verschiebung 5 Werktage zeigt.",
-              "- DST-sicher (diff(...,'day',true) + Math.round).",
-              "- Bei Backend-Fehler: Toast + Snap-Back ohne State-Mutation."
-            ]
-          },
-          {
-            "hash": "5774406",
-            "emoji": "✨",
-            "message": "Ablaufplanung: Gruppen ein-/ausklappbar",
-            "date": "2026-05-19",
-            "description": [
-              "- Klick auf Gruppen-Header (Blueprint) klappt die Azubi-Zeilen ein/aus.",
-              "- Default: oberste Gruppe expanded, alle weiteren collapsed.",
-              "- Anzahl Azubis je Gruppe wird im Header angezeigt.",
-              "- Reset auf Default, sobald sich die sichtbaren Gruppen ändern (z.B. via Filter).",
-              "- BlueprintSeparator-Props sind optional — MonthlyOverview unverändert."
-            ]
-          },
-          {
-            "hash": "89431f4",
-            "emoji": "✨",
-            "message": "Ablaufplanung: Filter nach Gruppe und Azubis + generische PopoverFilterButton",
-            "date": "2026-05-19",
-            "description": [
-              "- Multi-Select Gruppen-Filter (Blueprint) und Azubi-Filter mit Suche über dem",
-              "Kalender; Auswahl persistiert pro Nutzer im localStorage.",
-              "- Filter clientseitig — API unverändert; weniger DOM-Knoten = spürbar",
-              "schnelleres Rendering bei großen Azubi-Listen.",
-              "- Generisches PopoverFilterButton-Molecule extrahiert (Single/Multi, optionales",
-              "Suchfeld, Custom-Renderer); FilterBar nutzt es 2x.",
-              "- CLAUDE.md: DRY-/Wiederverwendbarkeits-Regel ergänzt."
-            ]
           }
         ],
         "deployment": [
@@ -672,6 +614,18 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "026cbd7",
+            "emoji": "🐛",
+            "message": "Die Empfänger-Seite speichert jetzt nur noch das, was wirklich geändert wurde – bisher schickte jeder Klick auf „Speichern“ den kompletten Stand der Seite mit und konnte damit Einstellungen zurückdrehen, die der Server oder ein zweiter Administrator zwischenzeitlich angepasst hatte",
+            "date": "2026-09-22"
+          },
+          {
+            "hash": "f0483af",
+            "emoji": "🩹",
+            "message": "🩹 Nach dem Speichern der Empfänger-Einstellungen blieb die Seite fälschlich im „gerade bearbeitet\"-Zustand hängen – dadurch kamen spätere Aktualisierungen vom Server nicht mehr an, bis man die Seite neu geladen hat. Das ist jetzt behoben, ohne dass der Schutz vor Datenverlust während der Eingabe verloren geht",
+            "date": "2026-09-22"
+          },
           {
             "hash": "ec1a7b4",
             "emoji": "🐛",
