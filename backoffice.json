@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-09-23T08:42:22.663Z",
+  "generatedAt": "2026-09-24T11:23:02.614Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -584,24 +584,6 @@
             "date": "2026-05-21",
             "description": [
               "Neuer Picker im Create-Modus (statt des bisherigen „Phasen können erst nach dem Speichern geplant werden\"-Hinweises): lifecycle-rollen-abhängiger Pflicht-Blueprint, für Suite-Executives zusätzlich Führungsgruppe. Speichern-Button bleibt deaktiviert, bis alles gewählt ist — so können keine Nutzer ohne Gruppenzuweisung mehr in der DB landen. Administratoren mappen auf den Employee-Lifecycle."
-            ]
-          },
-          {
-            "hash": "cf74314",
-            "emoji": "✨",
-            "message": "Stammdaten: „Führungskraft für\" nur für Executives + Count-Pill",
-            "date": "2026-05-21",
-            "description": [
-              "Section erscheint nur noch bei Usern mit Rolle Executive (sonst null). Anzahl der Mentees wird als kontraststarke Pill (bg-primary/text-primary-contrast) im Section-Header angezeigt."
-            ]
-          },
-          {
-            "hash": "cecb12a",
-            "emoji": "✨",
-            "message": "Stammdaten: Rubrik „Führungskraft für:\" mit zugewiesenen Mentees",
-            "date": "2026-05-21",
-            "description": [
-              "Listet alle User auf, die diesen User als Mentor/Führungskraft hinterlegt haben (Umkehrsicht zur UnifiedSettingsForm). Avatar + Name + Mentor-Label, Klick navigiert zum jeweiligen User-Profil. Daten via useUsersQuery + client-seitiger Filter; sichtbar für Admin/Superadmin im Edit-Modus."
             ]
           }
         ],
@@ -1321,18 +1303,6 @@
             "date": "2026-05-21",
             "description": [
               "Neue generische SectionCard-Komponente (bg-white, rounded-xl, shadow-sm, border) ersetzt die bisherigen flachen mt-8/mt-10-Blöcke in Stammdaten, Phase/InitialBlueprint, Rechte, Mentoren, „Führungskraft für\", Notiz und Superadmin-Aktionen — der Tab liest sich jetzt deutlich strukturierter und weniger überladen."
-            ]
-          },
-          {
-            "hash": "312d5ec",
-            "emoji": "💄",
-            "message": "Ablaufplanung: Pillen mit Gradient/Highlight aufgewertet + Hover-Tooltip",
-            "date": "2026-05-20",
-            "description": [
-              "- Neue colorUtils (lightenHex, hexToRgba, readableTextColor, buildPillStyle) erzeugen den weichen Look (Vertikal-Gradient, tinted Multi-Layer-Shadow, weiße Highlight-Linie, rounded-md, Hover-Lift) für Source-Pillen und die Resize-Preview einheitlich",
-              "- MUI Tooltip am Lernort-Pill mit Kategorie (tags), Ausbildern (managers) und „Freie Plätze X / Y\" (Min aus perDay über die Pill-Tage)",
-              "- useLearningPlacesAvailabilityQuery für das sichtbare Fenster geladen, als Map<placeId, Availability> durch Calendar/Row/DayCell durchgereicht",
-              "- Refetch-Hook deckt jetzt auch die Availability-Query ab → freie Plätze aktualisieren nach Create/Update/Delete"
             ]
           }
         ],
