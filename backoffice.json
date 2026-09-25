@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-09-24T18:36:10.796Z",
+  "generatedAt": "2026-09-25T14:06:05.738Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -463,136 +463,15 @@
             "emoji": "✨",
             "message": "Serientermine in der Azubiplanung: Wiederholen-Dialog (Wochentage/Block, Intervall, Ende), Mehr-Azubi-/Gruppenauswahl mit Suche, Serien-Indikator auf Pills, Lernort-Pager",
             "date": "2026-06-23"
-          },
-          {
-            "hash": "f3f5953",
-            "emoji": "✨",
-            "message": "Neuer Bereich „Azubi-Assistent\" in den Kunden-Funktionen mit Schalter fürs Berichtsheft",
-            "date": "2026-06-16",
-            "description": [
-              "👁️ Berichtsheft erscheint im Menü nur noch, wenn das Recht aktiviert ist",
-              "🧹 Berichtsheft-Modus sitzt jetzt direkt im neuen Bereich und nicht mehr unter den allgemeinen Einstellungen"
-            ]
-          },
-          {
-            "hash": "5aeed59",
-            "emoji": "✨",
-            "message": "Freie Datumsauswahl in den Statisiken + Auflistung aktivste Kunden",
-            "date": "2026-06-14"
-          },
-          {
-            "hash": "f9ae73e",
-            "emoji": "✨",
-            "message": "Statistiken: Auch die Web-Nutzung der Mitarbeiter wird jetzt erfasst 📊 Neue Kennzahl „Sitzungen gesamt\" (App + Web zusammen) in der globalen Übersicht 🔄 Kunden-Ansicht zählt Sitzungen jetzt aus App und Web gemeinsam",
-            "date": "2026-06-13"
-          },
-          {
-            "hash": "dd77c1b",
-            "emoji": "✨",
-            "message": "Statistik: Vormonat-Button im Zeitraum-Selektor",
-            "date": "2026-06-03",
-            "description": [
-              "PeriodSelector um 'Vormonat' ergänzt (Monat · Vormonat · Quartal · Jahr).",
-              "api.ts regeneriert (AnalyticsPeriodType.PreviousMonth)."
-            ]
-          },
-          {
-            "hash": "494691a",
-            "emoji": "✨",
-            "message": "Statistik: Kunden-Health-Detailkachel mit Picker statt Tabelle",
-            "date": "2026-06-03",
-            "description": [
-              "CustomerHealthTable ersetzt durch Customer-Picker + wiederverwendbare",
-              "CustomerHealthDetailCard (Funnel, Wochen-Trend, Toggle Komplett/Engagiert,",
-              "aufklappbare Methodik). Reiner Metrics-Helper computeHealth für beide Sichten;",
-              "Starts/Woche/User in 'Engagiert' ohne Dormant. api.ts regeneriert.",
-              "Inkl. Spec + Plan unter docs/superpowers."
-            ]
-          },
-          {
-            "hash": "976b5b2",
-            "emoji": "✨",
-            "message": "Wissensbereich: Mitarbeiter-Vorschau für Customer-Delegates",
-            "date": "2026-06-03",
-            "description": [
-              "Customer-Delegates (Superadmin) können den Wissensbereich aus Sicht eines",
-              "ausgewählten Mitarbeiters ansehen. Artikel und Kurse werden dann über die",
-              "/users/:id/preview-Endpunkte statt /app/* geladen; die Auswahl steckt im",
-              "useAppStore (persistiert) und wird über einen EmployeeSelectInput gesteuert."
-            ]
-          },
-          {
-            "hash": "fd9909a",
-            "emoji": "✨",
-            "message": "Wissensbereich: Lese-Ansicht /knowledge (Artikel + Videos)",
-            "date": "2026-06-02",
-            "description": [
-              "Neue Konsum-/Lese-Ansicht unter /knowledge für alle Rollen mit Tabs Artikel und Videos, als Web-Pendant zur App. Keine Backend-Änderung – Daten aus /app/articles und /app/profile (blueprint.courseChapters).",
-              "- Query-Hooks (src/queries/app): useAppArticlesQuery, useAppArticleById, useAppProfileQuery/useCourseChapters (customer-scoped Keys)",
-              "- Artikel: Tab mit Suche (aus App portiert), Highlights + Kategorie-Sektionen, Detailseite mit Content-Rendering (Text/Markdown, Bild+Lightbox, PDF)",
-              "- Videos/Kurse: Tab mit Kapitel-Übersicht, Kapitel-Detail, Lektions-Player (<video>) inkl. lokalem Fortschritt/Resume (localStorage)",
-              "- Routing (nicht hinter isAdmin) + Sidebar-Eintrag 'Wissen' (CustomerFeature.Articles, alle Rollen)",
-              "- Spec + Plan unter docs/superpowers (inkl. Phase-2-Design: Superadmin preview-as-user in Delegation)"
-            ]
-          },
-          {
-            "hash": "db4e5c4",
-            "emoji": "✨",
-            "message": "Inhaltsgruppen direkt in der Phasenanzeige anzeigen",
-            "date": "2026-05-29",
-            "description": [
-              "Inhaltsgruppen werden jetzt unter dem Phasennamen angezeigt (aktive +",
-              "geplante/überfällige Phasen) statt nur im Tooltip. Lange Namen werden",
-              "truncated, der volle Name bleibt im Tooltip sichtbar.",
-              "- Neuer PhaseContentGroupHelper baut die Gruppenliste pro Phase (primär +",
-              "Führung/Elternzeit) und spiegelt die Modul-/Label-Logik aus den Formularen",
-              "- Blueprint-Titel werden zentral in PhaseAgenda aufgelöst (eine Query statt",
-              "Mehrfach-Auflösung pro Phase)",
-              "- Icon-Container als 1:1-Quadrat in Höhe von Name+Datum für mehr Symmetrie"
-            ]
-          },
-          {
-            "hash": "67c6066",
-            "emoji": "✨",
-            "message": "Onboardee-Jahresbereinigung für Superadmin",
-            "date": "2026-05-27",
-            "description": [
-              "Superadmin kann im Onboardee-Tab alle Onboardees eines Registrierungsjahres",
-              "des delegierten Kunden gebündelt löschen — rein clientseitig über den",
-              "bestehenden Single-Delete-Endpoint, mit Tabellen-Vorschau und Type-to-confirm.",
-              "- TypeToConfirmDialog: generischer destruktiver Bestätigungsdialog",
-              "- useBulkOnboardeeDelete: Worker-Pool (5 parallel), Fortschritt, fortsetzbar",
-              "- OnboardeeYearCleanup: Jahr-Dropdown + Lösch-Button + Fortschritt",
-              "- EmployeesPage: Superadmin-Gate, cleanupYear-Param, Tabellen-Vorschau"
-            ]
-          },
-          {
-            "hash": "c7ef503",
-            "emoji": "✨",
-            "message": "Mitarbeiter anlegen: Initial-Phase wie Phasenwechsel auswählen",
-            "date": "2026-05-22",
-            "description": [
-              "Der alte InitialBlueprintPicker zeigte nur die Inhaltsgruppe für eine",
-              "implizit gesetzte Lifecycle-Rolle. Stattdessen kann der Admin jetzt im",
-              "neuen InitialPhasePicker aus allen sechs Targets (Onboardee, Azubi,",
-              "Mitarbeiter, Elternzeit, Führung, Austritt) wählen — modul-aware, mit",
-              "denselben Pflicht-Slots wie PhaseChangeForm (Zusatzgruppe, Austritts-",
-              "datum). Permission-Rollen bleiben beim Target-Wechsel erhalten. Kein",
-              "Lifecycle-Default mehr — der Admin muss aktiv wählen; ?role=… in der",
-              "URL gilt weiterhin als Vorauswahl. isInitialPhaseComplete prüft jetzt",
-              "alle Targets."
-            ]
-          }
-        ],
-        "deployment": [
-          {
-            "hash": "5ef0c0f",
-            "emoji": "🚀",
-            "message": "Changelog Automatisierung",
-            "date": "2026-05-23"
           }
         ],
         "fixes": [
+          {
+            "hash": "684223f",
+            "emoji": "🩹",
+            "message": "🩹 Mitarbeiterverzeichnis und neuer Seitenkopf sind wieder da – der Umbau des Seitenmenüs hatte sie versehentlich wieder entfernt; „Kollegen“ steht jetzt in der neuen Gruppe „Austausch“",
+            "date": "2026-09-25"
+          },
           {
             "hash": "026cbd7",
             "emoji": "🐛",
@@ -831,71 +710,6 @@
               "damit die breite Tabelle im inneren overflow-x-auto-Container scrollt statt die",
               "gesamte Seite inkl. Navbar horizontal zu verschieben."
             ]
-          },
-          {
-            "hash": "b4b0e5d",
-            "emoji": "🐛",
-            "message": "Vorschlagswesen erscheint nur noch bei aktiviertem Feature",
-            "date": "2026-06-14",
-            "description": [
-              "Der Menüpunkt Vorschlagswesen war für alle Admins sichtbar, auch wenn das Feature für den Kunden gar nicht freigeschaltet war. Jetzt taucht er nur noch auf, wenn das Vorschlagswesen für den jeweiligen Kunden aktiviert ist."
-            ]
-          },
-          {
-            "hash": "d8eb76d",
-            "emoji": "🐛",
-            "message": "Ablaufplanung: Zoom-Regler ist wieder da",
-            "date": "2026-06-14",
-            "description": [
-              "Der Schieberegler zum Rein- und Rauszoomen in der Ablaufplanung war nach der Einführung der Filter nicht mehr sichtbar. Er hat jetzt wieder seinen eigenen festen Platz und funktioniert wie gewohnt – genau wie in der Lernort-Auslastung."
-            ]
-          },
-          {
-            "hash": "dad4098",
-            "emoji": "🐛",
-            "message": "Menü: Newsfeed featurebasiert + Onboardee-Schutz nach Merge",
-            "date": "2026-06-03",
-            "description": [
-              "Nach develop->production-Merge war Newsfeed wieder modulbasiert (ProductModule.Employee)",
-              "und die Aufrufer übergaben isOnboardee/hireDate an eine Funktion ohne diese Parameter.",
-              "Gating nun an CustomerFeature.Newsfeed gekoppelt (wie Chat/Artikel), Onboardees erst ab",
-              "HireDate; Parameter isOnboardee/userHireDate + onboardeeBeforeHire ergänzt."
-            ]
-          },
-          {
-            "hash": "4153e34",
-            "emoji": "🐛",
-            "message": "Newsfeed: Menüpunkt erscheint wieder zuverlässig",
-            "date": "2026-06-01",
-            "description": [
-              "Der Newsfeed taucht im Menü jetzt verlässlich auf, sobald er für einen Kunden aktiviert ist – vorher konnte er trotz Freischaltung fehlen. Neue Mitarbeitende sehen den Newsfeed passend erst ab ihrem ersten Arbeitstag."
-            ]
-          },
-          {
-            "hash": "4278c8f",
-            "emoji": "🐛",
-            "message": "Superadmin-Anlage: Navigation über getModulePath statt /auth/404",
-            "date": "2026-05-27",
-            "description": [
-              "onNext nutzte rohe Pfade (/admins/<id>, /users?admin=true). Für",
-              "Superadmins existieren nur /admin/...-Routes, daher landete das Anlegen/",
-              "Speichern im Catch-all auf /auth/404. getModulePath wieder eingesetzt;",
-              "Listen-Navigation für Superadmin auf /admin/admins."
-            ]
-          },
-          {
-            "hash": "be5c97e",
-            "emoji": "🐛",
-            "message": "Phasenwechsel: relativeAmount NaN-fest validieren",
-            "date": "2026-05-22",
-            "description": [
-              "Leere/ungültige Eingabe im „In X …\"-Feld führte über `Number(\"\") = NaN`",
-              "und den `safeAmount = 0`-Fallback in computeScheduledAt zu einem stillen",
-              "Sofort-Apply auf heute. Jetzt: State ist `number | undefined`, Setter",
-              "parst NaN-sicher und trunkiert auf Integer, Validation verlangt",
-              "ganzzahlig ≥ 1, computeScheduledAt liefert `null` bei ungültiger",
-              "Eingabe statt eines today-Fallbacks, und der Submit fängt das ab."
-            ]
           }
         ],
         "refactors": [
@@ -949,26 +763,6 @@
             "emoji": "♻️",
             "message": "Release mail script adapted to multiple reciepients",
             "date": "2026-06-24"
-          },
-          {
-            "hash": "b9186e4",
-            "emoji": "🔧",
-            "message": "release-Skill: Changelog kundenfreundlich (themenbasiert) statt technisch",
-            "date": "2026-06-03"
-          },
-          {
-            "hash": "7eaea4f",
-            "emoji": "⚡",
-            "message": "Phasenwechsel-Mutation: Cache-Invalidate awaiten + Timezone mitsenden",
-            "date": "2026-05-22",
-            "description": [
-              "onSuccess wird jetzt async und awaitet alle invalidateQueries parallel,",
-              "sodass mutateAsync erst resolved, wenn die Caches frisch sind — Modal-",
-              "Closes nach `await mutateAsync(...)` rennen damit nicht mehr gegen den",
-              "nächsten Render. Zusätzlich wird X-Timezone-Offset (dayjs().utcOffset())",
-              "in Create- und Update-Calls mitgeschickt, damit das Backend „heute\"",
-              "client-lokal beurteilen kann."
-            ]
           }
         ],
         "styles": [
@@ -1237,42 +1031,6 @@
             "emoji": "💄",
             "message": "Umfrage duplizieren: wechselt jetzt automatisch zum Tab „Entwürfe\", wo das Duplikat erscheint",
             "date": "2026-06-18"
-          },
-          {
-            "hash": "63263ea",
-            "emoji": "💄",
-            "message": "Statistik: Aufteilung in Tabs Global + Kunde",
-            "date": "2026-06-03",
-            "description": [
-              "Top-Level-SegmentedControl: Tab 'Global' (bisherige Auswertungen + 'Aktivste",
-              "Nutzer'-Tabelle direkt statt innerem Sub-Tab) und Tab 'Kunde' (Customer-Picker +",
-              "Detailkachel). PeriodSelector bleibt über beiden Tabs."
-            ]
-          },
-          {
-            "hash": "602585f",
-            "emoji": "💄",
-            "message": "Statistik: Suche im Customer-Picker + kein Scroll-Sprung beim Kundenwechsel",
-            "date": "2026-06-03",
-            "description": [
-              "CustomerSelectInput: Freitextsuche (searchable, Default an, zentral).",
-              "Kundenwechsel: keepPreviousData + isFetching-Dimm — Kachel bleibt stehen statt",
-              "zu kollabieren, kein Sprung nach oben mehr."
-            ]
-          },
-          {
-            "hash": "44fc082",
-            "emoji": "💄",
-            "message": "Sidebar: Persönlich-Block oben, Verwaltung darunter",
-            "date": "2026-06-03",
-            "description": [
-              "Trennt das Seitenmenü in einen oberen \"Persönlich\"-Block (konsumierend als",
-              "User: Mein Profil, Wissen, Chat, Newsfeed) und die Verwaltungspunkte darunter,",
-              "getrennt durch einen subtilen Separator (auch im eingeklappten Zustand).",
-              "- Kommunikations-Hub aufgelöst: Chat und Newsfeed sind jetzt direkte Punkte",
-              "- Benachrichtigungen wird ein eigener Verwaltungspunkt (nur Admin)",
-              "- verwaiste /kommunikation-Route entfernt"
-            ]
           }
         ],
         "tests": [
@@ -1294,6 +1052,30 @@
         ],
         "docs": [
           {
+            "hash": "e3f4758",
+            "emoji": "📝",
+            "message": "Meine Formulare im Dashboard – wie in der App: Zugewiesene Formulare stehen unter „Aufgaben“, gruppiert in immer verfügbar, offen und erledigt 🧩 Man füllt sie abschnittsweise aus, Pflichtfragen werden markiert, optionale Fragen lassen sich per Ja/Nein überspringen, und der Entwurf bleibt im Browser auch nach einem Neuladen erhalten 🔘 Auswahlfragen zeigen jede Antwort als eigene Zeile mit Auswahlpunkt, auch lange Sätze brechen sauber um 📤 „Antworten senden“ schickt das Formular ab und führt zurück zur Liste; scheitert das Senden, bleiben die Antworten stehen 🔒 Beim Abmelden werden Entwürfe verworfen",
+            "date": "2026-09-25"
+          },
+          {
+            "hash": "629d162",
+            "emoji": "📚",
+            "message": "Artikel & Videos tragen jetzt den neuen work.mate-Seitenkopf „Wissen teilen. Für jede Phase das Richtige.“ und stehen zentriert wie Nutzerverwaltung und Ausbildung 🏷️ „Gruppen“ und „Kategorien“ filtern als runde Chips mit Lime-Zähler, „Kategorien verwalten“ ist ein Pillen-Knopf und die Mehrfachauswahl ein Umschalt-Chip mit runden Häkchen 🗂️ Artikel liegen als runde Karten unter kräftigen Kategorie-Überschriften mit Anzahl – Highlights tragen einen Lime-Ring, Artikel ohne Gruppe stehen in Koralle unter „Neu – noch ohne Gruppe“ 🎬 Videokapitel liegen in einer runden Karte mit Anfasser und „Bearbeiten“-Pille, neue Kapitel legt eine gestrichelte Petrol-Kachel an",
+            "date": "2026-09-25"
+          },
+          {
+            "hash": "00a434e",
+            "emoji": "📝",
+            "message": "Die Bearbeitung eines Formulars trägt jetzt den flachen work.mate-Seitenkopf mit dem Formularnamen als Titel – oben rechts zählt eine Pille Sektionen und Fragen, schreibgeschützte Formulare tragen dort ein Schloss 🔙 Eine Pille „← Formulare“ führt zurück, und nach dem Speichern geht es wieder zu den Formularen statt ins Feedback ✨ „Empfänger“, „Einstellungen“ und „Fragen“ tragen kräftige Überschriften mit feiner Linie, die Karten sind rund mit weicher Tiefe, und „Speichern“ ist die Petrol-Pille – „Löschen“ sitzt dezent rechts daneben 🧱 Seitenkopf mit Zurück-Pille, Abschnittsüberschrift und Knopfleiste stehen jetzt allen Seiten im neuen Look zur Verfügung",
+            "date": "2026-09-25"
+          },
+          {
+            "hash": "53e81d3",
+            "emoji": "📚",
+            "message": "Das Wissen trägt jetzt den neuen work.mate-Seitenkopf „Alles, was du wissen musst. Immer griffbereit.“ und steht zentriert wie Newsfeed und Kollegen – oben rechts zählt eine Pille Artikel und Videos 🔎 Die Artikelsuche ist das große Suchfeld aus „Kollegen“: „/“ springt hinein, Escape leert es, Treffer leuchten in Lime und stehen mit Kategorie-Schild in einer Karte ✨ Highlights und Kategorien tragen kräftige Überschriften mit Anzahl, Artikel kommen als runde Karten, die sich beim Drüberfahren heben, und „Alle anzeigen“ ist ein Pillen-Knopf 🎬 Video-Kapitel zeigen beim Drüberfahren einen Lime-Play-Knopf, der Fortschrittsbalken wird Lime und ein „Geschafft“-Schild erscheint, sobald alles geschaut ist 🅿️ Alle Seiten im neuen Look laufen im Inhalt durchgehend in Poppins",
+            "date": "2026-09-25"
+          },
+          {
             "hash": "5b30cd5",
             "emoji": "📚",
             "message": "Wissensmanagement ist jetzt ein eigenes buchbares Modul. Bisher war es ein Häkchen in der Funktionsliste — jetzt steht es bei den aktiven Modulen und bringt Interviews, Owly und Wissenspools mit. Wer es bucht, kann außerdem Mitarbeiter pflegen und Mitarbeiter-Inhaltsgruppen anlegen, ohne den ganzen Mitarbeiter-Assistenten zu buchen",
@@ -1309,18 +1091,6 @@
             "emoji": "📝",
             "message": "Wissensmanagement: Spec & Umsetzungsplan (Mitarbeitersicht)",
             "date": "2026-07-01"
-          },
-          {
-            "hash": "1d0091e",
-            "emoji": "📝",
-            "message": "Kunden-Statistik: Erklärtext korrigiert – „Sitzungen\" umfasst jetzt richtig App- UND Web-Nutzung ℹ️ Health-Score & Risiko-Kennzahlen sind klar als „Stand heute\" gekennzeichnet, da sie sich nicht rückwirkend auf einen vergangenen Zeitraum berechnen lassen",
-            "date": "2026-06-14"
-          },
-          {
-            "hash": "825d21c",
-            "emoji": "📝",
-            "message": "Changelog 0.6.0: kundenfreundlich vereinfacht",
-            "date": "2026-06-03"
           }
         ],
         "security": [
@@ -1375,19 +1145,6 @@
               "Fünf Adressen waren aus der Anwendung heraus nicht mehr erreichbar. Vier davon zeigten auf Ansichten, die es weiterhin als Reiter im Superadmin-Bereich gibt — dort fällt nur die doppelte Adresse weg, die Ansicht bleibt. Die alte Wissensmanagement-Übersicht samt ihrer Detailseite ist der abgelöste Vorgänger der heutigen Reiter-Struktur und fällt ganz.",
               "Ebenfalls entfernt: eine Schaltfläche für Schulungsvideos, die nirgends eingebunden war, eine Einstellungsseite ohne Aufrufer und ein ungenutztes Feld in der Menü-Struktur.",
               "Die Adressen zum Anlegen und Bearbeiten von Reflexionsfragen bleiben bewusst bestehen — nur die Listenansicht darüber war verwaist."
-            ]
-          },
-          {
-            "hash": "1f4aaca",
-            "emoji": "🚧",
-            "message": "Phasenwechsel: Vergangenheit sperren + Sofort-Apply-Warnung",
-            "date": "2026-05-22",
-            "description": [
-              "Datepicker erhält min=today, Validation lehnt manuell getippte",
-              "Vergangenheits-Daten ab, und ein Warn-Banner unter „Wann?\" weist",
-              "sichtbar darauf hin, wenn der Wechsel mit dem Speichern direkt",
-              "wirksam wird (Sofort gewählt oder heutiges Datum). DateInputGroup",
-              "reicht jetzt min/max an den DateInput durch."
             ]
           }
         ]
