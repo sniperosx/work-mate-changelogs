@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-09-25T14:06:05.738Z",
+  "generatedAt": "2026-10-01T13:23:59.182Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -22,13 +22,19 @@
       "changes": {
         "features": [
           {
-            "hash": "f789254",
+            "hash": "99e44434",
+            "emoji": "✨",
+            "message": "Beim Anlegen eines Onboardees übernehmen die Schalter für Personalfragebogen und Feedback jetzt automatisch die Voreinstellung der gewählten Onboarding-Gruppe – anpassen lässt sich das weiterhin direkt im Formular.",
+            "date": "2026-09-29"
+          },
+          {
+            "hash": "f7892544",
             "emoji": "✨",
             "message": "Der Login ist jetzt ein echter Hingucker: Links zeichnet sich eine Lebenslinie durchs Arbeitsleben, auf der nacheinander Onboarding, Azubi, Mitarbeitende, Elternzeit und Offboarding aufleuchten – dazu Owly als Assistent und der Claim „Vom ersten Tag bis zum letzten. Und alles dazwischen.“ Rechts ein ruhigeres, großzügigeres Anmeldeformular, bei dem Passwort- und Code-Schritt weich einblenden 👋 Der Begrüßungstext spricht jetzt alle Mitarbeitenden an statt nur die, die ein Unternehmen verwalten 📱 Auf dem Handy wird das Markenpanel zu einem kompakten Kopfband",
             "date": "2026-09-24"
           },
           {
-            "hash": "778ca62",
+            "hash": "778ca624",
             "emoji": "✨",
             "message": "Dialoge sehen jetzt überall gleich aus und ziehen sauber auf",
             "date": "2026-09-04",
@@ -40,7 +46,7 @@
             ]
           },
           {
-            "hash": "01e8408",
+            "hash": "01e8408a",
             "emoji": "✨",
             "message": "Wer ein Modul bucht, bekommt seine Funktionen jetzt sofort mitgeliefert — und zwar eingeschaltet. Bisher erschien der gebuchte Bereich zwar im Menü, blieb aber halb leer: Beim Wissensmanagement etwa gab es nur das Dashboard, während Interviews und Fragebögen fehlten. Der Grund war eine zweite, versteckte Maske, in der man von Hand Häkchen setzen musste, ohne zu wissen, dass es sie überhaupt gibt",
             "date": "2026-08-16",
@@ -50,7 +56,7 @@
             ]
           },
           {
-            "hash": "af514a9",
+            "hash": "af514a92",
             "emoji": "✨",
             "message": "Wissenspools: Ein Knopf lernt alle Pools auf einmal an, und die Übersicht zeigt dabei, woran jeder einzelne gerade ist. Bisher musste jeder Pool einzeln angestoßen werden — bei vielen Pools eine Klickstrecke. Der neue Sammelstart stößt sie nacheinander an, überspringt dabei alles, was ohnehin schon läuft, zeigt seinen Fortschritt im Knopf und meldet am Ende in einer einzigen Zusammenfassung, was gestartet wurde und was nicht. Wie beim einzelnen Anlernen bleibt die Bedienung Superadministratoren vorbehalten",
             "date": "2026-08-06",
@@ -60,7 +66,7 @@
             ]
           },
           {
-            "hash": "8250735",
+            "hash": "8250735c",
             "emoji": "✨",
             "message": "Changelogs: Plattform-Filter als Pill-Leiste, Release-Datum vorausgefüllt",
             "date": "2026-07-27",
@@ -69,7 +75,7 @@
             ]
           },
           {
-            "hash": "b3c27fa",
+            "hash": "b3c27fad",
             "emoji": "✨",
             "message": "Ablaufplanung: Schule liegt auf dem Lernort, Termin-Spur mit Schnellanlage",
             "date": "2026-07-27",
@@ -79,7 +85,7 @@
             ]
           },
           {
-            "hash": "062b60e",
+            "hash": "062b60e8",
             "emoji": "✨",
             "message": "Newsfeed-Beitrag als eigene Detailseite statt Overlay",
             "date": "2026-07-24",
@@ -90,7 +96,7 @@
             ]
           },
           {
-            "hash": "cfd4a22",
+            "hash": "cfd4a225",
             "emoji": "✨",
             "message": "Artikel-Übersicht als zweispaltiges Karten-Grid",
             "date": "2026-07-24",
@@ -100,7 +106,7 @@
             ]
           },
           {
-            "hash": "9810031",
+            "hash": "9810031a",
             "emoji": "✨",
             "message": "Nachrichtencenter im Dashboard: Topbar mit Glocken-Popover & eigener Vollansicht",
             "date": "2026-07-24",
@@ -115,7 +121,7 @@
             ]
           },
           {
-            "hash": "456885d",
+            "hash": "456885d4",
             "emoji": "✨",
             "message": "Owly-KI-Chat im Dashboard: eigene Seite für alle Nutzer",
             "date": "2026-07-24",
@@ -127,7 +133,7 @@
             ]
           },
           {
-            "hash": "2f1d803",
+            "hash": "2f1d8034",
             "emoji": "✨",
             "message": "Nummerierte Listen im Editor nutzbar + getrennte Aufzählungen bleiben getrennt",
             "date": "2026-07-24",
@@ -141,7 +147,7 @@
             ]
           },
           {
-            "hash": "d712c58",
+            "hash": "d712c58d",
             "emoji": "✨",
             "message": "Profilbild im Mitarbeiter-Detail: neuer Header mit Bild & Name für alle Admins",
             "date": "2026-07-23",
@@ -160,25 +166,25 @@
             ]
           },
           {
-            "hash": "5d5133d",
+            "hash": "5d5133d4",
             "emoji": "✨",
             "message": "„Was gibt's neues“ ist jetzt ein fester Menüpunkt im Seitenmenü statt eines Pop-ups beim Anmelden: Zwischen „Einstellungen“ und „Abmelden“ finden Nutzer eine Übersicht aller Neuerungen (nach Backoffice gefiltert). Ein kleiner Hinweis am Menüpunkt zeigt, wenn es ungelesene Änderungen gibt, und verschwindet, sobald die Seite geöffnet wurde",
             "date": "2026-07-23"
           },
           {
-            "hash": "36c0deb",
+            "hash": "36c0deb6",
             "emoji": "✨",
             "message": "Interview-Zusammenfassung: Word-Export (echtes .docx) und Überführung in einen neuen Artikel",
             "date": "2026-07-16"
           },
           {
-            "hash": "cacbe6d",
+            "hash": "cacbe6d1",
             "emoji": "✨",
             "message": "Wissensmanagement: Interview-Zusammenfassung per KI auf der Session-Detailseite — Content-Hub entfernt",
             "date": "2026-07-16"
           },
           {
-            "hash": "d99e68f",
+            "hash": "d99e68f8",
             "emoji": "✨",
             "message": "Lernortauslastung: Auf das Timeline-Modell der Ablaufplanung gehoben",
             "date": "2026-07-15",
@@ -208,7 +214,7 @@
             ]
           },
           {
-            "hash": "bc797ff",
+            "hash": "bc797ffe",
             "emoji": "✨",
             "message": "Navigation: Zurück-Button im Seitenkopf aller Unterseiten",
             "date": "2026-07-15",
@@ -218,7 +224,7 @@
             ]
           },
           {
-            "hash": "7e4cac6",
+            "hash": "7e4cac6e",
             "emoji": "✨",
             "message": "Einstellungen: Nach Modul gegliedert, Lernorte und Schulfächer umgezogen",
             "date": "2026-07-15",
@@ -236,7 +242,7 @@
             ]
           },
           {
-            "hash": "f56ef0c",
+            "hash": "f56ef0c2",
             "emoji": "✨",
             "message": "Interviews: Antwort wahlweise tippen oder aufnehmen",
             "date": "2026-07-15",
@@ -250,7 +256,7 @@
             ]
           },
           {
-            "hash": "4ab432c",
+            "hash": "4ab432c8",
             "emoji": "✨",
             "message": "Wissensmanagement: Interviews einzeln löschen",
             "date": "2026-07-14",
@@ -266,7 +272,7 @@
             ]
           },
           {
-            "hash": "1eecc7b",
+            "hash": "1eecc7b7",
             "emoji": "✨",
             "message": "Azubi-Planung: Mehrfachzuweisung von Azubis bei Terminanlage",
             "date": "2026-07-14",
@@ -275,7 +281,7 @@
             ]
           },
           {
-            "hash": "8b08122",
+            "hash": "8b08122f",
             "emoji": "✨",
             "message": "Azubi-Planung: Monatsraster in Wochen- und Quartalsansicht",
             "date": "2026-07-14",
@@ -289,7 +295,7 @@
             ]
           },
           {
-            "hash": "1df7bd6",
+            "hash": "1df7bd67",
             "emoji": "✨",
             "message": "Azubi-Planung: Kalenderwochen als KW-Leiste im Monats-Header",
             "date": "2026-07-13",
@@ -301,37 +307,37 @@
             ]
           },
           {
-            "hash": "29cfa44",
+            "hash": "29cfa445",
             "emoji": "✨",
             "message": "Azubi-Planung: Ferien & Feiertage als farbiges Overlay mit Bundesland-Picker",
             "date": "2026-07-13"
           },
           {
-            "hash": "b4a68c5",
+            "hash": "b4a68c58",
             "emoji": "✨",
             "message": "Wissensartikel: Inhaltsbausteine per Drag & Drop umsortierbar",
             "date": "2026-07-10"
           },
           {
-            "hash": "25ad181",
+            "hash": "25ad1812",
             "emoji": "✨",
             "message": "Wissensartikel: Inhaltsbausteine per Drag & Drop umsortierbar",
             "date": "2026-07-10"
           },
           {
-            "hash": "d492231",
+            "hash": "d4922313",
             "emoji": "✨",
             "message": "Ablaufplanung: parallele Termine vertikal gestapelt (dynamische Zeilenhöhe), saubere Serien-Pills, Wiederhol-Icon in den Tooltip",
             "date": "2026-07-09"
           },
           {
-            "hash": "2e0e527",
+            "hash": "2e0e527c",
             "emoji": "✨",
             "message": "Noten für Ausbildungsleiter freigegeben (nicht mehr admin-exklusiv); auf eigene Azubis gescopet, Menü/Tab nur bei bestehendem Recht",
             "date": "2026-07-09"
           },
           {
-            "hash": "2bebd78",
+            "hash": "2bebd786",
             "emoji": "✨",
             "message": "Beiträge: Highlights lassen sich jetzt per Schalter „Als Highlight anzeigen\" direkt am Beitrag setzen",
             "date": "2026-07-09",
@@ -340,19 +346,19 @@
             ]
           },
           {
-            "hash": "2eb4d61",
+            "hash": "2eb4d619",
             "emoji": "✨",
             "message": "Ablaufplanung: Lernort-Legende zeigt nur eigene Lernorte (außer Admin/Ausbildungsleitung)",
             "date": "2026-07-09"
           },
           {
-            "hash": "7527ece",
+            "hash": "7527ece1",
             "emoji": "✨",
             "message": "Azubi-Detail: Ausbildungsleitung (Voller-Zugriff-Badge) + read-only Ausbilder-Liste aus Lernorten",
             "date": "2026-07-09"
           },
           {
-            "hash": "dfea344",
+            "hash": "dfea3447",
             "emoji": "✨",
             "message": "Wissensmanagement-Dashboard: KI-Ansichten im Backoffice (Phase 2)",
             "date": "2026-07-09",
@@ -373,13 +379,13 @@
             ]
           },
           {
-            "hash": "65a00df",
+            "hash": "65a00df2",
             "emoji": "✨",
             "message": "Azubi-Planung: Legende als Overlay per Header-Button; Filter-Dropdowns über Timeline-Header",
             "date": "2026-07-09"
           },
           {
-            "hash": "caaab23",
+            "hash": "caaab233",
             "emoji": "✨",
             "message": "Azubi-Planung: Schichtmodell, horizontales Scrollen & Sticky-Labels",
             "date": "2026-07-09",
@@ -397,19 +403,19 @@
             ]
           },
           {
-            "hash": "026d7dc",
+            "hash": "026d7dcf",
             "emoji": "✨",
             "message": "ESG-/Nachhaltigkeitszertifikat: druckbare Zertifikat-Ansicht (als PDF speichern) mit belegten Umwelt-Kennzahlen (Papier, CO₂, Wasser, Energie) und Button in den Einstellungen",
             "date": "2026-07-05"
           },
           {
-            "hash": "dcce942",
+            "hash": "dcce9424",
             "emoji": "✨",
             "message": "Auswertungen: Neue Ansicht \"Signatur-Verbrauch\" unter Kunden – Übersicht der digitalen Signaturen je Kunde nach Status, sortierbar und mit Zeitraum-Auswahl",
             "date": "2026-07-02"
           },
           {
-            "hash": "95438a5",
+            "hash": "95438a5f",
             "emoji": "✨",
             "message": "Wissensmanagement: Interviews als Mitarbeiter im Backoffice führen",
             "date": "2026-07-01",
@@ -419,7 +425,7 @@
             ]
           },
           {
-            "hash": "944b3e0",
+            "hash": "944b3e02",
             "emoji": "✨",
             "message": "Interview erstellen: Fragen per KI aus einer Berufsgruppe generieren und unten anhängen",
             "date": "2026-07-01",
@@ -428,7 +434,7 @@
             ]
           },
           {
-            "hash": "e60b6e4",
+            "hash": "e60b6e44",
             "emoji": "✨",
             "message": "Newsfeed: Videos in Beiträgen (Backoffice)",
             "date": "2026-06-24",
@@ -437,61 +443,35 @@
               "- Video-Anzeige mit Thumbnail-Poster in Feed-Karte & Detailansicht",
               "- Höhenstabile Media-Karte, Content-Feld nutzt vertikalen Platz"
             ]
-          },
-          {
-            "hash": "7959df8",
-            "emoji": "✨",
-            "message": "Newsfeed: Neues Verfassen-Overlay & Beiträge nachträglich bearbeiten",
-            "date": "2026-06-23",
-            "description": [
-              "Das Fenster zum Erstellen eines Newsfeed-Beitrags wurde von Grund auf neu gestaltet: ein modernes, aufgeräumtes Overlay mit großzügigem Schreibbereich, einer einladenden Drag-and-Drop-Fläche für Bilder (einfach reinziehen statt umständlich auswählen) und klar getrennten Bereichen – inklusive schöner Schalter für Sichtbarkeit und „Oben anpinnen\".",
-              "Außerdem lassen sich bestehende Beiträge jetzt nachträglich bearbeiten; geänderte Beiträge werden als bearbeitet gekennzeichnet."
-            ]
-          },
-          {
-            "hash": "81bd510",
-            "emoji": "✨",
-            "message": "Newsfeed: Optionale Überschrift beim Verfassen",
-            "date": "2026-06-23",
-            "description": [
-              "Beim Verfassen eines Newsfeed-Beitrags gibt es jetzt ein optionales Feld für eine Überschrift (bis zu 100 Zeichen). Sie erscheint hervorgehoben über dem Text – in der Beitragsliste wie in der Detailansicht.",
-              "So heben sich vor allem offizielle Ankündigungen besser voneinander ab. Wer keine Überschrift vergibt, dessen Beitrag sieht aus wie gewohnt."
-            ]
-          },
-          {
-            "hash": "bd70244",
-            "emoji": "✨",
-            "message": "Serientermine in der Azubiplanung: Wiederholen-Dialog (Wochentage/Block, Intervall, Ende), Mehr-Azubi-/Gruppenauswahl mit Suche, Serien-Indikator auf Pills, Lernort-Pager",
-            "date": "2026-06-23"
           }
         ],
         "fixes": [
           {
-            "hash": "684223f",
+            "hash": "684223f9",
             "emoji": "🩹",
             "message": "🩹 Mitarbeiterverzeichnis und neuer Seitenkopf sind wieder da – der Umbau des Seitenmenüs hatte sie versehentlich wieder entfernt; „Kollegen“ steht jetzt in der neuen Gruppe „Austausch“",
             "date": "2026-09-25"
           },
           {
-            "hash": "026cbd7",
+            "hash": "026cbd7f",
             "emoji": "🐛",
             "message": "Die Empfänger-Seite speichert jetzt nur noch das, was wirklich geändert wurde – bisher schickte jeder Klick auf „Speichern“ den kompletten Stand der Seite mit und konnte damit Einstellungen zurückdrehen, die der Server oder ein zweiter Administrator zwischenzeitlich angepasst hatte",
             "date": "2026-09-22"
           },
           {
-            "hash": "f0483af",
+            "hash": "f0483af5",
             "emoji": "🩹",
             "message": "🩹 Nach dem Speichern der Empfänger-Einstellungen blieb die Seite fälschlich im „gerade bearbeitet\"-Zustand hängen – dadurch kamen spätere Aktualisierungen vom Server nicht mehr an, bis man die Seite neu geladen hat. Das ist jetzt behoben, ohne dass der Schutz vor Datenverlust während der Eingabe verloren geht",
             "date": "2026-09-22"
           },
           {
-            "hash": "ec1a7b4",
+            "hash": "ec1a7b43",
             "emoji": "🐛",
             "message": "„Wer darf Beiträge im Newsfeed erstellen?\" lässt sich beim Kunden jetzt wirklich speichern. Die Auswahl „Nur Administratoren\" blieb bisher nur bis zum Neuladen stehen und sprang dann heimlich auf „Offen\" zurück – dasselbe galt für die Newsfeed-Kommentare 🧹 Wer einen Kunden speichert, verstellt dabei nicht mehr nebenbei die Chat-Einstellung der work.mate-Vorlage",
             "date": "2026-09-15"
           },
           {
-            "hash": "51da055",
+            "hash": "51da0555",
             "emoji": "🐛",
             "message": "Der Menüpunkt „Wissensmanagement\" führt nicht mehr auf eine Fehlerseite. Wer die Fragebögen nicht gebucht hat, sah beim Klick statt seiner Auswertung nur noch „Seite nicht gefunden\" — die Seite war zwar fertig gebaut, aber nie unter einer eigenen Adresse hinterlegt",
             "date": "2026-08-16",
@@ -501,7 +481,7 @@
             ]
           },
           {
-            "hash": "e8687a1",
+            "hash": "e8687a1c",
             "emoji": "🐛",
             "message": "Mitarbeiter-Gruppen lassen sich wieder zuweisen, auch ohne gebuchten Mitarbeiter-Assistenten. Wer das Wissensmanagement gebucht hat, hat Mitarbeiter im Haus und damit auch Mitarbeiter-Inhaltsgruppen — auf der Gruppenseite waren sie sichtbar, im Artikel aber nicht auswählbar. Die Auswahldialoge hatten die Frage \"welche Gruppen gibt es hier?\" mit \"was ist gebucht?\" beantwortet, und das ist nicht dasselbe. Betroffen waren die Mehrfachauswahl der Inhalte, der Gruppen-Dialog im Artikel, der Gruppenfilter und die Kategorien-Überschriften darin",
             "date": "2026-08-16",
@@ -512,7 +492,7 @@
             ]
           },
           {
-            "hash": "9b55d70",
+            "hash": "9b55d708",
             "emoji": "🐛",
             "message": "Beim Anlegen eines Mitarbeiters standen nicht alle Phasen zur Wahl, die es beim Kunden gibt. Wer das Wissensmanagement gebucht hat, braucht Mitarbeiter als Wissensträger — angeboten wurden aber nur „Azubi\" und „Führungskraft\". Die Anlagemaske hatte eine eigene Liste geführt, die von der Nutzerverwaltung längst abgewichen war",
             "date": "2026-08-16",
@@ -523,13 +503,13 @@
             ]
           },
           {
-            "hash": "72d9e39",
+            "hash": "72d9e399",
             "emoji": "🐛",
             "message": "Abmelden führt nicht mehr zu einer weissen Seite: Durch die neue Beobachter-Funktion wurde beim Abmelden noch auf Anmeldedaten zugegriffen, die es zu dem Zeitpunkt schon nicht mehr gab — die Anwendung brach dabei komplett ab. Betroffen war jede Abmeldung, bei Ausbildungsleitungen zusätzlich an einer zweiten Stelle",
             "date": "2026-07-30"
           },
           {
-            "hash": "7d6ace6",
+            "hash": "7d6ace6b",
             "emoji": "🐛",
             "message": "Wissensmanagement: Auswertung hängt nicht mehr im Ladezustand",
             "date": "2026-07-28",
@@ -544,7 +524,7 @@
             ]
           },
           {
-            "hash": "fb8aa68",
+            "hash": "fb8aa684",
             "emoji": "🐛",
             "message": "Noten: gleiche Zahlen wie in der App",
             "date": "2026-07-21",
@@ -562,7 +542,7 @@
             ]
           },
           {
-            "hash": "8eea568",
+            "hash": "8eea568c",
             "emoji": "🐛",
             "message": "Reflexionsfragen: Speichern führte auf die Fehlerseite",
             "date": "2026-07-15",
@@ -571,7 +551,7 @@
             ]
           },
           {
-            "hash": "0b53ba8",
+            "hash": "0b53ba8a",
             "emoji": "🐛",
             "message": "Scrolling: Springenden Seiteninhalt beim Ein- und Ausblenden der Scrollbar verhindert",
             "date": "2026-07-15",
@@ -584,7 +564,7 @@
             ]
           },
           {
-            "hash": "64301bb",
+            "hash": "64301bbe",
             "emoji": "🐛",
             "message": "Scrolling: doppelte vertikale Scrollebene zentral entfernt",
             "date": "2026-07-15",
@@ -605,7 +585,7 @@
             ]
           },
           {
-            "hash": "7df9557",
+            "hash": "7df95572",
             "emoji": "🐛",
             "message": "Azubi-Planung: Ferien-/Feiertags-Marker als eigene Zeile in der Zeitachse",
             "date": "2026-07-14",
@@ -617,43 +597,43 @@
             ]
           },
           {
-            "hash": "6575e6b",
+            "hash": "6575e6bf",
             "emoji": "🐛",
             "message": "Umfragen: Falschen Untertitel im Frage-Dialog korrigiert",
             "date": "2026-07-13"
           },
           {
-            "hash": "61f4037",
+            "hash": "61f40372",
             "emoji": "🐛",
             "message": "Azubi-Planung: Fehlermeldung im Termin-Dialog wird beim Schließen zurückgesetzt",
             "date": "2026-07-13"
           },
           {
-            "hash": "ca54a83",
+            "hash": "ca54a830",
             "emoji": "🐛",
             "message": "Azubi-Planung: Lernort-Resize öffnet nicht mehr versehentlich den Bearbeiten-Dialog",
             "date": "2026-07-13"
           },
           {
-            "hash": "4e853d0",
+            "hash": "4e853d0a",
             "emoji": "🐛",
             "message": "Lernort-Auslastung zeigt Ausbildern nur eigene Lernorte; Planungs-Legende wieder vollständig",
             "date": "2026-07-09"
           },
           {
-            "hash": "d672a79",
+            "hash": "d672a797",
             "emoji": "🐛",
             "message": "Azubi-Planung: Tages-Labels der Zeitachse als zentrierte Zweizeiler (kein Überlauf mehr)",
             "date": "2026-07-09"
           },
           {
-            "hash": "c38a7b8",
+            "hash": "c38a7b8e",
             "emoji": "🐛",
             "message": "Seitenmenü: Navigation auf kleinen Displays scrollbar; Abmelden/Kundenwechsel bleiben immer erreichbar",
             "date": "2026-07-07"
           },
           {
-            "hash": "7999c80",
+            "hash": "7999c809",
             "emoji": "🐛",
             "message": "Artikelübersicht: Kategorien ohne Gruppenzuordnung im Filter anzeigen und mitzählen",
             "date": "2026-07-02",
@@ -662,7 +642,7 @@
             ]
           },
           {
-            "hash": "bb45856",
+            "hash": "bb45856a",
             "emoji": "🐛",
             "message": "Fehlerprotokoll: technische Fehler endlich selbst einsehbar",
             "date": "2026-06-30",
@@ -674,7 +654,7 @@
             ]
           },
           {
-            "hash": "b6a2b8a",
+            "hash": "b6a2b8a3",
             "emoji": "🐛",
             "message": "Dialog: verirrtes window.close() in Button-Handlern entfernt",
             "date": "2026-06-29",
@@ -686,41 +666,17 @@
               "Übernehmen. Der Dialog schliesst weiterhin korrekt ueber setIsOpen(false)",
               "im Aufrufer."
             ]
-          },
-          {
-            "hash": "412de65",
-            "emoji": "🐛",
-            "message": "Newsfeed-Dashboard: Sticky-Ablauf & Löschen aus der Übersicht",
-            "date": "2026-06-23",
-            "description": [
-              "Zwei Verbesserungen im Newsfeed-Bereich des Dashboards:",
-              "Angepinnte Beiträge bleiben jetzt wirklich nur 7 Tage oben angeheftet – danach rutschen sie wieder ganz normal in die zeitliche Reihenfolge und verlieren die Stecknadel. Bisher klebten sie unbegrenzt oben fest.",
-              "Außerdem lassen sich Beiträge jetzt direkt aus der Übersicht löschen (Papierkorb-Symbol auf der Karte, mit Sicherheitsabfrage) – man muss dafür nicht mehr erst den Beitrag öffnen."
-            ]
-          },
-          {
-            "hash": "599a81f",
-            "emoji": "🐛",
-            "message": "Ablaufplanung: Azubi-Namensspalte bleibt beim horizontalen Scrollen sticky",
-            "date": "2026-06-20",
-            "description": [
-              "Tabelle von border-collapse auf border-separate umgestellt (Chromium ignoriert",
-              "sticky auf Tabellenzellen bei collapsed borders) und Rahmen-Darstellung",
-              "angeglichen. Zusätzlich min-w-0 am Inhalts-Container des FullLayout ergänzt,",
-              "damit die breite Tabelle im inneren overflow-x-auto-Container scrollt statt die",
-              "gesamte Seite inkl. Navbar horizontal zu verschieben."
-            ]
           }
         ],
         "refactors": [
           {
-            "hash": "bab702d",
+            "hash": "bab702d3",
             "emoji": "🔧",
             "message": "Die Auswahl im Fragen-Editor merkt sich jetzt, welche Frage gemeint ist, statt eine Kopie davon mitzuschleppen",
             "date": "2026-09-04"
           },
           {
-            "hash": "776dc53",
+            "hash": "776dc53a",
             "emoji": "⚡",
             "message": "Chat-Unread-Polling entfernt, Notification-Center-Poller entschärft",
             "date": "2026-07-28",
@@ -736,13 +692,13 @@
             ]
           },
           {
-            "hash": "4134e9c",
+            "hash": "4134e9c4",
             "emoji": "♻️",
             "message": "Übriggebliebenes",
             "date": "2026-07-27"
           },
           {
-            "hash": "ba1bf57",
+            "hash": "ba1bf576",
             "emoji": "⚡",
             "message": "Azubi-Planung: Timeline auf performantes Balken-/Zoom-Modell umgebaut",
             "date": "2026-07-08",
@@ -759,7 +715,7 @@
             ]
           },
           {
-            "hash": "4b2d75f",
+            "hash": "4b2d75f2",
             "emoji": "♻️",
             "message": "Release mail script adapted to multiple reciepients",
             "date": "2026-06-24"
@@ -767,13 +723,13 @@
         ],
         "styles": [
           {
-            "hash": "3cb4db7",
+            "hash": "3cb4db77",
             "emoji": "🎨",
             "message": "Interviews im work.mate-Look: Die Übersicht „Meine Interviews“ und das Interview selbst tragen jetzt die Hausfarben Petrol und Lime, die Hausschrift und das work.mate-Männchen im Hintergrund – statt Grün-Braun mit Honig und Koralle 🗂️ Die Interviews sitzen direkt auf der Übersicht, als dunkle Karten mit Fortschrittsbalken; laufende leuchten vorn, erledigte rücken nach hinten 🎙️ Im Interview: großer Lime-Aufnahmeknopf mit Stopp-Symbol und rotem Aufnahmepunkt, sichtbare Kennzeichnung von Rückfragen, hüpfende Punkte, während die KI nachdenkt, und zum Schluss ein Haken samt Konfetti in allen CI-Farben",
             "date": "2026-09-24"
           },
           {
-            "hash": "55fd436",
+            "hash": "55fd4368",
             "emoji": "🎨",
             "message": "Oberfläche: Die Inhaltsgruppen sehen jetzt aus wie die Fragebögen. Jede Gruppe trägt den dunklen Kopf in der Hausfarbe des Kunden mit Icon und Titel, das Drei-Punkte-Menü sitzt hell darin. Darunter stehen drei ruhige Zeilen statt loser Grautexte und eines grünen Datums-Plättchens: welche Inhalte die Gruppe bündelt, wie vielen Personen sie zugewiesen ist und seit wann es sie gibt. Die Zahl der Zugewiesenen war bisher nur indirekt am gesperrten Verschieben zu erahnen, jetzt steht sie auf der Karte. Beim Überfahren hebt sich die Karte wie bei den Fragebögen; die Kachel für eine neue Gruppe ist gestrichelt und nimmt beim Überfahren den hellen Kundenton an. Das Raster folgt ebenfalls den Fragebögen: eine, zwei oder drei Spalten je nach Fensterbreite",
             "date": "2026-09-10",
@@ -783,7 +739,7 @@
             ]
           },
           {
-            "hash": "90d90e6",
+            "hash": "90d90e64",
             "emoji": "🎨",
             "message": "Oberfläche: Die Fragebogen-Übersicht wirkt nicht mehr wie eine Versicherungstabelle. Die Karten tragen jetzt einen dunklen Kopf in der Hausfarbe des Kunden — derselbe Ton wie die aktive Reiter-Pille — mit heller Schrift und einem Icon, das auf der dunklen Fläche sitzt statt auf einem weißen Plättchen. Die Zeilen darunter standen sehr luftig, ihr Abstand ist zusammengerückt, ohne gedrängt zu wirken; eine Karte ist dadurch rund ein Viertel flacher. Statt zwei stehen ab großen Fenstern drei Karten nebeneinander, auf mittleren zwei, auf schmalen eine. Beim Überfahren hebt sich die Karte leicht an, wirft einen weichen Schatten in der Kundenfarbe und der Kopf wird durchgehend dunkel; wer reduzierte Bewegung eingestellt hat, bekommt die Bewegung nicht. Der Farbverlauf im Kopf lässt sich technisch nicht weich überblenden, deshalb legt sich die satte Fläche über ihn statt ihn auszutauschen",
             "date": "2026-09-09",
@@ -793,19 +749,19 @@
             ]
           },
           {
-            "hash": "ba50b7e",
+            "hash": "ba50b7e9",
             "emoji": "🎨",
             "message": "Oberfläche: Die Kundenfarbe greift jetzt auch dort, wo bisher noch das work.mate-Grün stand. Die Grundfarbe der Bedienelemente war an zweiter Stelle ein zweites Mal fest hinterlegt — deshalb blieben Schaltflächen in Formularen, der runde Aktionsknopf und die Aktionen im Seitenkopf grün, obwohl der Rest längst dem Kunden folgte. Speichern, Abbrechen und alle übrigen Formularknöpfe hängen jetzt an einer einzigen Stelle. Filter werden einheitlich hervorgehoben statt jeder in einer eigenen Signalfarbe, die Phasen im Mitarbeiterformular ebenso. Der helle Farbton wird aus der Kundenfarbe abgeleitet und muss nicht gepflegt werden. Die Hinweistexte an den Aktionen im Seitenkopf waren angelegt, aber nie zu sehen, weil der Knopf seine Referenz nicht weiterreichte; der Zurück-Knopf in Formularen trägt jetzt denselben Pfeil wie überall sonst",
             "date": "2026-08-12"
           },
           {
-            "hash": "fb36b94",
+            "hash": "fb36b942",
             "emoji": "🎨",
             "message": "Oberfläche: Das Backoffice trägt jetzt die Hausfarbe des Kunden. Primärfarbe und dunkler Ton kommen aus den Kundendaten und färben Menü-Highlights, Reiter und Auswahlfelder — beim Superadmin auch dann, wenn er sich in einen Kunden hineinversetzt hat, damit sich die Farbgebung dort prüfen lässt. Ist beim Kunden nichts gepflegt, bleibt es beim work.mate-Ton. Die Rollen-Leiste trug bisher je Lebenszyklus-Rolle eine eigene Farbe; das biss sich mit der Kundenfarbe und ist einer einheitlichen hellen Hervorhebung gewichen. Aktive Flächen und Auswahlringe waren an mehreren Stellen fest verdrahtet und hätten den Wechsel sonst nicht mitgemacht",
             "date": "2026-08-11"
           },
           {
-            "hash": "57807d0",
+            "hash": "57807d0c",
             "emoji": "🎨",
             "message": "Jeder Fragetyp hat jetzt ein eigenes Sinnbild, unvollständige Fragen werden erkannt",
             "date": "2026-09-04",
@@ -814,7 +770,7 @@
             ]
           },
           {
-            "hash": "b9b02af",
+            "hash": "b9b02af4",
             "emoji": "🎨",
             "message": "Vertragsdaten im Kundenbereich komplett überarbeitet. Die Maske stammte noch aus der alten Oberfläche und war der letzte Bereich der Kundenverwaltung, der nicht auf dem aktuellen Stand war. Sie ist jetzt in drei klare Abschnitte gegliedert: Status, Vertragsinformationen und Fristen",
             "date": "2026-08-04",
@@ -826,7 +782,7 @@
             ]
           },
           {
-            "hash": "502a89b",
+            "hash": "502a89b1",
             "emoji": "🎨",
             "message": "Superadmin-Bereiche: Pill-Leiste linksbündig statt zentriert",
             "date": "2026-07-27",
@@ -835,7 +791,7 @@
             ]
           },
           {
-            "hash": "7d12b4e",
+            "hash": "7d12b4e9",
             "emoji": "🎨",
             "message": "Benachrichtigungen: Tab-Leiste als linksbündige Pill-Control mit mehr Abstand zum Inhalt",
             "date": "2026-07-25",
@@ -844,7 +800,7 @@
             ]
           },
           {
-            "hash": "81c1e5f",
+            "hash": "81c1e5f8",
             "emoji": "🎨",
             "message": "Einklappbares Seitenmenü entfernt — Sidebar dauerhaft in voller Breite",
             "date": "2026-07-25",
@@ -853,7 +809,7 @@
             ]
           },
           {
-            "hash": "036f9da",
+            "hash": "036f9da2",
             "emoji": "🎨",
             "message": "Interview-Fragestrecke: Höhe an Topbar angepasst, linke Rundungen entfernt",
             "date": "2026-07-24",
@@ -863,7 +819,7 @@
             ]
           },
           {
-            "hash": "0c207a8",
+            "hash": "0c207a85",
             "emoji": "🎨",
             "message": "Profilseite: Zurück-Button und Hilfe-Icon entfernt",
             "date": "2026-07-24",
@@ -874,7 +830,7 @@
             ]
           },
           {
-            "hash": "8363202",
+            "hash": "83632024",
             "emoji": "🎨",
             "message": "Wissens- und Leseansichten linksbündig ausgerichtet",
             "date": "2026-07-24",
@@ -885,7 +841,7 @@
             ]
           },
           {
-            "hash": "a753db6",
+            "hash": "a753db6f",
             "emoji": "🎨",
             "message": "Einheitliche linksbündige Content-Breite statt zentriertem Layout",
             "date": "2026-07-24",
@@ -896,7 +852,7 @@
             ]
           },
           {
-            "hash": "c7c2c65",
+            "hash": "c7c2c656",
             "emoji": "🎨",
             "message": "Customer-Logo im Avatar vollständig einpassen statt beschneiden",
             "date": "2026-07-23",
@@ -910,7 +866,7 @@
             ]
           },
           {
-            "hash": "67f70ee",
+            "hash": "67f70ee7",
             "emoji": "🎨",
             "message": "Notification-Katalog: jede Benachrichtigung wird jetzt als anschaulicher Ablauf dargestellt (Auslöser → Bündelung → Empfänger-Einstellung → Kanäle → Empfänger) statt als Tabelle",
             "date": "2026-07-20",
@@ -919,13 +875,13 @@
             ]
           },
           {
-            "hash": "6001abf",
+            "hash": "6001abf4",
             "emoji": "💄",
             "message": "Rechte: Ausbilder-Beschreibung verständlicher und als Aufzählung strukturiert",
             "date": "2026-07-16"
           },
           {
-            "hash": "7dc6b3a",
+            "hash": "7dc6b3a9",
             "emoji": "💄",
             "message": "Wissensmanagement: Dashboard auf die wesentlichen Kennzahlen reduziert",
             "date": "2026-07-15",
@@ -941,7 +897,7 @@
             ]
           },
           {
-            "hash": "fe48bee",
+            "hash": "fe48bee3",
             "emoji": "💄",
             "message": "Wissensmanagement: Interview-Übersicht aufgeräumt",
             "date": "2026-07-14",
@@ -952,19 +908,19 @@
             ]
           },
           {
-            "hash": "1ef41d0",
+            "hash": "1ef41d04",
             "emoji": "💄",
             "message": "Azubi-Planung: Termine als reguläre Balken (violett + Icon), im Lane-Raster gestapelt",
             "date": "2026-07-10"
           },
           {
-            "hash": "93c0e72",
+            "hash": "93c0e72d",
             "emoji": "💄",
             "message": "Azubi-Detail: Ausbilder-Liste konsekutiv gruppiert (von–bis) + Zugriffs-Pill; Ausbildungsleitung mit Empty-State & eigenem Button-Label",
             "date": "2026-07-09"
           },
           {
-            "hash": "9fff408",
+            "hash": "9fff408b",
             "emoji": "💄",
             "message": "Azubi-Planung: Gruppen-Header vollbreit, gepinnt & sauber geschichtet",
             "date": "2026-07-09",
@@ -980,62 +936,24 @@
             ]
           },
           {
-            "hash": "965a59e",
+            "hash": "965a59ed",
             "emoji": "💄",
             "message": "Meine Interviews: warmes Studio-Redesign (Fullscreen, Live-Waveform, Erklär-Header)",
             "date": "2026-07-02",
             "description": [
               "Die Mitarbeiter-Interviewsicht wird eine immersive, motivierende 'Aufnahme-Studio'-Bühne statt blanker Formularoptik: atmender Mikrofon-Puls mit echter Live-Waveform aus dem Mikrofonpegel, Frage in Fraunces, warme Intro- und Feier-Szene, Chapter-Fortschritt. Booth füllt die Content-Fläche auf volle Höhe (Höhen-Kette im FullLayout durchgereicht). Neuer Erklär-Header auf der Übersicht ('Dein Wissen. Nachhaltig gesichert.', 'So funktioniert's'). Dev-only Debug-Skip zum Abschluss (nicht im Prod-Build)."
             ]
-          },
-          {
-            "hash": "01f5575",
-            "emoji": "💄",
-            "message": "Einheitliches Marken-Dunkelgrün (#1C3C46) in der gesamten Oberfläche",
-            "date": "2026-06-24",
-            "description": [
-              "- Primär-Buttons, Sidebar-Highlight, Segmented-Controls (Tab-Leisten),",
-              "Dialog-Header, FAB und Chat-Bubbles auf statisches workmate-primaryDark",
-              "- FAB vereinheitlicht: Newsfeed & Teams nutzen jetzt die zentrale",
-              "FloatingActionButton-Komponente statt MUI-Fab bzw. Inline-Button",
-              "- Newsfeed-Verfassen-Overlay: statische Marken-Tokens mit Lime-Akzent",
-              "- Newsfeed-Sichtbarkeit: AdminOnly-Modus blendet die Team-Option nun",
-              "auch fuer Mitarbeiter aus (ueber /app/settings)"
-            ]
-          },
-          {
-            "hash": "ee5b9b9",
-            "emoji": "💄",
-            "message": "Ablaufplanung: sticky Header/Gruppen/Namensspalte, ClickUp-Scrollmodell & einklappbares Filter-Panel",
-            "date": "2026-06-22",
-            "description": [
-              "- Datums-Header, Gruppen-Trennzeilen (Push-out) und Namensspalte bleiben beim",
-              "Scrollen sichtbar; ein einziger, bildschirmfüllender Scroll-Container für beide",
-              "Achsen (Höhe per JS bis zur Fensterunterkante gemessen), Agenda/Legende darin.",
-              "- Vertikaler Seiten-Scroll nur auf dieser Route gesperrt (kein Nachscrollen mehr).",
-              "- Filter/Einstellungen in eine einklappbare Card (Default geschlossen): Zeitraum,",
-              "Gruppen-/Azubi-Filter, Wochenend-Toggle (Zahnrad entfernt) und Zoom sauber",
-              "gruppiert; Filter-Popovers via z-40 über der Datumsleiste.",
-              "- ZoomSlider: optionale 'bare'-Variante ohne Karten-Box für die Panel-Nutzung.",
-              "- DRY: gemeinsamer useCalendarHeaderModel-Hook für die Header-Berechnung."
-            ]
-          },
-          {
-            "hash": "ab8044f",
-            "emoji": "💄",
-            "message": "Inhaltsgruppen-Auswahl: Hinweis aufs nötige Speichern der Hauptentität + Button „Übernehmen\" statt „Speichern\"",
-            "date": "2026-06-18"
-          },
-          {
-            "hash": "ebc9af6",
-            "emoji": "💄",
-            "message": "Umfrage duplizieren: wechselt jetzt automatisch zum Tab „Entwürfe\", wo das Duplikat erscheint",
-            "date": "2026-06-18"
           }
         ],
         "tests": [
           {
-            "hash": "b0487f1",
+            "hash": "a0f717a2",
+            "emoji": "🧪",
+            "message": "Die E2E-Tests für „Meine Formulare“ laufen stabil – der Profil-Hinweis gilt im Test als schon gesehen und schnappt beim Ausfüllen nicht mehr den Fokus weg",
+            "date": "2026-09-25"
+          },
+          {
+            "hash": "b0487f13",
             "emoji": "🧪",
             "message": "Der automatische Test kommt lokal wieder als Administrator hinein. Der Administrator in den Testdaten existiert in der lokalen Umgebung nicht mehr, jeder Test mit dieser Rolle scheiterte schon an der Anmeldung. Er zeigt jetzt auf den lokalen Standard-Admin des Demo-Kunden, der ohne echte Kundendaten auskommt",
             "date": "2026-09-10",
@@ -1044,7 +962,7 @@
             ]
           },
           {
-            "hash": "e607c68",
+            "hash": "e607c682",
             "emoji": "🧪",
             "message": "Der automatische Test führt jetzt durch den neuen Fragen-Editor",
             "date": "2026-09-04"
@@ -1052,31 +970,37 @@
         ],
         "docs": [
           {
-            "hash": "e3f4758",
+            "hash": "ee15730b",
+            "emoji": "📝",
+            "message": "Beurteilungen beim Lernortwechsel sind im Backoffice angekommen: Unter „Ausbildung“ finden Lernort-Ausbilder ihre offenen Beurteilungen mit rotem Zähler und geben sie in einem Dialog ab – per Maus oder mit den Tasten 1 bis 5 📊 „Noten“ heißt jetzt „Beurteilungen“ und hat den neuen Reiter „Feedbacks“: Durchschnitte je Lernort und Kriterium samt Trend, dazu alle Beurteilungen je Azubi mit Freitexten 🕶️ Lernort-Ausbilder sehen die Rückmeldungen ihrer Azubis anonym und nur für abgeschlossene Quartale 🎚️ Die neue Funktion lässt sich pro Kunde im Azubi-Assistenten ein- und ausschalten",
+            "date": "2026-09-30"
+          },
+          {
+            "hash": "e3f4758e",
             "emoji": "📝",
             "message": "Meine Formulare im Dashboard – wie in der App: Zugewiesene Formulare stehen unter „Aufgaben“, gruppiert in immer verfügbar, offen und erledigt 🧩 Man füllt sie abschnittsweise aus, Pflichtfragen werden markiert, optionale Fragen lassen sich per Ja/Nein überspringen, und der Entwurf bleibt im Browser auch nach einem Neuladen erhalten 🔘 Auswahlfragen zeigen jede Antwort als eigene Zeile mit Auswahlpunkt, auch lange Sätze brechen sauber um 📤 „Antworten senden“ schickt das Formular ab und führt zurück zur Liste; scheitert das Senden, bleiben die Antworten stehen 🔒 Beim Abmelden werden Entwürfe verworfen",
             "date": "2026-09-25"
           },
           {
-            "hash": "629d162",
+            "hash": "629d1620",
             "emoji": "📚",
             "message": "Artikel & Videos tragen jetzt den neuen work.mate-Seitenkopf „Wissen teilen. Für jede Phase das Richtige.“ und stehen zentriert wie Nutzerverwaltung und Ausbildung 🏷️ „Gruppen“ und „Kategorien“ filtern als runde Chips mit Lime-Zähler, „Kategorien verwalten“ ist ein Pillen-Knopf und die Mehrfachauswahl ein Umschalt-Chip mit runden Häkchen 🗂️ Artikel liegen als runde Karten unter kräftigen Kategorie-Überschriften mit Anzahl – Highlights tragen einen Lime-Ring, Artikel ohne Gruppe stehen in Koralle unter „Neu – noch ohne Gruppe“ 🎬 Videokapitel liegen in einer runden Karte mit Anfasser und „Bearbeiten“-Pille, neue Kapitel legt eine gestrichelte Petrol-Kachel an",
             "date": "2026-09-25"
           },
           {
-            "hash": "00a434e",
+            "hash": "00a434ef",
             "emoji": "📝",
             "message": "Die Bearbeitung eines Formulars trägt jetzt den flachen work.mate-Seitenkopf mit dem Formularnamen als Titel – oben rechts zählt eine Pille Sektionen und Fragen, schreibgeschützte Formulare tragen dort ein Schloss 🔙 Eine Pille „← Formulare“ führt zurück, und nach dem Speichern geht es wieder zu den Formularen statt ins Feedback ✨ „Empfänger“, „Einstellungen“ und „Fragen“ tragen kräftige Überschriften mit feiner Linie, die Karten sind rund mit weicher Tiefe, und „Speichern“ ist die Petrol-Pille – „Löschen“ sitzt dezent rechts daneben 🧱 Seitenkopf mit Zurück-Pille, Abschnittsüberschrift und Knopfleiste stehen jetzt allen Seiten im neuen Look zur Verfügung",
             "date": "2026-09-25"
           },
           {
-            "hash": "53e81d3",
+            "hash": "53e81d31",
             "emoji": "📚",
             "message": "Das Wissen trägt jetzt den neuen work.mate-Seitenkopf „Alles, was du wissen musst. Immer griffbereit.“ und steht zentriert wie Newsfeed und Kollegen – oben rechts zählt eine Pille Artikel und Videos 🔎 Die Artikelsuche ist das große Suchfeld aus „Kollegen“: „/“ springt hinein, Escape leert es, Treffer leuchten in Lime und stehen mit Kategorie-Schild in einer Karte ✨ Highlights und Kategorien tragen kräftige Überschriften mit Anzahl, Artikel kommen als runde Karten, die sich beim Drüberfahren heben, und „Alle anzeigen“ ist ein Pillen-Knopf 🎬 Video-Kapitel zeigen beim Drüberfahren einen Lime-Play-Knopf, der Fortschrittsbalken wird Lime und ein „Geschafft“-Schild erscheint, sobald alles geschaut ist 🅿️ Alle Seiten im neuen Look laufen im Inhalt durchgehend in Poppins",
             "date": "2026-09-25"
           },
           {
-            "hash": "5b30cd5",
+            "hash": "5b30cd53",
             "emoji": "📚",
             "message": "Wissensmanagement ist jetzt ein eigenes buchbares Modul. Bisher war es ein Häkchen in der Funktionsliste — jetzt steht es bei den aktiven Modulen und bringt Interviews, Owly und Wissenspools mit. Wer es bucht, kann außerdem Mitarbeiter pflegen und Mitarbeiter-Inhaltsgruppen anlegen, ohne den ganzen Mitarbeiter-Assistenten zu buchen",
             "date": "2026-08-16",
@@ -1087,7 +1011,7 @@
             ]
           },
           {
-            "hash": "18feef2",
+            "hash": "18feef24",
             "emoji": "📝",
             "message": "Wissensmanagement: Spec & Umsetzungsplan (Mitarbeitersicht)",
             "date": "2026-07-01"
@@ -1095,19 +1019,19 @@
         ],
         "security": [
           {
-            "hash": "c95a6ba",
+            "hash": "c95a6ba7",
             "emoji": "🔒",
             "message": "Der Plus-Button für neue Newsfeed-Beiträge erscheint nur noch, wenn man auch posten darf: Administratoren immer, alle anderen nur, wenn der Newsfeed für alle offen ist. Bisher ließ sich der Dialog trotzdem öffnen und erst beim Absenden kam die Absage",
             "date": "2026-09-16"
           },
           {
-            "hash": "fba737a",
+            "hash": "fba737a4",
             "emoji": "🔒",
             "message": "Ein schreibgeschütztes Formular sagt jetzt deutlich, dass es schreibgeschützt ist — und wie man trotzdem eine eigene Fassung bekommt",
             "date": "2026-09-04"
           },
           {
-            "hash": "cd4f1ee",
+            "hash": "cd4f1ee3",
             "emoji": "🔒",
             "message": "Funktionsschalter, die nichts bewirken, lassen sich nicht mehr umlegen. Wer das Wissensmanagement nicht gebucht hat, konnte Interviews und Owly trotzdem anhaken — ein Häkchen, das aussieht wie eine Zusage und ins Leere lief. Der Bereich ist jetzt ausgegraut, die Schalter sind gesperrt, und eine kleine Markierung an der Überschrift sagt, woran es liegt",
             "date": "2026-08-16",
@@ -1117,13 +1041,13 @@
             ]
           },
           {
-            "hash": "86ca905",
+            "hash": "86ca9059",
             "emoji": "🔒",
             "message": "Die Lernorte-Verwaltung ist ab sofort ausschließlich Administratoren vorbehalten. Eine Ausbildungsleitung findet den Bereich weder im Menü noch über die direkte Adresse — dort greift jetzt die gewohnte Seite-nicht-gefunden-Meldung",
             "date": "2026-08-16"
           },
           {
-            "hash": "274d80a",
+            "hash": "274d80ad",
             "emoji": "🔒",
             "message": "Ablaufplanung: Zeilen ohne Bearbeitungsrecht read-only (kein Anlegen/Verschieben/Resize/Edit)",
             "date": "2026-07-09"
@@ -1131,13 +1055,13 @@
         ],
         "other": [
           {
-            "hash": "77962f1",
+            "hash": "77962f19",
             "emoji": "🗑️",
             "message": "Das Geschlecht ist auch im Backoffice verschwunden – auf den Nutzerkarten steht kein „männlich/weiblich/divers\" mehr",
             "date": "2026-09-21"
           },
           {
-            "hash": "e13d197",
+            "hash": "e13d1972",
             "emoji": "🔥",
             "message": "Aufräumen: Verwaiste Routen und tote Seiten entfernt",
             "date": "2026-07-15",
