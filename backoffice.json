@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-01T13:23:59.182Z",
+  "generatedAt": "2026-10-09T14:49:21.144Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,12 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "7852c83c",
+            "emoji": "✨",
+            "message": "Wissensmanagement-Fragebögen lassen sich jetzt aus ganzen Szenarien erzeugen: Statt nur einen Beruf einzutragen, beschreibst du einfach die Lage – etwa „Bruno geht in zwei Jahren in Rente, wir wollen sein Wissen für die Nachfolge sichern“ – und die KI stellt passende Fragen zu genau diesem Anlass, ohne Namen und direkt an die befragte Person gerichtet 🔢 Wie viele Fragen gezaubert werden, wählst du jetzt selbst: 5, 10, 15 oder 20",
+            "date": "2026-10-05"
+          },
           {
             "hash": "99e44434",
             "emoji": "✨",
@@ -407,42 +413,6 @@
             "emoji": "✨",
             "message": "ESG-/Nachhaltigkeitszertifikat: druckbare Zertifikat-Ansicht (als PDF speichern) mit belegten Umwelt-Kennzahlen (Papier, CO₂, Wasser, Energie) und Button in den Einstellungen",
             "date": "2026-07-05"
-          },
-          {
-            "hash": "dcce9424",
-            "emoji": "✨",
-            "message": "Auswertungen: Neue Ansicht \"Signatur-Verbrauch\" unter Kunden – Übersicht der digitalen Signaturen je Kunde nach Status, sortierbar und mit Zeitraum-Auswahl",
-            "date": "2026-07-02"
-          },
-          {
-            "hash": "95438a5f",
-            "emoji": "✨",
-            "message": "Wissensmanagement: Interviews als Mitarbeiter im Backoffice führen",
-            "date": "2026-07-01",
-            "description": [
-              "Neue Mitarbeitersicht 'Meine Interviews' (/meine-interviews): zugewiesene Interviews auflisten und im Frage-Loop beantworten (Intro → Fragen → Abschluss). Antwort per Sprachaufnahme (WAV im Browser); Texteingabe ist vorbereitet, aber hinter INTERVIEW_TEXT_INPUT_ENABLED deaktiviert, bis der AI-Dienst Text unterstützt.",
-              "Sichtbar für alle Rollen, gated auf CustomerFeature.KnowledgeManagement. Neue App-seitige Query-/Mutation-Hooks für /app/interviews/*."
-            ]
-          },
-          {
-            "hash": "944b3e02",
-            "emoji": "✨",
-            "message": "Interview erstellen: Fragen per KI aus einer Berufsgruppe generieren und unten anhängen",
-            "date": "2026-07-01",
-            "description": [
-              "Neues Berufsgruppe-Feld und Generieren-Button; API-Schema aktualisiert."
-            ]
-          },
-          {
-            "hash": "e60b6e44",
-            "emoji": "✨",
-            "message": "Newsfeed: Videos in Beiträgen (Backoffice)",
-            "date": "2026-06-24",
-            "description": [
-              "- Video statt Bilder per SAS-Upload (Video + Thumbnail), Entweder/Oder-Umschaltung im Verfassen-Dialog",
-              "- Video-Anzeige mit Thumbnail-Poster in Feed-Karte & Detailansicht",
-              "- Höhenstabile Media-Karte, Content-Feld nutzt vertikalen Platz"
-            ]
           }
         ],
         "fixes": [
@@ -631,41 +601,6 @@
             "emoji": "🐛",
             "message": "Seitenmenü: Navigation auf kleinen Displays scrollbar; Abmelden/Kundenwechsel bleiben immer erreichbar",
             "date": "2026-07-07"
-          },
-          {
-            "hash": "7999c809",
-            "emoji": "🐛",
-            "message": "Artikelübersicht: Kategorien ohne Gruppenzuordnung im Filter anzeigen und mitzählen",
-            "date": "2026-07-02",
-            "description": [
-              "Kategorien unzugewiesener Artikel erscheinen jetzt im Filter; bei Auswahl werden diese Artikel unter ihrer Kategorie angezeigt. Nicht mehr genutztes ArticleFilterPanel entfernt."
-            ]
-          },
-          {
-            "hash": "bb45856a",
-            "emoji": "🐛",
-            "message": "Fehlerprotokoll: technische Fehler endlich selbst einsehbar",
-            "date": "2026-06-30",
-            "description": [
-              "✨ Neuer Bereich „Fehlerprotokoll\" unter Einstellungen → Support: Tritt in der App ein Fehler auf (z. B. „Export fehlgeschlagen\"), wird er ab sofort automatisch festgehalten und ist dort einsehbar",
-              "📋 Mit „Alles kopieren\" lässt sich der komplette Fehler-Verlauf in einem Rutsch kopieren und direkt an den Support schicken – kein Suchen in technischen Browser-Menüs mehr",
-              "🧹 Unwichtige Warnungen werden ausgeblendet, damit nur echte Fehler in der Liste stehen",
-              "🔒 Sensible Daten wie Passwörter werden vor dem Speichern automatisch unkenntlich gemacht"
-            ]
-          },
-          {
-            "hash": "b6a2b8a3",
-            "emoji": "🐛",
-            "message": "Dialog: verirrtes window.close() in Button-Handlern entfernt",
-            "date": "2026-06-29",
-            "description": [
-              "Die Buttons in DialogPanel riefen neben ihrer Aktion ein globales close()",
-              "(= window.close()) auf. In direkt geöffneten Tabs ein No-Op, in einem per",
-              "Link (target=_blank) geöffneten Tab schloss es jedoch den kompletten Tab —",
-              "beim Kunden sichtbar als 'Absprung auf work-mate.de' nach Klick auf",
-              "Übernehmen. Der Dialog schliesst weiterhin korrekt ueber setIsOpen(false)",
-              "im Aufrufer."
-            ]
           }
         ],
         "refactors": [
@@ -713,12 +648,6 @@
               "- ApprenticeNameCell von td auf div; Wochenend-Kompression entfaellt",
               "- Spec + Implementierungsplan ergaenzt"
             ]
-          },
-          {
-            "hash": "4b2d75f2",
-            "emoji": "♻️",
-            "message": "Release mail script adapted to multiple reciepients",
-            "date": "2026-06-24"
           }
         ],
         "styles": [
@@ -934,15 +863,6 @@
               "Gruppen-Header (z-50) < TimeAxis (z-60) — Zeilen/Balken scrollen nicht mehr",
               "ueber die Header"
             ]
-          },
-          {
-            "hash": "965a59ed",
-            "emoji": "💄",
-            "message": "Meine Interviews: warmes Studio-Redesign (Fullscreen, Live-Waveform, Erklär-Header)",
-            "date": "2026-07-02",
-            "description": [
-              "Die Mitarbeiter-Interviewsicht wird eine immersive, motivierende 'Aufnahme-Studio'-Bühne statt blanker Formularoptik: atmender Mikrofon-Puls mit echter Live-Waveform aus dem Mikrofonpegel, Frage in Fraunces, warme Intro- und Feier-Szene, Chapter-Fortschritt. Booth füllt die Content-Fläche auf volle Höhe (Höhen-Kette im FullLayout durchgereicht). Neuer Erklär-Header auf der Übersicht ('Dein Wissen. Nachhaltig gesichert.', 'So funktioniert's'). Dev-only Debug-Skip zum Abschluss (nicht im Prod-Build)."
-            ]
           }
         ],
         "tests": [
@@ -1009,12 +929,6 @@
               "👥 In der Nutzerverwaltung stehen nur noch die Personenkreise zur Auswahl, die es beim Kunden gibt. Ein Kunde ohne Azubis sah bisher trotzdem einen Azubi-Reiter, der immer leer blieb. Mit gebuchtem Wissensmanagement bleiben die Mitarbeiter sichtbar — sonst fände man seine Wissensträger nicht mehr",
               "🎛️ Die Kundenpflege bietet jetzt die Schalter, die bisher fehlten: Videos, Noten, Interviews und Owly lassen sich einzeln an- und abschalten. Das stillgelegte Wissensmanagement-Häkchen ist aus der Funktionsliste verschwunden, weil es dort nichts mehr zu suchen hat"
             ]
-          },
-          {
-            "hash": "18feef24",
-            "emoji": "📝",
-            "message": "Wissensmanagement: Spec & Umsetzungsplan (Mitarbeitersicht)",
-            "date": "2026-07-01"
           }
         ],
         "security": [
