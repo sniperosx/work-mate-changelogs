@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-09T14:49:21.144Z",
+  "generatedAt": "2026-10-12T09:33:16.502Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -407,12 +407,6 @@
               "- Namensspalte & Achsen-Ecke horizontal fixiert",
               "- Tooltips: global genau einer offen, schliessen beim Scrollen (PlanningTooltip)"
             ]
-          },
-          {
-            "hash": "026d7dcf",
-            "emoji": "✨",
-            "message": "ESG-/Nachhaltigkeitszertifikat: druckbare Zertifikat-Ansicht (als PDF speichern) mit belegten Umwelt-Kennzahlen (Papier, CO₂, Wasser, Energie) und Button in den Einstellungen",
-            "date": "2026-07-05"
           }
         ],
         "fixes": [
@@ -595,12 +589,6 @@
             "emoji": "🐛",
             "message": "Azubi-Planung: Tages-Labels der Zeitachse als zentrierte Zweizeiler (kein Überlauf mehr)",
             "date": "2026-07-09"
-          },
-          {
-            "hash": "c38a7b8e",
-            "emoji": "🐛",
-            "message": "Seitenmenü: Navigation auf kleinen Displays scrollbar; Abmelden/Kundenwechsel bleiben immer erreichbar",
-            "date": "2026-07-07"
           }
         ],
         "refactors": [
@@ -631,26 +619,15 @@
             "emoji": "♻️",
             "message": "Übriggebliebenes",
             "date": "2026-07-27"
-          },
-          {
-            "hash": "ba1bf576",
-            "emoji": "⚡",
-            "message": "Azubi-Planung: Timeline auf performantes Balken-/Zoom-Modell umgebaut",
-            "date": "2026-07-08",
-            "description": [
-              "- Zelle-pro-Tag-Tabelle entfernt (DayCell/ApprenticeRow/OverviewCalendarHeader)",
-              "- Neue Bausteine: useTimeScale (Datum<->%, Zeit-Zoom Woche/Monat/Quartal),",
-              "TimeAxis, ScheduleBar/LaneTrack (ein Einsatz = ein absolutes Element),",
-              "TimelineLane",
-              "- Drag & Resize aufs %-Modell neu verdrahtet; dateTo inklusive (Ein-Tages-",
-              "Einsaetze sichtbar)",
-              "- Schichtmodell-Basis: useLayeredEntries (Lernort-Basis vs. School/Event-Overlays)",
-              "- ApprenticeNameCell von td auf div; Wochenend-Kompression entfaellt",
-              "- Spec + Implementierungsplan ergaenzt"
-            ]
           }
         ],
         "styles": [
+          {
+            "hash": "eaba2766",
+            "emoji": "🎨",
+            "message": "Die Schulfächer im Backoffice haben ein neues Gesicht: Links die Kategorien wie Ordner, rechts die Fächer als große Kacheln – man sieht immer genau einen Ausbildungsberuf auf einmal 🧹 Aufräumen leicht gemacht: Mehrere Fächer oder gleich eine ganze Kategorie per Häkchen auswählen und in einem Rutsch löschen. Fächer, zu denen schon Noten eingetragen sind, bleiben stehen und werden beim Namen genannt 🖼️ Beim Anlegen und Bearbeiten lässt sich jetzt das Icon des Fachs aussuchen – Schluss mit dem ewigen Doktorhut 🏷️ Die Kategorie wählt man per Klick aus den vorhandenen, statt sie jedes Mal neu einzutippen ⚠️ Fächer, die noch keiner Gruppe zugewiesen sind, fallen sofort auf",
+            "date": "2026-10-12"
+          },
           {
             "hash": "3cb4db77",
             "emoji": "🎨",
@@ -889,6 +866,12 @@
           }
         ],
         "docs": [
+          {
+            "hash": "a68f3b6f",
+            "emoji": "📝",
+            "message": "Newsfeed-Beiträge lassen sich jetzt als Entwurf speichern – in der App und im Backoffice. Bild fehlt noch, Text ist noch nicht abgestimmt? Einfach zwischenspeichern und später fertigstellen 🔒 Entwürfe sieht nur, wer sie geschrieben hat – niemand sonst, auch kein Admin 🚀 Erst beim Veröffentlichen erscheint der Beitrag im Feed, ganz oben und mit Benachrichtigung an alle 🛟 Wer einen angefangenen Beitrag schließt, wird vorher gefragt, statt ihn still zu verlieren 📌 Nebenbei: „Oben anpinnen“ sehen im Backoffice nur noch Admins",
+            "date": "2026-10-10"
+          },
           {
             "hash": "ee15730b",
             "emoji": "📝",
