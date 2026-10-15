@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-12T09:33:16.502Z",
+  "generatedAt": "2026-10-15T09:31:37.029Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -356,57 +356,6 @@
             "emoji": "✨",
             "message": "Ablaufplanung: Lernort-Legende zeigt nur eigene Lernorte (außer Admin/Ausbildungsleitung)",
             "date": "2026-07-09"
-          },
-          {
-            "hash": "7527ece1",
-            "emoji": "✨",
-            "message": "Azubi-Detail: Ausbildungsleitung (Voller-Zugriff-Badge) + read-only Ausbilder-Liste aus Lernorten",
-            "date": "2026-07-09"
-          },
-          {
-            "hash": "dfea3447",
-            "emoji": "✨",
-            "message": "Wissensmanagement-Dashboard: KI-Ansichten im Backoffice (Phase 2)",
-            "date": "2026-07-09",
-            "description": [
-              "Ersetzt die Mock-Tabs unter /wissensmanagement durch echte, KI-gestützte",
-              "Ansichten. Dashboard rendert die Backend-Auswertung (KPIs, Overview, Charts,",
-              "Sektionen, Question-Insights, Meta) plus Prompt-Box gegen die DB; Content-Hub",
-              "generiert echten KI-Content mit Themenvorschlägen aus den Insights.",
-              "- Query-Hooks: useKnowledgeInsightsQuery (+refresh), useKnowledgeAskMutation,",
-              "useKnowledgeContentGenerateMutation (customerId-Header, 180s-Timeout)",
-              "- Charts via recharts (Top-Themen, Confidence-Donut, Risiko-Cluster)",
-              "- Generisches QuoteCard-Atom + DashboardCard/DashboardSection/CollapsibleRow",
-              "- DashboardSingleStatCell um optionales icon/trend erweitert",
-              "- QueryStateContainer.skipRefetchError: Refresh-Fehler wischt Dashboard nicht",
-              "- RichTextEditor: Link-Öffnung mit http/https/mailto-Allowlist",
-              "- api.ts via generate:schema:dev regeneriert (analysisMeta typisiert)",
-              "- Feature-Doku (Plan/Spec/Golden-Master-Referenz) unter docs/superpowers"
-            ]
-          },
-          {
-            "hash": "65a00df2",
-            "emoji": "✨",
-            "message": "Azubi-Planung: Legende als Overlay per Header-Button; Filter-Dropdowns über Timeline-Header",
-            "date": "2026-07-09"
-          },
-          {
-            "hash": "caaab233",
-            "emoji": "✨",
-            "message": "Azubi-Planung: Schichtmodell, horizontales Scrollen & Sticky-Labels",
-            "date": "2026-07-09",
-            "description": [
-              "- Schichtmodell: School/Prüfungen als non-destruktive Overlays über der",
-              "durchlaufenden Lernort-Basis (OverlayBar), Events als gestapelte Pins",
-              "(EventMarker); Löschen eines Overlays gibt die Basis automatisch frei",
-              "- Timeline auf Feste-Dichte-Modell umgestellt: feste Pixel-pro-Tag je Zoom,",
-              "horizontal scrollbarer Track über den gesamten Zeitraum, Tagesraster in der",
-              "Wochenansicht (Raster als CSS-Gradient statt per-Tag-DOM)",
-              "- Sticky-Labels: Balkentitel bleibt beim Horizontal-Scrollen neben der",
-              "Namensspalte lesbar, solange der Balken dort liegt",
-              "- Namensspalte & Achsen-Ecke horizontal fixiert",
-              "- Tooltips: global genau einer offen, schliessen beim Scrollen (PlanningTooltip)"
-            ]
           }
         ],
         "fixes": [
@@ -582,12 +531,6 @@
             "hash": "4e853d0a",
             "emoji": "🐛",
             "message": "Lernort-Auslastung zeigt Ausbildern nur eigene Lernorte; Planungs-Legende wieder vollständig",
-            "date": "2026-07-09"
-          },
-          {
-            "hash": "d672a797",
-            "emoji": "🐛",
-            "message": "Azubi-Planung: Tages-Labels der Zeitachse als zentrierte Zweizeiler (kein Überlauf mehr)",
             "date": "2026-07-09"
           }
         ],
@@ -818,28 +761,6 @@
             "emoji": "💄",
             "message": "Azubi-Planung: Termine als reguläre Balken (violett + Icon), im Lane-Raster gestapelt",
             "date": "2026-07-10"
-          },
-          {
-            "hash": "93c0e72d",
-            "emoji": "💄",
-            "message": "Azubi-Detail: Ausbilder-Liste konsekutiv gruppiert (von–bis) + Zugriffs-Pill; Ausbildungsleitung mit Empty-State & eigenem Button-Label",
-            "date": "2026-07-09"
-          },
-          {
-            "hash": "9fff408b",
-            "emoji": "💄",
-            "message": "Azubi-Planung: Gruppen-Header vollbreit, gepinnt & sauber geschichtet",
-            "date": "2026-07-09",
-            "description": [
-              "- Gruppen-Header als vollbreites, klickbares Banner (kein Zuschneiden des",
-              "Namens mehr auf die Namensspalten-Breite); Chevron/Akzent/Zähler mit fester",
-              "Groesse, nur der Name schrumpft (einheitliche Kopfzeilen)",
-              "- Chevron + Name bleiben beim Horizontal-Scrollen links gepinnt (sticky auf dem",
-              "schmalen Inhalt statt auf dem vollbreiten Button)",
-              "- z-index-Hierarchie vereinheitlicht: Lane-Inhalt < Namensspalte (z-40) <",
-              "Gruppen-Header (z-50) < TimeAxis (z-60) — Zeilen/Balken scrollen nicht mehr",
-              "ueber die Header"
-            ]
           }
         ],
         "tests": [
@@ -942,12 +863,6 @@
             "emoji": "🔒",
             "message": "Die Lernorte-Verwaltung ist ab sofort ausschließlich Administratoren vorbehalten. Eine Ausbildungsleitung findet den Bereich weder im Menü noch über die direkte Adresse — dort greift jetzt die gewohnte Seite-nicht-gefunden-Meldung",
             "date": "2026-08-16"
-          },
-          {
-            "hash": "274d80ad",
-            "emoji": "🔒",
-            "message": "Ablaufplanung: Zeilen ohne Bearbeitungsrecht read-only (kein Anlegen/Verschieben/Resize/Edit)",
-            "date": "2026-07-09"
           }
         ],
         "other": [
