@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-15T09:31:37.029Z",
+  "generatedAt": "2026-10-15T10:27:36.819Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -350,12 +350,6 @@
             "description": [
               "♻️ Die feste „Highlights\"-Kategorie entfällt – Highlight-Beiträge erscheinen in einer eigenen Übersicht und bleiben zusätzlich in ihrer normalen Kategorie. Kategorien sind jetzt alle frei bearbeitbar."
             ]
-          },
-          {
-            "hash": "2eb4d619",
-            "emoji": "✨",
-            "message": "Ablaufplanung: Lernort-Legende zeigt nur eigene Lernorte (außer Admin/Ausbildungsleitung)",
-            "date": "2026-07-09"
           }
         ],
         "fixes": [
