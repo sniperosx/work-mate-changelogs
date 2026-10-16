@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-15T10:27:36.819Z",
+  "generatedAt": "2026-10-16T09:35:20.257Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -335,21 +335,6 @@
             "emoji": "✨",
             "message": "Ablaufplanung: parallele Termine vertikal gestapelt (dynamische Zeilenhöhe), saubere Serien-Pills, Wiederhol-Icon in den Tooltip",
             "date": "2026-07-09"
-          },
-          {
-            "hash": "2e0e527c",
-            "emoji": "✨",
-            "message": "Noten für Ausbildungsleiter freigegeben (nicht mehr admin-exklusiv); auf eigene Azubis gescopet, Menü/Tab nur bei bestehendem Recht",
-            "date": "2026-07-09"
-          },
-          {
-            "hash": "2bebd786",
-            "emoji": "✨",
-            "message": "Beiträge: Highlights lassen sich jetzt per Schalter „Als Highlight anzeigen\" direkt am Beitrag setzen",
-            "date": "2026-07-09",
-            "description": [
-              "♻️ Die feste „Highlights\"-Kategorie entfällt – Highlight-Beiträge erscheinen in einer eigenen Übersicht und bleiben zusätzlich in ihrer normalen Kategorie. Kategorien sind jetzt alle frei bearbeitbar."
-            ]
           }
         ],
         "fixes": [
