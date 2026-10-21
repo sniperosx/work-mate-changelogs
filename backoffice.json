@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-16T09:35:20.257Z",
+  "generatedAt": "2026-10-21T07:59:33.474Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -311,30 +311,6 @@
               "Monats-Trennlinie endet an der Band-Grenze, sodass sie die KW-Labels nicht mehr",
               "durchschneidet."
             ]
-          },
-          {
-            "hash": "29cfa445",
-            "emoji": "✨",
-            "message": "Azubi-Planung: Ferien & Feiertage als farbiges Overlay mit Bundesland-Picker",
-            "date": "2026-07-13"
-          },
-          {
-            "hash": "b4a68c58",
-            "emoji": "✨",
-            "message": "Wissensartikel: Inhaltsbausteine per Drag & Drop umsortierbar",
-            "date": "2026-07-10"
-          },
-          {
-            "hash": "25ad1812",
-            "emoji": "✨",
-            "message": "Wissensartikel: Inhaltsbausteine per Drag & Drop umsortierbar",
-            "date": "2026-07-10"
-          },
-          {
-            "hash": "d4922313",
-            "emoji": "✨",
-            "message": "Ablaufplanung: parallele Termine vertikal gestapelt (dynamische Zeilenhöhe), saubere Serien-Pills, Wiederhol-Icon in den Tooltip",
-            "date": "2026-07-09"
           }
         ],
         "fixes": [
@@ -493,24 +469,6 @@
             "emoji": "🐛",
             "message": "Umfragen: Falschen Untertitel im Frage-Dialog korrigiert",
             "date": "2026-07-13"
-          },
-          {
-            "hash": "61f40372",
-            "emoji": "🐛",
-            "message": "Azubi-Planung: Fehlermeldung im Termin-Dialog wird beim Schließen zurückgesetzt",
-            "date": "2026-07-13"
-          },
-          {
-            "hash": "ca54a830",
-            "emoji": "🐛",
-            "message": "Azubi-Planung: Lernort-Resize öffnet nicht mehr versehentlich den Bearbeiten-Dialog",
-            "date": "2026-07-13"
-          },
-          {
-            "hash": "4e853d0a",
-            "emoji": "🐛",
-            "message": "Lernort-Auslastung zeigt Ausbildern nur eigene Lernorte; Planungs-Legende wieder vollständig",
-            "date": "2026-07-09"
           }
         ],
         "refactors": [
@@ -734,12 +692,6 @@
               "jetzt das Unternehmenslogo anstelle des nicht mehr vorhandenen Profilbilds; ist",
               "kein Name hinterlegt, erscheint der Hinweis \"Gelöschter Mitarbeiter\"."
             ]
-          },
-          {
-            "hash": "1ef41d04",
-            "emoji": "💄",
-            "message": "Azubi-Planung: Termine als reguläre Balken (violett + Icon), im Lane-Raster gestapelt",
-            "date": "2026-07-10"
           }
         ],
         "tests": [
