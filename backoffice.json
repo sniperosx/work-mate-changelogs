@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-27T08:55:21.700Z",
+  "generatedAt": "2026-10-27T09:38:51.035Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -188,36 +188,6 @@
             "emoji": "✨",
             "message": "Wissensmanagement: Interview-Zusammenfassung per KI auf der Session-Detailseite — Content-Hub entfernt",
             "date": "2026-07-16"
-          },
-          {
-            "hash": "d99e68f8",
-            "emoji": "✨",
-            "message": "Lernortauslastung: Auf das Timeline-Modell der Ablaufplanung gehoben",
-            "date": "2026-07-15",
-            "description": [
-              "Die Auslastung ist die Transposition der Ablaufplanung: dieselben Einträge,",
-              "nur nach Lernort statt nach Azubi gruppiert. Zeile = Lernort, Balken = Azubi.",
-              "Dieselbe Datenquelle, keine neuen Endpunkte.",
-              "Geteilte Bausteine nach src/views/trainee/shared/timeline/ gezogen und über",
-              "rowKey/label/groups generisch gemacht (LaneRow, TimelineShell); ScheduleBar",
-              "nimmt resolve/renderTooltip als Injektion. TimelineLane und",
-              "ApprenticePlanningCalendar bleiben als dünne Wrapper mit unveränderter",
-              "Prop-Signatur, die Ablaufplanung verhält sich damit identisch.",
-              "Neu auf der Auslastung: Zoom Woche/Monat/Quartal statt Slider, Zeitachse mit",
-              "KW-Leiste, Ferien-Overlay mit Bundesland-Picker, Lane-Stacking, gepinnte",
-              "Gruppen-Header nach Tag, Sticky-Labels, Tag-/Lernort-Filter, Legende.",
-              "Erstmals echte Auslastung: Kapazitäts-Badge aus zeitgleicher Belegung gegen",
-              "die gepflegte Lehrplatzzahl, rote Tönung bei Überbuchung. Bisher wurde die",
-              "Lehrplatzzahl auf der Seite nirgends gelesen.",
-              "Bugfixes nebenbei:",
-              "- Wochenend-Toggle entfernt (ohne Entsprechung im lückenlos kalendarischen",
-              "Modell) und damit sein Fehler: Balken, die an einem Sa/So begannen oder",
-              "endeten, verschwanden komplett.",
-              "- Event-Bus-Handler registrierte sich bei jedem Render neu.",
-              "- useLearningPlacesQuery hatte keine customerId im Query-Key: nach einer",
-              "Delegation lieferte der Cache die Lernorte des vorherigen Kunden.",
-              "Aufgeräumt: 18 abgelöste/tote Dateien entfernt (~1.900 Zeilen)."
-            ]
           }
         ],
         "fixes": [
