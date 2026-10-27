@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-21T07:59:33.474Z",
+  "generatedAt": "2026-10-27T08:55:21.700Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -218,99 +218,6 @@
               "Delegation lieferte der Cache die Lernorte des vorherigen Kunden.",
               "Aufgeräumt: 18 abgelöste/tote Dateien entfernt (~1.900 Zeilen)."
             ]
-          },
-          {
-            "hash": "bc797ffe",
-            "emoji": "✨",
-            "message": "Navigation: Zurück-Button im Seitenkopf aller Unterseiten",
-            "date": "2026-07-15",
-            "description": [
-              "Der Seitenkopf zeigt den Button automatisch, sobald die Seite nicht direkt in der Seitenleiste verlinkt ist. Die Erkennung liest die Menü-Konfiguration, deckt sich damit von selbst mit der sichtbaren Navigation und braucht auf den Seiten keinerlei Zutun.",
-              "Die drei kopierten Zurück-Blöcke der Leseseiten nutzen jetzt dieselbe Komponente. Der Lektions-Player behält über die to-Prop sein festes Ziel zum Kapitel, weil History-zurück dort auf der vorherigen Lektion landen würde. Im CSV-Import entfällt der doppelte Rückweg im Fuß, ebenso der tote Zurück-Button der Fragestrecken-Auswertung, der mangels Tabs nie gerendert wurde."
-            ]
-          },
-          {
-            "hash": "7e4cac6e",
-            "emoji": "✨",
-            "message": "Einstellungen: Nach Modul gegliedert, Lernorte und Schulfächer umgezogen",
-            "date": "2026-07-15",
-            "description": [
-              "Die Einstellungen haben jetzt eine Tabbar, die nach Produkt-Modul gliedert.",
-              "Ein Modul-Tab erscheint nur, wenn das Modul beim Kunden gebucht ist; bleibt",
-              "nur \"Allgemein\" übrig, entfällt die Leiste ganz.",
-              "Lernorte und Schulfächer sind aus der Ausbildungs-Ansicht in den neuen Tab",
-              "\"Ausbildung\" gewandert und dort eigenständige Unterseiten mit eigenem",
-              "Seitenkopf. Die Ausbildungs-Importe liegen jetzt ebenfalls beim Modul statt",
-              "im allgemeinen Import-Block. Die alten Pfade leiten auf die neuen um.",
-              "Die Paket-Übersicht steht nun über der Tabbar und ist deutlich kompakter:",
-              "Fortschrittsbalken und Abschlusszeile sind entfallen, ihre Aussage steckt",
-              "schon im Assistenten-Zähler und in den Modul-Pills."
-            ]
-          },
-          {
-            "hash": "f56ef0c2",
-            "emoji": "✨",
-            "message": "Interviews: Antwort wahlweise tippen oder aufnehmen",
-            "date": "2026-07-15",
-            "description": [
-              "Beim Beantworten eines Interviews lässt sich jetzt frei zwischen Texteingabe und",
-              "Sprachaufnahme wechseln. Wer kein Mikrofon zur Hand hat oder in einer lauten",
-              "Umgebung sitzt, kann seine Antwort einfach schreiben.",
-              "💄 Interview-Auswertung zeigt die Art der Antwort",
-              "In der Auswertung ist an jeder Antwort erkennbar, ob sie getippt oder gesprochen",
-              "wurde."
-            ]
-          },
-          {
-            "hash": "4ab432c8",
-            "emoji": "✨",
-            "message": "Wissensmanagement: Interviews einzeln löschen",
-            "date": "2026-07-14",
-            "description": [
-              "In der Interview-Übersicht lassen sich einzelne Interviews entfernen: noch nicht",
-              "begonnene sowie Interviews ehemaliger Mitarbeiter. Bei einem abgeschlossenen",
-              "Interview weist die Rückfrage ausdrücklich darauf hin, dass das enthaltene Wissen",
-              "unwiderruflich verloren geht. Ist ein Interview nicht löschbar, erklärt ein",
-              "Hinweis am Button den Grund.",
-              "🐛 Wissensmanagement: Spalte \"Fragebogen\" bleibt nicht mehr leer",
-              "In der Interview-Übersicht wurde in der Spalte \"Fragebogen\" nie ein Name angezeigt.",
-              "📄 Specs"
-            ]
-          },
-          {
-            "hash": "1eecc7b7",
-            "emoji": "✨",
-            "message": "Azubi-Planung: Mehrfachzuweisung von Azubis bei Terminanlage",
-            "date": "2026-07-14",
-            "description": [
-              "Beim Anlegen eines Einzeltermins können jetzt mehrere Azubis in einem Vorgang gewählt werden (Bulk-Anlage), analog zum Serientermin. Zuweisung und Wiederholen liegen in getrennten, symmetrischen Boxen; die Zuweisung ist standardmäßig eingeklappt (Zugewiesen an aktuellen Azubi) und wird per Schalter Mehrfachzuweisung aufgeklappt. Zusätzlich: Lernort-Selektor zeigt Bereits besuchte Lernorte nun oberhalb der verfügbaren."
-            ]
-          },
-          {
-            "hash": "8b08122f",
-            "emoji": "✨",
-            "message": "Azubi-Planung: Monatsraster in Wochen- und Quartalsansicht",
-            "date": "2026-07-14",
-            "description": [
-              "Die Zeitachse gliedert jetzt in jeder Zoomstufe zweizeilig — grobe",
-              "Einheit oben, feines Raster darunter: Woche = Monat/Tage,",
-              "Monat = Monat/KW, Quartal = Quartal/Monate. Dazu benennt der Tick statt",
-              "seiner Einheit (variant) sein Header-Band (band), da der Monat je nach",
-              "Zoomstufe oben oder unten steht. Die Tages-Ticks der Wochenansicht sind",
-              "dafür einzeilig (\"Mo 06\"), sodass die Achsenhöhe unverändert bleibt."
-            ]
-          },
-          {
-            "hash": "1df7bd67",
-            "emoji": "✨",
-            "message": "Azubi-Planung: Kalenderwochen als KW-Leiste im Monats-Header",
-            "date": "2026-07-13",
-            "description": [
-              "Monats-Auflösung der Ablaufplanung zeigt jetzt zwei Header-Bänder: oben die",
-              "Monatsnamen, darunter eine gleichmäßige KW-Leiste mit Kalenderwochen-Ticks. Die",
-              "Monats-Trennlinie endet an der Band-Grenze, sodass sie die KW-Labels nicht mehr",
-              "durchschneidet."
-            ]
           }
         ],
         "fixes": [
@@ -408,67 +315,6 @@
               "Korrektur, nicht ein neuer Fehler. Noten ohne Wertung fließen außerdem",
               "nicht mehr in den Schnitt ein; bisher zogen sie ihn fälschlich nach oben."
             ]
-          },
-          {
-            "hash": "8eea568c",
-            "emoji": "🐛",
-            "message": "Reflexionsfragen: Speichern führte auf die Fehlerseite",
-            "date": "2026-07-15",
-            "description": [
-              "Nach dem Speichern sprang die Anwendung auf eine Adresse, die es nicht gibt, und landete dadurch auf der Fehlerseite. Sie führt jetzt zurück auf den Reiter, auf dem die Reflexionsfragen tatsächlich liegen."
-            ]
-          },
-          {
-            "hash": "0b53ba8a",
-            "emoji": "🐛",
-            "message": "Scrolling: Springenden Seiteninhalt beim Ein- und Ausblenden der Scrollbar verhindert",
-            "date": "2026-07-15",
-            "description": [
-              "Wechselte eine Seite zwischen scrollbarem und nicht scrollbarem Inhalt,",
-              "sprang der gesamte Inhalt um die Breite der Scrollbar zur Seite. Ursache",
-              "war, dass die Scrollbar im Layout Platz beansprucht, sobald sie erscheint.",
-              "Der Platz wird jetzt dauerhaft freigehalten, in beiden Layouts. Die",
-              "Seitenleiste bleibt bewusst ausgenommen, ihr Inhalt wechselt nicht."
-            ]
-          },
-          {
-            "hash": "64301bbe",
-            "emoji": "🐛",
-            "message": "Scrolling: doppelte vertikale Scrollebene zentral entfernt",
-            "date": "2026-07-15",
-            "description": [
-              "Das Dokument und der Seitencontainer haben beide unabhaengig voneinander",
-              "eine eigene Scrollebene aufgemacht. Sichtbar war die des Dokuments, gescrollt",
-              "wurde aber im Container mit versteckter Scrollbar -- daher der stehende",
-              "Scrollbalken, das Haken zwischen den Ebenen und das Nachscrollen am Ende.",
-              "- Dokument-Scroll abgeschaltet (html/body/#root/.wm-app-root), min-height:100vh",
-              "entfernt. Der Wrapper des ColorThemeProvider traegt die Hoehe jetzt ueber eine",
-              "eigene Klasse statt ueber den entfernten #root > div Selektor.",
-              "- Scrollcontainer sitzt nur noch einmal im FullLayout. WMPageContainer ist damit",
-              "reiner Breiten-/Abstandsrahmen ohne Hoehenanspruch, sodass Seiten keine",
-              "durchgehende Hoehenkette mehr brauchen.",
-              "- Einheitliche, dezente Scrollbar (.wm-scrollbar) statt versteckter Scrollbar.",
-              "- Login-/Fehlerseiten und ESG-Report bekommen einen eigenen Scrollbereich,",
-              "Druckansichten per @media print wieder den natuerlichen Dokumentfluss."
-            ]
-          },
-          {
-            "hash": "7df95572",
-            "emoji": "🐛",
-            "message": "Azubi-Planung: Ferien-/Feiertags-Marker als eigene Zeile in der Zeitachse",
-            "date": "2026-07-14",
-            "description": [
-              "Die Marker-Chips klebten als sticky Rail auf derselben Höhe wie die",
-              "Gruppen-Header und liefen dadurch über deren Titel. Sie sitzen jetzt in",
-              "einem eigenen Band unterhalb der KW-Leiste, sodass sich beide den Platz",
-              "nicht mehr teilen."
-            ]
-          },
-          {
-            "hash": "6575e6bf",
-            "emoji": "🐛",
-            "message": "Umfragen: Falschen Untertitel im Frage-Dialog korrigiert",
-            "date": "2026-07-13"
           }
         ],
         "refactors": [
@@ -665,33 +511,6 @@
             "emoji": "💄",
             "message": "Rechte: Ausbilder-Beschreibung verständlicher und als Aufzählung strukturiert",
             "date": "2026-07-16"
-          },
-          {
-            "hash": "7dc6b3a9",
-            "emoji": "💄",
-            "message": "Wissensmanagement: Dashboard auf die wesentlichen Kennzahlen reduziert",
-            "date": "2026-07-15",
-            "description": [
-              "Fünf Kacheln in einer Zeile: Interviews, Abgeschlossene, Offene,",
-              "In Bearbeitung, Antworten. Sie erscheinen jetzt schon, sobald überhaupt",
-              "Interviews existieren — bisher blieb die Seite leer, bis das erste",
-              "abgeschlossen war. Dafür sind Kennzahlen und KI-Auswertung in der",
-              "Sichtbarkeit getrennt.",
-              "Das Diagramm \"Klarheit der Antworten\" entfällt, da es sich aus den",
-              "gestrichenen Kennzahlen ableitete. Das Promptfeld heißt jetzt",
-              "\"Frage deine Wissensdatenbank\" und sitzt direkt unter den Diagrammen."
-            ]
-          },
-          {
-            "hash": "fe48bee3",
-            "emoji": "💄",
-            "message": "Wissensmanagement: Interview-Übersicht aufgeräumt",
-            "date": "2026-07-14",
-            "description": [
-              "Die Spalte \"Fortschritt\" ist entfallen. Interviews ehemaliger Mitarbeiter zeigen",
-              "jetzt das Unternehmenslogo anstelle des nicht mehr vorhandenen Profilbilds; ist",
-              "kein Name hinterlegt, erscheint der Hinweis \"Gelöschter Mitarbeiter\"."
-            ]
           }
         ],
         "tests": [
@@ -768,6 +587,12 @@
         ],
         "security": [
           {
+            "hash": "35b4b2ce",
+            "emoji": "🔒",
+            "message": "Neuer Abschnitt „Lizenz“ in den Vertragsdaten eines Kunden: Kunde mit einem Klick deaktivieren (mit Sicherheitsabfrage) und jederzeit wieder freischalten 🏷️ Deaktivierte Kunden tragen in der Kundenliste ein rotes „Deaktiviert“-Badge 🪪 Wer zu einem deaktivierten Kunden gehört, landet statt im Fehlerchaos auf einer schicken Seite „Lizenz abgelaufen“ – egal ob beim Anmelden oder mitten in der Arbeit",
+            "date": "2026-10-25"
+          },
+          {
             "hash": "c95a6ba7",
             "emoji": "🔒",
             "message": "Der Plus-Button für neue Newsfeed-Beiträge erscheint nur noch, wenn man auch posten darf: Administratoren immer, alle anderen nur, wenn der Newsfeed für alle offen ist. Bisher ließ sich der Dialog trotzdem öffnen und erst beim Absenden kam die Absage",
@@ -802,17 +627,6 @@
             "emoji": "🗑️",
             "message": "Das Geschlecht ist auch im Backoffice verschwunden – auf den Nutzerkarten steht kein „männlich/weiblich/divers\" mehr",
             "date": "2026-09-21"
-          },
-          {
-            "hash": "e13d1972",
-            "emoji": "🔥",
-            "message": "Aufräumen: Verwaiste Routen und tote Seiten entfernt",
-            "date": "2026-07-15",
-            "description": [
-              "Fünf Adressen waren aus der Anwendung heraus nicht mehr erreichbar. Vier davon zeigten auf Ansichten, die es weiterhin als Reiter im Superadmin-Bereich gibt — dort fällt nur die doppelte Adresse weg, die Ansicht bleibt. Die alte Wissensmanagement-Übersicht samt ihrer Detailseite ist der abgelöste Vorgänger der heutigen Reiter-Struktur und fällt ganz.",
-              "Ebenfalls entfernt: eine Schaltfläche für Schulungsvideos, die nirgends eingebunden war, eine Einstellungsseite ohne Aufrufer und ein ungenutztes Feld in der Menü-Struktur.",
-              "Die Adressen zum Anlegen und Bearbeiten von Reflexionsfragen bleiben bewusst bestehen — nur die Listenansicht darüber war verwaist."
-            ]
           }
         ]
       }
