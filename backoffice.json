@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-30T14:05:30.183Z",
+  "generatedAt": "2026-10-30T14:10:29.095Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -148,20 +148,6 @@
               "Frage stellen mit „denkt nach\"-Anzeige und Markdown-Antwort, Vorschlagsfragen",
               "im leeren Chat. Nutzt die vorhandenen /ai.mate/owly-Endpoints und bestehende",
               "Chat-Bausteine."
-            ]
-          },
-          {
-            "hash": "2f1d8034",
-            "emoji": "✨",
-            "message": "Nummerierte Listen im Editor nutzbar + getrennte Aufzählungen bleiben getrennt",
-            "date": "2026-07-24",
-            "description": [
-              "Nummerierte Listen sichtbar gestylt und den Toolbar-Button eingeblendet. Zwei",
-              "durch eine Leerzeile getrennte gleichartige Listen verschmolzen bisher beim",
-              "Speichern zu einer durchlaufenden Nummerierung (in App und Editor). Ein",
-              "Export-Visitor erhält die Leerzeile als Trenner-Absatz (geschütztes Leerzeichen),",
-              "sodass die Aufzählungen in Editor, Backoffice und App getrennt bleiben und jede",
-              "wieder bei 1 startet."
             ]
           }
         ],
