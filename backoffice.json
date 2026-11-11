@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-10-30T14:10:29.095Z",
+  "generatedAt": "2026-11-11T10:58:01.372Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -136,18 +136,6 @@
               "- Menuepunkt \"Mein Profil\" aus Sidebar entfernt, sauber ins Topbar-User-Menu integriert",
               "- Initiale Route fuer App-User feature-basiert: Newsfeed -> Chats -> Profil",
               "- Inhaltsrahmen linksbuendig und einheitlich begrenzt; fixedHeight-Seiten (Chat/Owly) um Topbar-Hoehe korrigiert"
-            ]
-          },
-          {
-            "hash": "456885d4",
-            "emoji": "✨",
-            "message": "Owly-KI-Chat im Dashboard: eigene Seite für alle Nutzer",
-            "date": "2026-07-24",
-            "description": [
-              "Owly analog zur App als eigener, KI-gated Menüpunkt (/owly). Verlauf laden,",
-              "Frage stellen mit „denkt nach\"-Anzeige und Markdown-Antwort, Vorschlagsfragen",
-              "im leeren Chat. Nutzt die vorhandenen /ai.mate/owly-Endpoints und bestehende",
-              "Chat-Bausteine."
             ]
           }
         ],
