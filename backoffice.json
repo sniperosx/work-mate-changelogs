@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-11-11T10:58:01.372Z",
+  "generatedAt": "2026-11-18T09:27:56.093Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -21,6 +21,28 @@
       "date": null,
       "changes": {
         "features": [
+          {
+            "hash": "8cad41ac",
+            "emoji": "✨",
+            "message": "Wissen: Eine Suche für Artikel und Videos",
+            "date": "2026-11-09",
+            "description": [
+              "Das Suchfeld im Wissensbereich durchforstet jetzt Artikel und Videos",
+              "gleichzeitig. Es sitzt über den Reitern, egal ob ihr gerade bei",
+              "„Artikel“ oder „Videos“ seid, und zeigt alle Treffer gemischt nach",
+              "Relevanz. Ein Klick auf ein Video bringt euch direkt zur passenden",
+              "Lektion.",
+              "Auch die Mitarbeiter-Vorschau für Delegierte sucht mit: Ihr findet",
+              "genau die Videos, die die ausgewählte Person sieht. Der Satz",
+              "„durchsuchbar“ im Seitenkopf stimmt damit jetzt auch für Videos."
+            ]
+          },
+          {
+            "hash": "422698fa",
+            "emoji": "🎉",
+            "message": "Kollegen: Neue Kollegen gibt es jetzt auch im Dashboard – im eigenen Reiter „Neu dabei“ neben „Alle Kollegen“, die Neuesten zuerst und mit Startdatum, genau wie „Neue Gesichter“ in der App 💬 Ein Klick öffnet das Profil, eine Nachricht ist direkt geschrieben",
+            "date": "2026-11-02"
+          },
           {
             "hash": "6205df94",
             "emoji": "✨",
@@ -71,71 +93,6 @@
             "description": [
               "🔒 Bewusst getroffene Entscheidungen des Kunden bleiben unangetastet: Funktionen kommen ausschließlich in dem Moment dazu, in dem ein Modul neu eingeschaltet wird — nicht bei jedem Speichern. Was jemand absichtlich abgewählt hat, kommt also nicht heimlich zurück. Und beim Ausschalten eines Moduls wird nichts weggenommen, weil dieselbe Funktion oft zu mehreren gebuchten Modulen gehört",
               "💬 In beiden Masken steht jetzt ein kurzer Hinweis, der den Zusammenhang erklärt: Das Modul bestimmt, was enthalten ist, die Funktionsschalter dienen zum Abwählen"
-            ]
-          },
-          {
-            "hash": "af514a92",
-            "emoji": "✨",
-            "message": "Wissenspools: Ein Knopf lernt alle Pools auf einmal an, und die Übersicht zeigt dabei, woran jeder einzelne gerade ist. Bisher musste jeder Pool einzeln angestoßen werden — bei vielen Pools eine Klickstrecke. Der neue Sammelstart stößt sie nacheinander an, überspringt dabei alles, was ohnehin schon läuft, zeigt seinen Fortschritt im Knopf und meldet am Ende in einer einzigen Zusammenfassung, was gestartet wurde und was nicht. Wie beim einzelnen Anlernen bleibt die Bedienung Superadministratoren vorbehalten",
-            "date": "2026-08-06",
-            "description": [
-              "Die Statusanzeige unterscheidet jetzt drei Zustände statt einem: „In der Warteschlange\", „Wird gerade gelernt\" und „Lernen fehlgeschlagen\". Gerade beim Sammelstart ist das der Unterschied zwischen „es passiert nichts\" und „es ist nur noch nicht dran\"",
-              "Nachgefragt wird dabei nur noch jede Minute statt alle sieben Sekunden. Ein Lernvorgang dauert Minuten bis zu einer halben Stunde; der engere Takt hat lediglich das KI-System belastet, ohne dass jemand früher etwas anderes zu sehen bekam"
-            ]
-          },
-          {
-            "hash": "8250735c",
-            "emoji": "✨",
-            "message": "Changelogs: Plattform-Filter als Pill-Leiste, Release-Datum vorausgefüllt",
-            "date": "2026-07-27",
-            "description": [
-              "Die Changelog-Übersicht lässt sich jetzt über eine linksbündige Pill-Leiste nach Alle, Dashboard und App filtern; die Auswahl steht in der URL und übersteht Reload und Rücksprung aus dem Formular. Die Tabelle liegt dafür in einer gemeinsamen Komponente, leere Auswahlen zeigen einen Hinweis statt eines nackten Tabellenkopfs. Beim Anlegen ist das Release-Datum mit dem heutigen Tag vorbelegt."
-            ]
-          },
-          {
-            "hash": "b3c27fad",
-            "emoji": "✨",
-            "message": "Ablaufplanung: Schule liegt auf dem Lernort, Termin-Spur mit Schnellanlage",
-            "date": "2026-07-27",
-            "description": [
-              "Die Azubi-Zeile nutzt jetzt ein festes Spurmodell statt des generischen Stapelns: der Lernort läuft als Basis durch, die Schule liegt oben bündig darauf und bleibt flach, solange ein Lernort darunter liegt — ohne Lernort rendert sie auf voller Höhe. Darunter liegen Termin-Spuren mit einer freien Reserve-Spur, in der beim Überfahren ein Plus samt Datumsangabe erscheint und einen Termin an genau diesem Tag anlegt. Ein Klick auf die Basisfläche legt weiterhin einen Lernort an.",
-              "Die Lernortauslastung bleibt beim bisherigen Stapelmodell; beide Modelle laufen über denselben Zeitstrahl."
-            ]
-          },
-          {
-            "hash": "062b60e8",
-            "emoji": "✨",
-            "message": "Newsfeed-Beitrag als eigene Detailseite statt Overlay",
-            "date": "2026-07-24",
-            "description": [
-              "Beiträge öffnen sich auf einer eigenen, verlinkbaren Seite (Klick auf Bild,",
-              "Titel oder Kommentare) statt in einem Overlay; das Overlay entfällt komplett.",
-              "Newsfeed-Benachrichtigungen im Center verlinken jetzt direkt auf den Beitrag."
-            ]
-          },
-          {
-            "hash": "cfd4a225",
-            "emoji": "✨",
-            "message": "Artikel-Übersicht als zweispaltiges Karten-Grid",
-            "date": "2026-07-24",
-            "description": [
-              "Artikel je Kategorie werden im breiten Layout in zwei Spalten als Karten",
-              "dargestellt statt als einspaltige Liste; initial vier statt drei Artikel."
-            ]
-          },
-          {
-            "hash": "9810031a",
-            "emoji": "✨",
-            "message": "Nachrichtencenter im Dashboard: Topbar mit Glocken-Popover & eigener Vollansicht",
-            "date": "2026-07-24",
-            "description": [
-              "- Neue Topbar (voll breit) mit Glocken-Popover (kompakte Liste + Absprung) und User-Menü (Profil/Delegation/Abmelden), das aus der Sidebar hierher wandert",
-              "- Vollseite /meine-benachrichtigungen mit Infinite-Scroll und Vorschauen (Artikel-/Newsfeed-Titelbild, Chat-/Autor-Avatar) analog zur App",
-              "- Deeplinks nur wo im Dashboard sinnvoll: Artikel -> Leseansicht, Newsfeed -> Liste, Chat -> Chat; Umfrage/Kurs anzeige-only",
-              "- Superadmin sieht keine Glocke (kein 403-Polling)",
-              "- Menuepunkt \"Mein Profil\" aus Sidebar entfernt, sauber ins Topbar-User-Menu integriert",
-              "- Initiale Route fuer App-User feature-basiert: Newsfeed -> Chats -> Profil",
-              "- Inhaltsrahmen linksbuendig und einheitlich begrenzt; fixedHeight-Seiten (Chat/Owly) um Topbar-Hoehe korrigiert"
             ]
           }
         ],
@@ -201,60 +158,34 @@
               "🧹 Welche Phasen es bei einem Kunden gibt, entscheidet jetzt eine einzige Stelle statt drei. Anlagemaske, Phasenwechsel und Nutzerverwaltung fragen dieselbe Produktdefinition — sie können nicht mehr auseinanderlaufen",
               "🛟 Kein Knopf führt mehr in eine leere Pflichtauswahl: Die zusätzliche Führungsgruppe wird nur noch dort verlangt, wo der Kunde das Führungsmodul auch gebucht hat"
             ]
-          },
-          {
-            "hash": "72d9e399",
-            "emoji": "🐛",
-            "message": "Abmelden führt nicht mehr zu einer weissen Seite: Durch die neue Beobachter-Funktion wurde beim Abmelden noch auf Anmeldedaten zugegriffen, die es zu dem Zeitpunkt schon nicht mehr gab — die Anwendung brach dabei komplett ab. Betroffen war jede Abmeldung, bei Ausbildungsleitungen zusätzlich an einer zweiten Stelle",
-            "date": "2026-07-30"
-          },
-          {
-            "hash": "7d6ace6b",
-            "emoji": "🐛",
-            "message": "Wissensmanagement: Auswertung hängt nicht mehr im Ladezustand",
-            "date": "2026-07-28",
-            "description": [
-              "Der Insights-Call lief in den Axios-Default-Timeout von 2 Minuten, obwohl",
-              "der Backend-Client bis zu 5 Minuten rechnen darf (Server-Log: 499 nach",
-              "120s). react-query wiederholte den Timeout danach still dreimal, wodurch",
-              "die Seite ~8 Minuten im Ladescreen stand, ohne je einen Fehler zu zeigen.",
-              "- Timeout auf 5 Minuten für jeden Insights-Call, nicht nur bei refresh",
-              "- retry:false, damit ein Fehler sofort sichtbar wird statt nach Retries",
-              "- eigene Lade-/Fehlertexte inkl. separatem Hinweis bei Timeout"
-            ]
           }
         ],
         "refactors": [
+          {
+            "hash": "41449a63",
+            "emoji": "♻️",
+            "message": "E2E: Test-Admin mit Authenticator-App wird jetzt von mehreren Tests gemeinsam genutzt und sauber aufgeräumt",
+            "date": "2026-11-03"
+          },
           {
             "hash": "bab702d3",
             "emoji": "🔧",
             "message": "Die Auswahl im Fragen-Editor merkt sich jetzt, welche Frage gemeint ist, statt eine Kopie davon mitzuschleppen",
             "date": "2026-09-04"
-          },
-          {
-            "hash": "776dc53a",
-            "emoji": "⚡",
-            "message": "Chat-Unread-Polling entfernt, Notification-Center-Poller entschärft",
-            "date": "2026-07-28",
-            "description": [
-              "Das Backoffice hat dauerhaft alle 30 Sekunden /chats/unread-count abgefragt,",
-              "ungated und unabhängig davon, ob jemals ein Chat geöffnet wurde. Da das",
-              "Notification Center Chat-Ereignisse über NotificationCategory.Chat ohnehin",
-              "abdeckt, entfällt die Query samt der beiden Badge-Verwendungen in Sidebar",
-              "und Subitem-Tabs.",
-              "Der verbleibende Poller im Notification Center läuft jetzt alle 2 Minuten",
-              "statt alle 30 Sekunden und pausiert, solange das Fenster nicht fokussiert",
-              "ist. Die Rückkehr in den Tab lädt den Zähler ohnehin sofort neu."
-            ]
-          },
-          {
-            "hash": "4134e9c4",
-            "emoji": "♻️",
-            "message": "Übriggebliebenes",
-            "date": "2026-07-27"
           }
         ],
         "styles": [
+          {
+            "hash": "eb231cf2",
+            "emoji": "💄",
+            "message": "Dashboard: Abwesenheit im neuen Look – Status direkt am Avatar",
+            "date": "2026-11-06",
+            "description": [
+              "Das Abwesenheits-Banner im Chat sieht jetzt aus wie in der App: freundlicher Bernstein-Ton, die Vertretung mit Avatar und ein richtiger „Schreiben“-Knopf.",
+              "🟢 Oben am Avatar zeigt ein kleiner Punkt, ob du verfügbar (grün) oder abwesend (bernstein) bist – im Benutzermenü bringt dich die Status-Pill mit einem Klick zum Reiter „Abwesenheit“.",
+              "🗓️ Der Reiter „Abwesenheit“ nutzt jetzt dieselbe Datumsauswahl und dieselben Felder wie der Rest des Dashboards, sauber untereinander. Die Vertretung erscheint als hübsche Karte mit Bild und Team."
+            ]
+          },
           {
             "hash": "eaba2766",
             "emoji": "🎨",
@@ -307,91 +238,21 @@
             "description": [
               "🔍 Fehlt einer Frage die Fragestellung, der Feldname oder bei einer Auswahl die zweite Antwortmöglichkeit, wird das künftig als Hinweis gemeldet — ohne die Bearbeitung zu blockieren"
             ]
-          },
-          {
-            "hash": "b9b02af4",
-            "emoji": "🎨",
-            "message": "Vertragsdaten im Kundenbereich komplett überarbeitet. Die Maske stammte noch aus der alten Oberfläche und war der letzte Bereich der Kundenverwaltung, der nicht auf dem aktuellen Stand war. Sie ist jetzt in drei klare Abschnitte gegliedert: Status, Vertragsinformationen und Fristen",
-            "date": "2026-08-04",
-            "description": [
-              "🚦 Der Vertragsstatus ist keine reine Anzeige mehr, sondern anklickbar. Die fünf Stationen stehen als Kette nebeneinander — In Einrichtung, Inaktiv, Aktiv, Gekündigt, Archiviert — jede mit eigenem Symbol und eigener Farbe, verbunden durch Pfeile. Zum gewählten Status steht darunter, was er bedeutet",
-              "📆 Vertragsbeginn und Kündigungsdatum laufen über die aktuelle Datumsauswahl, Mindestlaufzeit über die gewohnte Auswahlliste",
-              "⏳ Bei den Fristen steht jetzt dabei, dass drei Monate vor der Verlängerung gekündigt werden muss. Fehlt der Vertragsbeginn, erscheint ein verständlicher Hinweis statt eines wortlosen \"Nicht verfügbar\"",
-              "🧹 Der Credits-Bereich ist verschwunden. Er zeigte drei fest einprogrammierte Zahlen, hinter denen nie Daten standen. Ebenso entfällt das Vertragspaket"
-            ]
-          },
-          {
-            "hash": "502a89b1",
-            "emoji": "🎨",
-            "message": "Superadmin-Bereiche: Pill-Leiste linksbündig statt zentriert",
-            "date": "2026-07-27",
-            "description": [
-              "Kundenübersicht, Konfiguration und System nutzen jetzt die linksbündige Pill-Control im Seitencontainer statt der am Viewport klebenden, zentrierten Variante. Da die Tab-Inhalte ihr Seiten-Padding selbst mitbringen, fluchten die Pills mit dem Inhalt; ohne Titel darüber bekommt die Pill-Zeile den fehlenden oberen Abstand ergänzt."
-            ]
-          },
-          {
-            "hash": "7d12b4e9",
-            "emoji": "🎨",
-            "message": "Benachrichtigungen: Tab-Leiste als linksbündige Pill-Control mit mehr Abstand zum Inhalt",
-            "date": "2026-07-25",
-            "description": [
-              "Die Tab-Umschaltung der Benachrichtigungen nutzt jetzt die neue linksbündige Pill-Control statt der alten Tab-Leiste; der Seitentitel bleibt darüber erhalten. Zusätzlich wurde der Abstand zwischen der Pill-Leiste und dem Inhalt vergrößert, was für alle Ansichten mit dieser Umschaltung gilt."
-            ]
-          },
-          {
-            "hash": "81c1e5f8",
-            "emoji": "🎨",
-            "message": "Einklappbares Seitenmenü entfernt — Sidebar dauerhaft in voller Breite",
-            "date": "2026-07-25",
-            "description": [
-              "Das Ein-/Ausklappen der Sidebar wird komplett entfernt. Menü und Logo-Zone stehen fest auf voller Breite, wodurch das im schmalen Zustand gestauchte Logo korrekt sitzt. Der persistierte Collapse-Zustand wird per Store-Versionssprung verworfen."
-            ]
-          },
-          {
-            "hash": "036f9da2",
-            "emoji": "🎨",
-            "message": "Interview-Fragestrecke: Höhe an Topbar angepasst, linke Rundungen entfernt",
-            "date": "2026-07-24",
-            "description": [
-              "Die Bühne füllt exakt den Bereich unter der Topbar (kein Überstand mehr) und",
-              "verzichtet auf die abgerundeten linken Ecken."
-            ]
-          },
-          {
-            "hash": "0c207a85",
-            "emoji": "🎨",
-            "message": "Profilseite: Zurück-Button und Hilfe-Icon entfernt",
-            "date": "2026-07-24",
-            "description": [
-              "Das Profil ist ein eigenständiges Ziel und braucht keinen Zurück-Button; der",
-              "Seitenkopf kann ihn nun optional unterdrücken. Zusätzlich das erklärende",
-              "Hilfe-Icon im Titel entfernt."
-            ]
-          },
-          {
-            "hash": "83632024",
-            "emoji": "🎨",
-            "message": "Wissens- und Leseansichten linksbündig ausgerichtet",
-            "date": "2026-07-24",
-            "description": [
-              "Wissen-Übersicht nutzt jetzt die neue linksbündige Pill-Leiste statt der",
-              "zentrierten, über die volle Breite schwebenden Tab-Leiste. Artikel-, Kapitel-",
-              "und Lektions-Detailseiten beginnen linksbündig statt zentriert."
-            ]
-          },
-          {
-            "hash": "a753db6f",
-            "emoji": "🎨",
-            "message": "Einheitliche linksbündige Content-Breite statt zentriertem Layout",
-            "date": "2026-07-24",
-            "description": [
-              "Inhalte beginnen linksbündig hinter der Sidebar (statt zentriert mit großer",
-              "Weißfläche), einheitlich begrenzt und mit kleinerem Padding. fixedHeight-Seiten",
-              "ziehen die Topbar-Höhe ab, damit nichts unten aus dem Bild rutscht."
-            ]
           }
         ],
         "tests": [
+          {
+            "hash": "52ce7669",
+            "emoji": "✅",
+            "message": "Backoffice-Tests: Anmeldung mit Authenticator-App räumt zuverlässig auf",
+            "date": "2026-11-03"
+          },
+          {
+            "hash": "d57c3be2",
+            "emoji": "✅",
+            "message": "Backoffice: Prämie für Empfehlungen – nur Administratoren sehen den Bearbeiten-Button, jetzt per Test abgesichert",
+            "date": "2026-11-02"
+          },
           {
             "hash": "eeba1589",
             "emoji": "🧪",
@@ -421,6 +282,12 @@
           }
         ],
         "docs": [
+          {
+            "hash": "bc6716bc",
+            "emoji": "📝",
+            "message": "Authenticator-App: Schnittstellen für das Backoffice bereitgestellt",
+            "date": "2026-11-03"
+          },
           {
             "hash": "a68f3b6f",
             "emoji": "📝",
@@ -470,6 +337,21 @@
           }
         ],
         "security": [
+          {
+            "hash": "d755cc70",
+            "emoji": "🔐",
+            "message": "Personalfragebögen: Anhänge im Backoffice laden jetzt sicher über die API, jeder Download wird protokolliert",
+            "date": "2026-11-06",
+            "description": [
+              "Hochgeladene Dokumente aus Personalfragebögen liegen jetzt verschlüsselt – und kommen deshalb nicht mehr über einen offenen Link, sondern nur noch mit Anmeldung direkt aus dem Backoffice. Wer was wann heruntergeladen hat, bleibt nachvollziehbar. Die tickende „noch X Minuten gültig“-Anzeige hat damit ausgedient, dafür zeigt jeder Anhang beim Laden einen eigenen Spinner und sagt Bescheid, falls etwas schiefgeht."
+            ]
+          },
+          {
+            "hash": "9960b047",
+            "emoji": "🔐",
+            "message": "Profil: Die Anmeldung mit Authenticator-App steht jetzt gut sichtbar rechts neben dem Profil statt versteckt unter dem Speichern-Knopf",
+            "date": "2026-11-04"
+          },
           {
             "hash": "35b4b2ce",
             "emoji": "🔒",
