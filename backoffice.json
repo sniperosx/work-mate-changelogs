@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-11-18T09:27:56.093Z",
+  "generatedAt": "2026-11-19T07:35:53.992Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -97,6 +97,12 @@
           }
         ],
         "fixes": [
+          {
+            "hash": "8274ad05",
+            "emoji": "🐛",
+            "message": "„Mitarbeiter empfehlen“: Der Button „Jemanden empfehlen“ steht nur noch oben – bei leerer Liste gibt es keinen zweiten mehr darunter",
+            "date": "2026-11-18"
+          },
           {
             "hash": "fde618ee",
             "emoji": "🐛",
