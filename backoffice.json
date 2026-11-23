@@ -1,6 +1,6 @@
 {
   "repository": "backoffice",
-  "generatedAt": "2026-11-19T07:35:53.992Z",
+  "generatedAt": "2026-11-23T13:38:10.585Z",
   "categoryNames": {
     "features": "Features",
     "deployment": "Deployment",
@@ -288,6 +288,12 @@
           }
         ],
         "docs": [
+          {
+            "hash": "189d84fe",
+            "emoji": "📝",
+            "message": "Newsfeed-Beiträge dürfen jetzt bis zu 3.000 statt 1.000 Zeichen lang sein – genug Platz für Jahresrückblick & Co.",
+            "date": "2026-11-23"
+          },
           {
             "hash": "bc6716bc",
             "emoji": "📝",
